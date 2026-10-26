@@ -1,48 +1,152 @@
-# 추계학술대회
+<div align="center">
 
-![자료](https://img.shields.io/badge/연구·개발-코드%20아카이브-176B87) ![공개범위](https://img.shields.io/badge/데이터·모델-미포함-64748B)
+# 🔎 볼 결함 탐지와 영상 필터 비교
 
-2026년 연구·개발 과정의 공개 가능한 코드와 실험 설정을 차수별로 보존한 저장소입니다. 원본 작업 자료는 수정하지 않고 공개용 사본을 구성했습니다.
+### YOLO 객체 검출 · 영역별 OK/NG 판정 · 강건성 실험
 
-## 기술과 구성
+부품 안의 볼을 찾고, 위치별 개수를 세어 정상·불량을 판정합니다.<br>
+원본 영상과 필터를 적용한 영상을 같은 흐름으로 비교하며, 검출 성능과 최종 판정 성능을 구분합니다.
 
-확인한 기술: **Python, Jupyter**.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![YOLO](https://img.shields.io/badge/Detection-YOLO-7C3AED?style=flat-square)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
-- `DataSet`
-- `ball_ok_ng_yolo_v7.ipynb`
-- `논문`
-- `발표자료`
-- `이전 도커 실험`
-- `최종`
+[빠른 시작](#quick-start) · [저장소 구성](#repository-structure) · [실험 설정](#data-settings)
 
-## 차수별 변경
+</div>
 
-| 차수·위치 | 파일 | 추가 | 변경 | 이전에만 존재 |
-|---|---:|---:|---:|---:|
-| `기본` | 537 | 537 | 0 | 0 |
-| `논문/4차` | 1 | 1 | 0 | 0 |
-| `발표자료/1차` | 1 | 1 | 0 | 0 |
-| `발표자료/2차` | 1 | 0 | 1 | 0 |
-| `발표자료/3차` | 1 | 0 | 1 | 0 |
+---
 
-자세한 비교 기준은 [버전 기록](docs/VERSIONS.md), 업로드 준비 내역은 [변경 기록](CHANGELOG.md)에 있습니다. 추가·변경·삭제 수는 같은 상위 묶음의 차수별 상대경로와 업로드 파일 SHA-256을 비교한 값입니다. 과거 개발 날짜나 동작 변경을 추정한 기록이 아닙니다.
+<a name="introduction"></a>
 
-## 재현하기
+## ✨ 프로젝트 소개
 
-1. 필요한 차수의 원본 README와 의존성 파일을 먼저 확인합니다.
-2. 별도 환경에서 해당 차수의 의존성을 설치합니다.
-3. 데이터셋·모델·인증 정보는 각자의 허가된 자료와 환경변수로 준비합니다.
+YOLO가 검출한 볼을 중앙 부품 영역으로 제한한 뒤, 위·왼쪽·아래·오른쪽의 개수 규칙으로 OK/NG를 판단하는 연구입니다. 단일 영상 필터, 조합 필터, 노이즈와 데이터 양 변화가 판정에 미치는 영향을 노트북에서 비교합니다.
 
-일부 코드는 과거 D 드라이브나 Docker 작업 경로를 참조합니다. 저장소는 코드 보관본이며 모든 실험·앱의 설치, 학습, 실행 성공을 확인한 배포본이 아닙니다.
+| 기능 | 구현 내용 |
+| :--- | :--- |
+| 🎯 볼 검출 | Ultralytics YOLO로 위치와 객체 상자 예측 |
+| 📐 영역 판정 | 중앙 사각형을 찾고 영역 내 볼의 위치별 개수 비교 |
+| 🎛️ 필터 비교 | 반전·이진화·블러·엣지 등 단일 필터 10개와 조합 필터 5개 |
+| 🧪 난도 실험 | 노이즈, 해상도, 블러 강도, 학습 데이터 양 조건 비교 |
+| 🔁 반복 실험 | 다중 시드, 교차검증, 근접 중복 이미지 묶음 처리 |
+| 📊 결과 시각화 | CSV·JSON 요약, 혼동행렬, 필터별 그래프, GPU 사용 기록 |
 
-## 공개 범위와 검증 한계
+```mermaid
+flowchart LR
+    A[영상과 YOLO 라벨] --> B[원본 또는 영상 필터]
+    B --> C[YOLO 볼 검출]
+    C --> D[중앙 부품 영역 선택]
+    D --> E[방향별 개수 규칙]
+    E --> F[OK / NG]
+    F --> G[지표와 조건별 비교]
+    A --> H[라벨 기반 기준 또는 별도 정답]
+    H --> G
+```
 
-- 노트북의 실행 결과, 실행 횟수, 위젯·셀 메타데이터와 첨부 이미지를 제거했습니다.
-- 원데이터, 의료·개인 자료, 학습 가중치, 실행 파일, 캐시와 외부 SDK를 제외했습니다.
-- 비밀키·개인정보 탐지 또는 공개 권리가 불명확한 파일 19개는 업로드하지 않았습니다. 탐지 값과 개인 기록은 저장소에 싣지 않았습니다.
-- 포함 파일의 해시와 사본 변환을 기록했습니다. 코드 전체의 기능·보안·재현성을 보증하지 않습니다.
-- GitHub Actions 원본이 포함되면 `_github-workflows-reference`에 참고용으로 보관하며 자동 실행하지 않습니다.
+<a name="repository-structure"></a>
 
-## 라이선스
+## 📁 저장소 구성
 
-기존 LICENSE·NOTICE 파일과 개별 저작권 표시를 유지합니다. 새 라이선스를 임의로 부여하지 않았습니다. 라이선스 표시가 없는 코드의 이용 조건과 외부 의존성의 조건은 별도로 확인해 주세요.
+아래는 주요 경로를 발췌한 구조입니다.
+
+```text
+.
+├── ball_ok_ng_yolo_v7.ipynb
+├── DataSet/
+├── 최종/
+│   └── 연구코드/
+│       └── ball_ok_ng_yolo_v7.ipynb
+├── 이전 도커 실험/
+│   └── 불량검출실험/
+│       ├── paper_filter_figures.py
+│       ├── reference_plot_style.py
+│       └── render_saved_figures.py
+├── docs/VERSIONS.md
+└── CHANGELOG.md
+```
+
+- [최종 연구 노트북](최종/연구코드/ball_ok_ng_yolo_v7.ipynb): 검출·판정·필터 비교 및 추가 진단 실험.
+- [기본 노트북](ball_ok_ng_yolo_v7.ipynb): 저장소 최상위에 보존한 연구 코드.
+- [그림 생성 코드](이전%20도커%20실험/불량검출실험/paper_filter_figures.py): 연구 그림 구성.
+- [버전별 파일 기록](docs/VERSIONS.md): 공개 코드의 차수별 비교.
+
+<a name="implementation"></a>
+
+## 🧩 주요 기술과 실험 구성
+
+OpenCV로 영상을 다루고, PyTorch·Kornia로 필터 연산을 구성합니다. Ultralytics는 객체 검출을 담당하며 NumPy·pandas·Matplotlib는 결과 집계와 그림 생성에 사용합니다.
+
+노트북은 초기 확인 실험과 뒤쪽의 교차검증·강건성 실험을 구분합니다. 앞부분의 개발 중 확인 결과를 독립된 평가 결과처럼 해석하지 않도록 셀 설명을 함께 확인해야 합니다.
+
+| 비교 묶음 | 조건 |
+| :--- | :--- |
+| 기준 | 원본 영상 |
+| 단일 필터 | Invert, Otsu, Solarize, Histogram Equalization, CLAHE, Gamma, Gaussian Blur, Sobel, Emboss, Unsharp |
+| 조합 필터 | Invert+CLAHE, Blur+Otsu, Sobel+Invert, HistEq+Emboss, Unsharp+Sobel |
+| 추가 진단 | 볼 지우기·추가하기, 판정 임계값 변화, 분포 변화, 다중 시드 반복 |
+
+<a name="quick-start"></a>
+
+## 🚀 빠른 시작
+
+Python과 CUDA를 사용할 수 있는 PyTorch 환경을 먼저 준비합니다. 노트북의 기본 `REQUIRE_GPU = True` 설정에서는 CUDA를 찾지 못하면 중단됩니다. 필요한 패키지를 준비한 뒤 저장소 루트에서 실행합니다.
+
+```powershell
+python -m pip install jupyterlab numpy opencv-python matplotlib pandas pyyaml joblib ultralytics kornia
+python -m jupyter lab "최종/연구코드/ball_ok_ng_yolo_v7.ipynb"
+```
+
+1. 노트북의 데이터 경로를 자신의 실험 자료 위치에 맞춥니다. 원래 코드는 `/root/추계학술대회/DataSet`을 전제로 작성되어 있습니다.
+2. 이미지와 YOLO 라벨의 대응 관계, 학습·검증·시험 분할을 확인합니다.
+3. 사용할 GPU와 데이터 경로를 확인한 뒤 필요한 실험 셀을 순서대로 실행합니다.
+4. 결과 CSV와 JSON을 확인하고, 필요할 때 그림 생성 셀을 실행합니다.
+
+원본 영상·학습 가중치·완성된 실행 환경은 별도로 준비해야 합니다. 공개 파일만으로 모든 실험을 즉시 재현할 수 있는 패키지는 아닙니다.
+
+<a name="data-settings"></a>
+
+## 📊 데이터 구성과 실험 설정
+
+노트북이 기대하는 기본 데이터 구조는 다음과 같습니다.
+
+```text
+DataSet/
+├── images/{train,val,test}/*.png
+├── labels/{train,val,test}/*.txt
+└── data.yaml
+```
+
+라벨 한 행은 `class cx cy w h`이며 좌표는 0~1로 정규화합니다. 별도의 실제 OK/NG 정답을 사용할 때는 노트북의 `OKNG_CSV` 및 후반부의 `REAL_LABEL_*` 설정을 확인합니다.
+
+| 지표·설정 | 해석 |
+| :--- | :--- |
+| 위치별 개수 | 위 5개·왼쪽 4개·아래 2개·오른쪽 2개를 사용하는 구현 규칙 |
+| 검출 mAP | 볼의 객체 상자 검출 성능 |
+| OK/NG 정확도 | 선택한 정답 정의와 개수 규칙에 대한 판정 일치율 |
+| Strict Acc | 라벨의 볼을 모두 찾고 추가 검출도 없는 엄격한 기준 |
+| 다수 클래스 기준 | 클래스 불균형에서 단순 다수 예측과 비교하기 위한 기준 |
+| McNemar 비교 | 같은 영상에 대한 두 방법의 정오답 차이 비교 |
+
+라벨 상자에도 동일한 영역·개수 규칙을 적용해 정답을 만들면, 예측과 정답이 같은 규칙을 공유합니다. 이 결과를 별도 전문가 판정에 대한 정확도와 동일하게 해석하지 않습니다. 저장소 소개에는 새로 재현하지 않은 정확도나 처리속도를 성과 수치로 제시하지 않습니다.
+
+<a name="troubleshooting"></a>
+
+## 🛠️ 문제 해결
+
+| 증상 | 확인할 내용 |
+| :--- | :--- |
+| CUDA GPU를 찾지 못함 | 드라이버, PyTorch의 CUDA 지원 여부, 노트북의 장치 설정 |
+| 데이터 경로 오류 | 노트북의 원래 Linux 경로와 현재 데이터 위치 |
+| 결과가 지나치게 높음 | 중복 이미지 묶음, 클래스 불균형, 정답 생성 규칙, 별도 실제 정답 유무 |
+| 한글 그래프가 깨짐 | 나눔고딕 설치와 노트북의 폰트 경로 |
+| 기존 결과와 수치가 다름 | 시드·분할·가중치·캐시·필터 파라미터가 같은지 확인 |
+
+---
+
+<div align="center">
+
+**검출에서 판정까지, 조건을 나누어 비교합니다.**
+
+</div>
