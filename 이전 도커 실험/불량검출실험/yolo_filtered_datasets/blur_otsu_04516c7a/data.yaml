@@ -1,0 +1,5 @@
+path: /root/추계학술대회/yolo_filtered_datasets/blur_otsu_04516c7a
+names:
+  0: ball
+train: images/train
+val: images/val

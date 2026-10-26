@@ -1,0 +1,7 @@
+path: /root/추계학술대회/DataSet
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: ball

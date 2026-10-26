@@ -1,0 +1,6 @@
+path: /root/추계학술대회/yolo_filtered_datasets/emboss_14e8142b_cv5f0
+train: images/train
+val: /root/추계학술대회/yolo_filtered_datasets/emboss_14e8142b_cv5f0/images/val
+names:
+  0: ball
+test: /root/추계학술대회/yolo_filtered_datasets/emboss_14e8142b_cv5f0/images/test

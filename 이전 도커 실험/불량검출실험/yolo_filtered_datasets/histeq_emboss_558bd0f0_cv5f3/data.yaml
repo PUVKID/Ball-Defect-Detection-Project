@@ -1,0 +1,6 @@
+path: /root/추계학술대회/yolo_filtered_datasets/histeq_emboss_558bd0f0_cv5f3
+train: images/train
+val: /root/추계학술대회/yolo_filtered_datasets/histeq_emboss_558bd0f0_cv5f3/images/val
+names:
+  0: ball
+test: /root/추계학술대회/yolo_filtered_datasets/histeq_emboss_558bd0f0_cv5f3/images/test

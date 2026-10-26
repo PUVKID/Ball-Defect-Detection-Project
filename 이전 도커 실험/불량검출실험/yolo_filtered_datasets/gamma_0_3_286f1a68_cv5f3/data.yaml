@@ -1,0 +1,6 @@
+path: /root/추계학술대회/yolo_filtered_datasets/gamma_0_3_286f1a68_cv5f3
+train: images/train
+val: /root/추계학술대회/yolo_filtered_datasets/gamma_0_3_286f1a68_cv5f3/images/val
+names:
+  0: ball
+test: /root/추계학술대회/yolo_filtered_datasets/gamma_0_3_286f1a68_cv5f3/images/test
