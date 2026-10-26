@@ -1,8 +1,12 @@
 <div align="center">
 
-# Ball-Defect-Detection-Project
+# 볼 결함 탐지와 영상 필터 비교
 
-## 🔎 볼 결함 탐지와 영상 필터 비교
+**Ball-Defect-Detection-Project**
+
+**기술 분류:** 컴퓨터 비전 › 딥러닝 객체 검출 › 소형 객체·전처리 강건성
+
+
 
 ### YOLOv8n · 단일·복합 전처리 필터 · 중복 그룹 분할 · 노이즈 강건성
 
@@ -16,7 +20,33 @@
 
 [빠른 시작](#quick-start) · [저장소 구성](#repository-structure) · [실험 설정](#data-settings)
 
+[예시 이미지](#preview)
+
 </div>
+
+<a name="preview"></a>
+
+## 🖼️ 예시로 보기
+
+<p align="center"><img src="assets/previews/paper-noise-comparison.png" width="674" alt="논문 그림 · Ball-Defect-Detection-Project" /></p>
+
+**논문 그림** — 공개 HWP 원고의 필터별 노이즈 강도 비교 집계 그림입니다. 세 열은 노이즈 표준편차 0·40·80이고, 지표는 mAP50-95입니다.
+
+[근거 파일 보기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
+
+
+
+<a name="input-processing-output"></a>
+
+## 🔄 입력·처리·출력
+
+| 단계 | 이 프로젝트에서 다루는 내용 |
+| :--- | :--- |
+| 입력 | 제조 부품 영상·볼 바운딩 박스 |
+| 처리 | YOLOv8n, 단일·복합 필터, 중복 그룹 분할·다중 시드 비교 |
+| 출력 | 검출 지표·Strict Acc·별도 OK/NG 판정 |
+
+
 
 ---
 
