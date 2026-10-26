@@ -1,11 +1,13 @@
 <div align="center">
 
-# 🔎 볼 결함 탐지와 영상 필터 비교
+# Ball-Defect-Detection-Project
 
-### YOLO 객체 검출 · 영역별 OK/NG 판정 · 강건성 실험
+## 🔎 볼 결함 탐지와 영상 필터 비교
 
-부품 안의 볼을 찾고, 위치별 개수를 세어 정상·불량을 판정합니다.<br>
-원본 영상과 필터를 적용한 영상을 같은 흐름으로 비교하며, 검출 성능과 최종 판정 성능을 구분합니다.
+### YOLOv8n · 단일·복합 전처리 필터 · 중복 그룹 분할 · 노이즈 강건성
+
+제조 영상의 작은 볼을 검출할 때 전처리 필터가 정확도와 노이즈 강건성에 미치는 영향을 비교합니다.<br>
+최종 논문의 YOLOv8n 실험과, 코드에 함께 보관한 영역별 개수 기반 OK/NG 판정·추가 진단을 구분합니다.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -22,7 +24,7 @@
 
 ## ✨ 프로젝트 소개
 
-YOLO가 검출한 볼을 중앙 부품 영역으로 제한한 뒤, 위·왼쪽·아래·오른쪽의 개수 규칙으로 OK/NG를 판단하는 연구입니다. 단일 영상 필터, 조합 필터, 노이즈와 데이터 양 변화가 판정에 미치는 영향을 노트북에서 비교합니다.
+최종 연구는 원본 영상과 단일 필터 10개·조합 필터 5개의 볼 객체 검출을 비교합니다. 근접 중복 이미지 묶음을 분리하고, 다중 시드·교차검증·노이즈 조건에서 결과의 안정성을 살펴봅니다. 노트북에는 중앙 영역의 방향별 개수로 OK/NG를 정하는 별도 실험도 포함되어 있습니다.
 
 | 기능 | 구현 내용 |
 | :--- | :--- |
@@ -71,6 +73,28 @@ flowchart LR
 - [기본 노트북](ball_ok_ng_yolo_v7.ipynb): 저장소 최상위에 보존한 연구 코드.
 - [그림 생성 코드](이전%20도커%20실험/불량검출실험/paper_filter_figures.py): 연구 그림 구성.
 - [버전별 파일 기록](docs/VERSIONS.md): 공개 코드의 차수별 비교.
+
+### 최종 논문
+
+[최종 논문 전체 원고](논문/최종_논문.hwp)를 한 개 포함했습니다. 이전 제출 차수와 통합 논문집은 함께 넣지 않았습니다. HWP의 본문과 내장 연구 그래프를 확인했으며, 한글 편집기에서 페이지 단위로 렌더링한 결과까지 검증한 것은 아닙니다.
+
+### 최종 원고의 연구 범위
+
+**YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교**  
+*Performance Comparison of Single and Combined Preprocessing Filters for YOLOv8n-Based Ball Detection*
+
+원고는 한국정보기술학회([Korean Institute of Information Technology](https://eng.ki-it.or.kr/homepage/custom/memberadministrationregulation))의 2026 추계종합학술대회 양식으로 작성되었습니다. 원고 파일의 존재를 게재 확정으로 표현하지 않습니다.
+
+| 최종 원고 항목 | 원고에 명시된 구성·결과 |
+| :--- | :--- |
+| 자료·분할 | 2944×2352 영상 500장, 초기 학습 400·검증 100; 근접 중복 368개 그룹을 이용한 5-fold 비교 |
+| 학습 조건 | YOLOv8n, 30 epoch, 입력 1280, batch 8, patience 15 |
+| 평가 구분 | mAP용 conf 0.001·NMS IoU 0.7과 엄격 일치용 conf 0.25·IoU 0.5를 구분 |
+| 단일 실행 | Gamma mAP50 96.70%, 원본 96.53%로 차이는 0.17%p |
+| 3개 시드 비교 | Invert+CLAHE Strict Acc 95.47±2.27%, 원본 95.40±0.53%; 단일 실행 98%를 반복 성능으로 대체하지 않음 |
+| 노이즈 σ=80 | Blur 82.86±0.08%, 원본 79.60±0.26%의 원고 보고값 |
+
+위 수치는 보존한 원고의 보고값이며 이번 공개 정리에서 다시 학습한 결과가 아닙니다. 노트북의 100-epoch 기준 실험·가상 볼 추가·판정 규칙 분석까지 모두 논문에 사용된 실험이라고 간주하지 않습니다.
 
 <a name="implementation"></a>
 
