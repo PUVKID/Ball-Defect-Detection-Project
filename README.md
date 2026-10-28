@@ -9,23 +9,18 @@ YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비�
 
 **기술 분류:** 컴퓨터 비전 › 딥러닝 객체 검출 › 소형 객체·전처리 강건성
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![YOLO](https://img.shields.io/badge/Detection-YOLO-7C3AED?style=flat-square)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+`Python`
+`PyTorch`
+`YOLO`
+`Jupyter`
 
 [빠른 시작](#quick-start) · [저장소 구성](#repository-structure) · [실험 설정](#data-settings)
 
-[예시 이미지](#preview)
+[핵심 구성](#input-processing-output)
 
 </div>
 
 <a name="overview"></a>
-
-## 🗺️ 한눈에 보는 구성
-
-<p align="center"><img src="assets/overview.png" width="960" alt="프로젝트의 입력·처리·출력을 정리한 설명도" /></p>
-보관한 프로젝트 자료의 흐름을 정리한 설명도입니다.
 
 ## ✨ 최신 자료에서 살펴볼 점
 
@@ -40,17 +35,18 @@ YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 최종 �
 
 발표 자료는 **1차: 본발표 12장+부록 3장 → 2차: 비교 사진을 확장한 본발표 20장 → 3차: 같은 내용·시간을 유지하고 투명 로고·자산 검사를 보강**한 흐름입니다. 연구 실험 차수와 구분하며, 공개 폴더에는 각 차수의 검사 도구만 보관합니다.
 
-
 <a name="preview"></a>
 
-## 🖼️ 예시로 보기
+<details>
+<summary>📎 논문 도표와 출처</summary>
 
-<p align="center"><img src="assets/previews/paper-noise-comparison.png" width="674" alt="논문 그림 · Ball-Defect-Detection-Project" /></p>
+[📊 원고 도표 보기](assets/previews/paper-noise-comparison.png)
 
 **논문 그림** — 공개 HWP 원고의 필터별 노이즈 강도 비교 집계 그림입니다. 세 열은 노이즈 표준편차 0·40·80이고, 지표는 mAP50-95입니다.
 
 [근거 파일 보기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
 
+</details>
 
 <a name="input-processing-output"></a>
 
@@ -58,9 +54,9 @@ YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 최종 �
 
 | 단계 | 이 프로젝트에서 다루는 내용 |
 | :--- | :--- |
-| 입력 | 제조 부품 영상·볼 바운딩 박스 |
-| 처리 | YOLOv8n, 단일·복합 필터, 중복 그룹 분할·다중 시드 비교 |
-| 출력 | 검출 지표·Strict Acc·별도 OK/NG 판정 |
+| 📥 입력 | 제조 부품 영상·볼 바운딩 박스 |
+| ⚙️ 처리 | YOLOv8n, 단일·복합 필터, 중복 그룹 분할·다중 시드 비교 |
+| 📤 출력 | 검출 지표·Strict Acc·별도 OK/NG 판정 |
 
 
 ---
