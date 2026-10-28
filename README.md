@@ -1,20 +1,13 @@
 <div align="center">
 
 <a name="볼-결함-탐지와-영상-필터-비교"></a>
-
-# 🔬 볼 결함 탐지와 영상 필터 비교
-
-**Ball-Defect-Detection-Project**
-
-**기술 분류:** 컴퓨터 비전 › 딥러닝 객체 검출 › 소형 객체·전처리 강건성
-
-
 <a name="yolov8n--단일복합-전처리-필터--중복-그룹-분할--노이즈-강건성"></a>
 
-### 🧩 YOLOv8n · 단일·복합 전처리 필터 · 중복 그룹 분할 · 노이즈 강건성
+# 🔎 Ball Defect Detection Project
 
-제조 영상의 작은 볼을 검출할 때 전처리 필터가 정확도와 노이즈 강건성에 미치는 영향을 비교합니다.<br>
-최종 논문의 YOLOv8n 실험과, 코드에 함께 보관한 영역별 개수 기반 OK/NG 판정·추가 진단을 구분합니다.
+YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비교합니다.
+
+**기술 분류:** 컴퓨터 비전 › 딥러닝 객체 검출 › 소형 객체·전처리 강건성
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -26,6 +19,27 @@
 [예시 이미지](#preview)
 
 </div>
+
+<a name="overview"></a>
+
+## 🗺️ 한눈에 보는 구성
+
+<p align="center"><img src="assets/overview.png" width="960" alt="프로젝트의 입력·처리·출력을 정리한 설명도" /></p>
+보관한 프로젝트 자료의 흐름을 정리한 설명도입니다.
+
+## ✨ 최신 자료에서 살펴볼 점
+
+YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 최종 원고 한 편입니다.
+
+원고 보고값이며 이번 정리에서 재실험하지 않았습니다. 원고 파일만으로 게재 확정을 뜻하지 않습니다.
+
+- 단일 실행 Gamma mAP50-95 96.70%와 원본 96.53%를 보고합니다. Strict Acc는 별도 중심 일치 규칙의 지표입니다.
+- 세 시드 반복 및 잡음 조건의 비교를 읽을 때 조건마다 재학습한 실험이라는 범위와 내부 분할의 유사 그룹 중복 한계를 함께 확인합니다.
+
+**자료별 안내:** [최종 연구코드](docs/versions/stage-1.md) · [논문/4차](docs/versions/stage-2.md) · [발표자료/1차](docs/versions/stage-3.md) · [발표자료/2차](docs/versions/stage-4.md) · [발표자료/3차](docs/versions/stage-5.md) · [최종 원고](docs/versions/stage-6.md) · [전체 기록](docs/VERSIONS.md)
+
+발표 자료는 **1차: 본발표 12장+부록 3장 → 2차: 비교 사진을 확장한 본발표 20장 → 3차: 같은 내용·시간을 유지하고 투명 로고·자산 검사를 보강**한 흐름입니다. 연구 실험 차수와 구분하며, 공개 폴더에는 각 차수의 검사 도구만 보관합니다.
+
 
 <a name="preview"></a>
 
