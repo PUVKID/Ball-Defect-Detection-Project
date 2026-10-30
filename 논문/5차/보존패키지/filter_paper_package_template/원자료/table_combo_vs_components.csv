@@ -1,0 +1,6 @@
+﻿Combination,Accuracy (%),Component A,A Acc. (%),Component B,B Acc. (%),Best Component,Gain vs Best Component (pp),Verdict,McNemar p vs Best Component,Significant (p<0.05),Combination F1 (%),Best Component F1 (%)
+Invert+CLAHE,100.0,Invert,99.8,CLAHE (max),100.0,CLAHE (max),0.0,Tie,1.0,No,100.0,100.0
+Blur+Otsu,74.0,Gaussian Blur (max),100.0,Otsu Threshold,78.6,Gaussian Blur (max),-26.0,Component better,0.0,Yes,71.49,100.0
+Sobel+Invert,99.8,Sobel Edges,100.0,Invert,99.8,Sobel Edges,-0.2,Component better,1.0,No,99.82,100.0
+HistEq+Emboss,100.0,Histogram Equalization,100.0,Emboss,100.0,Histogram Equalization,0.0,Tie,1.0,No,100.0,100.0
+Unsharp+Sobel,99.8,Unsharp (max),100.0,Sobel Edges,100.0,Unsharp (max),-0.2,Component better,1.0,No,99.82,100.0

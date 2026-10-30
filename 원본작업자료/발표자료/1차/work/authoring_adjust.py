@@ -1,0 +1,11 @@
+from pathlib import Path
+p = Path(__file__).with_name('build_presentation.mjs')
+s = p.read_text(encoding='utf-8')
+s = s.replace("chartFill:'#000000',plotAreaFill:'#000000'", "chartFill:'none',plotAreaFill:'none'")
+s = s.replace("'--validate-heading-fit'],explicitTotal", "'--validate-heading-fit','--require-native-table-slide','9'],explicitTotal")
+s = s.replace('values:q.values,fill:', 'values:chartPayload(q.values),fill:')
+s = s.replace('values:x.values}', 'values:chartPayload(x.values)}')
+s = s.replace("values:data.repeat[cond+'/'+n].map(x=>x[metric]),line:", "values:chartPayload(data.repeat[cond+'/'+n].map(x=>x[metric])),line:")
+s = s.replace("values:data.repeat[cond+'/'+n].map(x=>x[metric])}", "values:chartPayload(data.repeat[cond+'/'+n].map(x=>x[metric]))}")
+s = s.replace("name:n,values:chartPayload(data.repeat[cond+'/'+n].map(x=>x[metric])),line:", "name:n,values:chartPayload(data.repeat[cond+'/'+n].map(x=>x[metric])),smooth:false,line:")
+p.write_text(s, encoding='utf-8')

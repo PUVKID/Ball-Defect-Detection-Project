@@ -1,0 +1,32 @@
+﻿단일 필터와 복합 필터 검출 비교 논문 수정본
+
+본문과 그림은 모두 2단이며, 학회 양식의 제목·저자 공란만 양단을 가로지릅니다.
+DOCX와 PDF는 같은 조판 결과의 3쪽이며 그림 3개, 표 0개입니다.
+그림 폴더의 PNG는 문서에 삽입한 파일 그대로이고 PDF는 각 그림의 벡터 원본입니다.
+그림 표기는 모두 영어이며 필터 이름은 짧은 가로 표기 또는 2줄입니다.
+Orig.=Original, Inv.=Invert, Hist. Eq./HE=Histogram Equalization,
+Gauss.=Gaussian Blur, Emb.=Emboss, US=Unsharp. A+B는 A 후 B입니다.
+
+제공된 하계 노트북의 NanumGothic, 흰 배경, 막대 색상, 축 45 pt와 수치 35 pt Bold를 기반으로 했습니다.
+한 단 너비 71 mm에서 읽히도록 11-inch 캔버스, 최대 6개 범주/패널을 사용했습니다.
+필터 눈금은 31 pt로 줄 겹침을 방지했습니다. 본문 글꼴·용지·여백은 HWP 양식을 따랐습니다.
+국문 제목 휴먼명조 17 pt, 영문 제목 HY견명조 15 pt, 본문 휴먼명조 10 pt,
+절 제목 휴먼고딕 11 pt, 소제목 HY중고딕 11 pt, 캡션 HY중고딕 9 pt입니다.
+용지 190×260 mm, 좌우 20 mm, 위아래 17.5 mm, 단 간격 8 mm입니다.
+상용 본문 글꼴은 현재 PC의 설치본을 사용하고 배포하지 않습니다. NanumGothic과 라이선스는 포함했습니다.
+
+그래프만 재생성 (모델 학습 없음):
+python 코드/paper_filter_figures.py --results 원자료 --output 새_논문그림
+전체 기존 결과 그래프도 다시 생성하려면:
+python 코드/render_saved_figures.py --results 원자료 --output 새_전체그림
+필요 패키지: numpy, pandas, matplotlib. 연구 컨테이너에 설치되어 있습니다.
+학습·데이터 분할·평가 계산과 저장된 측정값은 바꾸지 않았습니다.
+재학습은 수행하지 않았으며 저장된 per-image 결과를 재계산하고 표·JSON·그림을 대조했습니다.
+mAP는 저장된 평가 요약과 대조했으며 원시 예측으로 AP를 새로 산출한 것은 아닙니다.
+모든 단일·복합 비교는 시드 42이고, 다중 시드 결과는 본문에서 별도로 구분했습니다.
+전체 후보·모든 조합·미지 현장 조건의 우월성까지 검증했다는 의미는 아닙니다.
+
+참고문헌 확인 경로:
+[1] https://docs.ultralytics.com/models/yolov8/
+[2] https://github.com/erich666/GraphicsGems/blob/master/gemsiv/clahe.c
+[3] https://arxiv.org/abs/1910.02190

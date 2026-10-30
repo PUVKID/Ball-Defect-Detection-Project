@@ -1,0 +1,463 @@
+# 논문 2차 -> 논문 3차
+# 공백·주석·개행을 무시하지 않습니다. PDF 추출 텍스트는 배치·글꼴 비교를 대신하지 않습니다. 바이너리는 크기·SHA-256으로 비교합니다. ipynb의 바이너리 이미지 출력만 크기·SHA·원문 링크로 표시하며 코드·Markdown·수치·설정·그 밖의 JSON 텍스트는 전체 비교합니다.
+# 이전 논문/2차/원고.pdf 423384 4da781634e54b11f9da37ce96e55f8a1f8658ed8d28ab75985981f847c062018
+# 이전 논문/2차/원고.hwp 526336 4610ea4542f49a55e302e141d760a7628cc45041d04ec2771c4051669d5fd49b
+# 이전 논문/2차/요약.pdf 126433 507b72bf24f9c31295291338f1b4fd59ea48d21b46ed18880662b0bb4f15812d
+# 이전 원본작업자료/논문/2차/추계학술대회 논문 2차_요약.hwp 89088 0b168e3b3f99215b98eed7e8bdf430ae30273d6d5a73008e7a0be730d1fc51ff
+# 현재 논문/최종_논문.pdf 420646 457b0126e44ecf11efe75e0d7fc2eb44dcb03bcc9091b39539831578e1f10e76
+# 현재 논문/최종_논문.hwp 528384 9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27
+# 현재 원본작업자료/논문/3차/추계학술대회 논문 3차_요약.hwp 73728 5cfac11aa7e9cbde941c5bef302eca00f7d5f2dd76a4fb38d31b556f44c94a0a
+--- 논문/2차/요약.pdf
++++ /dev/null
+@@ -1,39 +0,0 @@
+-=== 1쪽 ===
+-한글제목 
+-휴먼명조, 17, 장평:90, 자간: -7  
+-저자명
+-돋움, 11, 장평:90, 자간: 5 
+-영문제목
+-견명조, 15, 장평:90, 자간: -7
+-영문저자명
+-휴먼명조, 10, 장평:90, 자간: 5
+-본문
+-휴먼명조, 9.2, 장평:90, 자간:-6
+-참고문헌
+-영문:Times New Roman, 10, 장평:90, 
+-자간:-6 
+-- 2026 한국정보기술학회 추계 종합학술대회 논문집 -
+-- 1 -
+-다양한 영상 조건에서 YOLO 볼 검출을 위한 단일 필터와 복합 
+-필터의 성능 비교
+-곽윤석*, 김남기**
+-Comparison of Single and Combined Filters for YOLO Ball
+-Detection under Varying Image Conditions
+-Yunsuk Kwak* and Namgi Kim**
+-요  약
+-현장 영상의 특성을 사전에 확정하기 어려운 상황을 고려하여 YOLOv8n 볼 검출에 적용한 단일 필터 10 종
+-과 복합 필터 5 종을 비교한다. 500 장에 대해 유사 영상 그룹을 분리한 5 겹 교차검증을 수행하고, 일반 영상
+-과 가우시안 잡음 조건에서 mAP50-95 및 영상 단위 엄격 검출 정확도를 분석하였다. 일반 영상의 단일 필터 중 
+-Gamma 0.3 이 mAP50-95 96.70% 로 가장 높았고 , 강한 잡음에서는 Gaussian Blur (max)가 우세하였다. 모든 
+-조합의 mAP 는 더 나은 구성 필터를 넘지 못했고, Invert+CLAHE 의 단일 시드 엄격 정확도 이득도 반복 실험
+-에서 유지되지 않았다. 모든 필터가 성능을 보존하거나 복합 적용이 항상 유리하지는 않았으며, 입력 조건과 평
+-가 지표를 구분한 선택이 필요하다.
+-Key words
+-YOLOv8n, image preprocessing, filter combination, object detection
+-참고문헌
+-[1] G. Jocher, A. Chaurasia, and J. Qiu, “Ultralytics YOLOv8,” software, 2023.
+-[2] K. Zuiderveld, “Contrast Limited Adaptive Histogram Equalization,” Graphics Gems IV, pp. 474-485, 1994.
+-[3] E. Riba et al., “Kornia: an Open Source Differentiable Computer Vision Library for PyTorch,” arXiv:1910.0219
+-0, 2019.
+-*경기대학교 컴퓨터과학과, lukeyun@kyonggi.ac.kr, https://orcid.org/0009-0004-0207-4000
+-**경기대학교 컴퓨터과학과 교수(교신저자), ngkim@kyonggi.ac.kr, http://orcid.org/0000-0002-0077-6576
+Binary files 논문/2차/원고.hwp and 논문/최종_논문.hwp differ
+--- 논문/2차/원고.pdf
++++ 논문/최종_논문.pdf
+@@ -1,25 +1,26 @@
+ === 1쪽 ===
+-다양한 영상 조건에서 YOLO 볼 검출을 위한 단일 필터와 복합 
+-필터의 성능 비교
++YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 
++성능 비교
+ 곽윤석*, 김남기**
+-Comparison of Single and Combined Filters for YOLO Ball
+-Detection under Varying Image Conditions
++Performance Comparison of Single and Combined Preprocessing
++Filters for YOLOv8n-Based Ball Detection
+ Yunsuk Kwak* and Namgi Kim**
+ 요  약
+-현장 영상의 특성을 사전에 확정하기 어려운 상황을 고려하여 YOLOv8n 볼 검출에 적용한 단일 필터 10
+-종과 복합 필터 5 종을 비교한다. 500 장에 대해 유사 영상 그룹을 분리한 5 겹 교차검증을 수행하고, 일반 영
+-상과 가우시안 잡음 조건에서 mAP50-95 및 영상 단위 엄격 검출 정확도를 분석하였다. 일반 영상의 단일 필
+-터 중 Gamma 0.3 이 mAP50-95 96.70% 로 가장 높았고 , 강한 잡음에서는 Gaussian Blur (max)가 우세하였
+-다. 모든 조합의 mAP 는 더 나은 구성 필터를 넘지 못했고, Invert+CLAHE 의 단일 시드 엄격 정확도 이득도 
+-반복 실험에서 유지되지 않았다. 모든 필터가 성능을 보존하거나 복합 적용이 항상 유리하지는 않았으며, 입력 
+-조건과 평가 지표를 구분한 선택이 필요하다.
++본 연구는 YOLOv8n 볼 검출을 위한 단일 필터 10종과 순차 복합 필터 5종을 비교하였다. 영상 500장의 외
++부 평가 폴드를 유사 영상 그룹 단위로 분리한 5겹 교차검증을 수행하고 조건별로 모델을 재학습하였다. 일반 
++영상은 전체 필터를, 가우시안 잡음 조건은 Original과 단일 필터를 평가하였다. 일반 영상의 단일 시드에서 G
++amma 0.3은 mAP50-95 96.70%로 가장 높았으나 Original과의 차이는 0.17%p였다. 잡음 표준편차 40·80에서는 
++Gaussian Blur (max)가 각각 88.79%·82.94%로 가장 높았다. 일반 영상의 복합 필터는 더 우수한 구성 필터의 
++mAP50-95를 넘지 못했고, Invert+CLAHE의 엄격 정확도 이득도 반복 실험에서 일관되지 않았다. 따라서 영상 
++조건과 평가 지표를 고려한 필터 선택이 필요하다.
+ Abstract
+-This study compares ten single filters and five ordered combinations for YOLOv8n ball detection, motivated by 
+-uncertain image characteristics in deployment. Group-separated five-fold cross-validation uses 500 images. Gamma 0.3 
+-yields the highest clean-image mAP50-95 among single filters at 96.70%, whereas Gaussian Blur (max) performs best 
+-under strong Gaussian noise. No combination exceeds its better component in mAP. The strict-accuracy gain of 
+-Invert+CLAHE in one seed is not retained across repeated runs. Neither arbitrary filtering nor composition 
+-consistently improves detection. Filter selection must therefore account for the input condition and evaluation metric.
++Ten single filters and five ordered combinations were compared for YOLOv8n ball detection. Five-fold cross-valida
++tion used 500 images with group-separated outer evaluation folds and condition-specific retraining. All filters were test
++ed on clean images; Original and single filters were evaluated under Gaussian noise. In one seed, Gamma 0.3 achiev
++ed clean-image mAP50-95 of 96.70%, exceeding Original by 0.17 percentage points. Gaussian Blur (max) ranked high
++est at noise standard deviations of 40 and 80, scoring 88.79% and 82.94%. No combination exceeded its better comp
++onent in clean-image mAP50-95, and the strict-accuracy gain of Invert+CLAHE was inconsistent across repeated runs. 
++Filter selection should therefore consider image conditions and evaluation metrics.
+ Key words
+ YOLOv8n, image preprocessing, filter combination, object detection
+ 이 논문은 정부(과학기술정보통신부)의 재원으로 정보통신기획평가원-학·석사연계ICT핵심인재양성사
+@@ -38,141 +39,210 @@
+ 로 다르게 변환하는 필터를 적용하고, 변환 후에도
+ 검출 성능이 유지되는지와 어떤 필터 또는 조합이
+ 유리한지를 비교할 필요가 있다. 본 연구는 YOLOv
+-8n[1] 기반 볼 검출에서 Original, 단일 필터 10 종, 
+-순차 복합 필터 5 종을 동일한 학습 절차로 비교한
+-다. 분석은 세 질문을 따른다. 첫째, 모든 필터에서 
+-성능이 보존되는가. 둘째, 단일 필터 중 어떤 방법
+-이 가장 우수한가. 셋째, 복합 필터가 구성 필터 각
+-각보다 유리한가이다. 일반 영상의 순위만으로 현장 
+-적용성을 판단하지 않도록 잡음 강도를 바꾼 결과
+-와 주요 후보의 반복 실험도 분석한다. 각 필터가 
+-볼의 위치 추정과 누락, 추가 검출에 미치는 영향
+-을 객체 수준과 영상 수준에서 함께 비교한다. 실
+-제 현장의 모든 촬영 조건을 포괄했다는 의미는 아
+-니다.
++8n[1] 기반 볼 검출에서 일반 영상의 Original, 단일 
++전처리 필터 10종 및 순차 복합 필터 5종을 동일한 
++학습 설정으로 비교하였다. 또한 가우시안 잡음 조
++건에서는 Original과 단일 필터를 평가하여 영상 조
++건에 따른 성능 변화를 분석하였다. 분석은 전처리 
++후 검출 성능의 유지 여부, 단일 필터 간 상대적 
++성능, 복합 필터의 구성 필터 대비 개선 여부를 중
++심으로 수행하였다. 일반 영상의 결과만으로 적용성
++을 판단하지 않도록 가우시안 잡음 강도에 따른 성
++능 변화와 주요 후보의 반복 실험 결과도 분석하였
++다. 각 필터의 검출 성능은 경계 상자의 겹침을 반
++영하는 객체 수준 지표와 영상 전체의 누락·추가 
++검출 여부를 반영하는 영상 수준 지표로 구분하여 
++비교하였다. 본 연구의 영상 조건은 일반 영상과 
++합성 가우시안 잡음 조건으로 한정되며, 실제 현장
++의 모든 촬영 조건을 포괄하는 것은 아니다.
+ Ⅱ. 실험 방법
+ 2.1 데이터와평가분할
+-2,944×2,352 화소 회색조 영상 500 장과 볼 경계 
+-상자 주석을 사용하였다. 기존 train 400 장과 val 1
+-00 장을 재분할했으며 별도 외부 test 자료는 없다. 
+-128×128 축소영상 간 평균 절대차가 1 미만인 쌍
+-을 연결하여 368 개 유사 영상 그룹을 구성하였다. 
+-같은 그룹을 통째로 배정하는 5 겹 교차검증을 적
+-용하였다. 폴드당 학습 359~361 장, 내부 검증 40 
+-장, 평가 99~101 장이다. 외부 평가 폴드와 나머지 
+-자료 간 그룹 중복은 없으며, 각 영상은 해당 영상
+-을 학습하지 않은 모델로 평가하였다.
++2,944×2,352화소의 회색조 영상 500장과 볼 경계 
++상자 주석을 사용하였다. 기존 학습용(train) 400장
++과 검증용(val) 100장을 재분할하였으며, 별도로 수
++집한 외부 시험 데이터는 사용하지 않았다. 128×12
++8화소로 축소한 영상 간 평균 절대차가 1 미만인 
++영상 쌍을 연결하여 368개의 유사 영상 그룹을 구
++성하였다. 외부 평가 폴드를 유사 영상 그룹 단위
++로 분리하는 5겹 교차검증을 적용하였으며, 폴드당 
++학습 영상은 359~361장, 내부 검증 영상은 40장, 외
++부 평가 영상은 99~101장이었다. 외부 평가 폴드와 
++나머지 자료 간에는 유사 영상 그룹의 중복이 없었
++으며, 각 영상은 해당 영상을 학습에 사용하지 않
++은 모델로 평가하였다. 다만 내부 학습·검증 분할
++에서는 9~20개의 유사 영상 그룹이 중복되어, 내부 
++검증 자료의 그룹 수준 독립성은 완전히 확보되지 
++않았다.
+ 2.2 단일필터와순차조합
+ 단일 필터는 Invert, Otsu Threshold, Solarize, His
+ togram Equalization, CLAHE (max), Gamma 0.3, Ga
+ ussian Blur (max), Sobel Edges, Emboss, Unsharp 
+ (max)이다. 밝기·대비·평활화·경계 강조 등 서로 
+-다른 변환을 비교한다. CLAHE (max)[2]는 clip limit 
+-40 과 16×16 격자, Gamma 0.3 의 지수는 0.3, Gau
+-ssian Blur (max)는 표준 편차 20 화소와 121×121 
+-커널을 사용하였다. Emboss gain 은 4, Unsharp (m
+-ax)의 amount 는 8 과 표준편차 2 이다. 이는 고정
+-한 실험 설정이며 각 필터의 최적 파라미터를 뜻하
+-지 않는다. 구현에는 Kornia[3]를 사용하였다. 복합 
+-필터는 Invert+CLAHE, Blur+Otsu, Sobel+Invert, Hist
+-Eq+Emboss, Unsharp+Sobel 의 5 종이다. A+B 는 A 
+-후 B 를 적용하며 역순과 모든 조합을 시험한 것은 
+-아니다. 그림의 CLH, HE, US 는 각각 CLAHE, Hist
+-ogram Equalization, Unsharp 의 약칭이다.
++다른 변환을 비교한다. CLAHE (max)[2]의 clip limit
++은 40, 격자 크기는 16×16으로 설정하였다. Gamm
++a 0.3의 감마 지수는 0.3으로 설정하였으며, Gaussia
++n Blur (max)에는 표준편차 20화소와 121×121 커널
++을 사용하였다. Emboss의 gain은 4로 설정하였고, 
++Unsharp (max)에는 amount 8과 표준편차 2를 사용
++하였다. 이러한 값은 본 연구에서 고정한 실험 설
++정이며, 각 필터의 최적 파라미터를 의미하지 않는
++다. 필터 구현에는 Kornia[3]를 사용하였다. 순차 복
++합 필터는 Invert+CLAHE, Blur+Otsu, Sobel+Invert, 
++HistEq+Emboss, Unsharp+Sobel의 5종을 사용하였다. 
++A+B는 A를 적용한 결과에 B를 순차적으로 적용함
++을 의미하며, 역순 조합이나 가능한 모든 조합을 
++평가한 것은 아니다. 그림에서 CLH, HE, US는 각각 
++CLAHE, Histogram Equalization, Unsharp의 약칭이
++다.
+ 2.3 학습및영상조건
+-필터별로 사전학습 YOLOv8n 을 별도 학습하고 
+-학습·검증·평가에 같은 변환을 적용하였다. 최대 
+-30 epoch, 입력 크기 설정 1,280, 배치 8, patience 
+-15 를 공통 사용하였다. 상하·좌우 반전 확률 0.5, 
+-scale 0.3, translate 0.1, hsv_v 0.4 를 지정하고 나
+-머지 증강은 기본값을 사용하였다. RTX 4090 과 Ul
+-tralytics 8.4.160 에서 실행하였다. 잡음 실험은 8 
+-비트 밝기에 표준편차 40 또는 80 의 영평균 가우
+-시안 잡음을 더하고 [0,255]로 제한한 뒤 필터를 적
+-용하였다. 주요 후보는 시드 42·43·44 로 반복하
+-였다. 시드마다 폴드·내부 검증 분할, 학습 난수와 
+-잡음 실현이 바뀐다.
++전처리 및 영상 조건별로 사전학습된 YOLOv8n
++을 별도로 학습하였으며, 동일한 조건의 학습·검
++증·평가 자료에는 같은 전처리를 적용하였다. 공통 
++학습 설정은 최대 30에폭, 입력 크기 설정 1,280, 
++배치 크기 8, 조기 종료 patience 15였다. 상하·좌
++우 반전 확률은 각각 0.5로 설정하였으며, scale은 
++0.3, translate는 0.1, hsv_v는 0.4로 지정하였다. 나
++머지 증강 설정은 기본값을 사용하였다. 실험은 RT
++X 4090과 Ultralytics 8.4.160 환경에서 수행하였다.
++일반 영상에서는 Original, 단일 필터 10종 및 순
++차 복합 필터 5종을 비교하였으며, 가우시안 잡음 
++조건에서는 Original과 단일 필터를 평가하였다. 잡
++
++=== 3쪽 ===
++- 2026 한국정보기술학회 추계 종합학술대회 논문집 -
++- 3 -
++음 조건은 8비트 밝기값에 평균 0, 표준편차 40 또
++는 80의 가우시안 잡음을 더하고, 값을 [0, 255] 범
++위로 제한한 뒤 필터를 적용하여 구성하였다. 주요 
++후보는 시드 42·43·44에서 반복 평가하였다. 시드
++마다 폴드 및 내부 검증 분할, 학습 난수와 잡음 
++실현이 달라졌다.
+ 2.4 검출성능지표
+-주 지표는 IoU 0.50~0.95 의 평균 정밀도인 mAP5
+-0-95 이며, 외부 평가 5 개 폴드의 평균으로 보고한
+-다. mAP 계산은 confidence 0.001, NMS IoU 0.7 을 
+-사용한다. 별도로 누락·추가 검출이 모두 0 인 영
+-상의 비율을 엄격 검출 정확도로 측정한다. 엄격 
+-정확도는 confidence 0.25 와 NMS IoU 0.5 에서 계
+-산한다. 주석 중심과 예측 중심의 거리순으로 일대
+-일 대응하되, 허용 거리는 주석 상자 긴 변의 0.5 
+-배이다. 따라서 mAP 의 순위와 엄격 정확도의 순
+-위는 다를 수 있다. 전체 필터 비교는 시드 42, 반
+-복 결과는 세 시드의 평균±표본 표준편차이다.
+-
+-=== 3쪽 ===
+-- 2026 한국정보기술학회 추계 종합학술대회 논문집 -
+-- 3 -
++주 지표는 IoU 임계값 0.50~0.95에서 계산한 평균 
++정밀도(AP)를 평균한 mAP50-95이며, 외부 평가 5개 
++폴드에서 얻은 값을 평균하여 보고하였다. mAP50-9
++5 산출 시 confidence는 0.001, NMS IoU는 0.7로 설
++정하였다.
++별도로 영상 단위의 누락과 추가 검출을 평가하
++기 위해 엄격 검출 정확도를 사용하였다. 엄격 검
++출 정확도는 주석과 예측의 대응 결과에서 누락과 
++추가 검출이 모두 없는 영상의 비율로 정의하였으
++며, confidence 0.25와 NMS IoU 0.5에서 계산하였다. 
++주석 중심과 예측 중심 사이의 거리가 가까운 순서
++로 일대일 대응시키고, 허용 거리는 각 주석 상자
++의 긴 변 길이의 0.5배로 설정하였다. 이 지표는 중
++심점 기반 대응에 따른 영상 단위 검출 완전성을 
++평가하므로, 경계 상자의 겹침에 기반한 mAP와 구
++분된다. 또한 두 지표는 confidence와 NMS IoU 설
++정도 다르므로, 필터의 성능 순위가 일치하지 않을 
++수 있다.
++전체 필터 비교에는 시드 42의 결과를 사용하였
++으며, 주요 후보의 반복 평가 결과는 세 시드의 평
++균±표본 표준편차로 제시하였다.
+ Ⅲ. 실험 결과 및 고찰 
+ 3.1 단일필터의성능보존여부
+-그림1. 일반영상의단일필터별mAP
+-Fig.1. Single-filter mAP on clean images
+-그림 1에서 Original의 mAP50-95는 96.53%이고, 
+-단일 필터 중 Gamma 0.3이 96.70%로 가장 높았다. 
+-차이는 0.17%p로 작으며 일반 영상의 Gamma 0.3을 
+-다중 시드로 반복하지 않아 안정적인 우월성으로 
+-단정할 수 없다. 단일 필터 10종 중 9종은 93.37% 
+-이상이었으나 Otsu Threshold는 60.46%였다. 이진화 
+-후에도 검출이 동일하게 유지된다는 가정은 성립하
+-지 않았다. 엄격 정확도에서는 CLAHE (max) 96.4%, 
+-Gamma 0.3과 Sobel Edges 각각 96.2%, Original 94.
+-8%였다. 즉 상자 위치까지 반영하는 mAP의 최고 
+-필터와 영상 전체의 누락·추가 검출을 줄이는 최
+-고 필터가 일치하지 않았다.
++그림1. 일반영상의단일필터별mAP50-95
++Fig. 1. Single-filter mAP50-95 on clean images
++그림 1의 일반 영상 비교에서 Original의 mAP50-
++95는 96.53%였으며, 단일 필터 중에서는 Gamma 0.3
++이 96.70%로 가장 높았다. 그러나 Original과의 차이
++는 0.17%p였고, 일반 영상의 Gamma 0.3을 다중 시
++드로 반복 평가하지 않았으므로 이 결과만으로 안
++정적인 우월성을 단정할 수는 없다. 단일 필터 10종 
++중 9종의 mAP50-95는 93.37% 이상이었으나, Otsu T
++hreshold는 60.46%에 그쳤다. 따라서 본 실험의 이진
++화 조건에서는 Original과 유사한 검출 성능이 유지
++되지 않았다.
++엄격 검출 정확도는 CLAHE (max)가 96.4%, Gam
++ma 0.3과 Sobel Edges가 각각 96.2%, Original이 94.
++8%였다. 즉 일반 영상에서 가장 높은 mAP50-95를 
++보인 단일 필터와 가장 높은 엄격 검출 정확도를 
++보인 단일 필터는 일치하지 않았다. 두 지표는 평가 
++기준과 추론 임계값이 다르므로, 필터의 성능은 각 
++지표를 구분하여 해석해야 한다.
++
++=== 4쪽 ===
++- 2026 한국정보기술학회 추계 종합학술대회 논문집 -
++- 4 -
+ 3.2 조합에따른개선과손실
+-그림2. 일반영상의복합필터별mAP
+-Fig.2. Combined-filter mAP on clean images
+-그림 2에서 Invert+CLAHE는 조합 중 가장 높은 
+-mAP50-95 95.75%였으나 Original 96.53%와 CLAHE 
+-(max) 단독 95.98%보다 낮았다. 나머지 조합은 Blur
+-+Otsu 59.58%, Sobel+Invert 95.71%, HistEq+Emboss 
+-95.42%, Unsharp+Sobel 94.73%였다. 시험한 모든 조
+-합의 mAP는 구성 필터 중 더 나은 단일 필터를 넘
+-지 못했다. 엄격 정확도에서는 Invert+CLAHE가 98.
+-0%로 CLAHE (max) 단독보다 1.6%p 높았다. HistEq
+-+Emboss는 96.4%로 더 나은 구성 필터 대비 0.4%p 
+-높았다. 반면 Blur+Otsu, Sobel+Invert, Unsharp+Sobe
+-l은 각각 40.2, 2.8, 3.8%p 낮아 조합 자체가 개선을 
+-보장하지 않았다. Invert+CLAHE를 세 시드로 반복
+-한 엄격 정확도는 95.47±2.27%로 Original 95.40±0.
+-53%와 유사했다. 반복 mAP도 95.82±0.11%로 Origi
+-nal 96.65±0.15%보다 낮았다. 따라서 98.0%라는 한 
+-실행의 결과만으로 가장 우수한 조합이라고 일반화
+-할 수 없다.
++그림2. 일반영상의복합필터별mAP50-95
++Fig. 2. Combined-filter mAP50-95 on clean images
++그림 2의 일반 영상 비교에서 Invert+CLAHE는 
++복합 필터 중 가장 높은 mAP50-95인 95.75%를 보
++였으나, Original의 96.53%와 CLAHE (max) 단독의 
++95.98%보다 낮았다. 나머지 복합 필터의 mAP50-95
++는 Blur+Otsu 59.58%, Sobel+Invert 95.71%, HistEq+E
++mboss 95.42%, Unsharp+Sobel 94.73%였다. 일반 영
++상에서 평가한 5개 복합 필터의 mAP50-95는 각각 
++구성 필터 중 더 우수한 단일 필터를 넘지 못하였
++다.
++시드 42의 엄격 검출 정확도에서 Invert+CLAHE
++는 98.0%로 CLAHE (max) 단독보다 1.6%p 높았다. 
++HistEq+Emboss는 96.4%로 더 우수한 구성 필터보다 
++0.4%p 높았다. 반면 Blur+Otsu, Sobel+Invert, Unsharp
+++Sobel은 각각 더 우수한 구성 필터보다 40.2%p, 2.
++8%p, 3.8%p 낮았다. 따라서 복합 적용이 엄격 검출 
++정확도의 향상을 일관되게 보장하지는 않았다.
++세 시드 반복 평가에서 Invert+CLAHE의 엄격 검
++출 정확도는 95.47±2.27%, Original은 95.40±0.53%로 
++두 조건의 평균 차이는 0.07%p였다. 반복 평가의 m
++AP50-95는 Invert+CLAHE가 95.82±0.11%로, Original
++의 96.65±0.15%보다 낮았다. 따라서 단일 시드에서 
++얻은 98.0%만으로 Invert+CLAHE의 안정적인 우월
++성을 일반화할 수는 없다.
+ 3.3 영상조건에따른순위변화
+-그림 3은 전체 학습량에서 잡음 강도별 mAP를 
+-비교한다. 잡음 40과 80에서는 Gaussian Blur (max)
+-가 각각 88.79%, 82.94%로 단일 필터 중 가장 높았
+-다. 일반 영상에서는 93.37%로 Original보다 낮았으
+-므로 잡음 완화의 이점과 세부 위치 정보 보존 사
+-이의 차이를 고려해야 한다.
++그림 3은 가우시안 잡음의 표준편차 0, 40, 80에
++서 Original과 단일 필터의 mAP50-95를 비교한 결과
++이다. 잡음 표준편차 40과 80에서 Gaussian Blur (ma
++x)는 각각 88.79%와 82.94%로 단일 필터 중 가장 
++높은 mAP50-95를 보였다. 반면 일반 영상에서는 9
++3.37%로 Original의 96.53%보다 낮아, 영상 조건에 
++따라 해당 필터의 적용 이점이 달라졌다.
++Emboss의 mAP50-95는 일반 영상에서 96.06%였
++으나, 잡음 표준편차 40과 80에서는 각각 0.87%와 
++0.08%로 감소하였다. 이는 해당 필터의 검출 성능
++이 본 실험의 가우시안 잡음 조건에서 크게 저하되
++었음을 보여준다. 잡음 표준편차 80의 세 시드 반복 
++평가에서 Gaussian Blur (max)의 mAP50-95는 82.86±
++0.08%, Original은 79.60±0.26%였으며, 세 시드 모두 
++Gaussian Blur (max)가 더 높은 값을 보였다.
+   
+-
+-=== 4쪽 ===
+-- 2026 한국정보기술학회 추계 종합학술대회 논문집 -
+-- 4 -
+-그림3. 잡음강도별단일필터의mAP
+-Fig.3. Single-filter mAP across noise levels
+-Emboss는 일반 영상 96.06%에서 잡음 40·80의 
+-0.87%·0.08%로 감소하여 입력 변화에 민감했다. 
+-잡음 80의 반복 mAP는 Gaussian Blur (max) 82.86
+-±0.08%, Original 79.60±0.26%로 세 시드 모두 Gau
+-ssian Blur (max)가 높았다.
++그림3. 가우시안잡음표준편차별단일필터의mAP5
++0-95
++Fig. 3. Single-filter mAP50-95 across Gaussian noise st
++andard deviations
++Emboss는 일반 영상 96.06%에서 잡음 40·80의 0.
++87%·0.08%로 감소하여 입력 변화에 민감했다. 잡음 
++80의 반복 mAP는 Gaussian Blur (max) 82.86±0.08%, 
++Original 79.60±0.26%로 세 시드 모두 Gaussian Blur 
++(max)가 높았다.
+ Ⅳ. 결론 및 연구 한계
+-일반 영상의 단일 필터 mAP는 Gamma 0.3, 잡음 
+-영상에서는 Gaussian Blur (max)가 가장 높았다. 모
+-든 조합이 더 나은 구성 필터의 mAP를 넘지 못했
+-다. 입력 조건과 지표에 따른 선택이 필요하다. 조
+-건별 재학습 결과이므로 고정 모델의 미지 현장 적
+-응성을 검증한 것은 아니다. 복합 필터의 잡음 평
+-가와 전체 후보의 반복 실험이 필요하다. 내부 학
+-습·검증 간 9~20개 유사 그룹의 중복도 해소하고 
+-촬영 로트별 독립 자료로 검증해야 한다.
++
++=== 5쪽 ===
++- 2026 한국정보기술학회 추계 종합학술대회 논문집 -
++- 5 -
++시드 42의 일반 영상 비교에서 단일 필터 중 Ga
++mma 0.3이 가장 높은 mAP50-95를 보였으며, 가우
++시안 잡음 표준편차 40과 80에서는 Gaussian Blur 
++(max)가 가장 높았다. 다만 일반 영상에서 Gamma 
++0.3의 Original 대비 차이는 0.17%p였고 다중 시드 
++반복 평가를 수행하지 않았으므로, 안정적인 우월성
++을 단정할 수는 없다. 일반 영상에서 평가한 5개 복
++합 필터의 mAP50-95는 각각 구성 필터 중 더 우수
++한 단일 필터를 넘지 못하였다. 따라서 전처리의 복
++합 적용만으로 성능 향상을 기대하기보다는 영상 
++조건과 평가 지표를 구분하여 필터를 선택할 필요
++가 있다.
++본 연구는 전처리 및 영상 조건별로 모델을 다시 
++학습한 결과이므로, 고정된 모델의 미지 촬영 조건
++에 대한 적응성을 검증한 것은 아니다. 또한 내부 
++학습·검증 간에 9~20개의 유사 영상 그룹이 중복되
++어 내부 검증 자료의 그룹 수준 독립성이 제한되었
++다. 향후에는 내부 학습·검증 자료도 그룹 단위로 
++분리하여 재평가하고, 복합 필터의 잡음 조건 평가
++와 전체 후보의 다중 시드 반복 실험을 수행할 필
++요가 있다. 아울러 촬영 로트별로 분리된 독립 자료
++를 이용한 검증이 필요하다.
+ 참 고 문 헌
+ [1] G. Jocher, A. Chaurasia, and J. Qiu, “Ultralytics 
+ YOLOv8,” software, 2023.
+@@ -182,31 +252,3 @@
+ [3] E. Riba et al., “Kornia: an Open Source Differenti
+ able Computer Vision Library for PyTorch,” arXi
+ v:1910.02190, 2019.
+-한글제목 
+-휴먼명조, 17, 장평:90, 자간: -7  
+-저자명
+-돋움, 11, 장평:90, 자간: 5 
+-영문제목
+-견명조, 15, 장평:90, 자간: -7
+-영문저자명
+-휴먼명조, 10, 장평:90, 자간: 5
+-요약본문
+-휴먼명조, 9.2, 장평:90, 자간:-6
+-영문요약문
+-영문:Times New Roman, 9.2, 
+-장평:90, 자간:-6 
+-각장제목 
+-휴먼고딕, 11, 장평:90, 자간:-6 
+-본문내용
+-휴먼명조, 10, 장평:90, 자간:-6
+-소제목
+-중고딕 11, 장평:90, 자간:-6
+-그림캡션
+-중고딕, 9, 장평:90, 자간:-6
+-표캡션
+-중고딕, 9, 장평:90, 자간:-6 
+-식
+-크기 9, 왼정렬, 식번호는 오른 정렬
+-참고문헌
+-영문:Times New Roman, 10, 장평:90, 
+-자간:-6 
+Binary files 원본작업자료/논문/2차/추계학술대회 논문 2차_요약.hwp and /dev/null differ
+Binary files /dev/null and 원본작업자료/논문/3차/추계학술대회 논문 3차_요약.hwp differ

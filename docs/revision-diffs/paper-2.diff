@@ -1,0 +1,29 @@
+# 논문 1차 -> 논문 2차
+# 공백·주석·개행을 무시하지 않습니다. PDF 추출 텍스트는 배치·글꼴 비교를 대신하지 않습니다. 바이너리는 크기·SHA-256으로 비교합니다. ipynb의 바이너리 이미지 출력만 크기·SHA·원문 링크로 표시하며 코드·Markdown·수치·설정·그 밖의 JSON 텍스트는 전체 비교합니다.
+# 이전 논문/1차/원고.pdf 423950 fb6b433845d9554dbcc0e77ca5c1c574a1025380a7d91d995f0756e4083d8943
+# 이전 논문/1차/원고.hwp 529920 0c43d19aadfd19d4102ba2a1c16781d0b81f55d8dc636430da5e9e4900f34344
+# 이전 논문/1차/요약.pdf 126433 507b72bf24f9c31295291338f1b4fd59ea48d21b46ed18880662b0bb4f15812d
+# 이전 원본작업자료/논문/1차/추계학술대회 논문 1차_요약.hwp 89088 0b168e3b3f99215b98eed7e8bdf430ae30273d6d5a73008e7a0be730d1fc51ff
+# 현재 논문/2차/원고.pdf 423384 4da781634e54b11f9da37ce96e55f8a1f8658ed8d28ab75985981f847c062018
+# 현재 논문/2차/원고.hwp 526336 4610ea4542f49a55e302e141d760a7628cc45041d04ec2771c4051669d5fd49b
+# 현재 논문/2차/요약.pdf 126433 507b72bf24f9c31295291338f1b4fd59ea48d21b46ed18880662b0bb4f15812d
+# 현재 원본작업자료/논문/2차/추계학술대회 논문 2차_요약.hwp 89088 0b168e3b3f99215b98eed7e8bdf430ae30273d6d5a73008e7a0be730d1fc51ff
+Binary files 논문/1차/원고.hwp and 논문/2차/원고.hwp differ
+--- 논문/1차/원고.pdf
++++ 논문/2차/원고.pdf
+@@ -22,10 +22,9 @@
+ consistently improves detection. Filter selection must therefore account for the input condition and evaluation metric.
+ Key words
+ YOLOv8n, image preprocessing, filter combination, object detection
+-본 연구는 2026년 경기대학교 대학원 연구원장학생 장학금 지원에 의하여 수행되었음. 이 논문은 
+-정부(과학기술정보통신부)의 재원으로 정보통신기획평가원-학·석사연계ICT핵심인재양성사업의 지원을 
+-받아 수행된 연구임(ITTP-2024-00436954). 또한 이 논문은 2024년도 정부(교육부)의 재원으로 
+-한국연구재단의 지원을 받아 수행된 기초연구사업임(No. RS-2020-NR049579)
++이 논문은 정부(과학기술정보통신부)의 재원으로 정보통신기획평가원-학·석사연계ICT핵심인재양성사
++업의 지원을 받아 수행된 연구임(ITTP-2024-00436954). 또한 이 논문은 2024년도 정부(교육부)의 재원으
++로 한국연구재단의 지원을 받아 수행된 기초연구사업임(No. RS-2020-NR049579)
+ *경기대학교 컴퓨터과학과, lukeyun@kyonggi.ac.kr, https://orcid.org/0009-0004-0207-4000
+ **경기대학교 컴퓨터과학과 교수(교신저자), ngkim@kyonggi.ac.kr, http://orcid.org/0000-0002-0077-6576
+ 
+Binary files 원본작업자료/논문/1차/추계학술대회 논문 1차_요약.hwp and /dev/null differ
+Binary files /dev/null and 원본작업자료/논문/2차/추계학술대회 논문 2차_요약.hwp differ

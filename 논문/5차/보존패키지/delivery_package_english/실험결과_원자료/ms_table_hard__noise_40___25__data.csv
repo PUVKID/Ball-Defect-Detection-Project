@@ -1,0 +1,7 @@
+﻿Method,strict s42,strict s43,strict s44,Strict mean,Strict std,Acc mean,Acc std,Delta vs Original (pp),CI low,CI high,seeds better,seeds worse,per-seed McNemar p,Verdict
+Original,41.8,36.2,41.4,39.8,3.124,92.267,0.643,,,,,,,
+CLAHE (max),61.6,50.4,53.8,55.267,5.742,94.667,0.306,15.467,12.4,18.526,3/3,0/3,1.73e-17 / 2.23e-11 / 1.22e-08,robust better
+Histogram Equalization,47.6,37.0,47.0,43.867,5.954,94.333,1.677,4.067,2.07,6.19,3/3,0/3,0.00219 / 0.747 / 0.000756,robust better
+Gamma 0.3,44.4,42.2,46.6,44.4,2.2,94.133,1.301,4.6,2.096,7.114,3/3,0/3,0.218 / 0.00182 / 0.00294,robust better
+Gaussian Blur (max),37.4,37.2,28.2,34.267,5.255,84.667,3.828,-5.533,-8.351,-2.717,1/3,2/3,0.0409 / 0.699 / 4.16e-09,inconsistent
+Invert,31.2,32.2,37.4,33.6,3.329,82.733,5.178,-6.2,-9.692,-2.992,0/3,3/3,3.58e-05 / 0.0901 / 0.0798,robust worse

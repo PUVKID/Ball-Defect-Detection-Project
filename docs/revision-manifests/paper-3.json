@@ -1,0 +1,18 @@
+{
+  "stage": "논문 3차",
+  "previous": "논문 2차",
+  "files": {
+    "논문/최종_논문.pdf": {
+      "bytes": 420646,
+      "sha256": "457b0126e44ecf11efe75e0d7fc2eb44dcb03bcc9091b39539831578e1f10e76"
+    },
+    "논문/최종_논문.hwp": {
+      "bytes": 528384,
+      "sha256": "9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27"
+    },
+    "원본작업자료/논문/3차/추계학술대회 논문 3차_요약.hwp": {
+      "bytes": 73728,
+      "sha256": "5cfac11aa7e9cbde941c5bef302eca00f7d5f2dd76a4fb38d31b556f44c94a0a"
+    }
+  }
+}

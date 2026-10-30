@@ -18,15 +18,41 @@ YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비�
 
 [핵심 구성](#input-processing-output)
 
-[📄 PDF로 읽기](논문/최종_논문.pdf) · [📝 HWP 원본](논문/최종_논문.hwp)
+[📄 PDF로 읽기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) · [📝 HWP 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
 
 </div>
+
+## 📄 내 논문 PDF
+
+[현재 원문 PDF·공식 링크 교체 위치](docs/PAPERS.md) · [모든 실제 차수·최종본·전체 비교](docs/REVISION_INDEX.md)
+
+- **최종5장 · 전체 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/5%EC%9E%A5_%EC%9B%90%EB%AC%B8.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
+- **최종3장 · 축약 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.hwp)
+
+공식 공개 URL은 아직 등록하지 않았습니다. 추후 [논문 전용 표](docs/PAPERS.md)의 교체 칸과 이 항목을 함께 갱신합니다.
+
+## 🗂️ 모든 실제 차수와 최종본
+
+| 단계 | 설명 | 파일 종류 | 전체 차이 |
+|---|---|---|---|
+| [논문 1차](docs/revisions/paper-1.md) | 다양한 영상 조건에서 YOLO 볼 검출을 위한 단일 필터와 복합 필터의 성능 비교라는 초기 제목의 원고입니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-1.diff) |
+| [논문 2차](docs/revisions/paper-2.md) | 1차와 같은 제목·연구 설정 아래 본문 표현과 문장 구성을 다듬은 원고입니다. 두 요약 PDF는 해시가 같으므로 새 요약 결과가 생긴 것으로 설명하지 않습니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-2.diff) |
+| [논문 3차](docs/revisions/paper-3.md) | 제목을 YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교로 바꾸고 단일·복합 필터·잡음·시드 비교와 결과 해석을 확장했습니다. 3차 HWP는 최종5장 HWP와 바이트 해시가 동일합니다. 기존 전체 최종 PDF를 재사용합니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-3.diff) |
+| [논문 4차 · 검토 도구](docs/revisions/paper-4.md) | 새 원고가 아니라 그림의 이중 반올림·HWP 내장 해상도와 원정밀도 결과표를 대조한 검토 단계입니다. 기존 공개 검사 도구를 보존합니다. 검토 로그·역할 영수증은 공개 자료로 복제하지 않습니다. | py | [직전 단계 비교](docs/revision-diffs/paper-4.diff) |
+| [논문 5차 · 재구성 패키지](docs/revisions/paper-5.md) | 원본 결과표와 노트북을 바탕으로 필터 비교 원고·굵은 도표·참조 코드 패키지를 여러 변형으로 정리한 단계입니다. 한국어·영문 전달 패키지, 원고 변형 PDF/DOCX, 도표·집계표·참조 노트북·작성/검사 스크립트를 함께 보존합니다. 임시 렌더 이미지와 의존성 설치 폴더는 별도 제외합니다. 파일 이름이나 서체 변화만으로 새 실험·새 성능을 주장하지 않습니다. | csv·docx·ipynb·json·pdf·png·py·ttf·txt | [직전 단계 비교](docs/revision-diffs/paper-5.diff) |
+| [논문 최종 · 3장/5장/요약](docs/revisions/paper-final.md) | 3장 축약본·5장 전체본·별도 요약 HWP가 함께 보존된 최종 묶음입니다. 5장본은 논문3차와 동일 해시이며, 3장본은 본문 분량이 다른 별도 파일입니다. 3장본이 5장본을 대체하지 않습니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-final.diff) |
+| [발표자료 1차](docs/revisions/talk-1.md) | 본발표12장·부록3장 구성의 10분 발표 초안입니다. 기존 검사 도구와 실제 PDF/PPTX를 연결합니다. | mjs·pdf·pptx·py | [직전 단계 비교](docs/revision-diffs/talk-1.diff) |
+| [발표자료 2차](docs/revisions/talk-2.md) | 2차는 비교 사진과 설명을 나누어 20장·600초 본발표로 재구성합니다. 기존 결과를 설명하는 방식의 변화이며 새 연구 실험으로 세지 않습니다. | mjs·pdf·pptx·py | [직전 단계 비교](docs/revision-diffs/talk-2.diff) |
+| [발표자료 3차](docs/revisions/talk-3.md) | 3차는 2차의 내용·시간을 유지하면서 투명 로고·자산 보존 처리를 정리한 단계입니다. 연구 결과 변화로 확대하지 않습니다. | mjs·pdf·pptx·py | [직전 단계 비교](docs/revision-diffs/talk-3.diff) |
+| [발표자료 최종](docs/revisions/talk-final.md) | 발표3차 결과와 최종 발표파일의 바이트 동일 여부를 전체 SHA-256으로 대조합니다. 최종 연구코드 폴더와 발표 최종 폴더는 별개 자료입니다. | pdf·pptx | [직전 단계 비교](docs/revision-diffs/talk-final.diff) |
+| [최종 연구코드](docs/revisions/code-final.md) | 루트 노트북과 최종/연구코드 노트북은 같은 공개 바이트를 보존합니다. 볼 검출 필터 비교와 영역·개수 규칙을 적용하는 OK/NG 및 추가 진단 코드이며, 전문가 판정의 실측 정확도로 대체하지 않습니다. | ipynb | [직전 단계 비교](docs/revision-diffs/code-final.diff) |
+| [이전 도커 실험·기존 결과표](docs/revisions/legacy.md) | 기존 공개 단일·복합 필터 실험 코드와 집계 결과표를 보존합니다. 원자료 경로·단일영상 예측·제조 원본·모델 가중치는 신규 공개에서 제외합니다. | csv·ipynb·pdf·py·yaml | [직전 단계 비교](docs/revision-diffs/legacy.diff) |
 
 <a name="overview"></a>
 
 ## ✨ 연구 핵심
 
-YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 최종 원고 한 편입니다.
+YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 원고의 수정 차수와 최종3장·5장본을 함께 보존합니다.
 
 수치는 연구 원고에 보고된 값입니다.
 
@@ -114,16 +140,16 @@ flowchart LR
 └── CHANGELOG.md
 ```
 
-- [최종 연구 노트북](최종/연구코드/ball_ok_ng_yolo_v7.ipynb): 검출·판정·필터 비교 및 추가 진단 실험.
+- [최종 연구 노트북](%EC%B5%9C%EC%A2%85/%EC%97%B0%EA%B5%AC%EC%BD%94%EB%93%9C/ball_ok_ng_yolo_v7.ipynb): 검출·판정·필터 비교 및 추가 진단 실험.
 - [기본 노트북](ball_ok_ng_yolo_v7.ipynb): 저장소 최상위에 보존한 연구 코드.
-- [그림 생성 코드](이전%20도커%20실험/불량검출실험/paper_filter_figures.py): 연구 그림 구성.
+- [그림 생성 코드](%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98/paper_filter_figures.py): 연구 그림 구성.
 - [버전별 파일 기록](docs/VERSIONS.md): 공개 코드의 차수별 비교.
 
 <a name="최종-논문"></a>
 
 ### 📄 최종 논문
 
-[최종 논문 전체 원고](논문/최종_논문.hwp)에 필터 비교 방법과 연구 그래프를 정리했습니다.
+[최종 논문 전체 원고](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)에 필터 비교 방법과 연구 그래프를 정리했습니다.
 
 <a name="최종-원고의-연구-범위"></a>
 

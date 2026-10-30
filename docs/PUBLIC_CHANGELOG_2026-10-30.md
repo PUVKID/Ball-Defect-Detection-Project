@@ -1,0 +1,1139 @@
+# 📝 2026-10-30 연구 원문과 차수 공개 보완
+
+원격 기준 커밋: `dd05ea1bf2b89a7709ff0685f4ed034ab37006c4`
+
+기존 공개 파일을 삭제하지 않고 원본 논문·문서·연구 코드·결과표·발표자료를 추가했습니다. 연구 번호와 원본 폴더 차수·원고 수정·발표 차수를 구별하고 각 파일·직전 단계의 전체 차이와 크기·SHA-256을 연결했습니다. 현재 원문 PDF/HWP와 나중 공식 URL 교체 지점은 [논문 표](PAPERS.md)에 있습니다.
+
+## 실제 수정 파일
+
+- `CHANGELOG.md`: 현재 원문·이전 정제 사본과 차수 안내의 정합성을 보완했습니다.
+- `README.md`: 논문 직접 링크·모든 실제 단계·파일 종류·비교를 보완하고 기존 이모지 구조를 유지했습니다.
+- `docs/VERSIONS.md`: 현재 원문·이전 정제 사본과 차수 안내의 정합성을 보완했습니다.
+- `docs/versions/stage-2.md`: 현재 원문·이전 정제 사본과 차수 안내의 정합성을 보완했습니다.
+
+## 실제 추가 파일
+
+- `docs/PAPERS.md`
+- `docs/PUBLIC_CHANGELOG_2026-10-30.md`
+- `docs/REVISION_INDEX.md`
+- `docs/revision-diffs/code-final.diff`
+- `docs/revision-diffs/legacy.diff`
+- `docs/revision-diffs/paper-1.diff`
+- `docs/revision-diffs/paper-2.diff`
+- `docs/revision-diffs/paper-3.diff`
+- `docs/revision-diffs/paper-4.diff`
+- `docs/revision-diffs/paper-5.diff`
+- `docs/revision-diffs/paper-final.diff`
+- `docs/revision-diffs/talk-1.diff`
+- `docs/revision-diffs/talk-2.diff`
+- `docs/revision-diffs/talk-3.diff`
+- `docs/revision-diffs/talk-final.diff`
+- `docs/revision-manifests/code-final.json`
+- `docs/revision-manifests/legacy.json`
+- `docs/revision-manifests/paper-1.json`
+- `docs/revision-manifests/paper-2.json`
+- `docs/revision-manifests/paper-3.json`
+- `docs/revision-manifests/paper-4.json`
+- `docs/revision-manifests/paper-5.json`
+- `docs/revision-manifests/paper-final.json`
+- `docs/revision-manifests/talk-1.json`
+- `docs/revision-manifests/talk-2.json`
+- `docs/revision-manifests/talk-3.json`
+- `docs/revision-manifests/talk-final.json`
+- `docs/revisions/code-final.md`
+- `docs/revisions/legacy.md`
+- `docs/revisions/paper-1.md`
+- `docs/revisions/paper-2.md`
+- `docs/revisions/paper-3.md`
+- `docs/revisions/paper-4.md`
+- `docs/revisions/paper-5.md`
+- `docs/revisions/paper-final.md`
+- `docs/revisions/talk-1.md`
+- `docs/revisions/talk-2.md`
+- `docs/revisions/talk-3.md`
+- `docs/revisions/talk-final.md`
+- `논문/1차/요약.pdf`
+- `논문/1차/원고.hwp`
+- `논문/1차/원고.pdf`
+- `논문/2차/요약.pdf`
+- `논문/2차/원고.hwp`
+- `논문/2차/원고.pdf`
+- `논문/5차/그림/Figure_1.pdf`
+- `논문/5차/그림/Figure_2.pdf`
+- `논문/5차/그림/Figure_3.pdf`
+- `논문/5차/보존패키지/delivery_package/검증결과.json`
+- `논문/5차/보존패키지/delivery_package/논문에_사용한_그림/그림1.png`
+- `논문/5차/보존패키지/delivery_package/논문에_사용한_그림/그림2.png`
+- `논문/5차/보존패키지/delivery_package/수정_코드/ball_ok_ng_yolo_v7_reference.ipynb`
+- `논문/5차/보존패키지/delivery_package/수정_코드/fonts/LICENSE.txt`
+- `논문/5차/보존패키지/delivery_package/수정_코드/fonts/NanumGothic.ttf`
+- `논문/5차/보존패키지/delivery_package/수정_코드/fonts/NanumGothicBold.ttf`
+- `논문/5차/보존패키지/delivery_package/수정_코드/reference_plot_style.py`
+- `논문/5차/보존패키지/delivery_package/수정_코드/render_saved_figures.py`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/diag_ghost_rows.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/diag_ghost_table.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/diag_global_feature_auc.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/diag_operating_point_strict.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/diag_shortcut_thumbnail.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/ms_per_image.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/ms_run_results.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/ms_table_hard__noise_40___25__data.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/ms_table_noise_80.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/ms_table_normal.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/per_image_predictions.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/results_summary.json`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/sweep_results.json`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_all.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_combo_vs_components.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_filters.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_grid_noise40.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_grid_noise80.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_hard_retrain.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_round1.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_round2.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_shift_accuracy.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_shift_strict.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_stratified.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_strict_mcnemar.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_sweep_blur.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_sweep_data.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_sweep_noise.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/table_sweep_resolution.csv`
+- `논문/5차/보존패키지/delivery_package/실험결과_원자료/verification_summary.csv`
+- `논문/5차/보존패키지/delivery_package/읽어주세요.txt`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_combo_vs_components.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_multiseed_hard__noise_40___25__data.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_multiseed_noise_80.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_multiseed_normal.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_02_top_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_03_left_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_04_bottom_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_05_right_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_06_ok_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_07_ng_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_08_precision.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_09_f1_score.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_10_avg_filter_time.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_11_ball_recall.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_12_map50_95.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_13_min_confidence.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_14_center_error.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round1_15_strict_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_02_top_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_03_left_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_04_bottom_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_05_right_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_06_ok_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_07_ng_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_08_precision.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_09_f1_score.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_10_avg_filter_time.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_11_ball_recall.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_12_map50_95.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_13_min_confidence.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_14_center_error.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/fig_round2_15_strict_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_filters/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_filters/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_filters/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_filters/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_filters/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_filters/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_filters/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_filters/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_filters/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise40/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise40/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise40/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise40/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise40/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise40/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise40/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise40/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise40/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise80/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise80/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise80/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise80/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise80/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise80/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise80/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise80/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_grid_noise80/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_blur/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_blur/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_blur/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_blur/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_blur/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_blur/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_blur/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_blur/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_blur/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_data/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_data/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_data/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_data/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_data/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_data/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_data/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_data/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_data/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_noise/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_noise/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_noise/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_noise/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_noise/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_noise/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_noise/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_noise/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_noise/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package_english/검증결과.json`
+- `논문/5차/보존패키지/delivery_package_english/논문에_사용한_그림/그림1.png`
+- `논문/5차/보존패키지/delivery_package_english/논문에_사용한_그림/그림2.png`
+- `논문/5차/보존패키지/delivery_package_english/수정_코드/ball_ok_ng_yolo_v7_reference.ipynb`
+- `논문/5차/보존패키지/delivery_package_english/수정_코드/fonts/LICENSE.txt`
+- `논문/5차/보존패키지/delivery_package_english/수정_코드/fonts/NanumGothic.ttf`
+- `논문/5차/보존패키지/delivery_package_english/수정_코드/fonts/NanumGothicBold.ttf`
+- `논문/5차/보존패키지/delivery_package_english/수정_코드/reference_plot_style.py`
+- `논문/5차/보존패키지/delivery_package_english/수정_코드/render_saved_figures.py`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/diag_ghost_rows.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/diag_ghost_table.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/diag_global_feature_auc.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/diag_operating_point_strict.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/diag_shortcut_thumbnail.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/ms_per_image.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/ms_run_results.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/ms_table_hard__noise_40___25__data.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/ms_table_noise_80.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/ms_table_normal.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/per_image_predictions.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/results_summary.json`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/sweep_results.json`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_all.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_combo_vs_components.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_filters.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_grid_noise40.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_grid_noise80.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_hard_retrain.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_round1.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_round2.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_shift_accuracy.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_shift_strict.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_stratified.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_strict_mcnemar.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_sweep_blur.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_sweep_data.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_sweep_noise.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/table_sweep_resolution.csv`
+- `논문/5차/보존패키지/delivery_package_english/실험결과_원자료/verification_summary.csv`
+- `논문/5차/보존패키지/delivery_package_english/읽어주세요.txt`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_combo_vs_components.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_multiseed_hard__noise_40___25__data.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_multiseed_noise_80.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_multiseed_normal.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_02_top_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_03_left_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_04_bottom_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_05_right_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_06_ok_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_07_ng_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_08_precision.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_09_f1_score.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_10_avg_filter_time.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_11_ball_recall.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_12_map50_95.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_13_min_confidence.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_14_center_error.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round1_15_strict_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_02_top_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_03_left_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_04_bottom_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_05_right_region_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_06_ok_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_07_ng_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_08_precision.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_09_f1_score.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_10_avg_filter_time.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_11_ball_recall.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_12_map50_95.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_13_min_confidence.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_14_center_error.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/fig_round2_15_strict_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_filters/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_filters/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_filters/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_filters/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_filters/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_filters/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_filters/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_filters/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_filters/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise40/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise40/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise40/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise40/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise40/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise40/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise40/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise40/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise40/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise80/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise80/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise80/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise80/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise80/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise80/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise80/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise80/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_grid_noise80/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_blur/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_blur/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_blur/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_blur/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_blur/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_blur/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_blur/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_blur/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_blur/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_data/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_data/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_data/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_data/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_data/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_data/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_data/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_data/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_data/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_noise/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_noise/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_noise/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_noise/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_noise/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_noise/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_noise/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_noise/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_noise/10_dashboard.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_resolution/01_overall_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_resolution/02_per_class_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_resolution/03_map_vs_accuracy.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_resolution/04_confusion_matrices.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_resolution/05_learning_curves_baseline.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_resolution/06_heatmap_accuracy_by_fold.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_resolution/07_fit_diagnosis.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_resolution/08_radar_chart.png`
+- `논문/5차/보존패키지/delivery_package_english/추가_그래프/ref_graphs_sweep_resolution/10_dashboard.png`
+- `논문/5차/보존패키지/filter_paper_package/그림/Figure_1.pdf`
+- `논문/5차/보존패키지/filter_paper_package/그림/Figure_1.png`
+- `논문/5차/보존패키지/filter_paper_package/그림/Figure_2.pdf`
+- `논문/5차/보존패키지/filter_paper_package/그림/Figure_2.png`
+- `논문/5차/보존패키지/filter_paper_package/그림/Figure_3.pdf`
+- `논문/5차/보존패키지/filter_paper_package/그림/Figure_3.png`
+- `논문/5차/보존패키지/filter_paper_package/안내.txt`
+- `논문/5차/보존패키지/filter_paper_package/원자료/combination_detection_comparison.json`
+- `논문/5차/보존패키지/filter_paper_package/원자료/diag_ghost_rows.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/diag_ghost_table.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/diag_global_feature_auc.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/diag_operating_point_strict.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/diag_shortcut_thumbnail.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/ms_per_image.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/ms_run_results.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/ms_table_hard__noise_40___25__data.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/ms_table_noise_80.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/ms_table_normal.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/per_image_predictions.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/results_summary.json`
+- `논문/5차/보존패키지/filter_paper_package/원자료/sweep_results.json`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_all.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_combo_vs_components.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_filters.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_grid_noise40.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_grid_noise80.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_hard_retrain.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_round1.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_round2.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_shift_accuracy.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_shift_strict.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_stratified.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_strict_mcnemar.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_sweep_blur.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_sweep_data.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_sweep_noise.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/table_sweep_resolution.csv`
+- `논문/5차/보존패키지/filter_paper_package/원자료/verification_summary.csv`
+- `논문/5차/보존패키지/filter_paper_package/코드/ball_ok_ng_yolo_v7_reference.ipynb`
+- `논문/5차/보존패키지/filter_paper_package/코드/fonts/LICENSE.txt`
+- `논문/5차/보존패키지/filter_paper_package/코드/fonts/NanumGothic.ttf`
+- `논문/5차/보존패키지/filter_paper_package/코드/fonts/NanumGothicBold.ttf`
+- `논문/5차/보존패키지/filter_paper_package/코드/paper_filter_figures.py`
+- `논문/5차/보존패키지/filter_paper_package/코드/reference_plot_style.py`
+- `논문/5차/보존패키지/filter_paper_package/코드/render_saved_figures.py`
+- `논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_1.pdf`
+- `논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_1.png`
+- `논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_2.pdf`
+- `논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_2.png`
+- `논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_3.pdf`
+- `논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_3.png`
+- `논문/5차/보존패키지/filter_paper_package_bold/안내.txt`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/combination_detection_comparison.json`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/diag_ghost_rows.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/diag_ghost_table.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/diag_global_feature_auc.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/diag_operating_point_strict.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/diag_shortcut_thumbnail.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/ms_per_image.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/ms_run_results.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/ms_table_hard__noise_40___25__data.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/ms_table_noise_80.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/ms_table_normal.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/per_image_predictions.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/results_summary.json`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/sweep_results.json`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_all.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_combo_vs_components.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_filters.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_grid_noise40.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_grid_noise80.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_hard_retrain.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_round1.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_round2.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_shift_accuracy.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_shift_strict.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_stratified.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_strict_mcnemar.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_sweep_blur.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_sweep_data.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_sweep_noise.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/table_sweep_resolution.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/원자료/verification_summary.csv`
+- `논문/5차/보존패키지/filter_paper_package_bold/코드/ball_ok_ng_yolo_v7_reference.ipynb`
+- `논문/5차/보존패키지/filter_paper_package_bold/코드/fonts/LICENSE.txt`
+- `논문/5차/보존패키지/filter_paper_package_bold/코드/fonts/NanumGothic.ttf`
+- `논문/5차/보존패키지/filter_paper_package_bold/코드/fonts/NanumGothicBold.ttf`
+- `논문/5차/보존패키지/filter_paper_package_bold/코드/paper_filter_figures.py`
+- `논문/5차/보존패키지/filter_paper_package_bold/코드/reference_plot_style.py`
+- `논문/5차/보존패키지/filter_paper_package_bold/코드/render_saved_figures.py`
+- `논문/5차/보존패키지/filter_paper_package_template/그림/Figure_1.pdf`
+- `논문/5차/보존패키지/filter_paper_package_template/그림/Figure_1.png`
+- `논문/5차/보존패키지/filter_paper_package_template/그림/Figure_2.pdf`
+- `논문/5차/보존패키지/filter_paper_package_template/그림/Figure_2.png`
+- `논문/5차/보존패키지/filter_paper_package_template/그림/Figure_3.pdf`
+- `논문/5차/보존패키지/filter_paper_package_template/그림/Figure_3.png`
+- `논문/5차/보존패키지/filter_paper_package_template/안내.txt`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/combination_detection_comparison.json`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/diag_ghost_rows.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/diag_ghost_table.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/diag_global_feature_auc.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/diag_operating_point_strict.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/diag_shortcut_thumbnail.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/ms_per_image.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/ms_run_results.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/ms_table_hard__noise_40___25__data.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/ms_table_noise_80.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/ms_table_normal.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/per_image_predictions.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/results_summary.json`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/sweep_results.json`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_all.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_combo_vs_components.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_filters.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_grid_noise40.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_grid_noise80.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_hard_retrain.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_round1.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_round2.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_shift_accuracy.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_shift_strict.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_stratified.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_strict_mcnemar.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_sweep_blur.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_sweep_data.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_sweep_noise.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/table_sweep_resolution.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/원자료/verification_summary.csv`
+- `논문/5차/보존패키지/filter_paper_package_template/코드/ball_ok_ng_yolo_v7_reference.ipynb`
+- `논문/5차/보존패키지/filter_paper_package_template/코드/fonts/LICENSE.txt`
+- `논문/5차/보존패키지/filter_paper_package_template/코드/fonts/NanumGothic.ttf`
+- `논문/5차/보존패키지/filter_paper_package_template/코드/fonts/NanumGothicBold.ttf`
+- `논문/5차/보존패키지/filter_paper_package_template/코드/paper_filter_figures.py`
+- `논문/5차/보존패키지/filter_paper_package_template/코드/reference_plot_style.py`
+- `논문/5차/보존패키지/filter_paper_package_template/코드/render_saved_figures.py`
+- `논문/5차/원고변형/NanumGothic-LICENSE.txt`
+- `논문/5차/원고변형/ball_ok_ng_yolo_v7_reference.ipynb`
+- `논문/5차/원고변형/docx_bold/paper_v2.pdf`
+- `논문/5차/원고변형/docx_filter_focus/paper_v2.pdf`
+- `논문/5차/원고변형/docx_final/paper.pdf`
+- `논문/5차/원고변형/docx_focus_final/paper_v2.pdf`
+- `논문/5차/원고변형/docx_graph_bold/paper_v2.pdf`
+- `논문/5차/원고변형/docx_initial/paper.pdf`
+- `논문/5차/원고변형/docx_v2/paper_v2.pdf`
+- `논문/5차/원고변형/docx_verified/paper.pdf`
+- `논문/5차/원고변형/paper.docx`
+- `논문/5차/원고변형/paper_filter_figures.py`
+- `논문/5차/원고변형/paper_v2.docx`
+- `논문/5차/원고변형/reference_plot_style.py`
+- `논문/5차/원고변형/render_saved_figures.py`
+- `논문/5차/코드/ball_ok_ng_yolo_v7_reference.ipynb`
+- `논문/최종/3장_원고.hwp`
+- `논문/최종/3장_원고.pdf`
+- `논문/최종/5장_원문.pdf`
+- `논문/최종/요약.hwp`
+- `발표자료/1차/추계학술대회_10분발표.pdf`
+- `발표자료/1차/추계학술대회_10분발표.pptx`
+- `발표자료/2차/추계학술대회_10분발표.pdf`
+- `발표자료/2차/추계학술대회_10분발표.pptx`
+- `발표자료/3차/추계학술대회_10분발표.pdf`
+- `발표자료/3차/추계학술대회_10분발표.pptx`
+- `발표자료/최종/추계학술대회_10분발표.pdf`
+- `발표자료/최종/추계학술대회_10분발표.pptx`
+- `원본작업자료/ball_ok_ng_yolo_v7.ipynb`
+- `원본작업자료/논문/1차/추계학술대회 논문 1차_요약.hwp`
+- `원본작업자료/논문/2차/추계학술대회 논문 2차_요약.hwp`
+- `원본작업자료/논문/3차/추계학술대회 논문 3차_요약.hwp`
+- `원본작업자료/논문/4차/work/evidence/build_audit_report.py`
+- `원본작업자료/논문/4차/work/evidence/check_metrics_code.py`
+- `원본작업자료/논문/4차/work/evidence/container_readonly.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_01.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_03.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_04.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_06.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_08.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_10.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_12.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_14.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_16.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_18.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_20.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_22.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_24.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_26.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_28.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_30.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_32.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_34.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_36.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_38.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_40.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_42.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_44.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_46.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_48.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_51.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_53.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_55.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_57.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_58.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_60.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_61.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_62.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_63.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_65.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_66.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_67.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_69.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_71.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_72.py`
+- `원본작업자료/논문/4차/work/evidence/notebook_cell_74.py`
+- `원본작업자료/논문/4차/work/evidence/recompute_saved.py`
+- `원본작업자료/논문/4차/work/main_layout_inspect.py`
+- `원본작업자료/논문/5차/work/add_links.py`
+- `원본작업자료/논문/5차/work/audit.py`
+- `원본작업자료/논문/5차/work/build_docx.py`
+- `원본작업자료/논문/5차/work/build_docx_v2.py`
+- `원본작업자료/논문/5차/work/build_pdf.py`
+- `원본작업자료/논문/5차/work/cell1.py`
+- `원본작업자료/논문/5차/work/cell46.py`
+- `원본작업자료/논문/5차/work/cell55.py`
+- `원본작업자료/논문/5차/work/cell61.py`
+- `원본작업자료/논문/5차/work/check_pdf.py`
+- `원본작업자료/논문/5차/work/check_template_weights.py`
+- `원본작업자료/논문/5차/work/condense.py`
+- `원본작업자료/논문/5차/work/condense2.py`
+- `원본작업자료/논문/5차/work/content.py`
+- `원본작업자료/논문/5차/work/extract.py`
+- `원본작업자료/논문/5차/work/figures/diag_ghost_rows.csv`
+- `원본작업자료/논문/5차/work/figures/diag_ghost_table.csv`
+- `원본작업자료/논문/5차/work/figures/diag_global_feature_auc.csv`
+- `원본작업자료/논문/5차/work/figures/diag_operating_point_strict.csv`
+- `원본작업자료/논문/5차/work/figures/diag_shortcut_thumbnail.csv`
+- `원본작업자료/논문/5차/work/figures/ms_per_image.csv`
+- `원본작업자료/논문/5차/work/figures/ms_run_results.csv`
+- `원본작업자료/논문/5차/work/figures/ms_table_hard__noise_40___25__data.csv`
+- `원본작업자료/논문/5차/work/figures/ms_table_noise_80.csv`
+- `원본작업자료/논문/5차/work/figures/ms_table_normal.csv`
+- `원본작업자료/논문/5차/work/figures/per_image_predictions.csv`
+- `원본작업자료/논문/5차/work/figures/table_all.csv`
+- `원본작업자료/논문/5차/work/figures/table_combo_vs_components.csv`
+- `원본작업자료/논문/5차/work/figures/table_filters.csv`
+- `원본작업자료/논문/5차/work/figures/table_grid_noise40.csv`
+- `원본작업자료/논문/5차/work/figures/table_grid_noise80.csv`
+- `원본작업자료/논문/5차/work/figures/table_hard_retrain.csv`
+- `원본작업자료/논문/5차/work/figures/table_round1.csv`
+- `원본작업자료/논문/5차/work/figures/table_round2.csv`
+- `원본작업자료/논문/5차/work/figures/table_shift_accuracy.csv`
+- `원본작업자료/논문/5차/work/figures/table_shift_strict.csv`
+- `원본작업자료/논문/5차/work/figures/table_stratified.csv`
+- `원본작업자료/논문/5차/work/figures/table_strict_mcnemar.csv`
+- `원본작업자료/논문/5차/work/figures/table_sweep_blur.csv`
+- `원본작업자료/논문/5차/work/figures/table_sweep_data.csv`
+- `원본작업자료/논문/5차/work/figures/table_sweep_noise.csv`
+- `원본작업자료/논문/5차/work/figures/table_sweep_resolution.csv`
+- `원본작업자료/논문/5차/work/figures/verification_summary.csv`
+- `원본작업자료/논문/5차/work/final_check.py`
+- `원본작업자료/논문/5차/work/final_text.py`
+- `원본작업자료/논문/5차/work/final_trim.py`
+- `원본작업자료/논문/5차/work/find_fonts.py`
+- `원본작업자료/논문/5차/work/find_hnc_fonts.py`
+- `원본작업자료/논문/5차/work/fix_font.py`
+- `원본작업자료/논문/5차/work/fonts.py`
+- `원본작업자료/논문/5차/work/hwp_final_try.py`
+- `원본작업자료/논문/5차/work/hwp_layout.py`
+- `원본작업자료/논문/5차/work/inspect_header.py`
+- `원본작업자료/논문/5차/work/inspect_hwp.py`
+- `원본작업자료/논문/5차/work/make_contacts.py`
+- `원본작업자료/논문/5차/work/native_render_test.py`
+- `원본작업자료/논문/5차/work/notebook.ipynb`
+- `원본작업자료/논문/5차/work/package_bold.py`
+- `원본작업자료/논문/5차/work/plot_paper.py`
+- `원본작업자료/논문/5차/work/read_cells.py`
+- `원본작업자료/논문/5차/work/reference_read.py`
+- `원본작업자료/논문/5차/work/refine_focus.py`
+- `원본작업자료/논문/5차/work/render_docx_isolated.py`
+- `원본작업자료/논문/5차/work/restore_template_and_names.py`
+- `원본작업자료/논문/5차/work/revise_bold.py`
+- `원본작업자료/논문/5차/work/revise_graphs.py`
+- `원본작업자료/논문/5차/work/revise_paper_focus.py`
+- `원본작업자료/논문/5차/work/try_hwp_v2.py`
+- `원본작업자료/논문/5차/work/update_notebook.py`
+- `원본작업자료/논문/5차/work/verify_and_package.py`
+- `원본작업자료/논문/5차/work/verify_filter_paper.py`
+- `원본작업자료/논문/5차/work/verify_filter_paper_bold.py`
+- `원본작업자료/논문/5차/work/verify_filter_paper_template.py`
+- `원본작업자료/논문/5차/work/word_ensure.py`
+- `원본작업자료/논문/5차/work/word_open.py`
+- `원본작업자료/논문/5차/work/word_retry.py`
+- `원본작업자료/논문/5차/work/write_revision.py`
+- `원본작업자료/발표자료/1차/.chart-data-AHQFVI/candidate.pptx`
+- `원본작업자료/발표자료/1차/.chart-data-KMLEaC/candidate.pptx`
+- `원본작업자료/발표자료/1차/.chart-data-utlr4E/candidate.pptx`
+- `원본작업자료/발표자료/1차/.chart-data-znEH9j/candidate.pptx`
+- `원본작업자료/발표자료/1차/work/authoring_adjust.py`
+- `원본작업자료/발표자료/1차/work/before-smoothing-finalized.pptx`
+- `원본작업자료/발표자료/1차/work/build_presentation.mjs`
+- `원본작업자료/발표자료/1차/work/candidate.pptx`
+- `원본작업자료/발표자료/1차/work/initial-finalized.pptx`
+- `원본작업자료/발표자료/1차/work/prepare_content.py`
+- `원본작업자료/발표자료/1차/work/render_final.mjs`
+- `원본작업자료/발표자료/2차/.chart-data-rP50bc/candidate.pptx`
+- `원본작업자료/발표자료/2차/work/assemble_builder.py`
+- `원본작업자료/발표자료/2차/work/build_presentation.mjs`
+- `원본작업자료/발표자료/2차/work/candidate.pptx`
+- `원본작업자료/발표자료/2차/work/first-finalized.pptx`
+- `원본작업자료/발표자료/2차/work/prepare_content.py`
+- `원본작업자료/발표자료/2차/work/prepare_revision.py`
+- `원본작업자료/발표자료/3차/work/assemble_builder.py`
+- `원본작업자료/발표자료/3차/work/build_presentation.mjs`
+- `원본작업자료/발표자료/3차/work/candidate.pptx`
+- `원본작업자료/발표자료/3차/work/design_revision.py`
+- `원본작업자료/발표자료/3차/work/prepare_content.py`
+- `원본작업자료/발표자료/3차/work/prepare_revision.py`
+- `원본작업자료/이전 도커 실험/불량검출실험/code_backups/20261013_2139_reference_style/ball_ok_ng_yolo_v7.ipynb`
+- `원본작업자료/이전 도커 실험/불량검출실험/code_backups/20261013_all_bold/ball_ok_ng_yolo_v7.ipynb`
+- `원본작업자료/이전 도커 실험/불량검출실험/code_backups/20261013_english_vertical/ball_ok_ng_yolo_v7.ipynb`
+- `원본작업자료/이전 도커 실험/불량검출실험/code_backups/20261013_filter_comparison/ball_ok_ng_yolo_v7.ipynb`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_otsu_04516c7a_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_otsu_04516c7a_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_otsu_04516c7a_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_otsu_04516c7a_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_otsu_04516c7a_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_128_cf798dde_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_128_cf798dde_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_128_cf798dde_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_128_cf798dde_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_128_cf798dde_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_16_cb268906_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_16_cb268906_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_16_cb268906_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_16_cb268906_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_16_cb268906_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_256_282c3afd_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_256_282c3afd_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_256_282c3afd_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_256_282c3afd_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_256_282c3afd_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_32_619206c0_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_32_619206c0_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_32_619206c0_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_32_619206c0_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_32_619206c0_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_64_4eba3eb1_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_64_4eba3eb1_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_64_4eba3eb1_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_64_4eba3eb1_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_64_4eba3eb1_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_8_8463f6c4_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_8_8463f6c4_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_8_8463f6c4_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_8_8463f6c4_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_blur_sigma_8_8463f6c4_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f0_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f0_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f1_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f1_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f2_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f2_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f3_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f3_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f4_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max_7a41f405_cv5f4_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_40_7a41f405_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_40_7a41f405_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_40_7a41f405_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_40_7a41f405_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_40_7a41f405_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s43_cv5f0_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s43_cv5f1_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s43_cv5f2_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s43_cv5f3_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s43_cv5f4_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s44_cv5f0_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s44_cv5f1_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s44_cv5f2_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s44_cv5f3_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_clahe__max____noise_80_7a41f405_n80_s44_cv5f4_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss_14e8142b_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss_14e8142b_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss_14e8142b_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss_14e8142b_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss_14e8142b_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_40_14e8142b_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_40_14e8142b_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_40_14e8142b_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_40_14e8142b_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_40_14e8142b_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_80_14e8142b_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_80_14e8142b_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_80_14e8142b_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_80_14e8142b_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_emboss___noise_80_14e8142b_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3_286f1a68_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3_286f1a68_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3_286f1a68_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3_286f1a68_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3_286f1a68_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_40_286f1a68_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_40_286f1a68_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_40_286f1a68_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_40_286f1a68_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_40_286f1a68_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_80_286f1a68_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_80_286f1a68_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_80_286f1a68_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_80_286f1a68_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gamma_0_3___noise_80_286f1a68_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max_506a732c_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max_506a732c_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max_506a732c_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max_506a732c_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max_506a732c_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_40_506a732c_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_40_506a732c_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_40_506a732c_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_40_506a732c_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_40_506a732c_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s43_cv5f0_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s43_cv5f1_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s43_cv5f2_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s43_cv5f3_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s43_cv5f4_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s44_cv5f0_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s44_cv5f1_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s44_cv5f2_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s44_cv5f3_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_gaussian_blur__max____noise_80_506a732c_n80_s44_cv5f4_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_cv5f0_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_cv5f1_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_cv5f2_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_cv5f3_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_cv5f4_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s43_cv5f0_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s43_cv5f1_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s43_cv5f2_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s43_cv5f3_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s43_cv5f4_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s44_cv5f0_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s44_cv5f1_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s44_cv5f2_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s44_cv5f3_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_clahe__max____noise_40__data_25_7a41f405_n40_s44_cv5f4_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_cv5f0_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_cv5f1_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_cv5f2_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_cv5f3_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_cv5f4_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s43_cv5f0_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s43_cv5f1_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s43_cv5f2_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s43_cv5f3_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s43_cv5f4_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s44_cv5f0_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s44_cv5f1_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s44_cv5f2_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s44_cv5f3_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gamma_0_3___noise_40__data_25_286f1a68_n40_s44_cv5f4_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_cv5f0_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_cv5f1_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_cv5f2_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_cv5f3_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_cv5f4_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s43_cv5f0_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s43_cv5f1_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s43_cv5f2_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s43_cv5f3_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s43_cv5f4_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s44_cv5f0_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s44_cv5f1_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s44_cv5f2_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s44_cv5f3_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_gaussian_blur__max____noise_40__data_25_506a732c_n40_s44_cv5f4_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_cv5f0_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_cv5f1_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_cv5f2_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_cv5f3_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_cv5f4_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s43_cv5f0_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s43_cv5f1_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s43_cv5f2_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s43_cv5f3_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s43_cv5f4_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s44_cv5f0_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s44_cv5f1_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s44_cv5f2_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s44_cv5f3_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_histogram_equalization___noise_40__data_25_b192e3b3_n40_s44_cv5f4_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_cv5f0_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_cv5f1_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_cv5f2_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_cv5f3_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_cv5f4_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s43_cv5f0_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s43_cv5f1_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s43_cv5f2_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s43_cv5f3_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s43_cv5f4_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s44_cv5f0_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s44_cv5f1_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s44_cv5f2_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s44_cv5f3_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_hard_invert___noise_40__data_25_00dca0aa_n40_s44_cv5f4_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histeq_emboss_558bd0f0_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histeq_emboss_558bd0f0_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histeq_emboss_558bd0f0_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histeq_emboss_558bd0f0_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histeq_emboss_558bd0f0_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_40_b192e3b3_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_40_b192e3b3_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_40_b192e3b3_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_40_b192e3b3_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_40_b192e3b3_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_80_b192e3b3_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_80_b192e3b3_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_80_b192e3b3_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_80_b192e3b3_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization___noise_80_b192e3b3_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization_b192e3b3_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization_b192e3b3_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization_b192e3b3_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization_b192e3b3_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_histogram_equalization_b192e3b3_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f0_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f0_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f1_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f1_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f2_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f2_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f3_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f3_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f4_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_00dca0aa_cv5f4_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_40_00dca0aa_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_40_00dca0aa_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_40_00dca0aa_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_40_00dca0aa_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_40_00dca0aa_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_80_00dca0aa_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_80_00dca0aa_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_80_00dca0aa_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_80_00dca0aa_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert___noise_80_00dca0aa_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f0_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f0_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f1_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f1_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f2_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f2_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f3_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f3_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f4_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_invert_clahe_4099db22_cv5f4_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf0.05_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf0.1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf0.5_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf1_sz224_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf1_sz320_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf1_sz480_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf1_sz640_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_os6_e30_tf1_sz960_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f0_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf0.05_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf0.1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf0.5_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf1_sz224_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf1_sz320_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf1_sz480_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf1_sz640_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_os6_e30_tf1_sz960_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f1_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf0.05_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf0.1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf0.5_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf1_sz224_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf1_sz320_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf1_sz480_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf1_sz640_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_os6_e30_tf1_sz960_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f2_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf0.05_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf0.1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf0.5_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf1_sz224_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf1_sz320_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf1_sz480_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf1_sz640_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_os6_e30_tf1_sz960_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f3_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf0.05_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf0.1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf0.5_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf1_sz224_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf1_sz320_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf1_sz480_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf1_sz640_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_os6_e30_tf1_sz960_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_cv5f4_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n10_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n10_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n10_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n10_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n10_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n120_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n120_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n120_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n120_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n120_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n20_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n20_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n20_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n20_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n20_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f0_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f1_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f2_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f3_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f4_grp_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s43_cv5f0_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s43_cv5f1_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s43_cv5f2_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s43_cv5f3_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s43_cv5f4_grp_s43_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s44_cv5f0_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s44_cv5f1_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s44_cv5f2_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s44_cv5f3_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n40_s44_cv5f4_grp_s44_os6_e30_tf0.25_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s43_cv5f0_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s43_cv5f1_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s43_cv5f2_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s43_cv5f3_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s43_cv5f4_grp_s43_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s44_cv5f0_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s44_cv5f1_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s44_cv5f2_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s44_cv5f3_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_original_n80_s44_cv5f4_grp_s44_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold_44f26a50_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold_44f26a50_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold_44f26a50_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold_44f26a50_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold_44f26a50_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_40_44f26a50_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_40_44f26a50_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_40_44f26a50_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_40_44f26a50_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_40_44f26a50_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_80_44f26a50_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_80_44f26a50_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_80_44f26a50_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_80_44f26a50_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_otsu_threshold___noise_80_44f26a50_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_40_faff24a5_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_40_faff24a5_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_40_faff24a5_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_40_faff24a5_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_40_faff24a5_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_80_faff24a5_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_80_faff24a5_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_80_faff24a5_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_80_faff24a5_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges___noise_80_faff24a5_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges_faff24a5_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges_faff24a5_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges_faff24a5_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges_faff24a5_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_edges_faff24a5_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_invert_a222368d_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_invert_a222368d_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_invert_a222368d_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_invert_a222368d_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_sobel_invert_a222368d_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize_1753d456_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize_1753d456_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize_1753d456_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize_1753d456_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize_1753d456_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_40_1753d456_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_40_1753d456_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_40_1753d456_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_40_1753d456_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_40_1753d456_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_80_1753d456_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_80_1753d456_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_80_1753d456_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_80_1753d456_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_solarize___noise_80_1753d456_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max_79e17df3_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max_79e17df3_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max_79e17df3_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max_79e17df3_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max_79e17df3_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_40_79e17df3_n40_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_40_79e17df3_n40_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_40_79e17df3_n40_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_40_79e17df3_n40_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_40_79e17df3_n40_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_80_79e17df3_n80_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_80_79e17df3_n80_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_80_79e17df3_n80_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_80_79e17df3_n80_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp__max____noise_80_79e17df3_n80_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp_sobel_79d9839d_cv5f0_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp_sobel_79d9839d_cv5f1_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp_sobel_79d9839d_cv5f2_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp_sobel_79d9839d_cv5f3_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/runs/detect/yolo_runs/ball_detect_unsharp_sobel_79d9839d_cv5f4_grp_os6_e30_tf1_sz1280_v0.1/results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/diag_ghost_rows.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/diag_ghost_table.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/diag_global_feature_auc.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/diag_operating_point_strict.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/diag_shortcut_thumbnail.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/ms_per_image.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/ms_run_results.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/ms_table_hard__noise_40___25__data.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/ms_table_noise_80.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/ms_table_normal.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/paper_filter_comparison/paper_figure1.pdf`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/paper_filter_comparison/paper_figure2.pdf`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/paper_filter_comparison/paper_figure3.pdf`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/per_image_predictions.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_all.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_combo_vs_components.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_filters.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_grid_noise40.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_grid_noise80.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_hard_retrain.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_round1.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_round2.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_shift_accuracy.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_shift_strict.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_stratified.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_strict_mcnemar.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_sweep_blur.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_sweep_data.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_sweep_noise.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/table_sweep_resolution.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/verification_summary.csv`
+- `원본작업자료/이전 도커 실험/불량검출실험/yolo_ok_ng_figures/yolo_judgement_results.csv`
+- `원본작업자료/최종/연구코드/ball_ok_ng_yolo_v7.ipynb`
+
+## 비교와 검증 범위
+
+- [전체 단계·직전 단계 차이](REVISION_INDEX.md)에 파일별 근거와 원고 설명을 연결했습니다. 공백·주석·코드셀·Markdown·텍스트·수치·실험 설정을 전체 비교하며 ipynb의 바이너리 이미지 출력만 바이트 길이·SHA-256·원문 링크로 표시합니다. 원문 ipynb 자체는 보존합니다.
+- UTF-8, 비밀 패턴, 실제 로컬 링크, 노트북 JSON, source/public SHA 및 코드 셀 보존, PDF 열기를 검사했습니다. 원본0바이트 노트북은 그대로 남기며 JSON·실행·성능 근거에서 제외합니다.
+- 의료 원본 후보가 포함된 노트북 이미지 출력만 제외한 사본은 비공개 대응표에 source/public 해시와 변환 이유를 구별해 기록했습니다.
+- 원문에 실린 본인·공동저자의 성명·소속·이메일·전화·ORCID·이력·사진은 최신 공개 지시에 따라 보존합니다. 기존 원격 정제 사본은 이력으로 유지합니다.
+- 인증키·비밀번호, 대용량 모델·원데이터, 연구와 무관한 결제 자료·도구 설치 캐시와 본인 비저자·공개권한 근거 불명확 외부 원고는 별도 제외·보류 근거로 관리합니다. 원본은 수정·삭제하지 않았습니다.
+- 새 학습·임상·제조 장비·추천 성능 실험은 수행하지 않았습니다. 저장 표와 원고 보고값을 새 실측으로 소개하지 않습니다.
+- 이 변경 기록 시점에는 원격 쓰기·커밋·푸시를 수행하지 않았고 부모 통합 독립 검토와 반영을 기다립니다.

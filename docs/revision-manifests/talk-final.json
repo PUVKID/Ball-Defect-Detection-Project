@@ -1,0 +1,14 @@
+{
+  "stage": "발표자료 최종",
+  "previous": "발표자료 3차",
+  "files": {
+    "발표자료/최종/추계학술대회_10분발표.pdf": {
+      "bytes": 4071884,
+      "sha256": "2c418f9bea55f538b0fe94c1c6b5f0b6ef9ceaebf17fffa8c9ae540f3e9d802c"
+    },
+    "발표자료/최종/추계학술대회_10분발표.pptx": {
+      "bytes": 22926957,
+      "sha256": "45d6582f1f77fde70fea519d2dd573f3aec03b4c78f09388da8b46732900441a"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "stage": "최종 연구코드",
+  "previous": null,
+  "files": {
+    "ball_ok_ng_yolo_v7.ipynb": {
+      "bytes": 277995,
+      "sha256": "087c1a4c6a4a7487e2b037eb622b7336e59620d2731e69e4f35cbd0cb6847188"
+    },
+    "최종/연구코드/ball_ok_ng_yolo_v7.ipynb": {
+      "bytes": 277995,
+      "sha256": "087c1a4c6a4a7487e2b037eb622b7336e59620d2731e69e4f35cbd0cb6847188"
+    },
+    "원본작업자료/최종/연구코드/ball_ok_ng_yolo_v7.ipynb": {
+      "bytes": 277994,
+      "sha256": "fea389f8751b308129f4cfbbdc870eb7b20a025e2c0985cdeda33a1a9a3d354a"
+    }
+  }
+}

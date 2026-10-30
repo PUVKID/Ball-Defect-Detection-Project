@@ -1,0 +1,501 @@
+﻿key,split,gt_pred,yolo_pred,match,yolo_reason,n_det,loc_fail
+train/1001,train,OK,OK,1,,13,0
+train/1002,train,OK,OK,1,,13,0
+train/1003,train,OK,OK,1,,13,0
+train/1004,train,OK,OK,1,,13,0
+train/1005,train,OK,OK,1,,13,0
+train/1006,train,OK,OK,1,,13,0
+train/1007,train,OK,OK,1,,13,0
+train/1008,train,OK,OK,1,,13,0
+train/1009,train,OK,OK,1,,13,0
+train/1010,train,OK,OK,1,,13,0
+train/1011,train,OK,OK,1,,13,0
+train/1012,train,OK,OK,1,,13,0
+train/1013,train,OK,OK,1,,13,0
+train/1014,train,OK,OK,1,,13,0
+train/1015,train,OK,OK,1,,13,0
+train/1016,train,OK,OK,1,,13,0
+train/1017,train,OK,OK,1,,13,0
+train/1018,train,OK,OK,1,,13,0
+train/1019,train,OK,OK,1,,13,0
+train/1020,train,OK,OK,1,,13,0
+train/1021,train,OK,OK,1,,13,0
+train/1022,train,OK,OK,1,,13,0
+train/1023,train,OK,OK,1,,13,0
+train/1024,train,OK,OK,1,,13,0
+train/1025,train,OK,OK,1,,13,0
+train/1026,train,OK,OK,1,,13,0
+train/1027,train,OK,OK,1,,13,0
+train/1028,train,OK,OK,1,,13,0
+train/1029,train,OK,OK,1,,13,0
+train/1030,train,OK,OK,1,,13,0
+train/1031,train,OK,OK,1,,13,0
+train/1032,train,OK,OK,1,,13,0
+train/1033,train,OK,OK,1,,13,0
+train/1034,train,OK,OK,1,,13,0
+train/1035,train,OK,OK,1,,13,0
+train/1036,train,OK,OK,1,,13,0
+train/1037,train,OK,OK,1,,13,0
+train/1038,train,NG,NG,1,"top -5, left -4, bottom -2, right -2",13,0
+train/1039,train,OK,OK,1,,13,0
+train/1040,train,OK,OK,1,,13,0
+train/1041,train,OK,OK,1,,13,0
+train/1042,train,OK,OK,1,,13,0
+train/1043,train,OK,OK,1,,13,0
+train/1044,train,OK,OK,1,,13,0
+train/1045,train,OK,OK,1,,13,0
+train/1046,train,OK,OK,1,,13,0
+train/1047,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1048,train,OK,OK,1,,13,0
+train/1049,train,OK,OK,1,,13,0
+train/1050,train,OK,OK,1,,13,0
+train/1051,train,OK,OK,1,,13,0
+train/1052,train,OK,OK,1,,13,0
+train/1053,train,OK,OK,1,,13,0
+train/1054,train,OK,OK,1,,13,0
+train/1055,train,OK,OK,1,,13,0
+train/1056,train,OK,OK,1,,13,0
+train/1057,train,OK,OK,1,,13,0
+train/1058,train,OK,OK,1,,13,0
+train/1059,train,OK,OK,1,,13,0
+train/1060,train,OK,OK,1,,13,0
+train/1061,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1062,train,OK,OK,1,,13,0
+train/1063,train,OK,OK,1,,13,0
+train/1064,train,OK,OK,1,,13,0
+train/1065,train,OK,OK,1,,13,0
+train/1066,train,OK,OK,1,,13,0
+train/1067,train,OK,OK,1,,13,0
+train/1068,train,OK,OK,1,,13,0
+train/1069,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1070,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1071,train,OK,OK,1,,13,0
+train/1072,train,OK,OK,1,,13,0
+train/1073,train,OK,OK,1,,13,0
+train/1074,train,OK,OK,1,,13,0
+train/1075,train,OK,OK,1,,13,0
+train/1076,train,OK,OK,1,,13,0
+train/1077,train,OK,OK,1,,13,0
+train/1078,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1079,train,OK,OK,1,,13,0
+train/1080,train,OK,OK,1,,13,0
+train/1081,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1082,train,OK,OK,1,,13,0
+train/1083,train,OK,OK,1,,13,0
+train/1084,train,OK,OK,1,,13,0
+train/1085,train,OK,OK,1,,13,0
+train/1086,train,OK,OK,1,,13,0
+train/1087,train,OK,OK,1,,13,0
+train/1088,train,OK,OK,1,,13,0
+train/1089,train,OK,OK,1,,13,0
+train/1090,train,OK,OK,1,,13,0
+train/1091,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1092,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1093,train,OK,OK,1,,13,0
+train/1094,train,OK,OK,1,,13,0
+train/1095,train,OK,OK,1,,13,0
+train/1096,train,OK,OK,1,,13,0
+train/1097,train,OK,OK,1,,13,0
+train/1098,train,OK,OK,1,,13,0
+train/1099,train,OK,OK,1,,13,0
+train/1100,train,OK,OK,1,,13,0
+train/1101,train,OK,OK,1,,13,0
+train/1102,train,OK,OK,1,,13,0
+train/1103,train,OK,OK,1,,13,0
+train/1104,train,OK,OK,1,,13,0
+train/1105,train,OK,OK,1,,13,0
+train/1106,train,OK,OK,1,,13,0
+train/1107,train,OK,OK,1,,13,0
+train/1108,train,OK,OK,1,,13,0
+train/1109,train,OK,OK,1,,13,0
+train/1110,train,OK,OK,1,,13,0
+train/1111,train,OK,OK,1,,13,0
+train/1112,train,OK,OK,1,,13,0
+train/1113,train,OK,OK,1,,13,0
+train/1114,train,OK,OK,1,,13,0
+train/1115,train,NG,NG,1,right -2,13,0
+train/1116,train,NG,NG,1,right -2,14,0
+train/1117,train,OK,OK,1,,13,0
+train/1118,train,OK,OK,1,,13,0
+train/1119,train,OK,OK,1,,13,0
+train/1120,train,OK,OK,1,,13,0
+train/1121,train,OK,OK,1,,13,0
+train/1122,train,OK,OK,1,,13,0
+train/1123,train,OK,OK,1,,13,0
+train/1124,train,OK,OK,1,,13,0
+train/1125,train,NG,NG,1,"top -5, left -4, bottom -2, right -2",13,0
+train/1126,train,OK,OK,1,,13,0
+train/1127,train,OK,OK,1,,13,0
+train/1128,train,OK,OK,1,,13,0
+train/1129,train,OK,OK,1,,13,0
+train/1130,train,OK,OK,1,,13,0
+train/1131,train,OK,OK,1,,13,0
+train/1132,train,OK,OK,1,,13,0
+train/1133,train,OK,OK,1,,13,0
+train/1134,train,OK,OK,1,,13,0
+train/1135,train,OK,OK,1,,13,0
+train/1136,train,OK,OK,1,,13,0
+train/1137,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1138,train,OK,OK,1,,13,0
+train/1139,train,NG,NG,1,"bottom -2, right -1",13,0
+train/1140,train,OK,OK,1,,13,0
+train/1141,train,OK,OK,1,,13,0
+train/1142,train,OK,OK,1,,13,0
+train/1143,train,OK,OK,1,,13,0
+train/1144,train,OK,OK,1,,13,0
+train/1145,train,OK,OK,1,,13,0
+train/1146,train,OK,OK,1,,13,0
+train/1147,train,OK,OK,1,,13,0
+train/1148,train,OK,OK,1,,13,0
+train/1149,train,OK,OK,1,,13,0
+train/1150,train,OK,OK,1,,13,0
+train/1151,train,OK,OK,1,,13,0
+train/1152,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1153,train,OK,OK,1,,13,0
+train/1154,train,OK,OK,1,,13,0
+train/1155,train,OK,OK,1,,13,0
+train/1156,train,OK,OK,1,,13,0
+train/1157,train,OK,OK,1,,13,0
+train/1158,train,OK,OK,1,,13,0
+train/1159,train,OK,OK,1,,13,0
+train/1160,train,OK,OK,1,,13,0
+train/1161,train,OK,OK,1,,13,0
+train/1162,train,OK,OK,1,,13,0
+train/1163,train,OK,OK,1,,13,0
+train/1164,train,NG,NG,1,"top -5, left -4, bottom -2, right -2",13,0
+train/1165,train,OK,OK,1,,13,0
+train/1166,train,NG,NG,1,"top -5, left -4, bottom -2, right -2",13,0
+train/1167,train,OK,OK,1,,13,0
+train/1168,train,OK,OK,1,,13,0
+train/1169,train,OK,OK,1,,13,0
+train/1170,train,OK,OK,1,,13,0
+train/1171,train,OK,OK,1,,13,0
+train/1172,train,NG,NG,1,"top -5, left -4, bottom -2, right -2",13,0
+train/1173,train,OK,OK,1,,13,0
+train/1174,train,OK,OK,1,,13,0
+train/1175,train,OK,OK,1,,13,0
+train/1176,train,OK,OK,1,,13,0
+train/1177,train,OK,OK,1,,13,0
+train/1178,train,OK,OK,1,,13,0
+train/1179,train,OK,OK,1,,13,0
+train/1180,train,OK,OK,1,,13,0
+train/1181,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1182,train,OK,OK,1,,13,0
+train/1183,train,OK,OK,1,,13,0
+train/1184,train,NG,NG,1,"top -5, left -4, right -2",13,0
+train/1185,train,OK,OK,1,,13,0
+train/1186,train,OK,OK,1,,13,0
+train/1187,train,OK,OK,1,,13,0
+train/1188,train,OK,OK,1,,13,0
+train/1189,train,OK,OK,1,,13,0
+train/1190,train,OK,OK,1,,13,0
+train/1191,train,OK,OK,1,,13,0
+train/1192,train,OK,OK,1,,13,0
+train/1193,train,OK,OK,1,,13,0
+train/1194,train,OK,OK,1,,13,0
+train/1195,train,OK,OK,1,,13,0
+train/1196,train,OK,OK,1,,13,0
+train/1197,train,OK,OK,1,,13,0
+train/1198,train,OK,OK,1,,13,0
+train/1199,train,OK,OK,1,,13,0
+train/1200,train,OK,OK,1,,13,0
+train/ano1,train,NG,NG,1,right -1,12,0
+train/ano10,train,NG,NG,1,bottom -1,12,0
+train/ano100,train,NG,NG,1,right +1,14,1
+train/ano101,train,NG,NG,1,bottom -1,12,0
+train/ano102,train,NG,NG,1,bottom -1,12,0
+train/ano103,train,NG,NG,1,"top -3, left -2",8,0
+train/ano104,train,NG,NG,1,"top -3, left -2",8,0
+train/ano105,train,NG,NG,1,bottom -1,12,0
+train/ano106,train,NG,NG,1,bottom -1,12,0
+train/ano107,train,NG,NG,1,"top -3, left -2",8,0
+train/ano108,train,NG,NG,1,"top -3, left -2",8,0
+train/ano109,train,NG,NG,1,"top -3, left -2",8,0
+train/ano11,train,NG,NG,1,bottom +1,14,0
+train/ano110,train,NG,NG,1,"top -3, left -2",8,0
+train/ano111,train,NG,NG,1,left -1,12,0
+train/ano112,train,NG,NG,1,left -1,12,0
+train/ano113,train,NG,NG,1,right +1,14,0
+train/ano114,train,NG,NG,1,right +1,14,0
+train/ano115,train,NG,NG,1,left -1,12,0
+train/ano116,train,NG,NG,1,left -1,12,0
+train/ano117,train,NG,NG,1,bottom -1,12,0
+train/ano118,train,NG,NG,1,bottom -1,12,0
+train/ano119,train,NG,NG,1,left -1,12,0
+train/ano12,train,NG,NG,1,bottom +1,14,0
+train/ano120,train,NG,NG,1,left -1,12,0
+train/ano121,train,NG,NG,1,"top -3, left -2",8,0
+train/ano122,train,NG,NG,1,"top -3, left -2",8,0
+train/ano123,train,NG,NG,1,"top -3, left -2",8,0
+train/ano124,train,NG,NG,1,"top -3, left -2",8,0
+train/ano125,train,NG,NG,1,"top -3, left -2",8,0
+train/ano126,train,NG,NG,1,"top -3, left -2",8,0
+train/ano127,train,NG,NG,1,"top -3, left -2",8,0
+train/ano128,train,NG,NG,1,"top -3, left -2",8,0
+train/ano129,train,NG,NG,1,"top -3, left -2",8,0
+train/ano13,train,NG,NG,1,bottom +1,14,0
+train/ano130,train,NG,NG,1,"top -3, left -2",8,0
+train/ano131,train,NG,NG,1,bottom -1,12,0
+train/ano132,train,NG,NG,1,bottom -1,12,0
+train/ano133,train,NG,NG,1,"top -3, left -2",8,0
+train/ano134,train,NG,NG,1,"top -3, left -2",8,0
+train/ano135,train,NG,NG,1,right -1,12,0
+train/ano136,train,NG,NG,1,right -1,12,0
+train/ano137,train,NG,NG,1,"top -3, left -2",8,0
+train/ano138,train,NG,NG,1,"top -3, left -2",8,0
+train/ano139,train,NG,NG,1,left -1,12,0
+train/ano14,train,NG,NG,1,bottom +1,14,0
+train/ano140,train,NG,NG,1,left -1,12,0
+train/ano141,train,NG,NG,1,bottom -1,12,0
+train/ano142,train,NG,NG,1,bottom -1,12,0
+train/ano143,train,NG,NG,1,"top -3, left -2",8,0
+train/ano144,train,NG,NG,1,"top -3, left -2",8,0
+train/ano145,train,NG,NG,1,"top -3, left -2",8,0
+train/ano146,train,NG,NG,1,"top -3, left -2",8,0
+train/ano147,train,NG,NG,1,"top -3, left -2",8,0
+train/ano148,train,NG,NG,1,"top -3, left -2",8,0
+train/ano149,train,NG,NG,1,left -1,12,0
+train/ano15,train,NG,NG,1,bottom +1,14,0
+train/ano150,train,NG,NG,1,left -1,12,0
+train/ano151,train,NG,NG,1,left -1,12,0
+train/ano152,train,NG,NG,1,left -1,12,0
+train/ano153,train,NG,NG,1,left -1,12,0
+train/ano154,train,NG,NG,1,left -1,12,0
+train/ano155,train,NG,NG,1,bottom -1,12,0
+train/ano156,train,NG,NG,1,bottom -1,12,0
+train/ano157,train,NG,NG,1,bottom -1,12,0
+train/ano158,train,NG,NG,1,bottom -1,12,0
+train/ano159,train,NG,NG,1,"top -3, left -2",8,0
+train/ano16,train,NG,NG,1,bottom +1,14,0
+train/ano160,train,NG,NG,1,"top -3, left -2",8,0
+train/ano161,train,NG,NG,1,"top -3, left -2",8,0
+train/ano162,train,NG,NG,1,"top -3, left -2",8,0
+train/ano163,train,NG,NG,1,bottom -1,12,0
+train/ano164,train,NG,NG,1,bottom -1,12,0
+train/ano165,train,NG,NG,1,"top -3, left -2",8,0
+train/ano166,train,NG,NG,1,"top -3, left -2",8,0
+train/ano167,train,NG,NG,1,"top -3, left -2",8,1
+train/ano168,train,NG,NG,1,"top -3, left -2",8,1
+train/ano169,train,NG,NG,1,"top -3, left -2",8,0
+train/ano17,train,NG,NG,1,bottom +1,14,0
+train/ano170,train,NG,NG,1,"top -3, left -2",8,0
+train/ano171,train,NG,NG,1,"top -3, left -2",8,0
+train/ano172,train,NG,NG,1,"top -3, left -2",8,0
+train/ano173,train,NG,NG,1,"top -3, left -2",8,1
+train/ano174,train,NG,NG,1,"top -3, left -2",8,1
+train/ano175,train,NG,NG,1,"top -3, left -2",8,1
+train/ano176,train,NG,NG,1,"top -3, left -2",8,1
+train/ano177,train,NG,NG,1,left +1,14,0
+train/ano178,train,NG,NG,1,left +1,14,0
+train/ano179,train,NG,NG,1,right +1,14,0
+train/ano18,train,NG,NG,1,bottom +1,14,0
+train/ano180,train,NG,NG,1,right +1,14,0
+train/ano181,train,NG,NG,1,"top -5, left -4, right -2",14,0
+train/ano182,train,NG,NG,1,"top -5, left -4, right -2",14,0
+train/ano183,train,NG,NG,1,bottom -1,12,0
+train/ano184,train,NG,NG,1,bottom -1,12,0
+train/ano185,train,NG,NG,1,"top -5, left -4, right -2",14,0
+train/ano186,train,NG,NG,1,"top -5, left -4, right -2",14,0
+train/ano187,train,NG,NG,1,bottom -1,12,0
+train/ano188,train,NG,NG,1,bottom -1,12,0
+train/ano189,train,NG,NG,1,left +1,14,0
+train/ano19,train,NG,NG,1,bottom +1,14,0
+train/ano190,train,NG,NG,1,left +1,14,0
+train/ano191,train,NG,NG,1,left +1,14,0
+train/ano192,train,NG,NG,1,left +1,14,0
+train/ano193,train,NG,NG,1,left +1,14,0
+train/ano194,train,NG,NG,1,left +1,14,0
+train/ano195,train,NG,NG,1,"top -5, left -4, bottom -2, right -2",14,0
+train/ano196,train,NG,NG,1,"top -5, left -4, bottom -2, right -2",14,0
+train/ano197,train,NG,NG,1,top +1,14,0
+train/ano198,train,NG,NG,1,top +1,14,0
+train/ano199,train,NG,NG,1,left +1,14,0
+train/ano2,train,NG,NG,1,right -1,12,0
+train/ano20,train,NG,NG,1,bottom +1,14,0
+train/ano200,train,NG,NG,1,left +1,14,0
+train/ano21,train,NG,NG,1,bottom +1,14,0
+train/ano22,train,NG,NG,1,bottom +1,14,0
+train/ano23,train,NG,NG,1,bottom +1,14,0
+train/ano24,train,NG,NG,1,bottom +1,14,0
+train/ano25,train,NG,NG,1,"top -2, left -2, bottom -2, right -2",5,0
+train/ano26,train,NG,NG,1,"top -2, left -2, bottom -2, right -2",5,0
+train/ano27,train,NG,NG,1,top +1,14,0
+train/ano28,train,NG,NG,1,top +1,14,0
+train/ano29,train,NG,NG,1,top +1,14,0
+train/ano3,train,NG,NG,1,"top -2, left -2, bottom -2, right -2",5,0
+train/ano30,train,NG,NG,1,top +1,14,0
+train/ano31,train,NG,NG,1,bottom -1,12,0
+train/ano32,train,NG,NG,1,bottom -1,12,0
+train/ano33,train,NG,NG,1,bottom -1,12,0
+train/ano34,train,NG,NG,1,bottom -1,12,0
+train/ano35,train,NG,NG,1,top +1,14,0
+train/ano36,train,NG,NG,1,top +1,14,0
+train/ano37,train,NG,NG,1,bottom -1,12,0
+train/ano38,train,NG,NG,1,bottom -1,12,0
+train/ano39,train,NG,NG,1,bottom +1,14,0
+train/ano4,train,NG,NG,1,"top -2, left -2, bottom -2, right -2",5,0
+train/ano40,train,NG,NG,1,bottom +1,14,0
+train/ano41,train,NG,NG,1,top +1,14,0
+train/ano42,train,NG,NG,1,top +1,14,0
+train/ano43,train,NG,NG,1,top +1,14,0
+train/ano44,train,NG,NG,1,top +1,14,0
+train/ano45,train,NG,NG,1,top +1,14,0
+train/ano46,train,NG,NG,1,top +1,14,0
+train/ano47,train,NG,NG,1,"top -2, left -2, bottom -2, right -2",5,0
+train/ano48,train,NG,NG,1,"top -2, left -2, bottom -2, right -2",5,0
+train/ano49,train,NG,NG,1,top +1,14,0
+train/ano5,train,NG,NG,1,top +1,14,0
+train/ano50,train,NG,NG,1,top +1,14,0
+train/ano51,train,NG,NG,1,top +1,14,0
+train/ano52,train,NG,NG,1,top +1,14,0
+train/ano53,train,NG,NG,1,top +1,14,0
+train/ano54,train,NG,NG,1,top +1,14,0
+train/ano55,train,NG,NG,1,bottom +1,14,0
+train/ano56,train,NG,NG,1,bottom +1,14,0
+train/ano57,train,NG,NG,1,bottom -1,12,0
+train/ano58,train,NG,NG,1,bottom -1,12,0
+train/ano59,train,NG,NG,1,top +1,14,0
+train/ano6,train,NG,NG,1,top +1,14,0
+train/ano60,train,NG,NG,1,top +1,14,0
+train/ano61,train,NG,NG,1,bottom +1,14,0
+train/ano62,train,NG,NG,1,bottom +1,14,0
+train/ano63,train,NG,NG,1,bottom -1,12,0
+train/ano64,train,NG,NG,1,bottom -1,12,0
+train/ano65,train,NG,NG,1,bottom +1,14,0
+train/ano66,train,NG,NG,1,bottom +1,14,0
+train/ano67,train,NG,NG,1,bottom +1,14,0
+train/ano68,train,NG,NG,1,bottom +1,14,0
+train/ano69,train,NG,NG,1,right -1,12,0
+train/ano7,train,NG,NG,1,bottom -1,12,0
+train/ano70,train,NG,NG,1,right -1,12,0
+train/ano71,train,NG,NG,1,bottom +1,14,0
+train/ano72,train,NG,NG,1,bottom +1,14,0
+train/ano73,train,NG,NG,1,bottom +1,14,0
+train/ano74,train,NG,NG,1,bottom +1,14,0
+train/ano75,train,NG,NG,1,top +1,14,0
+train/ano76,train,NG,NG,1,top +1,14,0
+train/ano77,train,NG,NG,1,top +1,14,0
+train/ano78,train,NG,NG,1,top +1,14,0
+train/ano79,train,NG,NG,1,top -1,12,0
+train/ano8,train,NG,NG,1,bottom -1,12,0
+train/ano80,train,NG,NG,1,top -1,12,0
+train/ano81,train,NG,NG,1,bottom -1,12,0
+train/ano82,train,NG,NG,1,bottom -1,12,0
+train/ano83,train,NG,NG,1,right +1,14,0
+train/ano84,train,NG,NG,1,right +1,14,0
+train/ano85,train,NG,NG,1,right +1,14,0
+train/ano86,train,NG,NG,1,right +1,14,0
+train/ano87,train,NG,NG,1,right +1,14,0
+train/ano88,train,NG,NG,1,right +1,14,0
+train/ano89,train,NG,NG,1,bottom -1,12,0
+train/ano9,train,NG,NG,1,bottom -1,12,0
+train/ano90,train,NG,NG,1,bottom -1,12,0
+train/ano91,train,NG,NG,1,"top -2, left -2, bottom -2, right -2",5,0
+train/ano92,train,NG,NG,1,"top -2, left -2, bottom -2, right -2",5,0
+train/ano93,train,NG,NG,1,top +1,14,0
+train/ano94,train,NG,NG,1,top +1,14,0
+train/ano95,train,NG,NG,1,right +1,14,1
+train/ano96,train,NG,NG,1,right +1,14,1
+train/ano97,train,NG,NG,1,right +1,14,1
+train/ano98,train,NG,NG,1,right +1,14,1
+train/ano99,train,NG,NG,1,right +1,14,1
+val/1201,val,OK,OK,1,,13,0
+val/1202,val,NG,NG,1,"top -5, left -4, right -2",13,0
+val/1203,val,OK,OK,1,,13,0
+val/1204,val,OK,OK,1,,13,0
+val/1205,val,OK,OK,1,,13,0
+val/1206,val,OK,OK,1,,13,0
+val/1207,val,OK,OK,1,,13,0
+val/1208,val,OK,OK,1,,13,0
+val/1209,val,OK,OK,1,,13,0
+val/1210,val,OK,OK,1,,13,0
+val/1211,val,OK,OK,1,,13,0
+val/1212,val,OK,OK,1,,13,0
+val/1213,val,OK,OK,1,,13,0
+val/1214,val,OK,OK,1,,13,0
+val/1215,val,OK,OK,1,,13,0
+val/1216,val,OK,OK,1,,13,0
+val/1217,val,OK,OK,1,,13,0
+val/1218,val,OK,OK,1,,13,0
+val/1219,val,OK,OK,1,,13,0
+val/1220,val,OK,OK,1,,13,0
+val/1221,val,OK,OK,1,,13,0
+val/1222,val,OK,OK,1,,13,0
+val/1223,val,OK,OK,1,,13,0
+val/1224,val,OK,OK,1,,13,0
+val/1225,val,OK,OK,1,,13,0
+val/1226,val,OK,OK,1,,13,0
+val/1227,val,OK,OK,1,,13,0
+val/1228,val,OK,OK,1,,13,0
+val/1229,val,OK,OK,1,,13,0
+val/1230,val,NG,NG,1,"top -5, left -4, right -2",13,0
+val/1231,val,OK,OK,1,,13,0
+val/1232,val,OK,OK,1,,13,1
+val/1233,val,OK,OK,1,,13,0
+val/1234,val,NG,NG,1,"top -5, left -4, right -2",13,0
+val/1235,val,NG,NG,1,"top -5, left -4, right -2",13,0
+val/1236,val,OK,OK,1,,13,0
+val/1237,val,NG,NG,1,"top -5, left -4, bottom -2, right -2",13,0
+val/1238,val,OK,OK,1,,13,0
+val/1239,val,OK,OK,1,,13,0
+val/1240,val,OK,OK,1,,13,0
+val/1241,val,OK,OK,1,,13,0
+val/1242,val,OK,OK,1,,13,0
+val/1243,val,OK,OK,1,,13,0
+val/1244,val,OK,OK,1,,13,0
+val/1245,val,OK,OK,1,,13,0
+val/1246,val,NG,NG,1,"top -5, left -4, right -2",13,0
+val/1247,val,OK,OK,1,,13,0
+val/1248,val,OK,OK,1,,13,0
+val/1249,val,OK,OK,1,,13,0
+val/1250,val,NG,NG,1,"top -5, left -4, right -2",13,0
+val/ano201,val,NG,NG,1,top +1,14,0
+val/ano202,val,NG,NG,1,top +1,14,0
+val/ano203,val,NG,NG,1,left +1,14,0
+val/ano204,val,NG,NG,1,left +1,14,0
+val/ano205,val,NG,NG,1,"top -5, left -4, right -2",14,0
+val/ano206,val,NG,NG,1,"top -5, left -4, right -2",14,0
+val/ano207,val,NG,NG,1,"top -5, left -4, bottom -2, right -2",14,0
+val/ano208,val,NG,NG,1,"top -5, left -4, bottom -2, right -2",14,0
+val/ano209,val,NG,NG,1,bottom -1,12,0
+val/ano210,val,NG,NG,1,bottom -1,12,0
+val/ano211,val,NG,NG,1,bottom -1,12,0
+val/ano212,val,NG,NG,1,bottom -1,12,0
+val/ano213,val,NG,NG,1,"top -5, left -4, right -2",14,0
+val/ano214,val,NG,NG,1,"top -5, left -4, right -2",14,0
+val/ano215,val,NG,NG,1,top +1,14,0
+val/ano216,val,NG,NG,1,top +1,14,0
+val/ano217,val,NG,NG,1,top +1,14,0
+val/ano218,val,NG,NG,1,top +1,14,0
+val/ano219,val,NG,NG,1,left -1,12,0
+val/ano220,val,NG,NG,1,left -1,12,0
+val/ano221,val,NG,NG,1,left -1,12,0
+val/ano222,val,NG,NG,1,left -1,12,0
+val/ano223,val,NG,NG,1,right -1,12,0
+val/ano224,val,NG,NG,1,right -1,12,0
+val/ano225,val,NG,NG,1,top +1,14,0
+val/ano226,val,NG,NG,1,top +1,14,0
+val/ano227,val,NG,NG,1,left +1,14,0
+val/ano228,val,NG,NG,1,left +1,14,0
+val/ano229,val,NG,NG,1,left +1,14,0
+val/ano230,val,NG,NG,1,left +1,14,0
+val/ano231,val,NG,NG,1,left +1,14,0
+val/ano232,val,NG,NG,1,left +1,14,0
+val/ano233,val,NG,NG,1,left +1,14,0
+val/ano234,val,NG,NG,1,left +1,14,0
+val/ano235,val,NG,NG,1,left -1,12,0
+val/ano236,val,NG,NG,1,left -1,12,0
+val/ano237,val,NG,NG,1,bottom -1,12,0
+val/ano238,val,NG,NG,1,bottom -1,12,0
+val/ano239,val,NG,NG,1,bottom -1,12,0
+val/ano240,val,NG,NG,1,bottom -1,12,0
+val/ano241,val,NG,NG,1,left +1,14,0
+val/ano242,val,NG,NG,1,left +1,14,0
+val/ano243,val,NG,NG,1,left +1,14,0
+val/ano244,val,NG,NG,1,left +1,14,0
+val/ano245,val,NG,NG,1,left +1,14,0
+val/ano246,val,NG,NG,1,left +1,14,0
+val/ano247,val,NG,NG,1,bottom +1,14,0
+val/ano248,val,NG,NG,1,bottom +1,14,0
+val/ano249,val,NG,NG,1,left -1,12,0
+val/ano250,val,NG,NG,1,left -1,12,0

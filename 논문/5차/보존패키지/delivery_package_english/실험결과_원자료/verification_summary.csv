@@ -1,0 +1,6 @@
+﻿Check,Result,Criterion,Verdict
+1 permutation,"real 100.0% vs shuffled 50.6%, p<=0.0001",p < 0.001,PASS
+2 erase all balls,0.20 detections / image,<= 0.5 per image,PASS
+3 remove one ball,"ghost 7.7%, exact counts 100.0%",ghost <= 5% and exact >= 90%,CHECK
+4 insert one ball,"found 87.4%, flip 87.4%",informational (>= 80% found),PASS
+5 global shortcut,best balanced accuracy 92.3%,<= 75% (no shortcut),CHECK

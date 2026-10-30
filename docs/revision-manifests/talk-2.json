@@ -1,0 +1,42 @@
+{
+  "stage": "발표자료 2차",
+  "previous": "발표자료 1차",
+  "files": {
+    "발표자료/2차/추계학술대회_10분발표.pdf": {
+      "bytes": 4054848,
+      "sha256": "4a17d156c3d737e06f6424e343bcbf6f11b26ce4a64617039d508448656824f9"
+    },
+    "발표자료/2차/추계학술대회_10분발표.pptx": {
+      "bytes": 22906083,
+      "sha256": "a56be240bf21da2ee23457a7c480251ac0167a3c1db252c61e1fdad96c4e3b59"
+    },
+    "원본작업자료/발표자료/2차/.chart-data-rP50bc/candidate.pptx": {
+      "bytes": 22906081,
+      "sha256": "0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105"
+    },
+    "원본작업자료/발표자료/2차/work/assemble_builder.py": {
+      "bytes": 6090,
+      "sha256": "c1ee20bd63cc4dd1ac89d63f709d5cb05dbebf79a8fc2733e5a40293741f592d"
+    },
+    "원본작업자료/발표자료/2차/work/build_presentation.mjs": {
+      "bytes": 19355,
+      "sha256": "7bdd4ec64e89988a4872067507817511ca0a7383128c9738a305777bc1bd9150"
+    },
+    "원본작업자료/발표자료/2차/work/candidate.pptx": {
+      "bytes": 23589246,
+      "sha256": "1f6b9bc37275e6a2c6122c46c15809eb14632660bebc9827d23e60495ebf9769"
+    },
+    "원본작업자료/발표자료/2차/work/first-finalized.pptx": {
+      "bytes": 22906081,
+      "sha256": "0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105"
+    },
+    "원본작업자료/발표자료/2차/work/prepare_content.py": {
+      "bytes": 16058,
+      "sha256": "ba1f5e520953ac71ceba0cab26a539d219f25de244c17c5ccb7dd11054227fb7"
+    },
+    "원본작업자료/발표자료/2차/work/prepare_revision.py": {
+      "bytes": 13761,
+      "sha256": "9f956dd067bf1d08cc6ad4bce285c00bc561cb7d69334aa49ec524cd83965a6a"
+    }
+  }
+}

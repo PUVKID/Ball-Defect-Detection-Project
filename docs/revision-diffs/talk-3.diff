@@ -1,0 +1,496 @@
+# 발표자료 2차 -> 발표자료 3차
+# 공백·주석·개행을 무시하지 않습니다. PDF 추출 텍스트는 배치·글꼴 비교를 대신하지 않습니다. 바이너리는 크기·SHA-256으로 비교합니다. ipynb의 바이너리 이미지 출력만 크기·SHA·원문 링크로 표시하며 코드·Markdown·수치·설정·그 밖의 JSON 텍스트는 전체 비교합니다.
+# 이전 발표자료/2차/추계학술대회_10분발표.pdf 4054848 4a17d156c3d737e06f6424e343bcbf6f11b26ce4a64617039d508448656824f9
+# 이전 발표자료/2차/추계학술대회_10분발표.pptx 22906083 a56be240bf21da2ee23457a7c480251ac0167a3c1db252c61e1fdad96c4e3b59
+# 이전 원본작업자료/발표자료/2차/.chart-data-rP50bc/candidate.pptx 22906081 0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105
+# 이전 원본작업자료/발표자료/2차/work/assemble_builder.py 6090 c1ee20bd63cc4dd1ac89d63f709d5cb05dbebf79a8fc2733e5a40293741f592d
+# 이전 원본작업자료/발표자료/2차/work/build_presentation.mjs 19355 7bdd4ec64e89988a4872067507817511ca0a7383128c9738a305777bc1bd9150
+# 이전 원본작업자료/발표자료/2차/work/candidate.pptx 23589246 1f6b9bc37275e6a2c6122c46c15809eb14632660bebc9827d23e60495ebf9769
+# 이전 원본작업자료/발표자료/2차/work/first-finalized.pptx 22906081 0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105
+# 이전 원본작업자료/발표자료/2차/work/prepare_content.py 16058 ba1f5e520953ac71ceba0cab26a539d219f25de244c17c5ccb7dd11054227fb7
+# 이전 원본작업자료/발표자료/2차/work/prepare_revision.py 13761 9f956dd067bf1d08cc6ad4bce285c00bc561cb7d69334aa49ec524cd83965a6a
+# 현재 발표자료/3차/추계학술대회_10분발표.pdf 4071884 2c418f9bea55f538b0fe94c1c6b5f0b6ef9ceaebf17fffa8c9ae540f3e9d802c
+# 현재 발표자료/3차/추계학술대회_10분발표.pptx 22926957 45d6582f1f77fde70fea519d2dd573f3aec03b4c78f09388da8b46732900441a
+# 현재 원본작업자료/발표자료/3차/work/assemble_builder.py 6090 c1ee20bd63cc4dd1ac89d63f709d5cb05dbebf79a8fc2733e5a40293741f592d
+# 현재 원본작업자료/발표자료/3차/work/build_presentation.mjs 20386 7be42c491627147dcfea30e4d1e115e1d258895169e85c04786f87290081e0c0
+# 현재 원본작업자료/발표자료/3차/work/candidate.pptx 23610412 6755b1005934faf9246443502523ffd0dcb176f19643b29c543a0e6987d20146
+# 현재 원본작업자료/발표자료/3차/work/design_revision.py 9921 dbaf1a66f8070bd35ec9f33056d8d2dd3cc7a62a529e2771af97de860b153367
+# 현재 원본작업자료/발표자료/3차/work/prepare_content.py 16058 ba1f5e520953ac71ceba0cab26a539d219f25de244c17c5ccb7dd11054227fb7
+# 현재 원본작업자료/발표자료/3차/work/prepare_revision.py 13761 9f956dd067bf1d08cc6ad4bce285c00bc561cb7d69334aa49ec524cd83965a6a
+--- 원본작업자료/발표자료/2차/work/build_presentation.mjs
++++ 원본작업자료/발표자료/3차/work/build_presentation.mjs
+@@ -12,7 +12,7 @@
+ GlobalFonts.registerFromPath('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf');
+ const content=JSON.parse(await fs.readFile(path.join(ROOT,'work/content.json'),'utf8'));
+ const data=JSON.parse(await fs.readFile(path.join(ROOT,'work/data.json'),'utf8'));
+-const FONT='NanumGothic',BLUE='#0A84FF',WHITE='#FFFFFF',GRAY='#BDBDC2';
++const FONT='NanumGothic',BLUE='#3B92FF',CYAN='#65D9F3',WHITE='#F7FAFF',GRAY='#AAB8CC',BG='#080D15';
+ const p=Presentation.create({slideSize:{width:1280,height:720}});
+ p.theme.defaultFont=FONT;
+ const citations={paper:'출처: 추계학술대회 논문 3차.hwp 및 results_summary.json, sweep_results.json, ms_run_results.csv. 조건별 재학습, 단일 시드 또는 표시한 세 시드 결과.',brand:'경기대학교 공식 로고: https://www.kyonggi.ac.kr/www/contents.do?key=5093'};
+@@ -20,17 +20,18 @@
+ const precisionEvidence=[];
+ function chartPayload(values){return values.map(raw=>{const shown=Number(raw.toPrecision(15));if(Math.abs(raw-shown)>1e-12||raw.toFixed(1)!==shown.toFixed(1)||raw.toFixed(2)!==shown.toFixed(2))throw new Error('원자료 대비 차트 정밀도·표시 검증 실패');precisionEvidence.push({raw,workbook:shown,absolute_error:Math.abs(raw-shown)});return shown;});}
+ function text(s,value,x,y,w,h,size=28,color=WHITE,align='left'){
++ if([76,78,80].includes(x))x=64;
+  const q=s.shapes.add({geometry:'textbox',name:value.slice(0,32),position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});
+  q.text=value;q.text.style={typeface:FONT,fontSize:size,bold:true,color,alignment:align,verticalAlignment:'top',insets:0,wrap:'square',autoFit:'none'};return q;
+ }
+-function footer(s,i){text(s,'2026 한국정보기술학회 추계 종합학술대회',76,673,1000,24,17,GRAY);text(s,String(i).padStart(2,'0'),1170,673,38,24,17,GRAY,'right');}
+-function make(i){const s=p.slides.add();s.background.fill='#000000';if(i!==1){text(s,content.slides[i-1].title,76,54,1140,72,44);footer(s,i);}s.speakerNotes.text=content.slides[i-1].spoken_script+'\n\n[출처 및 조건]\n'+citations.paper+(i===1||i===20?'\n'+citations.brand:'');return s;}
+-function line(s,v,y,color=GRAY,size=29){text(s,v,78,y,1120,72,size,color);}
++function footer(s,i){text(s,'경기대학교 컴퓨터과학과',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}
++function make(i){const s=p.slides.add();s.background.fill=BG;if(i!==1){const section=i<=3?'연구 배경':i<=9?'전처리 설계':i<=17?'실험과 성능 비교':'결론과 후속 연구';text(s,section,64,33,1152,25,16,CYAN);text(s,content.slides[i-1].title,64,77,1152,72,46);footer(s,i);}s.speakerNotes.text=content.slides[i-1].spoken_script+'\n\n[출처 및 조건]\n'+citations.paper+(i===1||i===20?'\n'+citations.brand:'');return s;}
++function line(s,v,y,color=GRAY,size=29){text(s,v,64,y,1152,72,size,color);}
+ function chart(s,slideNo,names,series,pos,options={}){
+- const c=s.charts.add('bar',{position:pos,categories:names,series:series.map((q,i)=>({name:q.name,values:chartPayload(q.values),fill:q.color??[BLUE,'#FFFFFF','#6B6B73'][i],valuesFormatCode:'0.00'})),barOptions:{direction:options.horizontal?'bar':'column',grouping:'clustered',gapWidth:options.gap??55},hasLegend:series.length>1,legend:{position:'bottom',overlay:false,textStyle:{fontSize:options.legendSize??19,bold:true,fill:WHITE}},chartFill:'none',plotAreaFill:'none',chartLine:{fill:'none',width:0},plotAreaLine:{fill:'none',width:0},xAxis:{visible:true,min:0,max:100,numberFormatCode:'0',textStyle:{fontSize:options.categorySize??21,bold:true,fill:WHITE},line:{fill:'#555555',width:1},majorGridlines:null},yAxis:{visible:true,min:0,max:100,majorUnit:20,numberFormatCode:'0',textStyle:{fontSize:20,bold:true,fill:WHITE},line:{fill:'none',width:0},majorGridlines:{fill:'#333333',width:1}},dataLabels:{showValue:options.labels!==false,position:'outEnd',numberFormatCode:'0.00',textStyle:{fontSize:options.labelSize??21,bold:true,fill:WHITE}}});
++ const c=s.charts.add('bar',{position:pos,categories:names,series:series.map((q,i)=>({name:q.name,values:chartPayload(q.values),fill:q.color??[BLUE,CYAN,'#7D91AD'][i],points:slideNo===11?names.map((name,idx)=>({idx,fill:name==='Original'?'#D8E3F3':name==='Gamma 0.3'?CYAN:BLUE})):undefined,valuesFormatCode:'0.00'})),barOptions:{direction:options.horizontal?'bar':'column',grouping:'clustered',gapWidth:options.gap??55},hasLegend:series.length>1,legend:{position:'bottom',overlay:false,textStyle:{fontSize:options.legendSize??19,bold:true,fill:WHITE}},chartFill:'none',plotAreaFill:'none',chartLine:{fill:'none',width:0},plotAreaLine:{fill:'none',width:0},xAxis:{visible:true,min:0,max:100,numberFormatCode:'0',textStyle:{fontSize:options.categorySize??21,bold:true,fill:WHITE},line:{fill:'#52647D',width:1},majorGridlines:null},yAxis:{visible:true,min:0,max:100,majorUnit:20,numberFormatCode:'0',textStyle:{fontSize:20,bold:true,fill:WHITE},line:{fill:'none',width:0},majorGridlines:{fill:'#283545',width:1}},dataLabels:{showValue:options.labels!==false,position:'outEnd',numberFormatCode:'0.00',textStyle:{fontSize:options.labelSize??21,bold:true,fill:WHITE}}});
+  applyPresentationChartFont(c,{fontFamily:FONT});chartEvidence.push({slide:slideNo,categories:names,series:series.map(x=>({name:x.name,values:chartPayload(x.values)}))});return c;
+ }
+-async function logo(s,x,y,w){const image=await fs.readFile(path.join(ROOT,'work/brand/kyonggi_signature.png'));s.shapes.add({geometry:'rect',name:'공식 마크 흰색 바탕',position:{left:x-8,top:y-5,width:w+16,height:w*168/603+10},fill:'#FFFFFF',line:{fill:'none',width:0}});s.images.add({blob:image.buffer.slice(image.byteOffset,image.byteOffset+image.byteLength),contentType:'image/png',alt:'경기대학교 공식 마크',fit:'contain',position:{left:x,top:y,width:w,height:w*168/603}});}
++async function logo(s,x,y,w){const meta=JSON.parse(await fs.readFile(path.join(ROOT,'evidence/logo_asset.json'),'utf8'));const image=await fs.readFile(path.join(ROOT,meta.local_path));s.images.add({blob:image.buffer.slice(image.byteOffset,image.byteOffset+image.byteLength),contentType:'image/png',alt:'경기대학교 공식 투명 마크',fit:'contain',position:{left:x,top:y,width:w,height:w*meta.height/meta.width}});}
+ 
+ 
+ const photoManifest=JSON.parse(await fs.readFile(path.join(ROOT,'evidence/photo_manifest.json'),'utf8'));
+@@ -39,25 +40,25 @@
+  if(!meta)throw new Error('사진 출처 누락: '+file);
+  const image=await fs.readFile(meta.local_path);
+  s.images.add({blob:image.buffer.slice(image.byteOffset,image.byteOffset+image.byteLength),contentType:'image/png',alt:label+' 실제 저장 연구 사진',fit:'contain',crop:meta.native_crop,position:{left:x,top:y,width:w,height:h}});
+- text(s,label,x,labelY,w,55,26,WHITE,'center');
++ text(s,label,x,labelY,w,52,25,WHITE,'left');
+  s.speakerNotes.text+='\n사진 출처: '+meta.container_source+'\nSHA-256: '+meta.sha256+'\n코드: save_filter_example(cell 32), 동일 원장면 선택 cell 36. 오른쪽 패널을 네이티브 자르기로 표시하며 PNG 원본 바이트를 보존했습니다.';
+ }
+ async function photoSlide(i,items,caption){
+- const s=make(i);text(s,caption,78,149,1120,75,25,GRAY);
++ const s=make(i);text(s,caption,64,166,1152,42,24,GRAY);
+  for(let j=0;j<items.length;j++){
+-  const [file,label,param]=items[j];const x=76+390*j;
+-  await sourcePhoto(s,i,file,label,x,251,350,280,551);
+-  if(param)text(s,param,x,606,350,43,21,GRAY,'center');
++  const [file,label,param]=items[j];const x=64+396*j;
++  await sourcePhoto(s,i,file,label,x,238,360,288,549);
++  if(param)text(s,param,x,598,360,46,20,GRAY,'left');
+  }
+  s.speakerNotes.text+='\n조건: 동일 원장면 1001.png의 필터 효과를 보여주는 한 장의 예시입니다. 사진 자체는 검출 예측 결과가 아니며 정량 성능은 전체 500장 평가에 근거합니다.';
+ }
+ {
+- const s=make(1);text(s,'2026 FALL CONFERENCE',78,75,900,26,19,BLUE);
+- text(s,'YOLOv8n 기반 볼 검출을 위한\n단일 및 복합 전처리 필터의 성능 비교',76,161,1136,150,47);
+- text(s,'Performance Comparison of Single and Combined Preprocessing Filters\nfor YOLOv8n-Based Ball Detection',78,334,1090,68,23,GRAY);
+- text(s,'곽윤석 · 김남기 (교신저자)',78,470,900,42,28);
+- text(s,'경기대학교 컴퓨터과학과',78,523,850,32,23,GRAY);
+- await logo(s,78,592,235);
++ const s=make(1);text(s,'2026 FALL CONFERENCE',64,64,1090,30,20,CYAN);
++ text(s,'YOLOv8n 기반 볼 검출을 위한\n단일 및 복합 전처리 필터의 성능 비교',64,172,1152,153,50);
++ text(s,'Performance Comparison of Single and Combined Preprocessing Filters\nfor YOLOv8n-Based Ball Detection',64,354,1120,68,22,GRAY);
++ text(s,'곽윤석 · 김남기 (교신저자)',64,499,900,42,27);
++ text(s,'경기대학교 컴퓨터과학과',64,548,850,32,22,GRAY);
++ await logo(s,934,548,282);
+ }
+ {
+ const s=make(2);text(s,'어떤 현장 영상이 들어올지 모르는 상황',78,170,1120,60,37,BLUE);
+@@ -87,41 +88,41 @@
+ text(s,'누락·추가 검출 없는 영상의 비율\n중심 거리 기반 일대일 대응\nconfidence 0.25 / NMS IoU 0.5',671,420,540,153,27,GRAY);
+ }
+ {
+-const s=make(11);text(s,'mAP50-95 (%)  /  Clean  /  Seed 42',78,133,1110,34,23,GRAY);
++const s=make(11);text(s,'mAP50-95 (%)  /  Clean  /  Seed 42',64,157,1152,34,21,GRAY);
+ const names=['Original','Invert','Otsu Threshold','Solarize','Histogram Eq.','CLAHE (max)','Gamma 0.3','Gaussian Blur','Sobel Edges','Emboss','Unsharp (max)'];
+-chart(s,11,names,[{name:'mAP50-95',values:data.single.map(x=>x.map50_95)}],{left:62,top:182,width:1130,height:405},{horizontal:true,categorySize:20,labelSize:20,gap:35});
+-text(s,'Gamma 0.3 96.70%     Original 96.53%     차이 +0.17%p',78,603,1130,40,28,BLUE);
++chart(s,11,names,[{name:'mAP50-95',values:data.single.map(x=>x.map50_95)}],{left:50,top:206,width:1170,height:385},{horizontal:true,categorySize:20,labelSize:20,gap:35});
++text(s,'Gamma 0.3 96.70%     Original 96.53%     차이 +0.17%p',64,618,1152,42,27,CYAN);
+ }
+ {
+-const s=make(12);text(s,'mAP50-95 (%)  /  Clean  /  Seed 42',78,133,1110,34,23,GRAY);
++const s=make(12);text(s,'mAP50-95 (%)  /  Clean  /  Seed 42',64,157,1152,34,21,GRAY);
+ const better=['Original','CLAHE (max)','Gaussian Blur (max)','Sobel Edges','Histogram Equalization','Sobel Edges'].map(n=>data.single.find(x=>x.name===n).map50_95);
+-chart(s,12,['Original','Invert+\nCLAHE','Blur+\nOtsu','Sobel+\nInvert','HistEq+\nEmboss','Unsharp+\nSobel'],[{name:'Combination / baseline',values:data.combo.map(x=>x.map50_95)},{name:'Better component',values:better,color:'#85858C'}],{left:75,top:190,width:1135,height:381},{categorySize:21,labelSize:20,gap:55});
+-text(s,'5개 조합 모두 더 우수한 구성 필터의 mAP를 넘지 못함',78,608,1120,40,28,BLUE);
++chart(s,12,['Original','Invert+\nCLAHE','Blur+\nOtsu','Sobel+\nInvert','HistEq+\nEmboss','Unsharp+\nSobel'],[{name:'Combination / baseline',values:data.combo.map(x=>x.map50_95)},{name:'Better component',values:better,color:'#7D91AD'}],{left:64,top:207,width:1152,height:375},{categorySize:21,labelSize:20,gap:55});
++text(s,'5개 조합 모두 더 우수한 구성 필터의 mAP를 넘지 못함',64,618,1152,42,27,CYAN);
+ }
+ {
+-const s=make(13);text(s,'Clean / Seed 42',78,133,1110,34,23,GRAY);
++const s=make(13);text(s,'Clean / Seed 42',64,157,1152,34,21,GRAY);
+ const selected=['Original','Gamma 0.3','CLAHE (max)','Invert+CLAHE'].map(n=>[...data.single,...data.combo].find(x=>x.name===n));
+-chart(s,13,['Original','Gamma 0.3','CLAHE (max)','Invert+CLAHE'],[{name:'mAP50-95 (%)',values:selected.map(x=>x.map50_95)},{name:'Strict detection accuracy (%)',values:selected.map(x=>x.strict_acc),color:'#FFFFFF'}],{left:75,top:197,width:1135,height:375},{categorySize:23,labelSize:22,gap:70});
+-text(s,'대응 기준과 추론 임계값이 달라 지표별 해석이 필요',78,608,1120,40,28,BLUE);
++chart(s,13,['Original','Gamma 0.3','CLAHE (max)','Invert+CLAHE'],[{name:'mAP50-95 (%)',values:selected.map(x=>x.map50_95)},{name:'Strict detection accuracy (%)',values:selected.map(x=>x.strict_acc),color:CYAN}],{left:64,top:207,width:1152,height:375},{categorySize:23,labelSize:22,gap:70});
++text(s,'대응 기준과 추론 임계값이 달라 지표별 해석이 필요',64,618,1152,42,27,CYAN);
+ }
+ 
+ await photoSlide(14,[['noise_std_40_example.png','Noise input','Noise std=40'],['gaussian_blur__max____noise_40_example.png','Gaussian Blur (max)','Noise std=40 후 필터 적용'],['emboss___noise_40_example.png','Emboss','Noise std=40 후 필터 적용']],'Noise std=40을 추가한 동일 원장면의 저장 예시');
+ await photoSlide(15,[['noise_std_80_example.png','Noise input','Noise std=80'],['gaussian_blur__max____noise_80_example.png','Gaussian Blur (max)','Noise std=80 후 필터 적용'],['emboss___noise_80_example.png','Emboss','Noise std=80 후 필터 적용']],'Noise std=80을 추가한 동일 원장면의 저장 예시');
+ {
+-const s=make(16);text(s,'mAP50-95 (%)  /  Seed 42',78,133,1110,34,23,GRAY);
++const s=make(16);text(s,'mAP50-95 (%)  /  Seed 42',64,157,1152,34,21,GRAY);
+ const names=['Original','Invert','Otsu Threshold','Solarize','Histogram Equalization','CLAHE (max)','Gamma 0.3','Gaussian Blur (max)','Sobel Edges','Emboss','Unsharp (max)'];
+ const vals=[['Filter','Clean','Noise std=40','Noise std=80'],...names.map((n,i)=>[n,...data.noise[i].map(x=>x.toFixed(1))])];
+-const t=s.tables.add({rows:12,columns:4,left:78,top:185,width:1125,height:408,columnWidths:[465,220,220,220],values:vals});
+-t.borders.assign({fill:'#000000',width:2});
++const t=s.tables.add({rows:12,columns:4,left:64,top:198,width:1152,height:408,columnWidths:[456,232,232,232],values:vals});
++t.borders.assign({fill:BG,width:2});
+ t.cells.block({row:0,column:0,rowCount:12,columnCount:4}).assign({margins:{top:0,bottom:0,left:5,right:5}});
+-for(let r=0;r<12;r++){t.rows[r].height=34;for(let c=0;c<4;c++){const ce=t.getCell(r,c);ce.text.style={typeface:FONT,fontSize:22,bold:true,color:WHITE,alignment:c?'center':'left',verticalAlignment:'middle',insets:3};ce.fill='#000000';if(r&&c){const v=data.noise[r-1][c-1]/100;ce.fill=`#${[Math.round(10+0*v),Math.round(23+v*92),Math.round(48+v*150)].map(x=>x.toString(16).padStart(2,'0')).join('')}`;}}}
+-text(s,'Gaussian Blur: 잡음 조건 최고     Emboss: 잡음에서 큰 성능 저하',78,627,1130,39,25,BLUE);
++for(let r=0;r<12;r++){t.rows[r].height=34;for(let c=0;c<4;c++){const ce=t.getCell(r,c);ce.text.style={typeface:FONT,fontSize:22,bold:true,color:WHITE,alignment:c?'center':'left',verticalAlignment:'middle',insets:3};ce.fill=BG;if(r&&c){const v=data.noise[r-1][c-1]/100;ce.fill=`#${[Math.round(8+v*8),Math.round(20+v*95),Math.round(40+v*147)].map(x=>x.toString(16).padStart(2,'0')).join('')}`;}}}
++text(s,'Gaussian Blur: 잡음 조건 최고     Emboss: 잡음에서 큰 성능 저하',64,633,1152,37,24,CYAN);
+ }
+ {
+-const s=make(17);text(s,'반복: Seed 42, 43, 44  /  평균 ± 표본 표준편차',78,133,1120,34,23,GRAY);
++const s=make(17);text(s,'반복: Seed 42, 43, 44  /  평균 ± 표본 표준편차',64,157,1152,34,21,GRAY);
+ const keys=Object.keys(data.repeat);const nk=keys.find(x=>x.includes('80')&&x.endsWith('/Original')).split('/')[0];
+ function repeatChart(cond,metric,names,pos,slideNo){
+-const c=s.charts.add('line',{position:pos,categories:['Seed 42','Seed 43','Seed 44'],series:names.map((n,i)=>({name:n,values:chartPayload(data.repeat[cond+'/'+n].map(x=>x[metric])),smooth:false,line:{fill:i?'#FFFFFF':BLUE,width:3},marker:{symbol:'circle',size:9,fill:i?'#FFFFFF':BLUE},valuesFormatCode:'0.00'})),hasLegend:true,legend:{position:'bottom',textStyle:{fontSize:20,bold:true,fill:WHITE}},chartFill:'none',plotAreaFill:'none',xAxis:{textStyle:{fontSize:20,fill:WHITE,bold:true},line:{fill:'#555555'}},yAxis:{min:metric==='strict_acc'?90:78,max:metric==='strict_acc'?100:85,majorUnit:metric==='strict_acc'?2:1,numberFormatCode:'0',textStyle:{fontSize:19,bold:true,fill:WHITE},majorGridlines:{fill:'#333333',width:1}},dataLabels:{showValue:false}});applyPresentationChartFont(c,{fontFamily:FONT});chartEvidence.push({slide:slideNo,categories:['Seed 42','Seed 43','Seed 44'],series:names.map(n=>({name:n,values:chartPayload(data.repeat[cond+'/'+n].map(x=>x[metric]))}))});}
++const c=s.charts.add('line',{position:pos,categories:['Seed 42','Seed 43','Seed 44'],series:names.map((n,i)=>({name:n,values:chartPayload(data.repeat[cond+'/'+n].map(x=>x[metric])),smooth:false,line:{fill:i?CYAN:BLUE,width:3.5},marker:{symbol:'circle',size:9,fill:i?CYAN:BLUE},valuesFormatCode:'0.00'})),hasLegend:true,legend:{position:'bottom',textStyle:{fontSize:20,bold:true,fill:WHITE}},chartFill:'none',plotAreaFill:'none',xAxis:{textStyle:{fontSize:20,fill:WHITE,bold:true},line:{fill:'#52647D'}},yAxis:{min:metric==='strict_acc'?90:78,max:metric==='strict_acc'?100:85,majorUnit:metric==='strict_acc'?2:1,numberFormatCode:'0',textStyle:{fontSize:19,bold:true,fill:WHITE},majorGridlines:{fill:'#283545',width:1}},dataLabels:{showValue:false}});applyPresentationChartFont(c,{fontFamily:FONT});chartEvidence.push({slide:slideNo,categories:['Seed 42','Seed 43','Seed 44'],series:names.map(n=>({name:n,values:chartPayload(data.repeat[cond+'/'+n].map(x=>x[metric]))}))});}
+ text(s,'Clean / Strict detection accuracy (%)',78,191,550,41,23);text(s,'Noise std=80 / mAP50-95 (%)',691,191,520,41,23);
+ repeatChart('normal','strict_acc',['Original','Invert+CLAHE'],{left:72,top:239,width:538,height:302},17);
+ repeatChart(nk,'map50_95',['Original','Gaussian Blur (max)'],{left:684,top:239,width:535,height:302},17);
+@@ -143,11 +144,11 @@
+ line(s,'독립 촬영 자료와 내부 그룹 분리를 통한 후속 검증',493,GRAY,28);
+ }
+ {
+-const s=p.slides.add();s.background.fill='#000000';
+-text(s,'감사합니다',76,199,1130,150,94,WHITE);
+-text(s,'질의응답',80,392,1130,65,35,BLUE);
+-text(s,'곽윤석 · 김남기',80,493,1050,45,27,GRAY);
+-await logo(s,80,574,260);footer(s,20);
++const s=p.slides.add();s.background.fill=BG;
++text(s,'감사합니다',64,192,1152,156,100,WHITE);
++text(s,'질의응답',64,389,1152,65,34,CYAN);
++text(s,'곽윤석 · 김남기',64,540,850,45,27,GRAY);
++await logo(s,934,548,282);footer(s,20);
+ s.speakerNotes.text=content.slides[19].spoken_script+'\n\n[출처]\n'+citations.brand;
+ }
+ await fs.writeFile(path.join(ROOT,'evidence/chart_data.json'),JSON.stringify(chartEvidence,null,2));
+@@ -164,4 +165,11 @@
+ await fs.mkdir(path.join(ROOT,'결과/글꼴'),{recursive:true});
+ await fs.copyFile('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf',path.join(ROOT,'결과/글꼴/NanumGothicBold.ttf'));
+ await fs.copyFile('C:/Users/PUVKID/Documents/Codex/2026-10-13/x20/work/NanumGothic-LICENSE.txt',path.join(ROOT,'결과/글꼴/NanumGothic-LICENSE.txt'));
++const logoOutput=path.join(ROOT,'결과/학교마크');await fs.mkdir(logoOutput,{recursive:true});
++const logoMeta=JSON.parse(await fs.readFile(path.join(ROOT,'evidence/logo_asset.json'),'utf8'));
++await fs.copyFile(path.join(ROOT,logoMeta.local_path),path.join(logoOutput,'경기대학교_투명마크.png'));
++await fs.copyFile(path.join(ROOT,'work/brand/kyonggi_signature_white.svg'),path.join(logoOutput,'경기대학교_투명마크.svg'));
++await fs.copyFile(path.join(ROOT,'work/brand/official_1947/logo_1947_01.ai'),path.join(logoOutput,'경기대학교_공식원본.ai'));
++await fs.copyFile(path.join(ROOT,'work/brand/kyonggi_signature_official_vector.svg'),path.join(logoOutput,'경기대학교_공식원본.svg'));
++await fs.writeFile(path.join(logoOutput,'마크_출처.json'),JSON.stringify(logoMeta,null,2),'utf8');
+ console.log(JSON.stringify(result));
+Binary files 원본작업자료/발표자료/2차/.chart-data-rP50bc/candidate.pptx and 원본작업자료/발표자료/3차/work/candidate.pptx differ
+Binary files 원본작업자료/발표자료/2차/work/candidate.pptx and /dev/null differ
+--- /dev/null
++++ 원본작업자료/발표자료/3차/work/design_revision.py
+@@ -0,0 +1,104 @@
++import hashlib
++import json
++import shutil
++from pathlib import Path
++
++ROOT=Path(__file__).resolve().parents[1]
++PREVIOUS=ROOT.parent/'2차'
++
++# 과거 차수는 입력으로만 읽고, 새 차수의 작업 경로를 명시적으로 갱신합니다.
++for filename in ['photo_manifest.json','content_sources.json']:
++    document=json.loads((PREVIOUS/'evidence'/filename).read_text(encoding='utf-8'))
++    def relocate(value):
++        if isinstance(value,str):return value.replace(str(PREVIOUS),str(ROOT)).replace(PREVIOUS.as_posix(),ROOT.as_posix())
++        if isinstance(value,list):return [relocate(v) for v in value]
++        if isinstance(value,dict):return {k:relocate(v) for k,v in value.items()}
++        return value
++    (ROOT/'evidence'/filename).write_text(json.dumps(relocate(document),ensure_ascii=False,indent=2),encoding='utf-8')
++shutil.copyfile(PREVIOUS/'결과/10분_발표대본.txt',ROOT/'결과/10분_발표대본.txt')
++out=ROOT/'결과/사용이미지'
++out.mkdir(parents=True,exist_ok=True)
++photos=json.loads((ROOT/'evidence/photo_manifest.json').read_text(encoding='utf-8'))
++for name in {x['file'] for x in photos['photos']}:shutil.copyfile(ROOT/'work/source_photos'/name,out/name)
++(out/'이미지_출처.json').write_text(json.dumps(photos,ensure_ascii=False,indent=2),encoding='utf-8')
++preserved=json.loads((ROOT/'evidence/preserved_inputs.json').read_text(encoding='utf-8'))
++for item in preserved['files']:
++    if str(PREVIOUS/'work') in item['path']:
++        item['path']=item['path'].replace(str(PREVIOUS/'work'),str(ROOT/'work'))
++for rel in ['결과/추계학술대회_10분발표.pptx','결과/10분_발표대본.txt']:
++    path=PREVIOUS/rel
++    if not any(x['path']==str(path) for x in preserved['files']):
++        preserved['files'].append({'path':str(path),'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'purpose':'이전 차수 납품본 보존 확인용 읽기 전용 입력'})
++(ROOT/'evidence/preserved_inputs.json').write_text(json.dumps(preserved,ensure_ascii=False,indent=2),encoding='utf-8')
++
++source=(PREVIOUS/'work/build_presentation.mjs').read_text(encoding='utf-8')
++source=source.replace("const FONT='NanumGothic',BLUE='#0A84FF',WHITE='#FFFFFF',GRAY='#BDBDC2';", "const FONT='NanumGothic',BLUE='#3B92FF',CYAN='#65D9F3',WHITE='#F7FAFF',GRAY='#AAB8CC',BG='#080D15';")
++source=source.replace("s.background.fill='#000000'", "s.background.fill=BG")
++source=source.replace("t.borders.assign({fill:'#000000'", "t.borders.assign({fill:BG")
++source=source.replace("ce.fill='#000000'", "ce.fill=BG")
++source=source.replace("fill:'#333333'", "fill:'#283545'").replace("fill:'#555555'", "fill:'#52647D'")
++
++# 공통 좌측 기준선과 본문 서식을 모든 슬라이드에서 동일하게 유지합니다.
++source=source.replace(" const q=s.shapes.add({", " if([76,78,80].includes(x))x=64;\n const q=s.shapes.add({",1)
++old_footer="function footer(s,i){text(s,'2026 한국정보기술학회 추계 종합학술대회',76,673,1000,24,17,GRAY);text(s,String(i).padStart(2,'0'),1170,673,38,24,17,GRAY,'right');}"
++new_footer="function footer(s,i){text(s,'경기대학교 컴퓨터과학과',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}"
++assert old_footer in source
++source=source.replace(old_footer,new_footer)
++old_make="function make(i){const s=p.slides.add();s.background.fill=BG;if(i!==1){text(s,content.slides[i-1].title,76,54,1140,72,44);footer(s,i);}s.speakerNotes.text=content.slides[i-1].spoken_script+'\\n\\n[출처 및 조건]\\n'+citations.paper+(i===1||i===20?'\\n'+citations.brand:'');return s;}"
++new_make="function make(i){const s=p.slides.add();s.background.fill=BG;if(i!==1){const section=i<=3?'연구 배경':i<=9?'전처리 설계':i<=17?'실험과 성능 비교':'결론과 후속 연구';text(s,section,64,33,1152,25,16,CYAN);text(s,content.slides[i-1].title,64,77,1152,72,46);footer(s,i);}s.speakerNotes.text=content.slides[i-1].spoken_script+'\\n\\n[출처 및 조건]\\n'+citations.paper+(i===1||i===20?'\\n'+citations.brand:'');return s;}"
++assert old_make in source
++source=source.replace(old_make,new_make)
++source=source.replace("function line(s,v,y,color=GRAY,size=29){text(s,v,78,y,1120,72,size,color);}","function line(s,v,y,color=GRAY,size=29){text(s,v,64,y,1152,72,size,color);}")
++
++# 사진은 원본 비율과 네이티브 자르기를 유지하고, 라벨·설명만 정렬합니다.
++source=source.replace("text(s,label,x,labelY,w,55,26,WHITE,'center');", "text(s,label,x,labelY,w,52,25,WHITE,'left');")
++source=source.replace("text(s,caption,78,149,1120,75,25,GRAY)","text(s,caption,64,166,1152,42,24,GRAY)")
++source=source.replace("const x=76+390*j;", "const x=64+396*j;")
++source=source.replace("file,label,x,251,350,280,551", "file,label,x,238,360,288,549")
++source=source.replace("text(s,param,x,606,350,43,21,GRAY,'center')", "text(s,param,x,598,360,46,20,GRAY,'left')")
++
++# 차트의 색상과 보조 축 대비를 같은 계열로 통일합니다. 수치는 변경하지 않습니다.
++source=source.replace("[BLUE,'#FFFFFF','#6B6B73']", "[BLUE,CYAN,'#7D91AD']")
++source=source.replace("fill:q.color??[BLUE,CYAN,'#7D91AD'][i],valuesFormatCode", "fill:q.color??[BLUE,CYAN,'#7D91AD'][i],points:slideNo===11?names.map((name,idx)=>({idx,fill:name==='Original'?'#D8E3F3':name==='Gamma 0.3'?CYAN:BLUE})):undefined,valuesFormatCode")
++source=source.replace("color:'#85858C'", "color:'#7D91AD'").replace("color:'#FFFFFF'", "color:CYAN")
++source=source.replace("fill:i?'#FFFFFF':BLUE", "fill:i?CYAN:BLUE")
++source=source.replace("width:3},marker", "width:3.5},marker")
++source=source.replace("',78,133,1110,34,23,GRAY)","',64,157,1152,34,21,GRAY)")
++source=source.replace("',78,133,1120,34,23,GRAY)","',64,157,1152,34,21,GRAY)")
++source=source.replace("{left:62,top:182,width:1130,height:405}","{left:50,top:206,width:1170,height:385}")
++source=source.replace("{left:75,top:190,width:1135,height:381}","{left:64,top:207,width:1152,height:375}")
++source=source.replace("{left:75,top:197,width:1135,height:375}","{left:64,top:207,width:1152,height:375}")
++source=source.replace("',78,603,1130,40,28,BLUE)","',64,618,1152,42,27,CYAN)")
++source=source.replace("',78,608,1120,40,28,BLUE)","',64,618,1152,42,27,CYAN)")
++source=source.replace("',78,627,1130,39,25,BLUE)","',64,633,1152,37,24,CYAN)")
++source=source.replace("left:78,top:185,width:1125,height:408,columnWidths:[465,220,220,220]", "left:64,top:198,width:1152,height:408,columnWidths:[456,232,232,232]")
++source=source.replace("Math.round(10+0*v),Math.round(23+v*92),Math.round(48+v*150)","Math.round(8+v*8),Math.round(20+v*95),Math.round(40+v*147)")
++
++# 표지와 마지막 장의 여백을 넓히고 로고는 공식 투명 자산으로만 넣습니다.
++source=source.replace("text(s,'2026 FALL CONFERENCE',78,75,900,26,19,BLUE)","text(s,'2026 FALL CONFERENCE',64,64,1090,30,20,CYAN)")
++source=source.replace("',76,161,1136,150,47)","',64,172,1152,153,50)")
++source=source.replace("',78,334,1090,68,23,GRAY)","',64,354,1120,68,22,GRAY)")
++source=source.replace("',78,470,900,42,28)","',64,499,900,42,27)")
++source=source.replace("',78,523,850,32,23,GRAY)","',64,548,850,32,22,GRAY)")
++source=source.replace("await logo(s,78,592,235)","await logo(s,934,548,282)")
++source=source.replace("text(s,'감사합니다',76,199,1130,150,94,WHITE)","text(s,'감사합니다',64,192,1152,156,100,WHITE)")
++source=source.replace("text(s,'질의응답',80,392,1130,65,35,BLUE)","text(s,'질의응답',64,389,1152,65,34,CYAN)")
++source=source.replace("text(s,'곽윤석 · 김남기',80,493,1050,45,27,GRAY)","text(s,'곽윤석 · 김남기',64,540,850,45,27,GRAY)")
++source=source.replace("await logo(s,80,574,260)","await logo(s,934,548,282)")
++start=source.index('async function logo(')
++end=source.index('\n',start)
++source=source[:start]+"async function logo(s,x,y,w){const meta=JSON.parse(await fs.readFile(path.join(ROOT,'evidence/logo_asset.json'),'utf8'));const image=await fs.readFile(path.join(ROOT,meta.local_path));s.images.add({blob:image.buffer.slice(image.byteOffset,image.byteOffset+image.byteLength),contentType:'image/png',alt:'경기대학교 공식 투명 마크',fit:'contain',position:{left:x,top:y,width:w,height:w*meta.height/meta.width}});}"+source[end:]
++source=source.replace("console.log(JSON.stringify(result));",r'''const logoOutput=path.join(ROOT,'결과/학교마크');await fs.mkdir(logoOutput,{recursive:true});
++const logoMeta=JSON.parse(await fs.readFile(path.join(ROOT,'evidence/logo_asset.json'),'utf8'));
++await fs.copyFile(path.join(ROOT,logoMeta.local_path),path.join(logoOutput,'경기대학교_투명마크.png'));
++await fs.copyFile(path.join(ROOT,'work/brand/kyonggi_signature_white.svg'),path.join(logoOutput,'경기대학교_투명마크.svg'));
++await fs.copyFile(path.join(ROOT,'work/brand/official_1947/logo_1947_01.ai'),path.join(logoOutput,'경기대학교_공식원본.ai'));
++await fs.copyFile(path.join(ROOT,'work/brand/kyonggi_signature_official_vector.svg'),path.join(logoOutput,'경기대학교_공식원본.svg'));
++await fs.writeFile(path.join(logoOutput,'마크_출처.json'),JSON.stringify(logoMeta,null,2),'utf8');
++console.log(JSON.stringify(result));''')
++
++# 모든 차수의 검사 및 납품 경로는 새 프로젝트를 기준으로 계산합니다.
++(ROOT/'work/build_presentation.mjs').write_text(source,encoding='utf-8')
++record={'background':'#080D15','main_accent':'#3B92FF','secondary_accent':'#65D9F3','font':'NanumGothic Bold','content_sha256':hashlib.sha256((ROOT/'work/content.json').read_bytes()).hexdigest(),'script_sha256':hashlib.sha256((ROOT/'결과/10분_발표대본.txt').read_bytes()).hexdigest(),'previous_script_identical':(ROOT/'결과/10분_발표대본.txt').read_bytes()==(PREVIOUS/'결과/10분_발표대본.txt').read_bytes()}
++(ROOT/'evidence/design_changes.json').write_text(json.dumps(record,ensure_ascii=False,indent=2),encoding='utf-8')
++print('3차 디자인 빌더와 작업 경로 갱신 완료')
+Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and /dev/null differ
+--- 발표자료/2차/추계학술대회_10분발표.pdf
++++ 발표자료/3차/추계학술대회_10분발표.pdf
+@@ -8,8 +8,9 @@
+ 경기대학교 컴퓨터과학과
+ 
+ === 2쪽 ===
++연구 배경
+ 현장 영상의 변화와 연구 질문
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 02
+ 어떤 현장 영상이 들어올지 모르는 상황
+ 밝기·대비·잡음과 경계 표현의 변화
+@@ -18,8 +19,9 @@
+ 비교 범위: 일반 영상과 합성 가우시안 잡음
+ 
+ === 3쪽 ===
++연구 배경
+ 데이터와 그룹 기반 평가
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 03
+ 500장
+ 368개 유사 영상 그룹
+@@ -31,8 +33,9 @@
+ 실제 입력 영상 예시
+ 
+ === 4쪽 ===
++전처리 설계
+ 단일 필터 영상 1: 반전과 이진화
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 04
+ 동일 원장면에서 비교한 변환 예시
+ Original
+@@ -44,8 +47,9 @@
+ 자동 임계값 이진화
+ 
+ === 5쪽 ===
++전처리 설계
+ 단일 필터 영상 2: 밝기와 대비
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 05
+ 밝기 분포와 대비를 바꾸는 변환
+ Solarize
+@@ -56,8 +60,9 @@
+ clip limit 40 / grid 16×16
+ 
+ === 6쪽 ===
++전처리 설계
+ 단일 필터 영상 3: 평활화와 경계
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 06
+ 실제 코드의 고정 파라미터를 적용한 예시
+ Gamma 0.3
+@@ -68,8 +73,9 @@
+ 정규화한 경계 응답의 제곱근
+ 
+ === 7쪽 ===
++전처리 설계
+ 단일 필터 영상 4: 음영과 선명화
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 07
+ 음영·선명화 변환과 원본 비교
+ Emboss
+@@ -80,8 +86,9 @@
+ 비교를 위한 원본 재제시
+ 
+ === 8쪽 ===
++전처리 설계
+ 순차 조합 영상 1
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 08
+ A+B는 A의 출력 영상에 B를 순차적으로 적용
+ Invert+CLAHE
+@@ -92,8 +99,9 @@
+ 경계 응답 후 반전
+ 
+ === 9쪽 ===
++전처리 설계
+ 순차 조합 영상 2
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 09
+ 역순·가능한 전체 조합은 평가 범위에 포함하지 않음
+ HistEq+Emboss
+@@ -104,8 +112,9 @@
+ 비교를 위한 원본 재제시
+ 
+ === 10쪽 ===
++실험과 성능 비교
+ 조건별 학습과 두 평가 지표
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 10
+ 조건별 YOLOv8n 재학습
+ 최대 30 epochs     imgsz 1280     batch 8     patience 15
+@@ -119,8 +128,9 @@
+ confidence 0.25 / NMS IoU 0.5
+ 
+ === 11쪽 ===
++실험과 성능 비교
+ 일반 영상의 단일 필터 성능
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 11
+ mAP50-95 (%)  /  Clean  /  Seed 42
+ Original
+@@ -154,8 +164,9 @@
+ Gamma 0.3 96.70%     Original 96.53%     차이 +0.17%p
+ 
+ === 12쪽 ===
++실험과 성능 비교
+ 복합 필터와 구성 필터 비교
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 12
+ mAP50-95 (%)  /  Clean  /  Seed 42
+ Original
+@@ -192,8 +203,9 @@
+ 5개 조합 모두 더 우수한 구성 필터의 mAP를 넘지 못함
+ 
+ === 13쪽 ===
++실험과 성능 비교
+ 평가 지표에 따른 순위 차이
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 13
+ Clean / Seed 42
+ Original
+@@ -219,8 +231,9 @@
+ 대응 기준과 추론 임계값이 달라 지표별 해석이 필요
+ 
+ === 14쪽 ===
++실험과 성능 비교
+ 가우시안 잡음 영상: Noise std=40
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 14
+ Noise std=40을 추가한 동일 원장면의 저장 예시
+ Noise input
+@@ -231,8 +244,9 @@
+ Noise std=40 후 필터 적용
+ 
+ === 15쪽 ===
++실험과 성능 비교
+ 가우시안 잡음 영상: Noise std=80
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 15
+ Noise std=80을 추가한 동일 원장면의 저장 예시
+ Noise input
+@@ -243,8 +257,9 @@
+ Noise std=80 후 필터 적용
+ 
+ === 16쪽 ===
++실험과 성능 비교
+ 잡음 조건에 따른 성능 변화
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 16
+ mAP50-95 (%)  /  Seed 42
+ Filter
+@@ -298,8 +313,9 @@
+ Gaussian Blur: 잡음 조건 최고     Emboss: 잡음에서 큰 성능 저하
+ 
+ === 17쪽 ===
++실험과 성능 비교
+ 세 시드 반복 평가
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 17
+ 반복: Seed 42, 43, 44  /  평균 ± 표본 표준편차
+ Clean / Strict detection accuracy (%)
+@@ -334,8 +350,9 @@
+ Gaussian Blur 82.86 ± 0.08
+ 
+ === 18쪽 ===
++결론과 후속 연구
+ 해석 범위와 후속 검증
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 18
+ 조건별 재학습의 비교 결과
+ 고정 모델의 미지 촬영 조건 적응성은 별도 검증 필요
+@@ -344,8 +361,9 @@
+ 후속 검증: 내부 그룹 분리와 독립 촬영 로트
+ 
+ === 19쪽 ===
++결론과 후속 연구
+ 결론
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 19
+ 영상 조건과 목적 지표에 따른 필터 선택
+ 일반 영상: Gamma 0.3  /  잡음 조건: Gaussian Blur
+@@ -356,5 +374,5 @@
+ 감사합니다
+ 질의응답
+ 곽윤석 · 김남기
+-2026 한국정보기술학회 추계 종합학술대회
++경기대학교 컴퓨터과학과
+ 20
+Binary files 발표자료/2차/추계학술대회_10분발표.pptx and 발표자료/3차/추계학술대회_10분발표.pptx differ

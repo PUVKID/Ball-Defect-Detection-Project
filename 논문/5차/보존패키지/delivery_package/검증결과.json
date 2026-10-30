@@ -1,0 +1,20 @@
+{
+  "docx_pages_rendered": 3,
+  "embedded_figures": 2,
+  "tables": 0,
+  "per_image_rows_verified": 19500,
+  "runs_verified": 39,
+  "notebook_changed_original_cell_indices": [
+    4,
+    22,
+    34,
+    46,
+    55,
+    61,
+    72
+  ],
+  "research_results_modified": false,
+  "training_rerun": false,
+  "figures_rendered": 99,
+  "original_notebook_sha256": "1f52ab0b45c65bd7d35a165fe398e84d2ee060eda652773202ee8d739a85c5e5"
+}

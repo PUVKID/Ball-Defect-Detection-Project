@@ -1,0 +1,47 @@
+[
+  {
+    "combination": "Invert+CLAHE",
+    "first": "Invert",
+    "second": "CLAHE (max)",
+    "mAP50-95 (%)": 95.75,
+    "mAP50-95 (%) gain vs best component": -0.23,
+    "Strict Acc (%)": 98.0,
+    "Strict Acc (%) gain vs best component": 1.6
+  },
+  {
+    "combination": "Blur+Otsu",
+    "first": "Gaussian Blur (max)",
+    "second": "Otsu Threshold",
+    "mAP50-95 (%)": 59.58,
+    "mAP50-95 (%) gain vs best component": -33.79,
+    "Strict Acc (%)": 51.8,
+    "Strict Acc (%) gain vs best component": -40.2
+  },
+  {
+    "combination": "Sobel+Invert",
+    "first": "Sobel Edges",
+    "second": "Invert",
+    "mAP50-95 (%)": 95.71,
+    "mAP50-95 (%) gain vs best component": -0.73,
+    "Strict Acc (%)": 93.4,
+    "Strict Acc (%) gain vs best component": -2.8
+  },
+  {
+    "combination": "HistEq+Emboss",
+    "first": "Histogram Equalization",
+    "second": "Emboss",
+    "mAP50-95 (%)": 95.42,
+    "mAP50-95 (%) gain vs best component": -0.85,
+    "Strict Acc (%)": 96.4,
+    "Strict Acc (%) gain vs best component": 0.4
+  },
+  {
+    "combination": "Unsharp+Sobel",
+    "first": "Unsharp (max)",
+    "second": "Sobel Edges",
+    "mAP50-95 (%)": 94.73,
+    "mAP50-95 (%) gain vs best component": -1.71,
+    "Strict Acc (%)": 92.4,
+    "Strict Acc (%) gain vs best component": -3.8
+  }
+]
