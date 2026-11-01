@@ -4,39 +4,67 @@
   "files": {
     "발표자료/2차/추계학술대회_10분발표.pdf": {
       "bytes": 4054848,
-      "sha256": "4a17d156c3d737e06f6424e343bcbf6f11b26ce4a64617039d508448656824f9"
+      "sha256": "4a17d156c3d737e06f6424e343bcbf6f11b26ce4a64617039d508448656824f9",
+      "public_path": "발표자료/2차/추계학술대회_10분발표.pdf",
+      "public_bytes": 4042719,
+      "public_sha256": "bf342631a3793d3a8080f283c3be01988c34c9ec8780831c0d8b8b84826be25c"
     },
     "발표자료/2차/추계학술대회_10분발표.pptx": {
       "bytes": 22906083,
-      "sha256": "a56be240bf21da2ee23457a7c480251ac0167a3c1db252c61e1fdad96c4e3b59"
+      "sha256": "a56be240bf21da2ee23457a7c480251ac0167a3c1db252c61e1fdad96c4e3b59",
+      "public_path": "발표자료/2차/추계학술대회_10분발표.pptx",
+      "public_bytes": 22906066,
+      "public_sha256": "a3936dd430a8b0d9a008c186faf6bf82d9745c7cbd1c2e9938f41831f22981ab"
     },
     "원본작업자료/발표자료/2차/.chart-data-rP50bc/candidate.pptx": {
       "bytes": 22906081,
-      "sha256": "0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105"
+      "sha256": "0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105",
+      "public_path": "원본작업자료/발표자료/2차/.chart-data-rP50bc/candidate.pptx",
+      "public_bytes": 22906064,
+      "public_sha256": "36ab3228d605b484ff22c43837bc26f8aa1b7e0ff8d095aa8c618d60e1cf7ee9"
     },
     "원본작업자료/발표자료/2차/work/assemble_builder.py": {
       "bytes": 6090,
-      "sha256": "c1ee20bd63cc4dd1ac89d63f709d5cb05dbebf79a8fc2733e5a40293741f592d"
+      "sha256": "c1ee20bd63cc4dd1ac89d63f709d5cb05dbebf79a8fc2733e5a40293741f592d",
+      "public_path": "원본작업자료/발표자료/2차/work/assemble_builder.py",
+      "public_bytes": 6090,
+      "public_sha256": "c1ee20bd63cc4dd1ac89d63f709d5cb05dbebf79a8fc2733e5a40293741f592d"
     },
     "원본작업자료/발표자료/2차/work/build_presentation.mjs": {
       "bytes": 19355,
-      "sha256": "7bdd4ec64e89988a4872067507817511ca0a7383128c9738a305777bc1bd9150"
+      "sha256": "7bdd4ec64e89988a4872067507817511ca0a7383128c9738a305777bc1bd9150",
+      "public_path": "원본작업자료/발표자료/2차/work/build_presentation.mjs",
+      "public_bytes": 18986,
+      "public_sha256": "f1d96829f068cf5f9211208b19076103f8290f1d27fc9f2e75f71a73d698acfc"
     },
     "원본작업자료/발표자료/2차/work/candidate.pptx": {
       "bytes": 23589246,
-      "sha256": "1f6b9bc37275e6a2c6122c46c15809eb14632660bebc9827d23e60495ebf9769"
+      "sha256": "1f6b9bc37275e6a2c6122c46c15809eb14632660bebc9827d23e60495ebf9769",
+      "public_path": "원본작업자료/발표자료/2차/work/candidate.pptx",
+      "public_bytes": 22896459,
+      "public_sha256": "1faae800aea5a1a263f1f3fd52455435f96a44cc935bdcc7f7c0e157aed566ed"
     },
     "원본작업자료/발표자료/2차/work/first-finalized.pptx": {
       "bytes": 22906081,
-      "sha256": "0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105"
+      "sha256": "0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105",
+      "public_path": "원본작업자료/발표자료/2차/work/first-finalized.pptx",
+      "public_bytes": 22906064,
+      "public_sha256": "36ab3228d605b484ff22c43837bc26f8aa1b7e0ff8d095aa8c618d60e1cf7ee9"
     },
     "원본작업자료/발표자료/2차/work/prepare_content.py": {
       "bytes": 16058,
-      "sha256": "ba1f5e520953ac71ceba0cab26a539d219f25de244c17c5ccb7dd11054227fb7"
+      "sha256": "ba1f5e520953ac71ceba0cab26a539d219f25de244c17c5ccb7dd11054227fb7",
+      "public_path": "원본작업자료/발표자료/2차/work/prepare_content.py",
+      "public_bytes": 15901,
+      "public_sha256": "cb411a140585dc75408b3f4fccb5ddc5159fc7fe14d8c997b6f87f284f3f7dc5"
     },
     "원본작업자료/발표자료/2차/work/prepare_revision.py": {
       "bytes": 13761,
-      "sha256": "9f956dd067bf1d08cc6ad4bce285c00bc561cb7d69334aa49ec524cd83965a6a"
+      "sha256": "9f956dd067bf1d08cc6ad4bce285c00bc561cb7d69334aa49ec524cd83965a6a",
+      "public_path": "원본작업자료/발표자료/2차/work/prepare_revision.py",
+      "public_bytes": 13742,
+      "public_sha256": "8d833d2268c2be9239290d4ea8f7778176b0d36c67d60fc031398824055c09ad"
     }
-  }
+  },
+  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
 }

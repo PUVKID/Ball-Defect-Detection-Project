@@ -4,7 +4,7 @@ import win32com.client
 h=win32com.client.DispatchEx('HWPFrame.HwpObject');h.XHwpWindows.Item(0).Visible=False
 ok=h.RegisterModule('FilePathCheckDLL','CodexPaperFilePathModule');print('HWP module',ok,flush=True)
 if ok:
- print(h.Open(r'C:\Users\PUVKID\Desktop\학술대회논문양식_표준형식.hwp','HWP','forceopen:true'),flush=True)
+ print(h.Open(r'.\학술대회논문양식_표준형식.hwp','HWP','forceopen:true'),flush=True)
  print(h.SaveAs(str(pathlib.Path('work/template.pdf').resolve()),'PDF',''),flush=True)
  print(h.SaveAs(str(pathlib.Path('work/template.hml').resolve()),'HWPML2X',''),flush=True)
 h.Quit()

@@ -13,9 +13,9 @@
 | 파일 | 종류 | 바이트 | SHA-256 |
 |---|---|---:|---|
 | [논문/2차/원고.pdf](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EA%B3%A0.pdf) | .pdf | 423384 | `4da781634e54b11f9da37ce96e55f8a1f8658ed8d28ab75985981f847c062018` |
-| [논문/2차/원고.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EA%B3%A0.hwp) | .hwp | 526336 | `4610ea4542f49a55e302e141d760a7628cc45041d04ec2771c4051669d5fd49b` |
+| [논문/2차/원고.hwp](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EA%B3%A0.hwp.md) | .hwp | 526336 | `4610ea4542f49a55e302e141d760a7628cc45041d04ec2771c4051669d5fd49b` |
 | [논문/2차/요약.pdf](../../%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9A%94%EC%95%BD.pdf) | .pdf | 126433 | `507b72bf24f9c31295291338f1b4fd59ea48d21b46ed18880662b0bb4f15812d` |
-| [원본작업자료/논문/2차/추계학술대회 논문 2차_요약.hwp](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%20%EB%85%BC%EB%AC%B8%202%EC%B0%A8_%EC%9A%94%EC%95%BD.hwp) | .hwp | 89088 | `0b168e3b3f99215b98eed7e8bdf430ae30273d6d5a73008e7a0be730d1fc51ff` |
+| [원본작업자료/논문/2차/추계학술대회 논문 2차_요약.hwp](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%20%EB%85%BC%EB%AC%B8%202%EC%B0%A8_%EC%9A%94%EC%95%BD.hwp.md) | .hwp | 89088 | `0b168e3b3f99215b98eed7e8bdf430ae30273d6d5a73008e7a0be730d1fc51ff` |
 
 ## 🔎 해석·검증 범위
 

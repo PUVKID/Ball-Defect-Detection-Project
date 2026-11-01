@@ -41,7 +41,7 @@ source=source.replace("fill:'#333333'", "fill:'#283545'").replace("fill:'#555555
 # 공통 좌측 기준선과 본문 서식을 모든 슬라이드에서 동일하게 유지합니다.
 source=source.replace(" const q=s.shapes.add({", " if([76,78,80].includes(x))x=64;\n const q=s.shapes.add({",1)
 old_footer="function footer(s,i){text(s,'2026 한국정보기술학회 추계 종합학술대회',76,673,1000,24,17,GRAY);text(s,String(i).padStart(2,'0'),1170,673,38,24,17,GRAY,'right');}"
-new_footer="function footer(s,i){text(s,'경기대학교 컴퓨터과학과',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}"
+new_footer="function footer(s,i){text(s,'경기대학교',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}"
 assert old_footer in source
 source=source.replace(old_footer,new_footer)
 old_make="function make(i){const s=p.slides.add();s.background.fill=BG;if(i!==1){text(s,content.slides[i-1].title,76,54,1140,72,44);footer(s,i);}s.speakerNotes.text=content.slides[i-1].spoken_script+'\\n\\n[출처 및 조건]\\n'+citations.paper+(i===1||i===20?'\\n'+citations.brand:'');return s;}"

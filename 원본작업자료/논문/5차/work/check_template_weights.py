@@ -1,5 +1,5 @@
 import olefile,zlib,struct
-o=olefile.OleFileIO('C:/Users/PUVKID/Desktop/학술대회논문양식_표준형식.hwp')
+o=olefile.OleFileIO('./학술대회논문양식_표준형식.hwp')
 def records(b):
  p=0
  while p<len(b):

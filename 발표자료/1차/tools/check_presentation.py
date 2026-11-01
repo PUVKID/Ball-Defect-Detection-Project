@@ -97,7 +97,7 @@ try:
         check(len([x for x in z.namelist() if x.endswith('.xlsx')])==5,'차트별 데이터 워크북 5개')
         # 원본 마크와 실험 입력 이미지를 바이트 단위로 대조합니다.
         media_hashes={hashlib.sha256(z.read(x)).hexdigest() for x in z.namelist() if '/media/' in x}
-        for src in [ROOT/'work/brand/kyonggi_signature.png',Path(r'D:\2026\추계학술대회\DataSet\images\train\1001.png')]:
+        for src in [ROOT/'work/brand/kyonggi_signature.png',Path(r'.\DataSet\images\train\1001.png')]:
             check(hashlib.sha256(src.read_bytes()).hexdigest() in media_hashes, '원본 이미지 바이트 보존: '+src.name)
     check(len(list((ROOT/'work/render').glob('slide-??.png')))==15,'슬라이드 15장 렌더 존재')
     receipt=read_json(ROOT/'evidence/finalizer.validation.json')

@@ -68,7 +68,7 @@ for folder in ['그림','코드/fonts','원자료']:(pkg/folder).mkdir(parents=T
 for n in [1,2,3]:
  for ext in ['png','pdf']:shutil.copy2(W/f'restyled_horizontal/paper_figure{n}.{ext}',pkg/f'그림/Figure_{n}.{ext}')
 for f in ['reference_plot_style.py','render_saved_figures.py','paper_filter_figures.py','ball_ok_ng_yolo_v7_reference.ipynb']:shutil.copy2(W/f,pkg/'코드'/f)
-for f in ['NanumGothic.ttf','NanumGothicBold.ttf']:shutil.copy2(P('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts')/f,pkg/'코드/fonts'/f)
+for f in ['NanumGothic.ttf','NanumGothicBold.ttf']:shutil.copy2(P('fonts')/f,pkg/'코드/fonts'/f)
 shutil.copy2(W/'NanumGothic-LICENSE.txt',pkg/'코드/fonts/LICENSE.txt')
 for f in R.glob('*.csv'):shutil.copy2(f,pkg/'원자료'/f.name)
 for f in ['results_summary.json','sweep_results.json']:shutil.copy2(R/f,pkg/'원자료'/f)

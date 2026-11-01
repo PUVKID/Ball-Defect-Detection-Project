@@ -1,4 +1,4 @@
-path: /home/uns/jiwoo/bResearch/FULL_dataset
+path: DataSet
 train: images/train
 val: images/val
 

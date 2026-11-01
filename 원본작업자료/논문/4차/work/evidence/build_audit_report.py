@@ -5,7 +5,7 @@ from collections import Counter
 
 # 검증 결과를 제출 승인과 구별하여 기록합니다. 원본 논문이나 연구 결과를 수정하지 않습니다.
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-SOURCE = pathlib.Path('C:/Users/PUVKID/Desktop/2026/추계학술대회/논문/3차/추계학술대회 논문 3차.hwp')
+SOURCE = pathlib.Path('./논문/3차/추계학술대회 논문 3차.hwp')
 EXPECTED = '9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27'
 E = ROOT / 'work/evidence'
 calc = json.loads((E / 'recalculated.json').read_text(encoding='utf-8'))

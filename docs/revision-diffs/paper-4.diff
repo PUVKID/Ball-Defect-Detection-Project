@@ -60,7 +60,7 @@
 +
 +# 검증 결과를 제출 승인과 구별하여 기록합니다. 원본 논문이나 연구 결과를 수정하지 않습니다.
 +ROOT = pathlib.Path(__file__).resolve().parents[2]
-+SOURCE = pathlib.Path('C:/Users/PUVKID/Desktop/2026/추계학술대회/논문/3차/추계학술대회 논문 3차.hwp')
++SOURCE = pathlib.Path('./논문/3차/추계학술대회 논문 3차.hwp')
 +EXPECTED = '9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27'
 +E = ROOT / 'work/evidence'
 +calc = json.loads((E / 'recalculated.json').read_text(encoding='utf-8'))
@@ -466,8 +466,8 @@
 +from PIL import Image
 +
 +ROOT=pathlib.Path(__file__).resolve().parents[1]
-+SOURCE=pathlib.Path('C:/Users/PUVKID/Desktop/2026/추계학술대회/논문/3차/추계학술대회 논문 3차.hwp')
-+TEMPLATE=pathlib.Path('C:/Users/PUVKID/Desktop/2025/학술대회논문양식_표준양식.hwp')
++SOURCE=pathlib.Path('./논문/3차/추계학술대회 논문 3차.hwp')
++TEMPLATE=pathlib.Path('./2025/학술대회논문양식_표준양식.hwp')
 +
 +def records(data):
 +    position=0
@@ -590,8 +590,8 @@
 +print(f"PyTorch: {torch.__version__} / CUDA: {torch.version.cuda}")
 +
 +# ── Font setup ─────────────────────────────────────────────────────
-+font_path = r"C:\Users\PUVKID\AppData\Local\Microsoft\Windows\Fonts\NanumGothic.ttf"
-+font_bold_path = r"C:\Users\PUVKID\AppData\Local\Microsoft\Windows\Fonts\NanumGothicBold.ttf"
++font_path = r"fonts\NanumGothic.ttf"
++font_bold_path = r"fonts\NanumGothicBold.ttf"
 +_linux_fallback = "/usr/share/fonts/truetype/nanum/NanumGothic.ttf"
 +_linux_fallback_bold = "/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf"
 +
@@ -4290,7 +4290,7 @@
 +
 +# 저장된 행을 다시 집계하고 원래 분할 함수만 격리하여 실행합니다. 학습은 수행하지 않습니다.
 +ROOT = pathlib.Path(__file__).resolve().parents[2]
-+OLD = pathlib.Path('C:/Users/PUVKID/Documents/Codex/2026-10-13/x20/work')
++OLD = pathlib.Path('.')
 +DATA = OLD / 'figures'
 +EVIDENCE = ROOT / 'work/evidence'
 +
@@ -4452,8 +4452,8 @@ Binary files 논문/최종_논문.hwp and /dev/null differ
 -이 논문은 정부(과학기술정보통신부)의 재원으로 정보통신기획평가원-학·석사연계ICT핵심인재양성사
 -업의 지원을 받아 수행된 연구임(ITTP-2024-00436954). 또한 이 논문은 2024년도 정부(교육부)의 재원으
 -로 한국연구재단의 지원을 받아 수행된 기초연구사업임(No. RS-2020-NR049579)
--*경기대학교 컴퓨터과학과, lukeyun@kyonggi.ac.kr, https://orcid.org/0009-0004-0207-4000
--**경기대학교 컴퓨터과학과 교수(교신저자), ngkim@kyonggi.ac.kr, http://orcid.org/0000-0002-0077-6576
+-*경기대학교 , lukeyun@kyonggi.ac.kr, https://orcid.org/0009-0004-0207-4000
+-**경기대학교  교수(교신저자), ngkim@kyonggi.ac.kr, http://orcid.org/0000-0002-0077-6576
 -
 -=== 2쪽 ===
 -- 2026 한국정보기술학회 추계 종합학술대회 논문집 -

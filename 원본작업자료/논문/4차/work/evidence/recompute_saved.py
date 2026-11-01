@@ -10,7 +10,7 @@ from collections import Counter, defaultdict
 
 # 저장된 행을 다시 집계하고 원래 분할 함수만 격리하여 실행합니다. 학습은 수행하지 않습니다.
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-OLD = pathlib.Path('C:/Users/PUVKID/Documents/Codex/2026-10-13/x20/work')
+OLD = pathlib.Path('.')
 DATA = OLD / 'figures'
 EVIDENCE = ROOT / 'work/evidence'
 

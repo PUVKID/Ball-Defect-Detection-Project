@@ -5,11 +5,11 @@ import { Presentation, PresentationFile } from '@oai/artifact-tool';
 import { GlobalFonts } from '@napi-rs/canvas';
 
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-process.env.RUNTIME_NODE_MODULES='C:/Users/PUVKID/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
-const SKILL='C:/Users/PUVKID/.codex/plugins/cache/openai-primary-runtime/presentations/26.1017.11052/skills/presentations';
-const PY='C:/Users/PUVKID/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe';
+process.env.RUNTIME_NODE_MODULES='runtime/dependencies/node/node_modules';
+const SKILL='tools/presentations/26.1017.11052/skills/presentations';
+const PY='runtime/dependencies/python/python.exe';
 const {applyPresentationChartFont,finalizePresentation}=await import(pathToFileURL(path.join(SKILL,'container_tools/artifact_tool_utils.mjs')));
-GlobalFonts.registerFromPath('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf');
+GlobalFonts.registerFromPath('fonts/NanumGothicBold.ttf');
 const content=JSON.parse(await fs.readFile(path.join(ROOT,'work/content.json'),'utf8'));
 const data=JSON.parse(await fs.readFile(path.join(ROOT,'work/data.json'),'utf8'));
 const FONT='NanumGothic',BLUE='#3B92FF',CYAN='#65D9F3',WHITE='#F7FAFF',GRAY='#AAB8CC',BG='#080D15';
@@ -24,7 +24,7 @@ function text(s,value,x,y,w,h,size=28,color=WHITE,align='left'){
  const q=s.shapes.add({geometry:'textbox',name:value.slice(0,32),position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});
  q.text=value;q.text.style={typeface:FONT,fontSize:size,bold:true,color,alignment:align,verticalAlignment:'top',insets:0,wrap:'square',autoFit:'none'};return q;
 }
-function footer(s,i){text(s,'경기대학교 컴퓨터과학과',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}
+function footer(s,i){text(s,'경기대학교',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}
 function make(i){const s=p.slides.add();s.background.fill=BG;if(i!==1){const section=i<=3?'연구 배경':i<=9?'전처리 설계':i<=17?'실험과 성능 비교':'결론과 후속 연구';text(s,section,64,33,1152,25,16,CYAN);text(s,content.slides[i-1].title,64,77,1152,72,46);footer(s,i);}s.speakerNotes.text=content.slides[i-1].spoken_script+'\n\n[출처 및 조건]\n'+citations.paper+(i===1||i===20?'\n'+citations.brand:'');return s;}
 function line(s,v,y,color=GRAY,size=29){text(s,v,64,y,1152,72,size,color);}
 function chart(s,slideNo,names,series,pos,options={}){
@@ -57,7 +57,7 @@ async function photoSlide(i,items,caption){
  text(s,'YOLOv8n 기반 볼 검출을 위한\n단일 및 복합 전처리 필터의 성능 비교',64,172,1152,153,50);
  text(s,'Performance Comparison of Single and Combined Preprocessing Filters\nfor YOLOv8n-Based Ball Detection',64,354,1120,68,22,GRAY);
  text(s,'곽윤석 · 김남기 (교신저자)',64,499,900,42,27);
- text(s,'경기대학교 컴퓨터과학과',64,548,850,32,22,GRAY);
+ text(s,'경기대학교',64,548,850,32,22,GRAY);
  await logo(s,934,548,282);
 }
 {
@@ -72,7 +72,7 @@ const s=make(3);text(s,'500장',78,174,500,100,78,BLUE);text(s,'368개 유사 �
 text(s,'2,944 × 2,352 px 회색조 영상',80,365,570,45,25,GRAY);
 text(s,'외부 평가: 그룹 분리 5겹 교차검증\n폴드별 외부 평가 99–101장',78,444,590,92,27,WHITE);
 text(s,'내부 학습·검증:\n유사 그룹 9–20개 중복',78,558,590,79,25,GRAY);
-const sample=await fs.readFile('C:/Users/PUVKID/Desktop/2026/추계학술대회/DataSet/images/train/1001.png');s.images.add({blob:sample.buffer.slice(sample.byteOffset,sample.byteOffset+sample.byteLength),contentType:'image/png',alt:'실험 자료의 실제 입력 영상 1001.png',fit:'contain',position:{left:715,top:186,width:480,height:384}});text(s,'실제 입력 영상 예시',715,590,480,40,24,GRAY,'center');s.speakerNotes.text+='\n입력 영상 출처: DataSet/images/train/1001.png, 원본 밝기·비율 유지. 예측 결과가 아닌 원본 입력 영상.';
+const sample=await fs.readFile('./DataSet/images/train/1001.png');s.images.add({blob:sample.buffer.slice(sample.byteOffset,sample.byteOffset+sample.byteLength),contentType:'image/png',alt:'실험 자료의 실제 입력 영상 1001.png',fit:'contain',position:{left:715,top:186,width:480,height:384}});text(s,'실제 입력 영상 예시',715,590,480,40,24,GRAY,'center');s.speakerNotes.text+='\n입력 영상 출처: DataSet/images/train/1001.png, 원본 밝기·비율 유지. 예측 결과가 아닌 원본 입력 영상.';
 }
 
 await photoSlide(4,[['original_example.png','Original','전처리 기준 입력'],['invert_example.png','Invert','1 − t'],['otsu_threshold_example.png','Otsu Threshold','자동 임계값 이진화']],'동일 원장면에서 비교한 변환 예시');
@@ -163,8 +163,8 @@ const candidate=path.join(ROOT,'work/candidate.pptx');await(await PresentationFi
 const finalPath=path.join(ROOT,'결과/추계학술대회_10분발표.pptx');
 const result=await finalizePresentation({workspaceDir:ROOT,candidatePath:candidate,finalPath,pythonExecutable:PY,integrityValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit','--require-native-table-slide','16'],explicitTotalSlideCount:20,requiredNativeChartOwnerSlides:[11,12,13,17],requiredNativeTableOwnerSlides:[16],materializeLiteralChartWorkbooks:true,fontPolicy:{basis:'user_request',families:[FONT]},verifyArtifactToolImport:true,receiptPath:path.join(ROOT,'evidence/finalizer.validation.json')});
 await fs.mkdir(path.join(ROOT,'결과/글꼴'),{recursive:true});
-await fs.copyFile('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf',path.join(ROOT,'결과/글꼴/NanumGothicBold.ttf'));
-await fs.copyFile('C:/Users/PUVKID/Documents/Codex/2026-10-13/x20/work/NanumGothic-LICENSE.txt',path.join(ROOT,'결과/글꼴/NanumGothic-LICENSE.txt'));
+await fs.copyFile('fonts/NanumGothicBold.ttf',path.join(ROOT,'결과/글꼴/NanumGothicBold.ttf'));
+await fs.copyFile('./NanumGothic-LICENSE.txt',path.join(ROOT,'결과/글꼴/NanumGothic-LICENSE.txt'));
 const logoOutput=path.join(ROOT,'결과/학교마크');await fs.mkdir(logoOutput,{recursive:true});
 const logoMeta=JSON.parse(await fs.readFile(path.join(ROOT,'evidence/logo_asset.json'),'utf8'));
 await fs.copyFile(path.join(ROOT,logoMeta.local_path),path.join(logoOutput,'경기대학교_투명마크.png'));

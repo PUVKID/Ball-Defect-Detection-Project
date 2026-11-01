@@ -57,8 +57,8 @@ else:
 print(f"PyTorch: {torch.__version__} / CUDA: {torch.version.cuda}")
 
 # ── Font setup ─────────────────────────────────────────────────────
-font_path = r"C:\Users\PUVKID\AppData\Local\Microsoft\Windows\Fonts\NanumGothic.ttf"
-font_bold_path = r"C:\Users\PUVKID\AppData\Local\Microsoft\Windows\Fonts\NanumGothicBold.ttf"
+font_path = r"fonts\NanumGothic.ttf"
+font_bold_path = r"fonts\NanumGothicBold.ttf"
 _linux_fallback = "/usr/share/fonts/truetype/nanum/NanumGothic.ttf"
 _linux_fallback_bold = "/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf"
 

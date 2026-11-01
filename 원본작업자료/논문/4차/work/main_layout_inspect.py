@@ -3,8 +3,8 @@ import olefile
 from PIL import Image
 
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-SOURCE=pathlib.Path('C:/Users/PUVKID/Desktop/2026/추계학술대회/논문/3차/추계학술대회 논문 3차.hwp')
-TEMPLATE=pathlib.Path('C:/Users/PUVKID/Desktop/2025/학술대회논문양식_표준양식.hwp')
+SOURCE=pathlib.Path('./논문/3차/추계학술대회 논문 3차.hwp')
+TEMPLATE=pathlib.Path('./2025/학술대회논문양식_표준양식.hwp')
 
 def records(data):
     position=0

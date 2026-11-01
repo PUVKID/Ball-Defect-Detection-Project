@@ -4,11 +4,18 @@
   "files": {
     "발표자료/최종/추계학술대회_10분발표.pdf": {
       "bytes": 4071884,
-      "sha256": "2c418f9bea55f538b0fe94c1c6b5f0b6ef9ceaebf17fffa8c9ae540f3e9d802c"
+      "sha256": "2c418f9bea55f538b0fe94c1c6b5f0b6ef9ceaebf17fffa8c9ae540f3e9d802c",
+      "public_path": "발표자료/최종/추계학술대회_10분발표.pdf",
+      "public_bytes": 4063958,
+      "public_sha256": "d4209bac4c77e5ca211583faee5729ccee935fbfbfc4c223a244f576b1c1b556"
     },
     "발표자료/최종/추계학술대회_10분발표.pptx": {
       "bytes": 22926957,
-      "sha256": "45d6582f1f77fde70fea519d2dd573f3aec03b4c78f09388da8b46732900441a"
+      "sha256": "45d6582f1f77fde70fea519d2dd573f3aec03b4c78f09388da8b46732900441a",
+      "public_path": "발표자료/최종/추계학술대회_10분발표.pptx",
+      "public_bytes": 22926426,
+      "public_sha256": "31c50a967db5bda2aa30a2e19e1ca314937d16ad28004883d37490b5664489e4"
     }
-  }
+  },
+  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
 }

@@ -16,3 +16,13 @@
 | [발표자료 최종](revisions/talk-final.md) | 발표3차 결과와 최종 발표파일의 바이트 동일 여부를 전체 SHA-256으로 대조합니다. 최종 연구코드 폴더와 발표 최종 폴더는 별개 자료입니다. | pdf·pptx | [직접 자료](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pdf) | [전체 차이](revision-diffs/talk-final.diff) |
 | [최종 연구코드](revisions/code-final.md) | 루트 노트북과 최종/연구코드 노트북은 같은 공개 바이트를 보존합니다. 볼 검출 필터 비교와 영역·개수 규칙을 적용하는 OK/NG 및 추가 진단 코드이며, 전문가 판정의 실측 정확도로 대체하지 않습니다. | ipynb | [직접 자료](../ball_ok_ng_yolo_v7.ipynb) | [전체 차이](revision-diffs/code-final.diff) |
 | [이전 도커 실험·기존 결과표](revisions/legacy.md) | 기존 공개 단일·복합 필터 실험 코드와 집계 결과표를 보존합니다. 원자료 경로·단일영상 예측·제조 원본·모델 가중치는 신규 공개에서 제외합니다. | csv·ipynb·pdf·py·yaml | [직접 자료](../%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98/ball_ok_ng_yolo_v7.ipynb) | [전체 차이](revision-diffs/legacy.diff) |
+
+
+<details>
+<summary>🧹 공개 자료 정리 기록</summary>
+
+| 검수 대상 | 연결 자료 | 상세·이번 비교 |
+| :--- | :--- | :--- |
+| **최종** | [📁 검수 자료](../%EC%B5%9C%EC%A2%85) | [📖 정리 내용](publication-review/item-1.md) · [🔎 파일 비교](publication-review/공개파일변경.json) |
+
+</details>

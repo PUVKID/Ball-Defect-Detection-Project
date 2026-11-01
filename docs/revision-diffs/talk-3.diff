@@ -20,7 +20,7 @@
 --- 원본작업자료/발표자료/2차/work/build_presentation.mjs
 +++ 원본작업자료/발표자료/3차/work/build_presentation.mjs
 @@ -12,7 +12,7 @@
- GlobalFonts.registerFromPath('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf');
+ GlobalFonts.registerFromPath('fonts/NanumGothicBold.ttf');
  const content=JSON.parse(await fs.readFile(path.join(ROOT,'work/content.json'),'utf8'));
  const data=JSON.parse(await fs.readFile(path.join(ROOT,'work/data.json'),'utf8'));
 -const FONT='NanumGothic',BLUE='#0A84FF',WHITE='#FFFFFF',GRAY='#BDBDC2';
@@ -39,7 +39,7 @@
 -function footer(s,i){text(s,'2026 한국정보기술학회 추계 종합학술대회',76,673,1000,24,17,GRAY);text(s,String(i).padStart(2,'0'),1170,673,38,24,17,GRAY,'right');}
 -function make(i){const s=p.slides.add();s.background.fill='#000000';if(i!==1){text(s,content.slides[i-1].title,76,54,1140,72,44);footer(s,i);}s.speakerNotes.text=content.slides[i-1].spoken_script+'\n\n[출처 및 조건]\n'+citations.paper+(i===1||i===20?'\n'+citations.brand:'');return s;}
 -function line(s,v,y,color=GRAY,size=29){text(s,v,78,y,1120,72,size,color);}
-+function footer(s,i){text(s,'경기대학교 컴퓨터과학과',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}
++function footer(s,i){text(s,'경기대학교 ',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}
 +function make(i){const s=p.slides.add();s.background.fill=BG;if(i!==1){const section=i<=3?'연구 배경':i<=9?'전처리 설계':i<=17?'실험과 성능 비교':'결론과 후속 연구';text(s,section,64,33,1152,25,16,CYAN);text(s,content.slides[i-1].title,64,77,1152,72,46);footer(s,i);}s.speakerNotes.text=content.slides[i-1].spoken_script+'\n\n[출처 및 조건]\n'+citations.paper+(i===1||i===20?'\n'+citations.brand:'');return s;}
 +function line(s,v,y,color=GRAY,size=29){text(s,v,64,y,1152,72,size,color);}
  function chart(s,slideNo,names,series,pos,options={}){
@@ -78,13 +78,13 @@
 - text(s,'YOLOv8n 기반 볼 검출을 위한\n단일 및 복합 전처리 필터의 성능 비교',76,161,1136,150,47);
 - text(s,'Performance Comparison of Single and Combined Preprocessing Filters\nfor YOLOv8n-Based Ball Detection',78,334,1090,68,23,GRAY);
 - text(s,'곽윤석 · 김남기 (교신저자)',78,470,900,42,28);
-- text(s,'경기대학교 컴퓨터과학과',78,523,850,32,23,GRAY);
+- text(s,'경기대학교 ',78,523,850,32,23,GRAY);
 - await logo(s,78,592,235);
 + const s=make(1);text(s,'2026 FALL CONFERENCE',64,64,1090,30,20,CYAN);
 + text(s,'YOLOv8n 기반 볼 검출을 위한\n단일 및 복합 전처리 필터의 성능 비교',64,172,1152,153,50);
 + text(s,'Performance Comparison of Single and Combined Preprocessing Filters\nfor YOLOv8n-Based Ball Detection',64,354,1120,68,22,GRAY);
 + text(s,'곽윤석 · 김남기 (교신저자)',64,499,900,42,27);
-+ text(s,'경기대학교 컴퓨터과학과',64,548,850,32,22,GRAY);
++ text(s,'경기대학교 ',64,548,850,32,22,GRAY);
 + await logo(s,934,548,282);
  }
  {
@@ -166,8 +166,8 @@
  await fs.writeFile(path.join(ROOT,'evidence/chart_data.json'),JSON.stringify(chartEvidence,null,2));
 @@ -164,4 +165,11 @@
  await fs.mkdir(path.join(ROOT,'결과/글꼴'),{recursive:true});
- await fs.copyFile('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf',path.join(ROOT,'결과/글꼴/NanumGothicBold.ttf'));
- await fs.copyFile('C:/Users/PUVKID/Documents/Codex/2026-10-13/x20/work/NanumGothic-LICENSE.txt',path.join(ROOT,'결과/글꼴/NanumGothic-LICENSE.txt'));
+ await fs.copyFile('fonts/NanumGothicBold.ttf',path.join(ROOT,'결과/글꼴/NanumGothicBold.ttf'));
+ await fs.copyFile('./NanumGothic-LICENSE.txt',path.join(ROOT,'결과/글꼴/NanumGothic-LICENSE.txt'));
 +const logoOutput=path.join(ROOT,'결과/학교마크');await fs.mkdir(logoOutput,{recursive:true});
 +const logoMeta=JSON.parse(await fs.readFile(path.join(ROOT,'evidence/logo_asset.json'),'utf8'));
 +await fs.copyFile(path.join(ROOT,logoMeta.local_path),path.join(logoOutput,'경기대학교_투명마크.png'));
@@ -224,7 +224,7 @@ Binary files 원본작업자료/발표자료/2차/work/candidate.pptx and /dev/n
 +# 공통 좌측 기준선과 본문 서식을 모든 슬라이드에서 동일하게 유지합니다.
 +source=source.replace(" const q=s.shapes.add({", " if([76,78,80].includes(x))x=64;\n const q=s.shapes.add({",1)
 +old_footer="function footer(s,i){text(s,'2026 한국정보기술학회 추계 종합학술대회',76,673,1000,24,17,GRAY);text(s,String(i).padStart(2,'0'),1170,673,38,24,17,GRAY,'right');}"
-+new_footer="function footer(s,i){text(s,'경기대학교 컴퓨터과학과',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}"
++new_footer="function footer(s,i){text(s,'경기대학교 ',64,684,1000,22,14,GRAY);text(s,String(i).padStart(2,'0'),1178,681,38,25,16,GRAY,'right');}"
 +assert old_footer in source
 +source=source.replace(old_footer,new_footer)
 +old_make="function make(i){const s=p.slides.add();s.background.fill=BG;if(i!==1){text(s,content.slides[i-1].title,76,54,1140,72,44);footer(s,i);}s.speakerNotes.text=content.slides[i-1].spoken_script+'\\n\\n[출처 및 조건]\\n'+citations.paper+(i===1||i===20?'\\n'+citations.brand:'');return s;}"
@@ -289,13 +289,13 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 --- 발표자료/2차/추계학술대회_10분발표.pdf
 +++ 발표자료/3차/추계학술대회_10분발표.pdf
 @@ -8,8 +8,9 @@
- 경기대학교 컴퓨터과학과
+ 경기대학교 
  
  === 2쪽 ===
 +연구 배경
  현장 영상의 변화와 연구 질문
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  02
  어떤 현장 영상이 들어올지 모르는 상황
  밝기·대비·잡음과 경계 표현의 변화
@@ -306,7 +306,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +연구 배경
  데이터와 그룹 기반 평가
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  03
  500장
  368개 유사 영상 그룹
@@ -317,7 +317,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +전처리 설계
  단일 필터 영상 1: 반전과 이진화
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  04
  동일 원장면에서 비교한 변환 예시
  Original
@@ -328,7 +328,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +전처리 설계
  단일 필터 영상 2: 밝기와 대비
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  05
  밝기 분포와 대비를 바꾸는 변환
  Solarize
@@ -339,7 +339,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +전처리 설계
  단일 필터 영상 3: 평활화와 경계
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  06
  실제 코드의 고정 파라미터를 적용한 예시
  Gamma 0.3
@@ -350,7 +350,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +전처리 설계
  단일 필터 영상 4: 음영과 선명화
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  07
  음영·선명화 변환과 원본 비교
  Emboss
@@ -361,7 +361,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +전처리 설계
  순차 조합 영상 1
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  08
  A+B는 A의 출력 영상에 B를 순차적으로 적용
  Invert+CLAHE
@@ -372,7 +372,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +전처리 설계
  순차 조합 영상 2
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  09
  역순·가능한 전체 조합은 평가 범위에 포함하지 않음
  HistEq+Emboss
@@ -383,7 +383,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +실험과 성능 비교
  조건별 학습과 두 평가 지표
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  10
  조건별 YOLOv8n 재학습
  최대 30 epochs     imgsz 1280     batch 8     patience 15
@@ -394,7 +394,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +실험과 성능 비교
  일반 영상의 단일 필터 성능
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  11
  mAP50-95 (%)  /  Clean  /  Seed 42
  Original
@@ -405,7 +405,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +실험과 성능 비교
  복합 필터와 구성 필터 비교
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  12
  mAP50-95 (%)  /  Clean  /  Seed 42
  Original
@@ -416,7 +416,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +실험과 성능 비교
  평가 지표에 따른 순위 차이
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  13
  Clean / Seed 42
  Original
@@ -427,7 +427,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +실험과 성능 비교
  가우시안 잡음 영상: Noise std=40
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  14
  Noise std=40을 추가한 동일 원장면의 저장 예시
  Noise input
@@ -438,7 +438,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +실험과 성능 비교
  가우시안 잡음 영상: Noise std=80
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  15
  Noise std=80을 추가한 동일 원장면의 저장 예시
  Noise input
@@ -449,7 +449,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +실험과 성능 비교
  잡음 조건에 따른 성능 변화
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  16
  mAP50-95 (%)  /  Seed 42
  Filter
@@ -460,7 +460,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +실험과 성능 비교
  세 시드 반복 평가
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  17
  반복: Seed 42, 43, 44  /  평균 ± 표본 표준편차
  Clean / Strict detection accuracy (%)
@@ -471,7 +471,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +결론과 후속 연구
  해석 범위와 후속 검증
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  18
  조건별 재학습의 비교 결과
  고정 모델의 미지 촬영 조건 적응성은 별도 검증 필요
@@ -482,7 +482,7 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
 +결론과 후속 연구
  결론
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  19
  영상 조건과 목적 지표에 따른 필터 선택
  일반 영상: Gamma 0.3  /  잡음 조건: Gaussian Blur
@@ -491,6 +491,6 @@ Binary files 원본작업자료/발표자료/2차/work/first-finalized.pptx and 
  질의응답
  곽윤석 · 김남기
 -2026 한국정보기술학회 추계 종합학술대회
-+경기대학교 컴퓨터과학과
++경기대학교 
  20
 Binary files 발표자료/2차/추계학술대회_10분발표.pptx and 발표자료/3차/추계학술대회_10분발표.pptx differ

@@ -4,15 +4,25 @@
   "files": {
     "논문/최종_논문.pdf": {
       "bytes": 420646,
-      "sha256": "457b0126e44ecf11efe75e0d7fc2eb44dcb03bcc9091b39539831578e1f10e76"
+      "sha256": "457b0126e44ecf11efe75e0d7fc2eb44dcb03bcc9091b39539831578e1f10e76",
+      "public_path": "논문/최종_논문.pdf",
+      "public_bytes": 403332,
+      "public_sha256": "96f1a60107b05a16a5a41061a931b3031da10353c08737b0510195f83f5fcb80"
     },
     "논문/최종_논문.hwp": {
       "bytes": 528384,
-      "sha256": "9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27"
+      "sha256": "9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27",
+      "public_path": "논문/최종_논문.hwp.md",
+      "public_bytes": 436,
+      "public_sha256": "60d3fb288ca7aefa58e45efd0cdfe1455bbae01964d960d4aa5a05ab4b94eecd"
     },
     "원본작업자료/논문/3차/추계학술대회 논문 3차_요약.hwp": {
       "bytes": 73728,
-      "sha256": "5cfac11aa7e9cbde941c5bef302eca00f7d5f2dd76a4fb38d31b556f44c94a0a"
+      "sha256": "5cfac11aa7e9cbde941c5bef302eca00f7d5f2dd76a4fb38d31b556f44c94a0a",
+      "public_path": "원본작업자료/논문/3차/추계학술대회 논문 3차_요약.hwp.md",
+      "public_bytes": 464,
+      "public_sha256": "39b75d311bf4235220cae43ffb6251395c636e642e1779ec4dd245a33162c0b2"
     }
-  }
+  },
+  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
 }

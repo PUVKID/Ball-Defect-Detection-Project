@@ -5,7 +5,7 @@ import statistics
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW = Path(r'C:\Users\PUVKID\Documents\Codex\2026-10-13\x20\work\figures')
+RAW = Path(r'.\figures')
 a = json.loads((RAW / 'results_summary.json').read_text(encoding='utf-8'))
 b = json.loads((RAW / 'sweep_results.json').read_text(encoding='utf-8'))
 single = [a['baseline']] + a['round1']
@@ -24,7 +24,7 @@ data = {'single': [{k:x[k] for k in ['name','map50_95','strict_acc']} for x in s
 titles = ['YOLOv8n 기반 볼 검출을 위한\n단일 및 복합 전처리 필터의 성능 비교','현장 영상의 변화와 연구 질문','데이터와 그룹 기반 평가','단일 필터와 순차 조합','조건별 학습과 두 평가 지표','일반 영상의 단일 필터 성능','복합 필터와 구성 필터 비교','평가 지표에 따른 순위 차이','잡음 조건에 따른 성능 변화','세 시드 반복 평가','해석 범위와 후속 검증','결론','부록 1. 주요 실험 파라미터','부록 2. 지표 해석과 예상 질문','부록 3. 참고문헌']
 durations = [30,45,55,55,60,65,60,50,65,55,35,25,0,0,0]
 scripts = [
-'안녕하십니까. 경기대학교 컴퓨터과학과 곽윤석입니다. 오늘은 YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교 연구를 발표하겠습니다. 본 연구는 현장의 입력 영상이 달라질 수 있다는 문제에서 출발했습니다. 여러 전처리에서 검출 성능이 유지되는지, 어떤 단일 필터와 순차 조합이 유리한지를 동일한 평가 체계에서 비교했습니다. 먼저 평가 설계를 설명하고, 일반 영상과 잡음 조건의 결과를 말씀드리겠습니다.',
+'안녕하십니까. 경기대학교 곽윤석입니다. 오늘은 YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교 연구를 발표하겠습니다. 본 연구는 현장의 입력 영상이 달라질 수 있다는 문제에서 출발했습니다. 여러 전처리에서 검출 성능이 유지되는지, 어떤 단일 필터와 순차 조합이 유리한지를 동일한 평가 체계에서 비교했습니다. 먼저 평가 설계를 설명하고, 일반 영상과 잡음 조건의 결과를 말씀드리겠습니다.',
 '현장에서는 조명이나 촬영 조건에 따라 밝기와 대비가 달라지고, 잡음이나 경계 표현도 변할 수 있습니다. 따라서 특정 필터의 일반 영상 성능만으로 적용성을 판단하기에는 한계가 있습니다. 이번 연구에서는 필터를 적용한 뒤에도 검출 성능이 유지되는지, 단일 필터 중 어떤 조건이 높은 성능을 보이는지, 그리고 두 필터를 순차적으로 적용하면 구성 필터보다 개선되는지를 확인했습니다. 성능 비교의 대상은 볼 검출이며, 객체의 위치와 영상 전체의 검출 완전성을 함께 살펴보았습니다. 다만 실제 현장의 모든 변화를 재현한 실험은 아니므로, 결과는 일반 영상과 합성 가우시안 잡음의 범위에서 해석하겠습니다.',
 '사용한 자료는 가로 이천구백사십사, 세로 이천삼백오십이 화소의 회색조 영상 오백 장과 볼 경계 상자 주석입니다. 별도로 수집한 외부 시험 자료 없이 기존 학습 및 검증 영상을 재분할했습니다. 유사 영상이 학습과 외부 평가에 동시에 들어가는 문제를 줄이기 위해, 축소 영상 사이의 평균 절대차를 기준으로 삼백육십팔 개의 그룹을 구성했습니다. 외부 평가는 이 그룹 단위의 오 겹 교차검증으로 수행했으며, 외부 평가 그룹과 나머지 자료 사이의 중복은 없었습니다. 각 영상은 자신을 학습에 사용하지 않은 모델로 평가했습니다. 다만 내부 학습과 검증 사이에는 아홉 개에서 스무 개의 그룹이 중복되어, 모델 선택 과정의 독립성에는 제한이 남습니다.',
 '단일 필터는 화면에 제시한 열 종입니다. 밝기와 대비를 바꾸는 변환, 평활화, 경계 강조, 이진화를 포함하여 서로 다른 영상 표현을 비교했습니다. 각 필터의 파라미터는 실험 전체에서 고정했으며, 이름에 포함한 max는 이번 연구에서 설정한 강도를 나타냅니다. 최적값을 탐색하여 얻은 결과는 아닙니다. 복합 필터는 Invert+CLAHE 등 다섯 가지를 사용했습니다. 여기서 더하기 기호는 두 결과를 합친다는 뜻이 아니라, 앞의 필터를 적용한 영상에 뒤의 필터를 순차적으로 적용한다는 뜻입니다. 가능한 모든 조합이나 역순을 평가하지 않았으므로, 조합의 결론도 이 다섯 가지 순서에 한정합니다.',
@@ -51,7 +51,7 @@ for i,(title,duration,script) in enumerate(zip(titles,durations,scripts),1):
 assert t == 600
 content={'main_duration_seconds':t,'main_slides':12,'total_slides':15,'timing_note':'목표 시간이며 실제 소요 시간은 리허설로 조정합니다. 부록 3장은 10분에 포함하지 않습니다.','slides':slides}
 (ROOT/'work/content.json').write_text(json.dumps(content,ensure_ascii=False,indent=2),encoding='utf-8')
-source_paths=[RAW/'results_summary.json',RAW/'sweep_results.json',RAW/'ms_run_results.csv',Path(r'D:\2026\추계학술대회\논문\3차\추계학술대회 논문 3차.hwp'),Path(r'C:\Users\PUVKID\Desktop\2026\하계학술대회 논문\곽윤석\발표 자료\하계학술대회 PPT.pptx')]
+source_paths=[RAW/'results_summary.json',RAW/'sweep_results.json',RAW/'ms_run_results.csv',Path(r'.\논문\3차\추계학술대회 논문 3차.hwp'),Path(r'.\발표 자료\하계학술대회 PPT.pptx')]
 evidence={'sources':[{'path':str(p),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in source_paths],'hangul_syllables':sum('\uac00'<=c<='\ud7a3' for x in slides[:12] for c in x['spoken_script']),'main_duration_seconds':600,'rounding_corrected':{'Otsu Threshold/noise80':f'{noise[2][2]:.1f}','Histogram Equalization/noise40':f'{noise[4][1]:.1f}','Sobel Edges/noise80':f'{noise[8][2]:.1f}'}}
 (ROOT/'evidence/content_sources.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2),encoding='utf-8')
 def clock(s): return f'{s//60:02d}:{s%60:02d}'

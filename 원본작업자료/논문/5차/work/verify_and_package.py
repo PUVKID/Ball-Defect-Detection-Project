@@ -43,7 +43,7 @@ for p in ['논문에_사용한_그림','수정_코드/fonts','실험결과_원�
 for n in [1,2]:shutil.copy2(W/f'restyled_english/paper_figure{n}.png',pkg/f'논문에_사용한_그림/그림{n}.png')
 for f in ['reference_plot_style.py','render_saved_figures.py','ball_ok_ng_yolo_v7_reference.ipynb']:shutil.copy2(W/f,pkg/'수정_코드'/f)
 for f in ['NanumGothic.ttf','NanumGothicBold.ttf']:
- shutil.copy2(P('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts')/f,pkg/'수정_코드/fonts'/f)
+ shutil.copy2(P('fonts')/f,pkg/'수정_코드/fonts'/f)
 shutil.copy2(W/'NanumGothic-LICENSE.txt',pkg/'수정_코드/fonts/LICENSE.txt')
 for f in (W/'figures').glob('*.csv'):shutil.copy2(f,pkg/'실험결과_원자료'/f.name)
 for f in ['results_summary.json','sweep_results.json']:shutil.copy2(W/'figures'/f,pkg/'실험결과_원자료'/f)

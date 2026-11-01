@@ -5,11 +5,11 @@ import { Presentation, PresentationFile } from '@oai/artifact-tool';
 import { GlobalFonts } from '@napi-rs/canvas';
 
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-process.env.RUNTIME_NODE_MODULES='C:/Users/PUVKID/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
-const SKILL='C:/Users/PUVKID/.codex/plugins/cache/openai-primary-runtime/presentations/26.1017.11052/skills/presentations';
-const PY='C:/Users/PUVKID/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe';
+process.env.RUNTIME_NODE_MODULES='runtime/dependencies/node/node_modules';
+const SKILL='tools/presentations/26.1017.11052/skills/presentations';
+const PY='runtime/dependencies/python/python.exe';
 const {applyPresentationChartFont,finalizePresentation}=await import(pathToFileURL(path.join(SKILL,'container_tools/artifact_tool_utils.mjs')));
-GlobalFonts.registerFromPath('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf');
+GlobalFonts.registerFromPath('fonts/NanumGothicBold.ttf');
 const content=JSON.parse(await fs.readFile(path.join(ROOT,'work/content.json'),'utf8'));
 const data=JSON.parse(await fs.readFile(path.join(ROOT,'work/data.json'),'utf8'));
 const FONT='NanumGothic',BLUE='#0A84FF',WHITE='#FFFFFF',GRAY='#BDBDC2';
@@ -38,7 +38,7 @@ async function logo(s,x,y,w){const image=await fs.readFile(path.join(ROOT,'work/
  text(s,'YOLOv8n 기반 볼 검출을 위한\n단일 및 복합 전처리 필터의 성능 비교',76,161,1136,150,47);
  text(s,'Performance Comparison of Single and Combined Preprocessing Filters\nfor YOLOv8n-Based Ball Detection',78,334,1090,68,23,GRAY);
  text(s,'곽윤석 · 김남기 (교신저자)',78,470,900,42,28);
- text(s,'경기대학교 컴퓨터과학과',78,523,850,32,23,GRAY);
+ text(s,'경기대학교',78,523,850,32,23,GRAY);
  await logo(s,78,592,235);
 }
 {
@@ -53,7 +53,7 @@ const s=make(3);text(s,'500장',78,174,500,100,78,BLUE);text(s,'368개 유사 �
 text(s,'2,944 × 2,352 px 회색조 영상',80,365,570,45,25,GRAY);
 text(s,'외부 평가: 그룹 분리 5겹 교차검증\n폴드별 외부 평가 99–101장',78,444,590,92,27,WHITE);
 text(s,'내부 학습·검증:\n유사 그룹 9–20개 중복',78,558,590,79,25,GRAY);
-const sample=await fs.readFile('C:/Users/PUVKID/Desktop/2026/추계학술대회/DataSet/images/train/1001.png');s.images.add({blob:sample.buffer.slice(sample.byteOffset,sample.byteOffset+sample.byteLength),contentType:'image/png',alt:'실험 자료의 실제 입력 영상 1001.png',fit:'contain',position:{left:715,top:186,width:480,height:384}});text(s,'실제 입력 영상 예시',715,590,480,40,24,GRAY,'center');s.speakerNotes.text+='\n입력 영상 출처: DataSet/images/train/1001.png, 원본 밝기·비율 유지. 예측 결과가 아닌 원본 입력 영상.';
+const sample=await fs.readFile('./DataSet/images/train/1001.png');s.images.add({blob:sample.buffer.slice(sample.byteOffset,sample.byteOffset+sample.byteLength),contentType:'image/png',alt:'실험 자료의 실제 입력 영상 1001.png',fit:'contain',position:{left:715,top:186,width:480,height:384}});text(s,'실제 입력 영상 예시',715,590,480,40,24,GRAY,'center');s.speakerNotes.text+='\n입력 영상 출처: DataSet/images/train/1001.png, 원본 밝기·비율 유지. 예측 결과가 아닌 원본 입력 영상.';
 }
 {
 const s=make(4);text(s,'단일 필터 10종',78,161,550,49,33,BLUE);text(s,'순차 조합 5종',690,161,500,49,33,BLUE);
@@ -148,6 +148,6 @@ const candidate=path.join(ROOT,'work/candidate.pptx');await(await PresentationFi
 const finalPath=path.join(ROOT,'결과/추계학술대회_10분발표.pptx');
 const result=await finalizePresentation({workspaceDir:ROOT,candidatePath:candidate,finalPath,pythonExecutable:PY,integrityValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit','--require-native-table-slide','9'],explicitTotalSlideCount:15,requiredNativeChartOwnerSlides:[6,7,8,10],requiredNativeTableOwnerSlides:[9],materializeLiteralChartWorkbooks:true,fontPolicy:{basis:'user_request',families:[FONT]},verifyArtifactToolImport:true,receiptPath:path.join(ROOT,'evidence/finalizer.validation.json')});
 await fs.mkdir(path.join(ROOT,'결과/글꼴'),{recursive:true});
-await fs.copyFile('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf',path.join(ROOT,'결과/글꼴/NanumGothicBold.ttf'));
-await fs.copyFile('C:/Users/PUVKID/Documents/Codex/2026-10-13/x20/work/NanumGothic-LICENSE.txt',path.join(ROOT,'결과/글꼴/NanumGothic-LICENSE.txt'));
+await fs.copyFile('fonts/NanumGothicBold.ttf',path.join(ROOT,'결과/글꼴/NanumGothicBold.ttf'));
+await fs.copyFile('./NanumGothic-LICENSE.txt',path.join(ROOT,'결과/글꼴/NanumGothic-LICENSE.txt'));
 console.log(JSON.stringify(result));

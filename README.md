@@ -18,7 +18,7 @@ YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비�
 
 [핵심 구성](#input-processing-output)
 
-[📄 PDF로 읽기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) · [📝 HWP 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
+[📄 PDF로 읽기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) · [📝 PDF 공개 안내](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md)
 
 </div>
 
@@ -26,8 +26,8 @@ YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비�
 
 [현재 원문 PDF·공식 링크 교체 위치](docs/PAPERS.md) · [모든 실제 차수·최종본·전체 비교](docs/REVISION_INDEX.md)
 
-- **최종5장 · 전체 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/5%EC%9E%A5_%EC%9B%90%EB%AC%B8.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
-- **최종3장 · 축약 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.hwp)
+- **최종5장 · 전체 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/5%EC%9E%A5_%EC%9B%90%EB%AC%B8.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md)
+- **최종3장 · 축약 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.hwp.md)
 
 공식 공개 URL은 아직 등록하지 않았습니다. 추후 [논문 전용 표](docs/PAPERS.md)의 교체 칸과 이 항목을 함께 갱신합니다.
 
@@ -72,7 +72,7 @@ YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 원고의
 
 **논문 그림** — 공개 HWP 원고의 필터별 노이즈 강도 비교 집계 그림입니다. 세 열은 노이즈 표준편차 0·40·80이고, 지표는 mAP50-95입니다.
 
-[근거 파일 보기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
+[근거 파일 보기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md)
 
 </details>
 
@@ -149,7 +149,7 @@ flowchart LR
 
 ### 📄 최종 논문
 
-[최종 논문 전체 원고](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)에 필터 비교 방법과 연구 그래프를 정리했습니다.
+[최종 논문 전체 원고](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md)에 필터 비교 방법과 연구 그래프를 정리했습니다.
 
 <a name="최종-원고의-연구-범위"></a>
 
@@ -255,3 +255,54 @@ DataSet/
 **검출에서 판정까지, 조건을 나누어 비교합니다.**
 
 </div>
+
+
+> 공개 PDF에서는 지정된 개인정보와 학과·학부 정보를 제외했습니다. 저자·공동저자의 성명, 학교, 이메일, ORCID와 사진은 보존합니다. 편집 원문 링크는 비공개 보관 안내로 연결됩니다.
+
+
+<details>
+<summary>📚 차수별 논문 공개본 전체 보기</summary>
+
+| 원고·공개 경로 | 논문 |
+| :--- | :--- |
+| 논문/1차/요약.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9A%94%EC%95%BD.pdf) |
+| 논문/1차/원고.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EA%B3%A0.pdf) |
+| 논문/2차/요약.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9A%94%EC%95%BD.pdf) |
+| 논문/2차/원고.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EA%B3%A0.pdf) |
+| 논문/5차/그림/Figure_1.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EA%B7%B8%EB%A6%BC/Figure_1.pdf) |
+| 논문/5차/그림/Figure_2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EA%B7%B8%EB%A6%BC/Figure_2.pdf) |
+| 논문/5차/그림/Figure_3.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EA%B7%B8%EB%A6%BC/Figure_3.pdf) |
+| 논문/5차/보존패키지/filter_paper_package/그림/Figure_1.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package/%EA%B7%B8%EB%A6%BC/Figure_1.pdf) |
+| 논문/5차/보존패키지/filter_paper_package/그림/Figure_2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package/%EA%B7%B8%EB%A6%BC/Figure_2.pdf) |
+| 논문/5차/보존패키지/filter_paper_package/그림/Figure_3.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package/%EA%B7%B8%EB%A6%BC/Figure_3.pdf) |
+| 논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_1.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_bold/%EA%B7%B8%EB%A6%BC/Figure_1.pdf) |
+| 논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_bold/%EA%B7%B8%EB%A6%BC/Figure_2.pdf) |
+| 논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_3.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_bold/%EA%B7%B8%EB%A6%BC/Figure_3.pdf) |
+| 논문/5차/보존패키지/filter_paper_package_template/그림/Figure_1.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_template/%EA%B7%B8%EB%A6%BC/Figure_1.pdf) |
+| 논문/5차/보존패키지/filter_paper_package_template/그림/Figure_2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_template/%EA%B7%B8%EB%A6%BC/Figure_2.pdf) |
+| 논문/5차/보존패키지/filter_paper_package_template/그림/Figure_3.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_template/%EA%B7%B8%EB%A6%BC/Figure_3.pdf) |
+| 논문/5차/원고변형/docx_bold/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_bold/paper_v2.pdf) |
+| 논문/5차/원고변형/docx_filter_focus/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_filter_focus/paper_v2.pdf) |
+| 논문/5차/원고변형/docx_final/paper.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_final/paper.pdf) |
+| 논문/5차/원고변형/docx_focus_final/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_focus_final/paper_v2.pdf) |
+| 논문/5차/원고변형/docx_graph_bold/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_graph_bold/paper_v2.pdf) |
+| 논문/5차/원고변형/docx_initial/paper.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_initial/paper.pdf) |
+| 논문/5차/원고변형/docx_v2/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_v2/paper_v2.pdf) |
+| 논문/5차/원고변형/docx_verified/paper.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_verified/paper.pdf) |
+| 논문/최종/3장_원고.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.pdf) |
+| 논문/최종/5장_원문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/5%EC%9E%A5_%EC%9B%90%EB%AC%B8.pdf) |
+| 논문/최종_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) |
+
+</details>
+
+
+<details>
+<summary>🧹 공개 자료 정리 기록</summary>
+
+| 검수 대상 | 연결 자료 | 상세·이번 비교 |
+| :--- | :--- | :--- |
+| **최종** | [📁 검수 자료](%EC%B5%9C%EC%A2%85) | [📖 정리 내용](docs/publication-review/item-1.md) · [🔎 파일 비교](docs/publication-review/공개파일변경.json) |
+
+[🗂️ 전체 차수와 자료](docs/REVISION_INDEX.md)
+
+</details>

@@ -4,15 +4,25 @@
   "files": {
     "ball_ok_ng_yolo_v7.ipynb": {
       "bytes": 277995,
-      "sha256": "087c1a4c6a4a7487e2b037eb622b7336e59620d2731e69e4f35cbd0cb6847188"
+      "sha256": "087c1a4c6a4a7487e2b037eb622b7336e59620d2731e69e4f35cbd0cb6847188",
+      "public_path": "ball_ok_ng_yolo_v7.ipynb",
+      "public_bytes": 277885,
+      "public_sha256": "a5d10fb017d97aa0fee5989980ebe2e24743fef5108f3aad4ba752d93c49ff75"
     },
     "최종/연구코드/ball_ok_ng_yolo_v7.ipynb": {
       "bytes": 277995,
-      "sha256": "087c1a4c6a4a7487e2b037eb622b7336e59620d2731e69e4f35cbd0cb6847188"
+      "sha256": "087c1a4c6a4a7487e2b037eb622b7336e59620d2731e69e4f35cbd0cb6847188",
+      "public_path": "최종/연구코드/ball_ok_ng_yolo_v7.ipynb",
+      "public_bytes": 277885,
+      "public_sha256": "a5d10fb017d97aa0fee5989980ebe2e24743fef5108f3aad4ba752d93c49ff75"
     },
     "원본작업자료/최종/연구코드/ball_ok_ng_yolo_v7.ipynb": {
       "bytes": 277994,
-      "sha256": "fea389f8751b308129f4cfbbdc870eb7b20a025e2c0985cdeda33a1a9a3d354a"
+      "sha256": "fea389f8751b308129f4cfbbdc870eb7b20a025e2c0985cdeda33a1a9a3d354a",
+      "public_path": "원본작업자료/최종/연구코드/ball_ok_ng_yolo_v7.ipynb",
+      "public_bytes": 277884,
+      "public_sha256": "a4b3afe135c93b097f2c6a13200565be5f13c34dba83e5d72a2c925ed6819c84"
     }
-  }
+  },
+  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
 }

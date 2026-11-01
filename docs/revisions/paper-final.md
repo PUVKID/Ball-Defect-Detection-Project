@@ -13,10 +13,10 @@
 | 파일 | 종류 | 바이트 | SHA-256 |
 |---|---|---:|---|
 | [논문/최종/3장_원고.pdf](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.pdf) | .pdf | 389240 | `06d33aed95f5055126d2ba65bd36f9cbd31c04cca56dbac395a0afac8c1533bd` |
-| [논문/최종/3장_원고.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.hwp) | .hwp | 524288 | `ed7fd941e6976122e11f50ba4a39074cf65acc58331655489d5136bceb41054d` |
+| [논문/최종/3장_원고.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.hwp.md) | .hwp | 524288 | `ed7fd941e6976122e11f50ba4a39074cf65acc58331655489d5136bceb41054d` |
 | [논문/최종_논문.pdf](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) | .pdf | 420646 | `457b0126e44ecf11efe75e0d7fc2eb44dcb03bcc9091b39539831578e1f10e76` |
-| [논문/최종_논문.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 528384 | `9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27` |
-| [논문/최종/요약.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/%EC%9A%94%EC%95%BD.hwp) | .hwp | 73728 | `e2da90aa62385a49051ecc10c044177da4f32f93a62e3a188ac83d65438fc6cd` |
+| [논문/최종_논문.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md) | .hwp | 528384 | `9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27` |
+| [논문/최종/요약.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/%EC%9A%94%EC%95%BD.hwp.md) | .hwp | 73728 | `e2da90aa62385a49051ecc10c044177da4f32f93a62e3a188ac83d65438fc6cd` |
 | [논문/최종/5장_원문.pdf](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/5%EC%9E%A5_%EC%9B%90%EB%AC%B8.pdf) | .pdf | 420646 | `1a5074e28a0003d873e11d2d71eedc86a4a26bd098ed2360fd5418e4b32cd226` |
 
 ## 🔎 해석·검증 범위

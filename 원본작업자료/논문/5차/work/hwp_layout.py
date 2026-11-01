@@ -1,5 +1,5 @@
 import olefile,zlib,struct,pathlib
-p=pathlib.Path('C:/Users/PUVKID/Desktop/학술대회논문양식_표준형식.hwp');o=olefile.OleFileIO(p)
+p=pathlib.Path('./학술대회논문양식_표준형식.hwp');o=olefile.OleFileIO(p)
 pathlib.Path('work/template_preview.png').write_bytes(o.openstream('PrvImage').read())
 b=zlib.decompress(o.openstream('BodyText/Section0').read(),-15);pos=0
 while pos<len(b):

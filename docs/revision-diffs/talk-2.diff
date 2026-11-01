@@ -148,7 +148,7 @@ Binary files 원본작업자료/발표자료/1차/work/before-smoothing-finalize
   text(s,'YOLOv8n 기반 볼 검출을 위한\n단일 및 복합 전처리 필터의 성능 비교',76,161,1136,150,47);
 @@ -55,38 +73,42 @@
  text(s,'내부 학습·검증:\n유사 그룹 9–20개 중복',78,558,590,79,25,GRAY);
- const sample=await fs.readFile('C:/Users/PUVKID/Desktop/2026/추계학술대회/DataSet/images/train/1001.png');s.images.add({blob:sample.buffer.slice(sample.byteOffset,sample.byteOffset+sample.byteLength),contentType:'image/png',alt:'실험 자료의 실제 입력 영상 1001.png',fit:'contain',position:{left:715,top:186,width:480,height:384}});text(s,'실제 입력 영상 예시',715,590,480,40,24,GRAY,'center');s.speakerNotes.text+='\n입력 영상 출처: DataSet/images/train/1001.png, 원본 밝기·비율 유지. 예측 결과가 아닌 원본 입력 영상.';
+ const sample=await fs.readFile('./DataSet/images/train/1001.png');s.images.add({blob:sample.buffer.slice(sample.byteOffset,sample.byteOffset+sample.byteLength),contentType:'image/png',alt:'실험 자료의 실제 입력 영상 1001.png',fit:'contain',position:{left:715,top:186,width:480,height:384}});text(s,'실제 입력 영상 예시',715,590,480,40,24,GRAY,'center');s.speakerNotes.text+='\n입력 영상 출처: DataSet/images/train/1001.png, 원본 밝기·비율 유지. 예측 결과가 아닌 원본 입력 영상.';
  }
 +
 +await photoSlide(4,[['original_example.png','Original','전처리 기준 입력'],['invert_example.png','Invert','1 − t'],['otsu_threshold_example.png','Otsu Threshold','자동 임계값 이진화']],'동일 원장면에서 비교한 변환 예시');
@@ -275,8 +275,8 @@ Binary files 원본작업자료/발표자료/1차/work/before-smoothing-finalize
 -const result=await finalizePresentation({workspaceDir:ROOT,candidatePath:candidate,finalPath,pythonExecutable:PY,integrityValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit','--require-native-table-slide','9'],explicitTotalSlideCount:15,requiredNativeChartOwnerSlides:[6,7,8,10],requiredNativeTableOwnerSlides:[9],materializeLiteralChartWorkbooks:true,fontPolicy:{basis:'user_request',families:[FONT]},verifyArtifactToolImport:true,receiptPath:path.join(ROOT,'evidence/finalizer.validation.json')});
 +const result=await finalizePresentation({workspaceDir:ROOT,candidatePath:candidate,finalPath,pythonExecutable:PY,integrityValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_package_integrity.py'),layoutValidatorPath:path.join(SKILL,'container_tools/inspect_presentation_layout_geometry.py'),layoutArgs:['--expected-slide-size-emu','12192000,6858000','--validate-bullet-geometry','--validate-heading-fit','--require-native-table-slide','16'],explicitTotalSlideCount:20,requiredNativeChartOwnerSlides:[11,12,13,17],requiredNativeTableOwnerSlides:[16],materializeLiteralChartWorkbooks:true,fontPolicy:{basis:'user_request',families:[FONT]},verifyArtifactToolImport:true,receiptPath:path.join(ROOT,'evidence/finalizer.validation.json')});
  await fs.mkdir(path.join(ROOT,'결과/글꼴'),{recursive:true});
- await fs.copyFile('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf',path.join(ROOT,'결과/글꼴/NanumGothicBold.ttf'));
- await fs.copyFile('C:/Users/PUVKID/Documents/Codex/2026-10-13/x20/work/NanumGothic-LICENSE.txt',path.join(ROOT,'결과/글꼴/NanumGothic-LICENSE.txt'));
+ await fs.copyFile('fonts/NanumGothicBold.ttf',path.join(ROOT,'결과/글꼴/NanumGothicBold.ttf'));
+ await fs.copyFile('./NanumGothic-LICENSE.txt',path.join(ROOT,'결과/글꼴/NanumGothic-LICENSE.txt'));
 Binary files 원본작업자료/발표자료/1차/.chart-data-AHQFVI/candidate.pptx and 원본작업자료/발표자료/2차/.chart-data-rP50bc/candidate.pptx differ
 Binary files 원본작업자료/발표자료/1차/.chart-data-KMLEaC/candidate.pptx and 원본작업자료/발표자료/2차/work/candidate.pptx differ
 Binary files 원본작업자료/발표자료/1차/.chart-data-utlr4E/candidate.pptx and /dev/null differ
@@ -299,7 +299,7 @@ Binary files 원본작업자료/발표자료/1차/work/initial-finalized.pptx an
 +titles=['YOLOv8n 기반 볼 검출을 위한\n단일 및 복합 전처리 필터의 성능 비교','현장 영상의 변화와 연구 질문','데이터와 그룹 기반 평가','단일 필터 영상 1: 반전과 이진화','단일 필터 영상 2: 밝기와 대비','단일 필터 영상 3: 평활화와 경계','단일 필터 영상 4: 음영과 선명화','순차 조합 영상 1','순차 조합 영상 2','조건별 학습과 두 평가 지표','일반 영상의 단일 필터 성능','복합 필터와 구성 필터 비교','평가 지표에 따른 순위 차이','가우시안 잡음 조건의 실제 영상','잡음 조건에 따른 성능 변화','세 시드 반복 평가','해석 범위와 후속 검증','결론','감사합니다']
 +durations=[25,30,45,25,25,25,20,25,20,50,55,50,35,30,50,40,30,15,5]
 +scripts=[
-+'안녕하십니까. 경기대학교 컴퓨터과학과 곽윤석입니다. YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교를 발표하겠습니다. 현장에서 영상 조건이 달라질 때 필터 적용 후에도 성능이 유지되는지, 어떤 필터와 조합이 유리한지를 실제 영상과 정량 결과로 설명하겠습니다.',
++'안녕하십니까. 경기대학교  곽윤석입니다. YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교를 발표하겠습니다. 현장에서 영상 조건이 달라질 때 필터 적용 후에도 성능이 유지되는지, 어떤 필터와 조합이 유리한지를 실제 영상과 정량 결과로 설명하겠습니다.',
 +'현장의 조명이나 촬영 조건에 따라 영상의 밝기, 대비, 잡음과 경계 표현이 달라질 수 있습니다. 하나의 필터가 모든 입력에 유리하다고 가정하기 어렵기 때문에, 서로 다른 변환에서 검출 성능을 비교했습니다. 연구 질문은 성능 유지 여부, 단일 필터의 상대적 성능, 그리고 조합의 구성 필터 대비 개선 여부입니다. 평가 범위는 일반 영상과 합성 가우시안 잡음이며, 현장의 모든 변화를 포괄하지는 않습니다.',
 +old[2],
 +'이제 실제 연구 코드에서 저장한 동일 영상의 변환 예시를 보시겠습니다. Original은 전처리하지 않은 입력이고, Invert는 밝기값을 반전합니다. Otsu Threshold는 히스토그램에서 자동으로 정한 임계값으로 이진화합니다. 사진은 변환 효과를 설명하는 한 장의 예시이며, 이후 성능 수치는 전체 오백 장의 평가 결과입니다.',
@@ -379,7 +379,7 @@ Binary files 원본작업자료/발표자료/1차/work/initial-finalized.pptx an
 -import {fileURLToPath} from 'node:url';
 -import {FileBlob,PresentationFile} from '@oai/artifact-tool';
 -import {GlobalFonts} from '@napi-rs/canvas';
--GlobalFonts.registerFromPath('C:/Users/PUVKID/AppData/Local/Microsoft/Windows/Fonts/NanumGothicBold.ttf');
+-GlobalFonts.registerFromPath('fonts/NanumGothicBold.ttf');
 -const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 -const p=await PresentationFile.importPptx(await FileBlob.load(path.join(root,'결과/추계학술대회_10분발표.pptx')));
 -for(const [i,s] of p.slides.items.entries()){

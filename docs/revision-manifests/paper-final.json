@@ -4,27 +4,46 @@
   "files": {
     "논문/최종/3장_원고.pdf": {
       "bytes": 389240,
-      "sha256": "06d33aed95f5055126d2ba65bd36f9cbd31c04cca56dbac395a0afac8c1533bd"
+      "sha256": "06d33aed95f5055126d2ba65bd36f9cbd31c04cca56dbac395a0afac8c1533bd",
+      "public_path": "논문/최종/3장_원고.pdf",
+      "public_bytes": 373989,
+      "public_sha256": "775227742381c1f59409dc7b4a2c63b53f9f20798d5403679f6213d05f7a0a42"
     },
     "논문/최종/3장_원고.hwp": {
       "bytes": 524288,
-      "sha256": "ed7fd941e6976122e11f50ba4a39074cf65acc58331655489d5136bceb41054d"
+      "sha256": "ed7fd941e6976122e11f50ba4a39074cf65acc58331655489d5136bceb41054d",
+      "public_path": "논문/최종/3장_원고.hwp.md",
+      "public_bytes": 428,
+      "public_sha256": "3e00f6cce7674027c01ac2bf8fd69bbf6aa07b558ae7ca2a7219e57fa5e3e17c"
     },
     "논문/최종_논문.pdf": {
       "bytes": 420646,
-      "sha256": "457b0126e44ecf11efe75e0d7fc2eb44dcb03bcc9091b39539831578e1f10e76"
+      "sha256": "457b0126e44ecf11efe75e0d7fc2eb44dcb03bcc9091b39539831578e1f10e76",
+      "public_path": "논문/최종_논문.pdf",
+      "public_bytes": 403332,
+      "public_sha256": "96f1a60107b05a16a5a41061a931b3031da10353c08737b0510195f83f5fcb80"
     },
     "논문/최종_논문.hwp": {
       "bytes": 528384,
-      "sha256": "9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27"
+      "sha256": "9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27",
+      "public_path": "논문/최종_논문.hwp.md",
+      "public_bytes": 436,
+      "public_sha256": "60d3fb288ca7aefa58e45efd0cdfe1455bbae01964d960d4aa5a05ab4b94eecd"
     },
     "논문/최종/요약.hwp": {
       "bytes": 73728,
-      "sha256": "e2da90aa62385a49051ecc10c044177da4f32f93a62e3a188ac83d65438fc6cd"
+      "sha256": "e2da90aa62385a49051ecc10c044177da4f32f93a62e3a188ac83d65438fc6cd",
+      "public_path": "논문/최종/요약.hwp.md",
+      "public_bytes": 439,
+      "public_sha256": "3ce0e883230db26c58deadfb77c87308af32460ff0500b2ef74ec1ba36a28a35"
     },
     "논문/최종/5장_원문.pdf": {
       "bytes": 420646,
-      "sha256": "1a5074e28a0003d873e11d2d71eedc86a4a26bd098ed2360fd5418e4b32cd226"
+      "sha256": "1a5074e28a0003d873e11d2d71eedc86a4a26bd098ed2360fd5418e4b32cd226",
+      "public_path": "논문/최종/5장_원문.pdf",
+      "public_bytes": 403332,
+      "public_sha256": "4dc488c82e0995a7fdd181eac1ee7a764fed67e37c3cdb3158cde238e635a288"
     }
-  }
+  },
+  "original_values_preserved": "bytes와 sha256은 이전 원본 차수의 기준값이며 public_*은 개인정보를 제외한 현재 공개 파일입니다."
 }

@@ -1,5 +1,5 @@
 import olefile,zlib,struct,pathlib
-p=pathlib.Path('C:/Users/PUVKID/Desktop/학술대회논문양식_표준형식.hwp')
+p=pathlib.Path('./학술대회논문양식_표준형식.hwp')
 o=olefile.OleFileIO(p)
 print(o.listdir())
 print(o.openstream('PrvText').read().decode('utf-16le'))
