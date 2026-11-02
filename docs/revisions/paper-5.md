@@ -1,6 +1,6 @@
 # 📚 논문 5차 · 재구성 패키지
 
-원본 결과표와 노트북을 바탕으로 필터 비교 원고·굵은 도표·참조 코드 패키지를 여러 변형으로 정리한 단계입니다. 한국어·영문 전달 패키지, 원고 변형 PDF/DOCX, 도표·집계표·참조 노트북·작성/검사 스크립트를 함께 보존합니다. 임시 렌더 이미지와 의존성 설치 폴더는 별도 제외합니다. 파일 이름이나 서체 변화만으로 새 실험·새 성능을 주장하지 않습니다.
+원본 결과표와 노트북을 바탕으로 필터 비교 원고·굵은 도표·참조 코드 패키지를 여러 변형으로 정리한 단계입니다. 당시에는 한국어·영문 전달 패키지와 원고 변형 PDF/DOCX를 함께 작성했습니다. 현재 첨부는 최종 전체 원고로 통일하고 도표·집계표·참조 노트북·작성/검사 스크립트는 유지합니다. 임시 렌더 이미지와 의존성 설치 폴더는 별도 제외합니다. 파일 이름이나 서체 변화만으로 새 실험·새 성능을 주장하지 않습니다.
 
 
 
@@ -8,7 +8,9 @@
 
 직전 단계: 논문 4차 · 검토 도구.
 
-## 📁 실제 파일
+## 📁 당시 파일 기록
+
+아래 첨부의 크기·해시는 이 단계의 이전 파일 기록입니다. 현재 첨부와 실제 크기·해시는 [최신 자료 안내](../PAPERS.md)에서 확인할 수 있습니다. 코드·그래프는 기존 파일을 유지했습니다.
 
 | 파일 | 종류 | 바이트 | SHA-256 |
 |---|---|---:|---|
@@ -425,16 +427,16 @@
 | [논문/5차/보존패키지/filter_paper_package_template/코드/fonts/LICENSE.txt](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_template/%EC%BD%94%EB%93%9C/fonts/LICENSE.txt) | .txt | 5281 | `1c09d5a13702fa8ee5cd5fa160f26ef72ec1168997673230050f9c0801da5017` |
 | [논문/5차/보존패키지/filter_paper_package_template/코드/fonts/NanumGothic.ttf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_template/%EC%BD%94%EB%93%9C/fonts/NanumGothic.ttf) | .ttf | 4691820 | `48a28e97b34fc8e5b157657633670cd1b7de126cfc414da65ce9c3d5bc8be733` |
 | [논문/5차/보존패키지/filter_paper_package_template/코드/fonts/NanumGothicBold.ttf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_template/%EC%BD%94%EB%93%9C/fonts/NanumGothicBold.ttf) | .ttf | 4642244 | `454eb3f503f377782a99eb84fc4bb7dde22a0f075d41b47427737f2985053bc9` |
-| [논문/5차/원고변형/docx_bold/paper_v2.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_bold/paper_v2.pdf) | .pdf | 431022 | `83d2bb7e491107887a3b5dff5d966988e26382547cd3021a6391d9a3516efa02` |
-| [논문/5차/원고변형/docx_filter_focus/paper_v2.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_filter_focus/paper_v2.pdf) | .pdf | 422361 | `cb05a7572dda5cc6a393b7d4fb2a4c23d3eadf2a3ad3aa2c0745e8fc3cf82609` |
-| [논문/5차/원고변형/docx_final/paper.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_final/paper.pdf) | .pdf | 402128 | `afd312239c6bae3b5d35ae15059fa8a0380e587bacb78871f7b994d911ab1e2b` |
-| [논문/5차/원고변형/docx_focus_final/paper_v2.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_focus_final/paper_v2.pdf) | .pdf | 417749 | `bc4948f4d1895a7c9e7fa4d20cf43c8c954a5a7c7b6947b933af42e3802dacee` |
-| [논문/5차/원고변형/docx_graph_bold/paper_v2.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_graph_bold/paper_v2.pdf) | .pdf | 428561 | `64944dcde5ee9d27b4c62a57e062c82ca2dc76070ff7ea6fb8cfef0c95b0aea9` |
-| [논문/5차/원고변형/docx_initial/paper.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_initial/paper.pdf) | .pdf | 393624 | `5ccae57b4aa9c6e6bcd56f36914e2c1eaf35c9a36810b79d56157c53c8b43e63` |
-| [논문/5차/원고변형/docx_v2/paper_v2.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_v2/paper_v2.pdf) | .pdf | 311620 | `4e0fb4d52f4a13ff627bef632d570fd4963033178c59cc879507f2ea8e384e08` |
-| [논문/5차/원고변형/docx_verified/paper.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_verified/paper.pdf) | .pdf | 382680 | `8eab2658005d9ac71e151ff057c9b262ad20c42ddf7c355e8c9f99231af0ae04` |
-| [논문/5차/원고변형/paper.docx](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/paper.docx) | .docx | 486122 | `d7bd349ce1da916a991cb44b84dcee79269a0a66b16752a8e6fa0bcb6c122f48` |
-| [논문/5차/원고변형/paper_v2.docx](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/paper_v2.docx) | .docx | 538444 | `b3639dfeb8ebd310cbde9249c9fe9e41cc6a0931f1ea5632f82cc8cdd65a5ce8` |
+| `논문/5차/원고변형/docx_bold/paper_v2.pdf` | .pdf | 431022 | `83d2bb7e491107887a3b5dff5d966988e26382547cd3021a6391d9a3516efa02` |
+| `논문/5차/원고변형/docx_filter_focus/paper_v2.pdf` | .pdf | 422361 | `cb05a7572dda5cc6a393b7d4fb2a4c23d3eadf2a3ad3aa2c0745e8fc3cf82609` |
+| `논문/5차/원고변형/docx_final/paper.pdf` | .pdf | 402128 | `afd312239c6bae3b5d35ae15059fa8a0380e587bacb78871f7b994d911ab1e2b` |
+| `논문/5차/원고변형/docx_focus_final/paper_v2.pdf` | .pdf | 417749 | `bc4948f4d1895a7c9e7fa4d20cf43c8c954a5a7c7b6947b933af42e3802dacee` |
+| `논문/5차/원고변형/docx_graph_bold/paper_v2.pdf` | .pdf | 428561 | `64944dcde5ee9d27b4c62a57e062c82ca2dc76070ff7ea6fb8cfef0c95b0aea9` |
+| `논문/5차/원고변형/docx_initial/paper.pdf` | .pdf | 393624 | `5ccae57b4aa9c6e6bcd56f36914e2c1eaf35c9a36810b79d56157c53c8b43e63` |
+| `논문/5차/원고변형/docx_v2/paper_v2.pdf` | .pdf | 311620 | `4e0fb4d52f4a13ff627bef632d570fd4963033178c59cc879507f2ea8e384e08` |
+| `논문/5차/원고변형/docx_verified/paper.pdf` | .pdf | 382680 | `8eab2658005d9ac71e151ff057c9b262ad20c42ddf7c355e8c9f99231af0ae04` |
+| `논문/5차/원고변형/paper.docx` | .docx | 486122 | `d7bd349ce1da916a991cb44b84dcee79269a0a66b16752a8e6fa0bcb6c122f48` |
+| `논문/5차/원고변형/paper_v2.docx` | .docx | 538444 | `b3639dfeb8ebd310cbde9249c9fe9e41cc6a0931f1ea5632f82cc8cdd65a5ce8` |
 | [논문/5차/원고변형/ball_ok_ng_yolo_v7_reference.ipynb](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/ball_ok_ng_yolo_v7_reference.ipynb) | .ipynb | 275847 | `e0470643575c3b6a85e6194d0652a15938411a99c14969ffee21b3e6390742ad` |
 | [논문/5차/원고변형/paper_filter_figures.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/paper_filter_figures.py) | .py | 5680 | `3e6daf0bcf9564b2e1d21cb066056d0d62e14a2500d49bf143c9b87933a8c064` |
 | [논문/5차/원고변형/reference_plot_style.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/reference_plot_style.py) | .py | 14411 | `f40dd52465a6fb48eb6232544275d4f6d6991c485774fc23eed68559e8c0837b` |

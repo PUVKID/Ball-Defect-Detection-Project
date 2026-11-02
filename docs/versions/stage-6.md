@@ -2,7 +2,7 @@
 
 YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 최종 원고 한 편입니다.
 
-- [근거 자료](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md)
+- [최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
 - [전체 보관 기록](../VERSIONS.md) · [프로젝트 소개](../../README.md)
 
 ## 🔎 범위와 해석
@@ -21,7 +21,7 @@ YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 최종 �
 
 ## 📍 관련 자료
 
-- [논문/최종_논문.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md) · `실험 결과` · BodyText §3 실험 결과
-- [논문/최종_논문.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md) · `결론` · BodyText §3–4
+- [최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) · `실험 결과` · BodyText §3 실험 결과
+- [최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) · `결론` · BodyText §3–4
 
 셀 번호는 0부터, 소스 행 번호와 PDF 쪽 번호는 1부터 셉니다. 

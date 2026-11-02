@@ -8,17 +8,19 @@
 
 직전 단계: 발표자료 1차.
 
-## 📁 실제 파일
+## 📁 당시 파일 기록
+
+아래 첨부의 크기·해시는 이 단계의 이전 파일 기록입니다. 현재 첨부와 실제 크기·해시는 [최신 자료 안내](../PAPERS.md)에서 확인할 수 있습니다. 코드·그래프는 기존 파일을 유지했습니다.
 
 | 파일 | 종류 | 바이트 | SHA-256 |
 |---|---|---:|---|
-| [발표자료/2차/추계학술대회_10분발표.pdf](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pdf) | .pdf | 4054848 | `4a17d156c3d737e06f6424e343bcbf6f11b26ce4a64617039d508448656824f9` |
-| [발표자료/2차/추계학술대회_10분발표.pptx](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pptx) | .pptx | 22906083 | `a56be240bf21da2ee23457a7c480251ac0167a3c1db252c61e1fdad96c4e3b59` |
-| [원본작업자료/발표자료/2차/.chart-data-rP50bc/candidate.pptx](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/.chart-data-rP50bc/candidate.pptx) | .pptx | 22906081 | `0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105` |
+| `발표자료/2차/추계학술대회_10분발표.pdf` | .pdf | 4054848 | `4a17d156c3d737e06f6424e343bcbf6f11b26ce4a64617039d508448656824f9` |
+| `발표자료/2차/추계학술대회_10분발표.pptx` | .pptx | 22906083 | `a56be240bf21da2ee23457a7c480251ac0167a3c1db252c61e1fdad96c4e3b59` |
+| `원본작업자료/발표자료/2차/.chart-data-rP50bc/candidate.pptx` | .pptx | 22906081 | `0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105` |
 | [원본작업자료/발표자료/2차/work/assemble_builder.py](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/work/assemble_builder.py) | .py | 6090 | `c1ee20bd63cc4dd1ac89d63f709d5cb05dbebf79a8fc2733e5a40293741f592d` |
 | [원본작업자료/발표자료/2차/work/build_presentation.mjs](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/work/build_presentation.mjs) | .mjs | 19355 | `7bdd4ec64e89988a4872067507817511ca0a7383128c9738a305777bc1bd9150` |
-| [원본작업자료/발표자료/2차/work/candidate.pptx](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/work/candidate.pptx) | .pptx | 23589246 | `1f6b9bc37275e6a2c6122c46c15809eb14632660bebc9827d23e60495ebf9769` |
-| [원본작업자료/발표자료/2차/work/first-finalized.pptx](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/work/first-finalized.pptx) | .pptx | 22906081 | `0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105` |
+| `원본작업자료/발표자료/2차/work/candidate.pptx` | .pptx | 23589246 | `1f6b9bc37275e6a2c6122c46c15809eb14632660bebc9827d23e60495ebf9769` |
+| `원본작업자료/발표자료/2차/work/first-finalized.pptx` | .pptx | 22906081 | `0578378ee469cfb850ca3f3dbfdb931a0a7c4e76949318e283be97c4e02f7105` |
 | [원본작업자료/발표자료/2차/work/prepare_content.py](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/work/prepare_content.py) | .py | 16058 | `ba1f5e520953ac71ceba0cab26a539d219f25de244c17c5ccb7dd11054227fb7` |
 | [원본작업자료/발표자료/2차/work/prepare_revision.py](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/work/prepare_revision.py) | .py | 13761 | `9f956dd067bf1d08cc6ad4bce285c00bc561cb7d69334aa49ec524cd83965a6a` |
 

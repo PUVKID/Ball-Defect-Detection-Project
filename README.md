@@ -18,29 +18,34 @@ YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비�
 
 [핵심 구성](#input-processing-output)
 
-[📄 PDF로 읽기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) · [📝 PDF 공개 안내](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md)
+[📄 PDF로 읽기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) · [최신 편집 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
 
 </div>
 
-## 📄 내 논문 PDF
+## 📄 논문과 최신 자료
 
-[현재 원문 PDF·공식 링크 교체 위치](docs/PAPERS.md) · [모든 실제 차수·최종본·전체 비교](docs/REVISION_INDEX.md)
+| 자료 | 원문 파일 |
+|---|---|
+| 최종 논문 · 볼 검출 필터 비교 | [PDF 다운로드](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) |
+| 최종 논문 · 볼 검출 필터 비교 | [HWP 다운로드](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) |
+| 최종 발표 · 볼 검출 | [PDF 다운로드](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pdf) |
+| 최종 발표 · 볼 검출 | [PPTX 다운로드](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pptx) |
+| 완성 대본 · 볼 검출 발표 4차 | [TXT 다운로드](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8/10%EB%B6%84_%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_%EB%B0%9C%ED%91%9C%EB%8C%80%EB%B3%B8.txt) |
 
-- **최종5장 · 전체 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/5%EC%9E%A5_%EC%9B%90%EB%AC%B8.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md)
-- **최종3장 · 축약 원고**: [PDF 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.pdf) · [편집 원본](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.hwp.md)
-
-공식 공개 URL은 아직 등록하지 않았습니다. 추후 [논문 전용 표](docs/PAPERS.md)의 교체 칸과 이 항목을 함께 갱신합니다.
+[📚 자료별 설명](docs/PAPERS.md) · [🗂️ 코드 차수와 변경 이력](docs/REVISION_INDEX.md)
 
 ## 🗂️ 모든 실제 차수와 최종본
 
+아래 표는 코드 개발과 원고 수정 당시의 변화입니다. 현재 다운로드는 최신 완성 문서로 연결하며 이전 첨부는 변경 이력에서 구분합니다.
+
 | 단계 | 설명 | 파일 종류 | 전체 차이 |
 |---|---|---|---|
-| [논문 1차](docs/revisions/paper-1.md) | 다양한 영상 조건에서 YOLO 볼 검출을 위한 단일 필터와 복합 필터의 성능 비교라는 초기 제목의 원고입니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-1.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8/1%EC%B0%A8) |
-| [논문 2차](docs/revisions/paper-2.md) | 1차와 같은 제목·연구 설정 아래 본문 표현과 문장 구성을 다듬은 원고입니다. 두 요약 PDF는 해시가 같으므로 새 요약 결과가 생긴 것으로 설명하지 않습니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-2.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8/2%EC%B0%A8) |
+| [논문 1차](docs/revisions/paper-1.md) | 다양한 영상 조건에서 YOLO 볼 검출을 위한 단일 필터와 복합 필터의 성능 비교라는 초기 제목의 원고입니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-1.diff) · [최신 자료](%EB%85%BC%EB%AC%B8) |
+| [논문 2차](docs/revisions/paper-2.md) | 1차와 같은 제목·연구 설정 아래 본문 표현과 문장 구성을 다듬은 원고입니다. 두 요약 PDF는 해시가 같으므로 새 요약 결과가 생긴 것으로 설명하지 않습니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-2.diff) · [최신 자료](%EB%85%BC%EB%AC%B8) |
 | [논문 3차](docs/revisions/paper-3.md) | 제목을 YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교로 바꾸고 단일·복합 필터·잡음·시드 비교와 결과 해석을 확장했습니다. 3차 HWP는 최종5장 HWP와 바이트 해시가 동일합니다. 기존 전체 최종 PDF를 재사용합니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-3.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8) |
 | [논문 4차 · 검토 도구](docs/revisions/paper-4.md) | 새 원고가 아니라 그림의 이중 반올림·HWP 내장 해상도와 원정밀도 결과표를 대조한 검토 단계입니다. 기존 공개 검사 도구를 보존합니다. 검토 로그·역할 영수증은 공개 자료로 복제하지 않습니다. | py | [직전 단계 비교](docs/revision-diffs/paper-4.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8/4%EC%B0%A8/tools) |
-| [논문 5차 · 재구성 패키지](docs/revisions/paper-5.md) | 원본 결과표와 노트북을 바탕으로 필터 비교 원고·굵은 도표·참조 코드 패키지를 여러 변형으로 정리한 단계입니다. 한국어·영문 전달 패키지, 원고 변형 PDF/DOCX, 도표·집계표·참조 노트북·작성/검사 스크립트를 함께 보존합니다. 임시 렌더 이미지와 의존성 설치 폴더는 별도 제외합니다. 파일 이름이나 서체 변화만으로 새 실험·새 성능을 주장하지 않습니다. | csv·docx·ipynb·json·pdf·png·py·ttf·txt | [직전 단계 비교](docs/revision-diffs/paper-5.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C) |
-| [논문 최종 · 3장/5장/요약](docs/revisions/paper-final.md) | 3장 축약본·5장 전체본·별도 요약 HWP가 함께 보존된 최종 묶음입니다. 5장본은 논문3차와 동일 해시이며, 3장본은 본문 분량이 다른 별도 파일입니다. 3장본이 5장본을 대체하지 않습니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-final.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85) |
+| [논문 5차 · 재구성 패키지](docs/revisions/paper-5.md) | 원본 결과표와 노트북을 바탕으로 필터 비교 원고·굵은 도표·참조 코드 패키지를 여러 변형으로 정리한 단계입니다. 당시에는 한국어·영문 전달 패키지와 원고 변형 PDF/DOCX를 함께 작성했습니다. 현재 첨부는 최종 전체 원고로 통일하고 도표·집계표·참조 노트북·작성/검사 스크립트는 유지합니다. 임시 렌더 이미지와 의존성 설치 폴더는 별도 제외합니다. 파일 이름이나 서체 변화만으로 새 실험·새 성능을 주장하지 않습니다. | csv·docx·ipynb·json·pdf·png·py·ttf·txt | [직전 단계 비교](docs/revision-diffs/paper-5.diff) · [자료 폴더](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C) |
+| [논문 최종 · 3장/5장/요약](docs/revisions/paper-final.md) | 당시 최종 묶음은 3장 축약본·5장 전체본·별도 요약 HWP로 구성됐습니다. 현재 첨부는 최종 5쪽 전체 원고와 같은 판의 HWP입니다. 5장본은 논문3차와 동일 해시이며, 3장본은 본문 분량이 다른 별도 파일입니다. 3장본이 5장본을 대체하지 않습니다. | hwp·pdf | [직전 단계 비교](docs/revision-diffs/paper-final.diff) · [최신 자료](%EB%85%BC%EB%AC%B8) |
 | [발표자료 1차](docs/revisions/talk-1.md) | 본발표12장·부록3장 구성의 10분 발표 초안입니다. 기존 검사 도구와 실제 PDF/PPTX를 연결합니다. | mjs·pdf·pptx·py | [직전 단계 비교](docs/revision-diffs/talk-1.diff) · [자료 폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/1%EC%B0%A8) |
 | [발표자료 2차](docs/revisions/talk-2.md) | 2차는 비교 사진과 설명을 나누어 20장·600초 본발표로 재구성합니다. 기존 결과를 설명하는 방식의 변화이며 새 연구 실험으로 세지 않습니다. | mjs·pdf·pptx·py | [직전 단계 비교](docs/revision-diffs/talk-2.diff) · [자료 폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8) |
 | [발표자료 3차](docs/revisions/talk-3.md) | 3차는 2차의 내용·시간을 유지하면서 투명 로고·자산 보존 처리를 정리한 단계입니다. 연구 결과 변화로 확대하지 않습니다. | mjs·pdf·pptx·py | [직전 단계 비교](docs/revision-diffs/talk-3.diff) · [자료 폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8) |
@@ -53,7 +58,7 @@ YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비�
 
 ## ✨ 연구 핵심
 
-YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 원고의 수정 차수와 최종3장·5장본을 함께 보존합니다.
+YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 최종 5쪽 전체 원고를 제공합니다. 이전 수정 차수와 축약본의 차이는 변경 설명에서 확인할 수 있습니다.
 
 수치는 연구 원고에 보고된 값입니다.
 
@@ -73,7 +78,7 @@ YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 원고의
 
 **논문 그림** — 공개 HWP 원고의 필터별 노이즈 강도 비교 집계 그림입니다. 세 열은 노이즈 표준편차 0·40·80이고, 지표는 mAP50-95입니다.
 
-[근거 파일 보기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md)
+[최신 편집 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
 
 </details>
 
@@ -150,7 +155,7 @@ flowchart LR
 
 ### 📄 최종 논문
 
-[최종 논문 전체 원고](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md)에 필터 비교 방법과 연구 그래프를 정리했습니다.
+[최신 편집 원문](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)에 필터 비교 방법과 연구 그래프를 정리했습니다.
 
 <a name="최종-원고의-연구-범위"></a>
 
@@ -258,43 +263,21 @@ DataSet/
 </div>
 
 
-> 공개 PDF에서는 지정된 개인정보와 학과·학부 정보를 제외했습니다. 저자·공동저자의 성명, 학교, 이메일, ORCID와 사진은 보존합니다. 편집 원문 링크는 비공개 보관 안내로 연결됩니다.
-
-
-<details>
-<summary>📚 차수별 논문 공개본 전체 보기</summary>
-
-| 원고·공개 경로 | 논문 |
-| :--- | :--- |
-| 논문/1차/요약.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9A%94%EC%95%BD.pdf) |
-| 논문/1차/원고.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/1%EC%B0%A8/%EC%9B%90%EA%B3%A0.pdf) |
-| 논문/2차/요약.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9A%94%EC%95%BD.pdf) |
-| 논문/2차/원고.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/2%EC%B0%A8/%EC%9B%90%EA%B3%A0.pdf) |
-| 논문/5차/그림/Figure_1.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EA%B7%B8%EB%A6%BC/Figure_1.pdf) |
-| 논문/5차/그림/Figure_2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EA%B7%B8%EB%A6%BC/Figure_2.pdf) |
-| 논문/5차/그림/Figure_3.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EA%B7%B8%EB%A6%BC/Figure_3.pdf) |
-| 논문/5차/보존패키지/filter_paper_package/그림/Figure_1.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package/%EA%B7%B8%EB%A6%BC/Figure_1.pdf) |
-| 논문/5차/보존패키지/filter_paper_package/그림/Figure_2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package/%EA%B7%B8%EB%A6%BC/Figure_2.pdf) |
-| 논문/5차/보존패키지/filter_paper_package/그림/Figure_3.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package/%EA%B7%B8%EB%A6%BC/Figure_3.pdf) |
-| 논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_1.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_bold/%EA%B7%B8%EB%A6%BC/Figure_1.pdf) |
-| 논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_bold/%EA%B7%B8%EB%A6%BC/Figure_2.pdf) |
-| 논문/5차/보존패키지/filter_paper_package_bold/그림/Figure_3.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_bold/%EA%B7%B8%EB%A6%BC/Figure_3.pdf) |
-| 논문/5차/보존패키지/filter_paper_package_template/그림/Figure_1.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_template/%EA%B7%B8%EB%A6%BC/Figure_1.pdf) |
-| 논문/5차/보존패키지/filter_paper_package_template/그림/Figure_2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_template/%EA%B7%B8%EB%A6%BC/Figure_2.pdf) |
-| 논문/5차/보존패키지/filter_paper_package_template/그림/Figure_3.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/filter_paper_package_template/%EA%B7%B8%EB%A6%BC/Figure_3.pdf) |
-| 논문/5차/원고변형/docx_bold/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_bold/paper_v2.pdf) |
-| 논문/5차/원고변형/docx_filter_focus/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_filter_focus/paper_v2.pdf) |
-| 논문/5차/원고변형/docx_final/paper.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_final/paper.pdf) |
-| 논문/5차/원고변형/docx_focus_final/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_focus_final/paper_v2.pdf) |
-| 논문/5차/원고변형/docx_graph_bold/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_graph_bold/paper_v2.pdf) |
-| 논문/5차/원고변형/docx_initial/paper.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_initial/paper.pdf) |
-| 논문/5차/원고변형/docx_v2/paper_v2.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_v2/paper_v2.pdf) |
-| 논문/5차/원고변형/docx_verified/paper.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/docx_verified/paper.pdf) |
-| 논문/최종/3장_원고.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/3%EC%9E%A5_%EC%9B%90%EA%B3%A0.pdf) |
-| 논문/최종/5장_원문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85/5%EC%9E%A5_%EC%9B%90%EB%AC%B8.pdf) |
-| 논문/최종_논문.pdf | [📄 PDF 열기](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) |
-
-</details>
 
 
 
+
+
+
+
+## 📚 현재 첨부 문서
+
+이전 원고·발표의 변경 설명과 코드 차수는 위의 이력에서 확인할 수 있습니다. 다운로드는 문서 계보별 최신 완성본으로 연결합니다.
+
+| 문서 | 자료 폴더 | 상세 | 직전 공개본 전체 비교 |
+|---|---|---|---|
+| 최종 논문 · 볼 검출 필터 비교 | [폴더](%EB%85%BC%EB%AC%B8) | [설명](docs/latest/ball-yolov8n-filter-paper.md) | [전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
+| 최종 발표 · 볼 검출 | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85) | [설명](docs/latest/ball-conference-presentation.md) | [전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
+| 완성 대본 · 볼 검출 발표 4차 | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8) | [설명](docs/latest/ball-complete-talk-script.md) | [전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
+
+[📝 최신 문서 구성 변경](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C.md)

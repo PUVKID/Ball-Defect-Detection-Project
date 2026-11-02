@@ -8,13 +8,15 @@
 
 직전 단계: 논문 2차.
 
-## 📁 실제 파일
+## 📁 당시 파일 기록
+
+아래 첨부의 크기·해시는 이 단계의 이전 파일 기록입니다. 현재 첨부와 실제 크기·해시는 [최신 자료 안내](../PAPERS.md)에서 확인할 수 있습니다. 코드·그래프는 기존 파일을 유지했습니다.
 
 | 파일 | 종류 | 바이트 | SHA-256 |
 |---|---|---:|---|
-| [논문/최종_논문.pdf](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) | .pdf | 420646 | `457b0126e44ecf11efe75e0d7fc2eb44dcb03bcc9091b39539831578e1f10e76` |
-| [논문/최종_논문.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp.md) | .hwp | 528384 | `9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27` |
-| [원본작업자료/논문/3차/추계학술대회 논문 3차_요약.hwp](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%85%BC%EB%AC%B8/3%EC%B0%A8/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%20%EB%85%BC%EB%AC%B8%203%EC%B0%A8_%EC%9A%94%EC%95%BD.hwp.md) | .hwp | 73728 | `5cfac11aa7e9cbde941c5bef302eca00f7d5f2dd76a4fb38d31b556f44c94a0a` |
+| `논문/최종_논문.pdf` | .pdf | 420646 | `457b0126e44ecf11efe75e0d7fc2eb44dcb03bcc9091b39539831578e1f10e76` |
+| [최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 528384 | `9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27` |
+| [최신 편집 원문](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) | .hwp | 73728 | `5cfac11aa7e9cbde941c5bef302eca00f7d5f2dd76a4fb38d31b556f44c94a0a` |
 
 ## 🔎 해석·검증 범위
 
