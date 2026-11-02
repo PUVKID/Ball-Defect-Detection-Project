@@ -1,14 +1,109 @@
-# 📚 이전 도커 실험·기존 결과표
+<div align="center">
 
-기존 공개 단일·복합 필터 실험 코드와 집계 결과표를 보존합니다. 원자료 경로·단일영상 예측·제조 원본·모델 가중치는 신규 공개에서 제외합니다.
+# 🗃️ 이전 도커 실험 · 코드와 저장 결과 읽기
 
+**단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다. 결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다.**
 
+**기술 분류:** 컴퓨터 비전 › 이전 필터 실험 › 저장된 결과표·그래프와 노트북
 
-[전체 차수](../REVISION_INDEX.md) · [첫 화면](../../README.md) · [직전 단계 전체 비교](../revision-diffs/legacy.diff) · [전체 파일 크기·해시](../revision-manifests/legacy.json)
+[목적](#purpose) · [기능](#features) · [입출력](#flow) · [구성](#files) · [준비](#setup) · [사용법](#usage) · [결과](#results) · [제약](#limits) · [변경](#changes)
 
-직전 단계: 확인된 비교 대상 없음.
+</div>
 
-## 📁 실제 파일
+<a name="purpose"></a>
+
+## 🎯 이 단계에서 하는 일
+
+이전 도커라는 폴더명은 실험 자료의 구분입니다. 현재 코드·결과 파일의 존재와 그대로 실행할 수 있는 컨테이너 이미지·데이터셋·GPU 환경이 제공된다는 사실은 구분합니다.
+
+<a name="features"></a>
+
+## 🧩 주요 기능과 처리 방식
+
+| 구성 | 실제 역할 |
+| --- | --- |
+| 결과 원자료 | results_summary·sweep·반복 결과와 표에서 조건과 지표를 확인합니다. |
+| 필터 비교 | 단일 10종과 복합 5종을 원본 기준과 비교한 결과가 연결됩니다. |
+| 표와 그림 대응 | 원정밀도 CSV/JSON과 표시용 반올림 그래프를 구분합니다. |
+| 코드 연결 | 이전 노트북의 설정·캐시·출력과 최종 노트북의 변화를 비교합니다. |
+
+<a name="flow"></a>
+
+## 🔄 입력 → 처리 → 출력
+
+| 입력 | 처리 | 출력·읽을 결과 |
+| --- | --- | --- |
+| 저장된 CSV·JSON | 조건·지표·시드 확인 | 당시 실험 결과 |
+| 결과표 | 그래프·필터 비교 | 상대 차이와 표시 정밀도 |
+| 이전·최종 노트북 | 설정과 함수 비교 | 구현 변화의 이해 |
+
+<a name="files"></a>
+
+## 📁 파일과 핵심 처리
+
+| 파일 | 이용 방법 |
+| --- | --- |
+| [이전 도커 실험/불량검출실험/ball_ok_ng_yolo_v7.ipynb](../../%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98/ball_ok_ng_yolo_v7.ipynb) | 설정·함수·실행 셀 |
+| [ball_ok_ng_yolo_v7.ipynb](../../ball_ok_ng_yolo_v7.ipynb) | 설정·함수·실행 셀 |
+
+### 🔎 함수·셀로 찾아가기
+
+아래 이름은 해당 파일의 실제 정의입니다. 위 처리 설명과 함께 설정·호출 순서·출력 경로를 따라 읽습니다.
+
+| 파일 | 핵심 정의 |
+| --- | --- |
+| [이전 도커 실험/불량검출실험/ball_ok_ng_yolo_v7.ipynb](../../%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98/ball_ok_ng_yolo_v7.ipynb) | 셀 4: `GpuSampler` · `__init__` · `run` · `stop`<br>셀 5: `plot_clean_bar`<br>셀 8: `read_yolo_boxes` · `list_dataset`<br>셀 10: `_ellipse` · `_locate_part_once` · `locate_part`<br>셀 12: `assign_region` · `judge_boxes`<br>셀 14: `_gt_worker`<br>셀 16: `find_dup_groups` · `find_root` |
+| [ball_ok_ng_yolo_v7.ipynb](../../ball_ok_ng_yolo_v7.ipynb) | 셀 3: `GpuSampler` · `__init__` · `run` · `stop`<br>셀 4: `_bar_colors` · `plot_clean_bar`<br>셀 6: `read_yolo_boxes` · `list_dataset`<br>셀 8: `_ellipse` · `_locate_part_once` · `locate_part`<br>셀 10: `assign_region` · `judge_boxes`<br>셀 12: `_gt_worker`<br>셀 14: `find_dup_groups` · `find_root` |
+
+<a name="setup"></a>
+
+## ⚙️ 환경과 설정
+
+| 항목 | 조건·기본값 |
+| --- | --- |
+| 읽기 | CSV·JSON 뷰어와 Jupyter |
+| 지표 | 정확도·Strict Acc·mAP·속도 등 각 열의 정의 확인 |
+| 실행 | 원본 데이터·GPU·가중치·경로를 별도로 준비 |
+
+<a name="usage"></a>
+
+## 🚀 준비와 사용 순서
+
+1. 보관된 결과 폴더에서 표와 요약 JSON의 조건명을 먼저 확인합니다.
+2. 일반·잡음·반복 실험을 나누고 단일 시드와 평균·표준편차를 구분합니다.
+3. 그래프 숫자와 원정밀도 표를 대조할 때 반올림 자리수를 확인합니다.
+4. 코드의 입력·캐시·출력 설정을 읽은 뒤 필요한 자료만 활용합니다.
+
+<a name="results"></a>
+
+## 📊 결과를 읽는 방법
+
+파일의 결과는 저장 당시 조건에 해당합니다. 같은 지표 이름이어도 실행·분할·시드가 다른 값을 합치지 않습니다.
+
+그림과 결과표를 재작성하는 것은 검출 모델을 다시 학습한 것과 다릅니다. 제조 원영상·모델 가중치를 새로 공개한 자료로 해석하지 않습니다.
+
+<a name="limits"></a>
+
+## 🛠️ 알려진 제약과 확인 지점
+
+| 상황 | 확인할 내용 |
+| --- | --- |
+| 입력 부재 | 제조 원영상 전체와 가중치는 별도로 준비합니다. |
+| 표시 정밀도 | CSV/JSON의 원정밀도와 그래프 소수점 표시는 다릅니다. |
+| 비교 범위 | 최종 노트북의 추가 진단을 이 이전 결과에 소급하지 않습니다. |
+
+<a name="changes"></a>
+
+## 🔀 이전 단계와의 변화
+
+이전 실험의 코드·저장 결과를 보존한 묶음입니다. 최종 연구코드와 결과 구성의 전체 차이를 연결합니다.
+
+[🔎 직전 단계 전체 비교·구성](../revision-diffs/legacy.diff) · [📋 전체 파일 크기·해시](../revision-manifests/legacy.json)
+
+<details>
+<summary>📎 이 단계의 파일 기록과 전체 해시</summary>
+
+아래 표는 해당 단계가 기록될 당시의 파일 정보입니다. 현재 첨부는 [프로젝트 자료 안내](../PAPERS.md)에서 확인할 수 있습니다.
 
 | 파일 | 종류 | 바이트 | SHA-256 |
 |---|---|---:|---|
@@ -1025,6 +1120,8 @@
 | [원본작업자료/이전 도커 실험/불량검출실험/yolo_filter_figures/paper_filter_comparison/paper_figure3.pdf](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98/yolo_filter_figures/paper_filter_comparison/paper_figure3.pdf) | .pdf | 31982 | `74724fff6a5b30ae8d97bcd8b88eedde6a22c37256339c1c4f6b89c4d84e351f` |
 | [원본작업자료/이전 도커 실험/불량검출실험/yolo_ok_ng_figures/yolo_judgement_results.csv](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98/yolo_ok_ng_figures/yolo_judgement_results.csv) | .csv | 19596 | `ac759c3140cea5e6ebcf4b9dc50ed1df225bd6ba64438fabdba036c3f4389d7d` |
 
-## 🔎 해석·검증 범위
+</details>
 
-원고는 원고 보고값, 저장된 표는 당시 결과 파일, 노트북은 구현 자료입니다. 이번 정리는 재학습·임상 실험·제조 장비 검사·추천 성능 재현을 수행하지 않았습니다. 파일 비교와 PDF 내용 확인은 실제 기능 실행의 성공을 대신하지 않습니다. 원본의 알려진 오류와 0바이트 자료는 보존하며 성공으로 보정하지 않습니다.
+---
+
+[🏠 프로젝트](../../README.md) · [🗂️ 전체 차수](../REVISION_INDEX.md) · [📁 자료 폴더](../../%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98)

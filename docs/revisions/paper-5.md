@@ -1,16 +1,114 @@
-# 📚 논문 5차 · 재구성 패키지
+<div align="center">
 
-원본 결과표와 노트북을 바탕으로 필터 비교 원고·굵은 도표·참조 코드 패키지를 여러 변형으로 정리한 단계입니다. 당시에는 한국어·영문 전달 패키지와 원고 변형 PDF/DOCX를 함께 작성했습니다. 현재 첨부는 최종 전체 원고로 통일하고 도표·집계표·참조 노트북·작성/검사 스크립트는 유지합니다. 임시 렌더 이미지와 의존성 설치 폴더는 별도 제외합니다. 파일 이름이나 서체 변화만으로 새 실험·새 성능을 주장하지 않습니다.
+# 🧩 논문 5차 · 결과표와 도표 재구성 패키지
 
+**보존된 결과표와 노트북을 논문용 도표·참조 코드·전달 패키지로 구성한 단계입니다. 모델을 다시 학습하는 경로와 저장 결과를 다시 그리는 경로를 분리합니다.**
 
+**기술 분류:** 연구 결과 시각화 › pandas·Matplotlib › 원정밀도 표·참조 스타일·도표
 
-[전체 차수](../REVISION_INDEX.md) · [첫 화면](../../README.md) · [직전 단계 전체 비교](../revision-diffs/paper-5.diff) · [전체 파일 크기·해시](../revision-manifests/paper-5.json)
+[목적](#purpose) · [기능](#features) · [입출력](#flow) · [구성](#files) · [준비](#setup) · [사용법](#usage) · [결과](#results) · [제약](#limits) · [변경](#changes)
 
-직전 단계: 논문 4차 · 검토 도구.
+</div>
 
-## 📁 당시 파일 기록
+<a name="purpose"></a>
 
-아래 첨부의 크기·해시는 이 단계의 이전 파일 기록입니다. 현재 첨부와 실제 크기·해시는 [최신 자료 안내](../PAPERS.md)에서 확인할 수 있습니다. 코드·그래프는 기존 파일을 유지했습니다.
+## 🎯 이 단계에서 하는 일
+
+원고의 작성·서체별 변형은 같은 연구의 편집 이력입니다. 현재 논문 첨부는 최종 전체 원고로 통일하고 코드·집계표·그림·스타일 함수는 보존합니다.
+
+<a name="features"></a>
+
+## 🧩 주요 기능과 처리 방식
+
+| 구성 | 실제 역할 |
+| --- | --- |
+| 논문 그림 | paper_filter_figures.py가 단일·복합·잡음 CSV에서 3개 논문용 그림을 구성합니다. |
+| 스타일 함수 | reference_plot_style.py가 글꼴·색·막대·레이블·이웃 텍스트 배치를 공통 처리합니다. |
+| 결과 재렌더 | render_saved_figures.py가 저장 JSON·CSV와 참조 노트북의 그림 함수를 이용합니다. |
+| 입력 연결 | 재작성한 그림에 사용한 원자료 SHA를 기록하는 처리를 포함합니다. |
+
+<a name="flow"></a>
+
+## 🔄 입력 → 처리 → 출력
+
+| 입력 | 처리 | 출력·읽을 결과 |
+| --- | --- | --- |
+| 저장 결과 CSV·JSON | 조건별 수치 읽기 | 그림 입력 표 |
+| 수치와 참조 스타일 | 막대·잡음 비교·조합 비교 그림 작성 | PNG/PDF 그래프 |
+| 참조 노트북·보존 패키지 | 같은 결과의 전달 구성 | 도표·코드·집계표 |
+
+<a name="files"></a>
+
+## 📁 파일과 핵심 처리
+
+| 파일 | 이용 방법 |
+| --- | --- |
+| [논문/5차/원고변형/paper_filter_figures.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/paper_filter_figures.py) | 처리 함수와 실행 조건 |
+| [논문/5차/원고변형/reference_plot_style.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/reference_plot_style.py) | 처리 함수와 실행 조건 |
+| [논문/5차/원고변형/render_saved_figures.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/render_saved_figures.py) | 처리 함수와 실행 조건 |
+| [논문/5차/코드/ball_ok_ng_yolo_v7_reference.ipynb](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C/ball_ok_ng_yolo_v7_reference.ipynb) | 설정·함수·실행 셀 |
+
+### 🔎 함수·셀로 찾아가기
+
+아래 이름은 해당 파일의 실제 정의입니다. 위 처리 설명과 함께 설정·호출 순서·출력 경로를 따라 읽습니다.
+
+| 파일 | 핵심 정의 |
+| --- | --- |
+| [논문/5차/원고변형/paper_filter_figures.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/paper_filter_figures.py) | 소스: `verify_paper_typography` · `make_paper_filter_figures` |
+| [논문/5차/원고변형/reference_plot_style.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/reference_plot_style.py) | 소스: `configure_reference_style` · `accuracy_color` · `label` · `is_filter_label` · `_fit_neighbor_text` · `draw_bar` · `finish_bar` · `plot_clean_bar` |
+| [논문/5차/원고변형/render_saved_figures.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/render_saved_figures.py) | 소스: `main` |
+| [논문/5차/코드/ball_ok_ng_yolo_v7_reference.ipynb](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C/ball_ok_ng_yolo_v7_reference.ipynb) | 셀 4: `GpuSampler` · `__init__` · `run` · `stop`<br>셀 5: `plot_clean_bar`<br>셀 7: `read_yolo_boxes` · `list_dataset`<br>셀 9: `_ellipse` · `_locate_part_once` · `locate_part`<br>셀 11: `assign_region` · `judge_boxes`<br>셀 13: `_gt_worker`<br>셀 15: `find_dup_groups` · `find_root` |
+
+<a name="setup"></a>
+
+## ⚙️ 환경과 설정
+
+| 항목 | 조건·기본값 |
+| --- | --- |
+| 입력 표 | table_round1·table_round2·table_grid_noise40·table_grid_noise80 |
+| 그림 도구 | NumPy·pandas·Matplotlib |
+| 인자 | paper_filter_figures: --results·--output |
+| 재렌더 인자 | --results·--output·--notebook |
+
+<a name="usage"></a>
+
+## 🚀 준비와 사용 순서
+
+1. 각 스크립트가 읽는 CSV/JSON과 결과 폴더를 먼저 확인합니다.
+2. 참조 스타일의 글꼴·레이블·색 설정과 실제 파일 경로를 준비합니다.
+3. 논문용 3개 그림 또는 저장 결과 전체 재렌더 중 목적에 맞는 스크립트를 선택합니다.
+4. 출력 그림의 값·조건명·표시 자릿수를 입력 표와 대조합니다.
+
+<a name="results"></a>
+
+## 📊 결과를 읽는 방법
+
+도표 재구성은 저장 결과의 표현을 바꾼 것입니다. 새 실험이나 별도 논문 성과로 세지 않습니다.
+
+그림 PDF15개는 그래프이며 이전 원고·축약본과 역할이 다릅니다. 코드·JSON·CSV·원본 실험 그래프와 최종 논문 첨부를 구분해 읽습니다.
+
+<a name="limits"></a>
+
+## 🛠️ 알려진 제약과 확인 지점
+
+| 상황 | 확인할 내용 |
+| --- | --- |
+| 실험과 렌더 | 모델 학습 성공과 저장 결과 그림 재작성을 혼동하지 않습니다. |
+| 원정밀도 | 표시용 반올림 수치에서 원래 값을 복원하지 않고 입력 표를 사용합니다. |
+| 의존 파일 | 스타일 모듈·노트북·CSV/JSON·폰트 경로를 함께 준비합니다. |
+
+<a name="changes"></a>
+
+## 🔀 이전 단계와의 변화
+
+4차의 수치·그림 대조 이후 결과표와 도표·참조 코드를 여러 전달 구성으로 정리한 단계입니다. 현재 첨부의 원고 수를 늘리는 작업과 구분합니다.
+
+[🔎 직전 단계 전체 비교·구성](../revision-diffs/paper-5.diff) · [📋 전체 파일 크기·해시](../revision-manifests/paper-5.json)
+
+<details>
+<summary>📎 이 단계의 파일 기록과 전체 해시</summary>
+
+아래 표는 해당 단계가 기록될 당시의 파일 정보입니다. 현재 첨부는 [프로젝트 자료 안내](../PAPERS.md)에서 확인할 수 있습니다.
 
 | 파일 | 종류 | 바이트 | SHA-256 |
 |---|---|---:|---|
@@ -520,6 +618,8 @@
 | [원본작업자료/논문/5차/work/figures/table_sweep_resolution.csv](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%85%BC%EB%AC%B8/5%EC%B0%A8/work/figures/table_sweep_resolution.csv) | .csv | 1659 | `6ea1225f87020b8b1bceec1afe771e6108577d646b0da0f3f7b9fa9503bd3eef` |
 | [원본작업자료/논문/5차/work/figures/verification_summary.csv](../../%EC%9B%90%EB%B3%B8%EC%9E%91%EC%97%85%EC%9E%90%EB%A3%8C/%EB%85%BC%EB%AC%B8/5%EC%B0%A8/work/figures/verification_summary.csv) | .csv | 409 | `ab8ac065bb34e9b1eccb603203d66d43afb4ed80d456f0e4ee7855ed7f307cf9` |
 
-## 🔎 해석·검증 범위
+</details>
 
-원고는 원고 보고값, 저장된 표는 당시 결과 파일, 노트북은 구현 자료입니다. 이번 정리는 재학습·임상 실험·제조 장비 검사·추천 성능 재현을 수행하지 않았습니다. 파일 비교와 PDF 내용 확인은 실제 기능 실행의 성공을 대신하지 않습니다. 원본의 알려진 오류와 0바이트 자료는 보존하며 성공으로 보정하지 않습니다.
+---
+
+[🏠 프로젝트](../../README.md) · [🗂️ 전체 차수](../REVISION_INDEX.md) · [📁 자료 폴더](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C) · [⬅️ 논문 4차 · 검토 도구](paper-4.md) · [➡️ 논문 최종 · 3장/5장/요약](paper-final.md)
