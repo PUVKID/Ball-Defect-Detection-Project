@@ -1124,7 +1124,7 @@ check_review.py는 10개 항목과 원고·결과 자료의 해시, 단일·반�
 
 ## 파일별 역할
 
-| 파일 · 이용 방법 |
+| 내용 |
 | --- |
 | **파일**<br>[논문/4차/tools/check_review.py](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/tools/check_review.py)<br><br>**이용 방법**<br>처리 함수와 실행 조건 |
 | **파일**<br>[논문/최종_논문.pdf](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf)<br><br>**이용 방법**<br>전체 원문·도표 읽기 |
@@ -1135,7 +1135,7 @@ check_review.py는 10개 항목과 원고·결과 자료의 해시, 단일·반�
 
 관련 함수와 셀을 파일별로 정리했습니다. 실행 전 설정과 호출 순서, 출력 경로를 확인하세요.
 
-| 파일 · 핵심 정의 |
+| 내용 |
 | --- |
 | **파일**<br>[논문/4차/tools/check_review.py](../../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/tools/check_review.py)<br><br>**핵심 정의**<br>소스: `rows` |
 

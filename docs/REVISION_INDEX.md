@@ -10,7 +10,7 @@
 
 [프로젝트 전체 소개](../README.md)
 
-| 차수·단계 · 주요 내용 · 자료 · 직전 비교 |
+| 내용 |
 | --- |
 | **차수·단계**<br>[논문 1차](revisions/paper-1.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-1-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-1.diff) |
 | **차수·단계**<br>[논문 2차](revisions/paper-2.md)<br><br>**주요 내용**<br>1차와 같은 제목·연구 설정 아래 문장과 표현을 다듬은 원고 단계입니다.<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-2.diff) |

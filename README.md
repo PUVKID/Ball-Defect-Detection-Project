@@ -8,7 +8,7 @@
 **YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비교합니다.**
 
 <!-- reading-levels17:start -->
-| 읽기 수준 · 안내 내용 |
+| 내용 |
 | --- |
 | **읽기 수준**<br>[LEVEL 1 - Beginner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md)<br><br>**안내 내용**<br>낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
 | **읽기 수준**<br>[LEVEL 2 - Explorer](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md)<br><br>**안내 내용**<br>핵심 개념과 처리 흐름의 관계 이해 |
@@ -102,7 +102,7 @@ YOLOv8n, 단일·복합 필터, 중복 그룹 분할·다중 시드 비교
 
 ## 논문과 최신 자료
 
-| 자료 · 원문 파일 |
+| 내용 |
 | --- |
 | **자료**<br>최종 논문 · 볼 검출 필터 비교<br><br>**원문 파일**<br>[PDF 다운로드](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) |
 | **자료**<br>최종 논문 · 볼 검출 필터 비교<br><br>**원문 파일**<br>[HWP 다운로드](%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) |
@@ -116,7 +116,7 @@ YOLOv8n, 단일·복합 필터, 중복 그룹 분할·다중 시드 비교
 
 ## 전체 차수
 
-| 차수·단계 · 주요 내용 · 자료 · 직전 비교 |
+| 내용 |
 | --- |
 | **차수·단계**<br>[논문 1차](docs/revisions/paper-1.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-4-row-1-field-1)<br><br>**자료**<br>[폴더](%EB%85%BC%EB%AC%B8)<br><br>**직전 비교**<br>[전체 비교](docs/revision-diffs/paper-1.diff) |
 | **차수·단계**<br>[논문 2차](docs/revisions/paper-2.md)<br><br>**주요 내용**<br>1차와 같은 제목·연구 설정 아래 문장과 표현을 다듬은 원고 단계입니다.<br><br>**자료**<br>[폴더](%EB%85%BC%EB%AC%B8)<br><br>**직전 비교**<br>[전체 비교](docs/revision-diffs/paper-2.diff) |
@@ -630,7 +630,7 @@ CUDA GPU를 찾지 못함
 
 현재 제공하는 원문과 직전 공개본의 비교입니다. 이전 원고·발표와 코드는 전체 차수 표에서 확인할 수 있습니다.
 
-| 문서 · 자료 폴더 · 상세 · 직전 공개본 전체 비교 |
+| 내용 |
 | --- |
 | **문서**<br>최종 논문 · 볼 검출 필터 비교<br><br>**자료 폴더**<br>[폴더](%EB%85%BC%EB%AC%B8)<br><br>**상세**<br>[설명](docs/latest/ball-yolov8n-filter-paper.md)<br><br>**직전 공개본 전체 비교**<br>[전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
 | **문서**<br>최종 발표 · 볼 검출<br><br>**자료 폴더**<br>[폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85)<br><br>**상세**<br>[설명](docs/latest/ball-conference-presentation.md)<br><br>**직전 공개본 전체 비교**<br>[전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |

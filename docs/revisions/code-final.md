@@ -1362,7 +1362,7 @@ YOLO 학습·검출·중심 매칭
 
 ## 파일별 역할
 
-| 파일 · 이용 방법 |
+| 내용 |
 | --- |
 | **파일**<br>[ball_ok_ng_yolo_v7.ipynb](../../ball_ok_ng_yolo_v7.ipynb)<br><br>**이용 방법**<br>설정·함수·실행 셀 |
 | **파일**<br>[최종/연구코드/ball_ok_ng_yolo_v7.ipynb](../../%EC%B5%9C%EC%A2%85/%EC%97%B0%EA%B5%AC%EC%BD%94%EB%93%9C/ball_ok_ng_yolo_v7.ipynb)<br><br>**이용 방법**<br>설정·함수·실행 셀 |

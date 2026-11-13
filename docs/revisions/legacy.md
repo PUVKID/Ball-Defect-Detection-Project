@@ -1026,7 +1026,7 @@ results_summary·sweep·반복 결과와 표에서 조건과 지표를 확인합
 
 ## 파일별 역할
 
-| 파일 · 이용 방법 |
+| 내용 |
 | --- |
 | **파일**<br>[이전 도커 실험/불량검출실험/ball_ok_ng_yolo_v7.ipynb](../../%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98/ball_ok_ng_yolo_v7.ipynb)<br><br>**이용 방법**<br>설정·함수·실행 셀 |
 | **파일**<br>[ball_ok_ng_yolo_v7.ipynb](../../ball_ok_ng_yolo_v7.ipynb)<br><br>**이용 방법**<br>설정·함수·실행 셀 |

@@ -54,7 +54,7 @@ PDF와 같은 발표의 PPTX를 함께 제공합니다.
 3. PPTX 노트와 4차 대본의 장별 발화를 확인합니다.
 4. 필요한 편집은 원본 발표를 별도 사본으로 보관해 진행합니다.
 
-| 차수·단계 · 주요 내용 · 자료 · 직전 비교 |
+| 내용 |
 | --- |
 | **차수·단계**<br>[발표자료 최종](../../docs/revisions/talk-final.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-2-row-1-field-1)<br><br>**자료**<br>[폴더](.)<br><br>**직전 비교**<br>[전체 비교](../../docs/revision-diffs/talk-final.diff) |
 

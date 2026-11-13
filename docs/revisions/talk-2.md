@@ -1028,7 +1028,7 @@ Strict Acc와 mAP, 일반·잡음·반복 결과를 구분합니다.
 
 ## 파일별 역할
 
-| 파일 · 이용 방법 |
+| 내용 |
 | --- |
 | **파일**<br>[발표자료/2차/tools/check_presentation.py](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/tools/check_presentation.py)<br><br>**이용 방법**<br>처리 함수와 실행 조건 |
 | **파일**<br>[발표자료/최종/추계학술대회_10분발표.pdf](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pdf)<br><br>**이용 방법**<br>전체 원문·도표 읽기 |
@@ -1040,7 +1040,7 @@ Strict Acc와 mAP, 일반·잡음·반복 결과를 구분합니다.
 
 관련 함수와 셀을 파일별로 정리했습니다. 실행 전 설정과 호출 순서, 출력 경로를 확인하세요.
 
-| 파일 · 핵심 정의 |
+| 내용 |
 | --- |
 | **파일**<br>[발표자료/2차/tools/check_presentation.py](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8/tools/check_presentation.py)<br><br>**핵심 정의**<br>소스: `check` · `read_json` |
 

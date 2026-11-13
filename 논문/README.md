@@ -8,7 +8,7 @@
 
 **이 폴더에 연결된 연구·개발 단계의 목적과 차이는 아래 개별 설명에서 확인할 수 있습니다.**
 
-| 차수·단계 · 주요 내용 · 자료 · 직전 비교 |
+| 내용 |
 | --- |
 | **차수·단계**<br>[논문 1차](../docs/revisions/paper-1.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-1-field-1)<br><br>**자료**<br>[폴더](.)<br><br>**직전 비교**<br>[전체 비교](../docs/revision-diffs/paper-1.diff) |
 | **차수·단계**<br>[논문 2차](../docs/revisions/paper-2.md)<br><br>**주요 내용**<br>1차와 같은 제목·연구 설정 아래 문장과 표현을 다듬은 원고 단계입니다.<br><br>**자료**<br>[폴더](.)<br><br>**직전 비교**<br>[전체 비교](../docs/revision-diffs/paper-2.diff) |
