@@ -66,9 +66,9 @@
 3. 검사 조건에서 결과 계산·분할 중복·표시 차이를 각각 구분해 읽습니다.
 4. 공개 도구에 없는 원본 근거를 준비하지 않은 상태에서는 전체 점검을 실행한 결과로 간주하지 않습니다.
 
-| 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
-| --- | --- | --- | --- |
-| [논문 4차 · 검토 도구](../../../docs/revisions/paper-4.md) | [상세 설명](#layout18-table-2-row-1-field-1) | [폴더](.) | [전체 비교](../../../docs/revision-diffs/paper-4.diff) |
+| 차수·단계 · 주요 내용 · 자료 · 직전 비교 |
+| --- |
+| **차수·단계**<br>[논문 4차 · 검토 도구](../../../docs/revisions/paper-4.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-2-row-1-field-1)<br><br>**자료**<br>[폴더](.)<br><br>**직전 비교**<br>[전체 비교](../../../docs/revision-diffs/paper-4.diff) |
 
 <a id="layout18-table-2-row-1-field-1"></a>
 
