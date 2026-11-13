@@ -1,24 +1,26 @@
-<div align="center">
+<a id="-논문-5차--결과표와-도표-재구성-패키지"></a>
 
-# 🧩 논문 5차 · 결과표와 도표 재구성 패키지
+# 논문 5차 · 결과표와 도표 재구성 패키지
 
-**보존된 결과표와 노트북을 논문용 도표·참조 코드·전달 패키지로 구성한 단계입니다. 모델을 다시 학습하는 경로와 저장 결과를 다시 그리는 경로를 분리합니다.**
+보존된 결과표와 노트북을 논문용 도표·참조 코드·전달 패키지로 구성한 단계입니다. 모델을 다시 학습하는 경로와 저장 결과를 다시 그리는 경로를 분리합니다.
 
-**기술 분류:** 연구 결과 시각화 › pandas·Matplotlib › 원정밀도 표·참조 스타일·도표
+분야: 연구 결과 시각화 › pandas·Matplotlib › 원정밀도 표·참조 스타일·도표
 
 [목적](#purpose) · [기능](#features) · [입출력](#flow) · [구성](#files) · [준비](#setup) · [사용법](#usage) · [결과](#results) · [제약](#limits) · [변경](#changes)
 
-</div>
-
 <a name="purpose"></a>
 
-## 🎯 이 단계에서 하는 일
+<a id="-이-단계에서-하는-일"></a>
+
+## 연구 목적
 
 원고의 작성·서체별 변형은 같은 연구의 편집 이력입니다. 현재 논문 첨부는 최종 전체 원고로 통일하고 코드·집계표·그림·스타일 함수는 보존합니다.
 
 <a name="features"></a>
 
-## 🧩 주요 기능과 처리 방식
+<a id="-주요-기능과-처리-방식"></a>
+
+## 방법과 구현
 
 | 구성 | 실제 역할 |
 | --- | --- |
@@ -29,9 +31,11 @@
 
 <a name="flow"></a>
 
-## 🔄 입력 → 처리 → 출력
+<a id="-입력--처리--출력"></a>
 
-| 입력 | 처리 | 출력·읽을 결과 |
+## 입력·처리·출력
+
+| 입력 | 처리 | 출력 |
 | --- | --- | --- |
 | 저장 결과 CSV·JSON | 조건별 수치 읽기 | 그림 입력 표 |
 | 수치와 참조 스타일 | 막대·잡음 비교·조합 비교 그림 작성 | PNG/PDF 그래프 |
@@ -39,7 +43,9 @@
 
 <a name="files"></a>
 
-## 📁 파일과 핵심 처리
+<a id="-파일과-핵심-처리"></a>
+
+## 파일별 역할
 
 | 파일 | 이용 방법 |
 | --- | --- |
@@ -48,9 +54,11 @@
 | [논문/5차/원고변형/render_saved_figures.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%9B%90%EA%B3%A0%EB%B3%80%ED%98%95/render_saved_figures.py) | 처리 함수와 실행 조건 |
 | [논문/5차/코드/ball_ok_ng_yolo_v7_reference.ipynb](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C/ball_ok_ng_yolo_v7_reference.ipynb) | 설정·함수·실행 셀 |
 
-### 🔎 함수·셀로 찾아가기
+<a id="-함수셀로-찾아가기"></a>
 
-아래 이름은 해당 파일의 실제 정의입니다. 위 처리 설명과 함께 설정·호출 순서·출력 경로를 따라 읽습니다.
+### 관련 함수와 셀
+
+관련 함수와 셀을 파일별로 정리했습니다. 실행 전 설정과 호출 순서, 출력 경로를 확인하세요.
 
 | 파일 | 핵심 정의 |
 | --- | --- |
@@ -61,7 +69,9 @@
 
 <a name="setup"></a>
 
-## ⚙️ 환경과 설정
+<a id="️-환경과-설정"></a>
+
+## 실행 환경과 설정
 
 | 항목 | 조건·기본값 |
 | --- | --- |
@@ -72,7 +82,9 @@
 
 <a name="usage"></a>
 
-## 🚀 준비와 사용 순서
+<a id="-준비와-사용-순서"></a>
+
+## 실행 순서
 
 1. 각 스크립트가 읽는 CSV/JSON과 결과 폴더를 먼저 확인합니다.
 2. 참조 스타일의 글꼴·레이블·색 설정과 실제 파일 경로를 준비합니다.
@@ -81,7 +93,9 @@
 
 <a name="results"></a>
 
-## 📊 결과를 읽는 방법
+<a id="-결과를-읽는-방법"></a>
+
+## 결과와 해석
 
 도표 재구성은 저장 결과의 표현을 바꾼 것입니다. 새 실험이나 별도 논문 성과로 세지 않습니다.
 
@@ -89,7 +103,9 @@
 
 <a name="limits"></a>
 
-## 🛠️ 알려진 제약과 확인 지점
+<a id="️-알려진-제약과-확인-지점"></a>
+
+## 제약과 확인 사항
 
 | 상황 | 확인할 내용 |
 | --- | --- |
@@ -99,14 +115,16 @@
 
 <a name="changes"></a>
 
-## 🔀 이전 단계와의 변화
+<a id="-이전-단계와의-변화"></a>
+
+## 직전 단계와 비교
 
 4차의 수치·그림 대조 이후 결과표와 도표·참조 코드를 여러 전달 구성으로 정리한 단계입니다. 현재 첨부의 원고 수를 늘리는 작업과 구분합니다.
 
-[🔎 직전 단계 전체 비교·구성](../revision-diffs/paper-5.diff) · [📋 전체 파일 크기·해시](../revision-manifests/paper-5.json)
+[직전 단계 전체 비교·구성](../revision-diffs/paper-5.diff) · [전체 파일 크기·해시](../revision-manifests/paper-5.json)
 
 <details>
-<summary>📎 이 단계의 파일 기록과 전체 해시</summary>
+<summary>이 단계의 파일 기록과 전체 해시</summary>
 
 아래 표는 해당 단계가 기록될 당시의 파일 정보입니다. 현재 첨부는 [프로젝트 자료 안내](../PAPERS.md)에서 확인할 수 있습니다.
 
@@ -118,8 +136,8 @@
 | [논문/5차/그림/Figure_3.pdf](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EA%B7%B8%EB%A6%BC/Figure_3.pdf) | .pdf | 31982 | `f5c1bead09b7eae69b025f666eb175c405daaed120a42b53ab3ce2c7fbdc24a7` |
 | [논문/5차/보존패키지/delivery_package/검증결과.json](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EA%B2%80%EC%A6%9D%EA%B2%B0%EA%B3%BC.json) | .json | 442 | `274587a2d5bede0e3cf2a0349a00073c3626acfb5790dcf458db9b31c211388b` |
 | [논문/5차/보존패키지/delivery_package/읽어주세요.txt](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EC%9D%BD%EC%96%B4%EC%A3%BC%EC%84%B8%EC%9A%94.txt) | .txt | 3272 | `49186ea0493d0a144929737fcfc08fc8f28a52a7c066a30435e390b83728d7ff` |
-| [논문/5차/보존패키지/delivery_package/논문에_사용한_그림/그림1.png](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EB%85%BC%EB%AC%B8%EC%97%90_%EC%82%AC%EC%9A%A9%ED%95%9C_%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC1.png) | .png | 233000 | `660f6840034c655a3aefecf0a361e7e1cb6d40dd56cb75e3029a739f44f8f788` |
-| [논문/5차/보존패키지/delivery_package/논문에_사용한_그림/그림2.png](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EB%85%BC%EB%AC%B8%EC%97%90_%EC%82%AC%EC%9A%A9%ED%95%9C_%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC2.png) | .png | 245338 | `98da2e0a074aaff9475ea8e4f6cd25e486c33dda41862f2a5bde0925c0aa28eb` |
+| [논문/5차/보존패키지/delivery_package/논문에_사용한_그림/그림 1.png](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EB%85%BC%EB%AC%B8%EC%97%90_%EC%82%AC%EC%9A%A9%ED%95%9C_%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC1.png) | .png | 233000 | `660f6840034c655a3aefecf0a361e7e1cb6d40dd56cb75e3029a739f44f8f788` |
+| [논문/5차/보존패키지/delivery_package/논문에_사용한_그림/그림 2.png](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EB%85%BC%EB%AC%B8%EC%97%90_%EC%82%AC%EC%9A%A9%ED%95%9C_%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC2.png) | .png | 245338 | `98da2e0a074aaff9475ea8e4f6cd25e486c33dda41862f2a5bde0925c0aa28eb` |
 | [논문/5차/보존패키지/delivery_package/수정_코드/ball_ok_ng_yolo_v7_reference.ipynb](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EC%88%98%EC%A0%95_%EC%BD%94%EB%93%9C/ball_ok_ng_yolo_v7_reference.ipynb) | .ipynb | 275213 | `681f6fd7002045329a6ff8662e280e3800ca48b27de5caffa55f3137b45dca3a` |
 | [논문/5차/보존패키지/delivery_package/수정_코드/reference_plot_style.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EC%88%98%EC%A0%95_%EC%BD%94%EB%93%9C/reference_plot_style.py) | .py | 12086 | `3091ece33b4cdda1a1a07f30c062945a49e335f32b93a33cfb16cf213c5c6f94` |
 | [논문/5차/보존패키지/delivery_package/수정_코드/render_saved_figures.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EC%88%98%EC%A0%95_%EC%BD%94%EB%93%9C/render_saved_figures.py) | .py | 4842 | `4d94ff176201ecbfc47db9a62a681adc83b97d94ea0429dcf07edcbbf77d0f60` |
@@ -255,8 +273,8 @@
 | [논문/5차/보존패키지/delivery_package/추가_그래프/ref_graphs_sweep_resolution/10_dashboard.png](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package/%EC%B6%94%EA%B0%80_%EA%B7%B8%EB%9E%98%ED%94%84/ref_graphs_sweep_resolution/10_dashboard.png) | .png | 401819 | `1c6a2ea5c77f47a2b0ca5266131585aa7394b67dec0d55738584003c68bcd539` |
 | [논문/5차/보존패키지/delivery_package_english/검증결과.json](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package_english/%EA%B2%80%EC%A6%9D%EA%B2%B0%EA%B3%BC.json) | .json | 442 | `274587a2d5bede0e3cf2a0349a00073c3626acfb5790dcf458db9b31c211388b` |
 | [논문/5차/보존패키지/delivery_package_english/읽어주세요.txt](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package_english/%EC%9D%BD%EC%96%B4%EC%A3%BC%EC%84%B8%EC%9A%94.txt) | .txt | 3352 | `ee0e10d6edabdfee4a8d4c61672df81e068edf043a4dd978d4251dd45c006591` |
-| [논문/5차/보존패키지/delivery_package_english/논문에_사용한_그림/그림1.png](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package_english/%EB%85%BC%EB%AC%B8%EC%97%90_%EC%82%AC%EC%9A%A9%ED%95%9C_%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC1.png) | .png | 268037 | `12cef015ddaa4b9bd9c58a9fc4b07f7d7529407d35f762fc9f997b374323e238` |
-| [논문/5차/보존패키지/delivery_package_english/논문에_사용한_그림/그림2.png](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package_english/%EB%85%BC%EB%AC%B8%EC%97%90_%EC%82%AC%EC%9A%A9%ED%95%9C_%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC2.png) | .png | 266565 | `5f19b2a1b0f4739848d67f24e6f7573e40a3b575e12500fd105a18532cb9b23a` |
+| [논문/5차/보존패키지/delivery_package_english/논문에_사용한_그림/그림 1.png](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package_english/%EB%85%BC%EB%AC%B8%EC%97%90_%EC%82%AC%EC%9A%A9%ED%95%9C_%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC1.png) | .png | 268037 | `12cef015ddaa4b9bd9c58a9fc4b07f7d7529407d35f762fc9f997b374323e238` |
+| [논문/5차/보존패키지/delivery_package_english/논문에_사용한_그림/그림 2.png](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package_english/%EB%85%BC%EB%AC%B8%EC%97%90_%EC%82%AC%EC%9A%A9%ED%95%9C_%EA%B7%B8%EB%A6%BC/%EA%B7%B8%EB%A6%BC2.png) | .png | 266565 | `5f19b2a1b0f4739848d67f24e6f7573e40a3b575e12500fd105a18532cb9b23a` |
 | [논문/5차/보존패키지/delivery_package_english/수정_코드/ball_ok_ng_yolo_v7_reference.ipynb](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package_english/%EC%88%98%EC%A0%95_%EC%BD%94%EB%93%9C/ball_ok_ng_yolo_v7_reference.ipynb) | .ipynb | 275248 | `487bc4d8d478373efff5c1929c64de6d7567d96cdfd02f4302daa424c46a377b` |
 | [논문/5차/보존패키지/delivery_package_english/수정_코드/reference_plot_style.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package_english/%EC%88%98%EC%A0%95_%EC%BD%94%EB%93%9C/reference_plot_style.py) | .py | 13440 | `8fd12105d4947f93b31a077e4bc18fe71f176aa3c505ce481f10a137d9d93bcf` |
 | [논문/5차/보존패키지/delivery_package_english/수정_코드/render_saved_figures.py](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EB%B3%B4%EC%A1%B4%ED%8C%A8%ED%82%A4%EC%A7%80/delivery_package_english/%EC%88%98%EC%A0%95_%EC%BD%94%EB%93%9C/render_saved_figures.py) | .py | 4991 | `a187749fc5254d27ef6bcc9bacf60a1912d7db1afa6857ee77e314cb40db89b2` |
@@ -622,4 +640,4 @@
 
 ---
 
-[🏠 프로젝트](../../README.md) · [🗂️ 전체 차수](../REVISION_INDEX.md) · [📁 자료 폴더](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C) · [⬅️ 논문 4차 · 검토 도구](paper-4.md) · [➡️ 논문 최종 · 3장/5장/요약](paper-final.md)
+[프로젝트](../../README.md) · [전체 차수](../REVISION_INDEX.md) · [자료 폴더](../../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C) · [논문 4차 · 검토 도구](paper-4.md) · [논문 최종 · 3장/5장/요약](paper-final.md)
