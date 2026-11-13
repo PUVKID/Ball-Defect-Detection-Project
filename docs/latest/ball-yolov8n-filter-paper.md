@@ -2,7 +2,11 @@
 
 # YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교
 
-같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약이 있던 최종 단계에서 현재는 5쪽 전체 원고와 같은 판의 HWP를 제공합니다.
+<!-- reading-levels17:start -->
+**읽기 수준 선택** · [LEVEL 1 - Beginner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) · [LEVEL 2 - Explorer](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) · [LEVEL 3 - Practitioner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) · [LEVEL 4 - Advanced](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) · [LEVEL 5 - Expert](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md)
+<!-- reading-levels17:end -->
+
+**같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약이 있던 최종 단계에서 현재는 5쪽 전체 원고와 같은 판의 HWP를 제공합니다.**
 
 [목적·구성·사용법·결과의 상세 안내](../revisions/paper-final.md) · [프로젝트](../../README.md) · [전체 차수](../REVISION_INDEX.md)
 
@@ -39,10 +43,38 @@
 <details>
 <summary>파일·크기·SHA-256과 자료 연결</summary>
 
-| 원문 파일 | 바이트 | SHA-256 |
-|---|---:|---|
-| [최종_논문.pdf](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf) | 420646 | `1a5074e28a0003d873e11d2d71eedc86a4a26bd098ed2360fd5418e4b32cd226` |
-| [최종_논문.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp) | 528384 | `9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27` |
+<a id="layout18-table-2-row-1"></a>
+
+**[최종_논문.pdf](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf)**
+
+**원문 파일**
+
+[최종_논문.pdf](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.pdf)
+
+**바이트**
+
+420646
+
+**SHA-256**
+
+`1a5074e28a0003d873e11d2d71eedc86a4a26bd098ed2360fd5418e4b32cd226`
+
+<a id="layout18-table-2-row-2"></a>
+
+**[최종_논문.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)**
+
+**원문 파일**
+
+[최종_논문.hwp](../../%EB%85%BC%EB%AC%B8/%EC%B5%9C%EC%A2%85_%EB%85%BC%EB%AC%B8.hwp)
+
+**바이트**
+
+528384
+
+**SHA-256**
+
+`9328b43ab033f7fef1bc8d43fb6ba8a58b525b4b0663301e659d53697c700a27`
+
 
 </details>
 

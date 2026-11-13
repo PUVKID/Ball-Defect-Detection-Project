@@ -2,7 +2,11 @@
 
 # 발표자료/4차
 
-3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다. 슬라이드를 새로 학습하거나 실험한 단계가 아닙니다.
+<!-- reading-levels17:start -->
+**읽기 수준 선택** · [LEVEL 1 - Beginner](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) · [LEVEL 2 - Explorer](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) · [LEVEL 3 - Practitioner](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) · [LEVEL 4 - Advanced](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) · [LEVEL 5 - Expert](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md)
+<!-- reading-levels17:end -->
+
+**3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다.** 슬라이드를 새로 학습하거나 실험한 단계가 아닙니다.
 
 | 주요 구성 | 내용 |
 | --- | --- |
@@ -22,6 +26,15 @@
 
 | 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
 | --- | --- | --- | --- |
-| [발표자료 4차](../../docs/revisions/talk-4.md) | 3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다. 슬라이드를 새로 학습하거나 실험한 단계가 아닙니다. | [폴더](.) | [전체 비교](../../docs/revision-diffs/talk-4.diff) |
+| [발표자료 4차](../../docs/revisions/talk-4.md) | [상세 설명](#layout18-table-2-row-1-field-1) | [폴더](.) | [전체 비교](../../docs/revision-diffs/talk-4.diff) |
+
+<a id="layout18-table-2-row-1-field-1"></a>
+
+**[발표자료 4차](../../docs/revisions/talk-4.md)**
+
+**주요 내용**
+
+3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다. 슬라이드를 새로 학습하거나 실험한 단계가 아닙니다.
+
 
 [프로젝트](../../README.md) · [전체 차수](../../docs/REVISION_INDEX.md)

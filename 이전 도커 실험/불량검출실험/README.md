@@ -2,7 +2,11 @@
 
 # 이전 도커 실험/불량검출실험
 
-단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다. 결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다.
+<!-- reading-levels17:start -->
+**읽기 수준 선택** · [LEVEL 1 - Beginner](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) · [LEVEL 2 - Explorer](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) · [LEVEL 3 - Practitioner](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) · [LEVEL 4 - Advanced](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) · [LEVEL 5 - Expert](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md)
+<!-- reading-levels17:end -->
+
+**단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다.** 결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다.
 
 | 주요 구성 | 내용 |
 | --- | --- |
@@ -22,6 +26,15 @@
 
 | 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
 | --- | --- | --- | --- |
-| [이전 도커 실험·기존 결과표](../../docs/revisions/legacy.md) | 단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다. 결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다. | [폴더](.) | [전체 비교](../../docs/revision-diffs/legacy.diff) |
+| [이전 도커 실험·기존 결과표](../../docs/revisions/legacy.md) | [상세 설명](#layout18-table-2-row-1-field-1) | [폴더](.) | [전체 비교](../../docs/revision-diffs/legacy.diff) |
+
+<a id="layout18-table-2-row-1-field-1"></a>
+
+**[이전 도커 실험·기존 결과표](../../docs/revisions/legacy.md)**
+
+**주요 내용**
+
+단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다. 결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다.
+
 
 [프로젝트](../../README.md) · [전체 차수](../../docs/REVISION_INDEX.md)

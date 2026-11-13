@@ -5,7 +5,17 @@
 
 # Ball Defect Detection Project
 
-YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비교합니다.
+**YOLOv8n과 영상 필터를 조합해 작은 볼 결함의 검출 성능을 비교합니다.**
+
+<!-- reading-levels17:start -->
+| 읽기 수준 | 안내 내용 |
+| --- | --- |
+| [LEVEL 1 - Beginner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
+| [LEVEL 2 - Explorer](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 핵심 개념과 처리 흐름의 관계 이해 |
+| [LEVEL 3 - Practitioner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 실험·사용 절차와 결과 해석 따라가기 |
+| [LEVEL 4 - Advanced](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 코드 구조·설정·설계 선택과 제약 검토 |
+| [LEVEL 5 - Expert](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 논문·프로토콜·분모·누수·미검증 범위 대조 |
+<!-- reading-levels17:end -->
 
 분야: 컴퓨터 비전 › 딥러닝 객체 검출 › 소형 객체·전처리 강건성
 
@@ -78,19 +88,92 @@ YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 최종 5�
 
 | 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
 | --- | --- | --- | --- |
-| [논문 1차](docs/revisions/paper-1.md) | 다양한 영상 조건에서 YOLO 볼 검출을 위한 단일·복합 필터의 성능 비교를 정리한 초기 원고입니다. | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-1.diff) |
+| [논문 1차](docs/revisions/paper-1.md) | [상세 설명](#layout18-table-4-row-1-field-1) | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-1.diff) |
 | [논문 2차](docs/revisions/paper-2.md) | 1차와 같은 제목·연구 설정 아래 문장과 표현을 다듬은 원고 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-2.diff) |
-| [논문 3차](docs/revisions/paper-3.md) | 제목을 YOLOv8n 기반 볼 검출의 단일·복합 전처리 필터 비교로 정리하고 조건·결과 해석을 확장한 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-3.diff) |
-| [논문 4차 · 검토 도구](docs/revisions/paper-4.md) | 새 모델을 학습하는 대신 원고의 표·그림·문장과 저장된 원정밀도 결과를 대조한 검토 도구 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8/4%EC%B0%A8/tools) | [전체 비교](docs/revision-diffs/paper-4.diff) |
-| [논문 5차 · 재구성 패키지](docs/revisions/paper-5.md) | 보존된 결과표와 노트북을 논문용 도표·참조 코드·전달 패키지로 구성한 단계입니다. 모델을 다시 학습하는 경로와 저장 결과를 다시 그리는 경로를 분리합니다. | [폴더](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C) | [전체 비교](docs/revision-diffs/paper-5.diff) |
-| [논문 최종 · 3장/5장/요약](docs/revisions/paper-final.md) | 같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약이 있던 최종 단계에서 현재는 5쪽 전체 원고와 같은 판의 HWP를 제공합니다. | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-final.diff) |
+| [논문 3차](docs/revisions/paper-3.md) | [상세 설명](#layout18-table-4-row-3-field-1) | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-3.diff) |
+| [논문 4차 · 검토 도구](docs/revisions/paper-4.md) | [상세 설명](#layout18-table-4-row-4-field-1) | [폴더](%EB%85%BC%EB%AC%B8/4%EC%B0%A8/tools) | [전체 비교](docs/revision-diffs/paper-4.diff) |
+| [논문 5차 · 재구성 패키지](docs/revisions/paper-5.md) | [상세 설명](#layout18-table-4-row-5-field-1) | [폴더](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C) | [전체 비교](docs/revision-diffs/paper-5.diff) |
+| [논문 최종 · 3장/5장/요약](docs/revisions/paper-final.md) | [상세 설명](#layout18-table-4-row-6-field-1) | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-final.diff) |
 | [발표자료 1차](docs/revisions/talk-1.md) | 필터 비교 연구를 12장 본발표 600초와 3장 부록으로 설명한 초기 발표 구성입니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/1%EC%B0%A8) | [전체 비교](docs/revision-diffs/talk-1.diff) |
 | [발표자료 2차](docs/revisions/talk-2.md) | 필터 비교 사진과 설명을 나누고 20장·600초 본발표로 재배치한 단계입니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8) | [전체 비교](docs/revision-diffs/talk-2.diff) |
 | [발표자료 3차](docs/revisions/talk-3.md) | 2차의 20장 내용·시간을 유지하면서 투명 학교 마크와 전달 자산의 일치를 보강한 단계입니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8) | [전체 비교](docs/revision-diffs/talk-3.diff) |
-| [발표자료 4차](docs/revisions/talk-4.md) | 3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다. 슬라이드를 새로 학습하거나 실험한 단계가 아닙니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8) | [전체 비교](docs/revision-diffs/talk-4.diff) |
-| [발표자료 최종](docs/revisions/talk-final.md) | 단일·복합 필터와 잡음·시드 결과를 20장으로 설명하는 완성 발표 PDF/PPTX입니다. 논문과 다른 목적의 발표 자료로 같은 연구의 흐름을 전달합니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85) | [전체 비교](docs/revision-diffs/talk-final.diff) |
-| [최종](docs/revisions/code-final.md) | 유사 영상 그룹과 교차검증을 구성하고 전처리 필터별 YOLO 검출, 볼 일치, 영역별 개수 판정과 추가 진단을 함께 계산하는 노트북입니다. | [폴더](%EC%B5%9C%EC%A2%85) | [전체 비교](docs/revision-diffs/code-final.diff) |
-| [이전 도커 실험·기존 결과표](docs/revisions/legacy.md) | 단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다. 결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다. | [폴더](%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98) | [전체 비교](docs/revision-diffs/legacy.diff) |
+| [발표자료 4차](docs/revisions/talk-4.md) | [상세 설명](#layout18-table-4-row-10-field-1) | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8) | [전체 비교](docs/revision-diffs/talk-4.diff) |
+| [발표자료 최종](docs/revisions/talk-final.md) | [상세 설명](#layout18-table-4-row-11-field-1) | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85) | [전체 비교](docs/revision-diffs/talk-final.diff) |
+| [최종](docs/revisions/code-final.md) | [상세 설명](#layout18-table-4-row-12-field-1) | [폴더](%EC%B5%9C%EC%A2%85) | [전체 비교](docs/revision-diffs/code-final.diff) |
+| [이전 도커 실험·기존 결과표](docs/revisions/legacy.md) | [상세 설명](#layout18-table-4-row-13-field-1) | [폴더](%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98) | [전체 비교](docs/revision-diffs/legacy.diff) |
+
+<a id="layout18-table-4-row-1-field-1"></a>
+
+**[논문 1차](docs/revisions/paper-1.md)**
+
+**주요 내용**
+
+다양한 영상 조건에서 YOLO 볼 검출을 위한 단일·복합 필터의 성능 비교를 정리한 초기 원고입니다.
+
+<a id="layout18-table-4-row-3-field-1"></a>
+
+**[논문 3차](docs/revisions/paper-3.md)**
+
+**주요 내용**
+
+제목을 YOLOv8n 기반 볼 검출의 단일·복합 전처리 필터 비교로 정리하고 조건·결과 해석을 확장한 단계입니다.
+
+<a id="layout18-table-4-row-4-field-1"></a>
+
+**[논문 4차 · 검토 도구](docs/revisions/paper-4.md)**
+
+**주요 내용**
+
+새 모델을 학습하는 대신 원고의 표·그림·문장과 저장된 원정밀도 결과를 대조한 검토 도구 단계입니다.
+
+<a id="layout18-table-4-row-5-field-1"></a>
+
+**[논문 5차 · 재구성 패키지](docs/revisions/paper-5.md)**
+
+**주요 내용**
+
+보존된 결과표와 노트북을 논문용 도표·참조 코드·전달 패키지로 구성한 단계입니다. 모델을 다시 학습하는 경로와 저장 결과를 다시 그리는 경로를 분리합니다.
+
+<a id="layout18-table-4-row-6-field-1"></a>
+
+**[논문 최종 · 3장/5장/요약](docs/revisions/paper-final.md)**
+
+**주요 내용**
+
+같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약이 있던 최종 단계에서 현재는 5쪽 전체 원고와 같은 판의 HWP를 제공합니다.
+
+<a id="layout18-table-4-row-10-field-1"></a>
+
+**[발표자료 4차](docs/revisions/talk-4.md)**
+
+**주요 내용**
+
+3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다. 슬라이드를 새로 학습하거나 실험한 단계가 아닙니다.
+
+<a id="layout18-table-4-row-11-field-1"></a>
+
+**[발표자료 최종](docs/revisions/talk-final.md)**
+
+**주요 내용**
+
+단일·복합 필터와 잡음·시드 결과를 20장으로 설명하는 완성 발표 PDF/PPTX입니다. 논문과 다른 목적의 발표 자료로 같은 연구의 흐름을 전달합니다.
+
+<a id="layout18-table-4-row-12-field-1"></a>
+
+**[최종](docs/revisions/code-final.md)**
+
+**주요 내용**
+
+유사 영상 그룹과 교차검증을 구성하고 전처리 필터별 YOLO 검출, 볼 일치, 영역별 개수 판정과 추가 진단을 함께 계산하는 노트북입니다.
+
+<a id="layout18-table-4-row-13-field-1"></a>
+
+**[이전 도커 실험·기존 결과표](docs/revisions/legacy.md)**
+
+**주요 내용**
+
+단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다. 결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다.
+
 
 <a name="introduction"></a>
 
@@ -171,14 +254,78 @@ flowchart LR
 
 한국정보기술학회([Korean Institute of Information Technology](https://eng.ki-it.or.kr/homepage/custom/memberadministrationregulation))의 2026 추계종합학술대회 양식으로 작성한 연구 원고입니다.
 
-| 최종 원고 항목 | 원고에 명시된 구성·결과 |
-| :--- | :--- |
-| 자료·분할 | 2944×2352 영상 500장, 초기 학습 400·검증 100; 근접 중복 368개 그룹을 이용한 5-fold 비교 |
-| 학습 조건 | YOLOv8n, 30 epoch, 입력 1280, batch 8, patience 15 |
-| 평가 구분 | mAP50-95용 conf 0.001·NMS IoU 0.7과 엄격 일치용 conf 0.25·NMS IoU 0.5를 구분 |
-| 단일 실행 | Gamma mAP50-95 96.70%, 원본 96.53%로 차이는 0.17%p |
-| 3개 시드 비교 | Invert+CLAHE Strict Acc 95.47±2.27%, 원본 95.40±0.53%; 단일 실행 98%를 반복 성능으로 대체하지 않음 |
-| 노이즈 σ=80 | Blur 82.86±0.08%, 원본 79.60±0.26%의 원고 보고값 |
+<a id="layout18-table-6-row-1"></a>
+
+**자료·분할**
+
+**최종 원고 항목**
+
+자료·분할
+
+**원고에 명시된 구성·결과**
+
+2944×2352 영상 500장, 초기 학습 400·검증 100; 근접 중복 368개 그룹을 이용한 5-fold 비교
+
+<a id="layout18-table-6-row-2"></a>
+
+**학습 조건**
+
+**최종 원고 항목**
+
+학습 조건
+
+**원고에 명시된 구성·결과**
+
+YOLOv8n, 30 epoch, 입력 1280, batch 8, patience 15
+
+<a id="layout18-table-6-row-3"></a>
+
+**평가 구분**
+
+**최종 원고 항목**
+
+평가 구분
+
+**원고에 명시된 구성·결과**
+
+mAP50-95용 conf 0.001·NMS IoU 0.7과 엄격 일치용 conf 0.25·NMS IoU 0.5를 구분
+
+<a id="layout18-table-6-row-4"></a>
+
+**단일 실행**
+
+**최종 원고 항목**
+
+단일 실행
+
+**원고에 명시된 구성·결과**
+
+Gamma mAP50-95 96.70%, 원본 96.53%로 차이는 0.17%p
+
+<a id="layout18-table-6-row-5"></a>
+
+**3개 시드 비교**
+
+**최종 원고 항목**
+
+3개 시드 비교
+
+**원고에 명시된 구성·결과**
+
+Invert+CLAHE Strict Acc 95.47±2.27%, 원본 95.40±0.53%; 단일 실행 98%를 반복 성능으로 대체하지 않음
+
+<a id="layout18-table-6-row-6"></a>
+
+**노이즈 σ=80**
+
+**최종 원고 항목**
+
+노이즈 σ=80
+
+**원고에 명시된 구성·결과**
+
+Blur 82.86±0.08%, 원본 79.60±0.26%의 원고 보고값
+
 
 엄격 일치는 주석·예측 중심을 가까운 순서로 일대일 대응시키며, 허용 거리는 주석 상자 긴 변의 0.5배입니다. 상자의 겹침을 평가하는 mAP50-95와 기준이 다릅니다.
 
@@ -202,12 +349,54 @@ CLAHE는 clip limit 40·16×16 격자, Gamma는 0.3, Gaussian Blur는 σ20·121�
 
 노트북 앞부분은 초기 개발 실험이며, 뒤쪽에는 교차검증과 강건성 실험을 구성했습니다.
 
-| 비교 묶음 | 조건 |
-| :--- | :--- |
-| 기준 | 원본 영상 |
-| 단일 필터 | Invert, Otsu, Solarize, Histogram Equalization, CLAHE, Gamma, Gaussian Blur, Sobel, Emboss, Unsharp |
-| 조합 필터 | Invert+CLAHE, Blur+Otsu, Sobel+Invert, HistEq+Emboss, Unsharp+Sobel |
-| 추가 진단 | 볼 지우기·추가하기, 판정 임계값 변화, 분포 변화, 다중 시드 반복 |
+<a id="layout18-table-7-row-1"></a>
+
+**기준**
+
+**비교 묶음**
+
+기준
+
+**조건**
+
+원본 영상
+
+<a id="layout18-table-7-row-2"></a>
+
+**단일 필터**
+
+**비교 묶음**
+
+단일 필터
+
+**조건**
+
+Invert, Otsu, Solarize, Histogram Equalization, CLAHE, Gamma, Gaussian Blur, Sobel, Emboss, Unsharp
+
+<a id="layout18-table-7-row-3"></a>
+
+**조합 필터**
+
+**비교 묶음**
+
+조합 필터
+
+**조건**
+
+Invert+CLAHE, Blur+Otsu, Sobel+Invert, HistEq+Emboss, Unsharp+Sobel
+
+<a id="layout18-table-7-row-4"></a>
+
+**추가 진단**
+
+**비교 묶음**
+
+추가 진단
+
+**조건**
+
+볼 지우기·추가하기, 판정 임계값 변화, 분포 변화, 다중 시드 반복
+
 
 <a name="quick-start"></a>
 
@@ -328,11 +517,42 @@ DataSet/
 
 복합 필터는 모든 경우에 단일 구성 필터보다 좋아지지 않습니다. 일반 조건의 결과와 잡음 조건의 안정성·세 시드의 변동을 나누어 읽습니다.
 
-| 제약 | 확인할 내용 |
-| --- | --- |
-| 일반화 범위 | 필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다. |
-| 내부 분할 | 외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다. |
-| 지표 정의 | Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다. |
+<a id="layout18-table-13-row-1"></a>
+
+**일반화 범위**
+
+**제약**
+
+일반화 범위
+
+**확인할 내용**
+
+필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다.
+
+<a id="layout18-table-13-row-2"></a>
+
+**내부 분할**
+
+**제약**
+
+내부 분할
+
+**확인할 내용**
+
+외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다.
+
+<a id="layout18-table-13-row-3"></a>
+
+**지표 정의**
+
+**제약**
+
+지표 정의
+
+**확인할 내용**
+
+Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다.
+
 
 [파일 구성·핵심 정의·사용 순서](docs/revisions/paper-1.md) · [이 단계 전체 비교](docs/revision-diffs/paper-1.diff)
 
@@ -369,11 +589,42 @@ DataSet/
 
 복합 필터는 모든 경우에 단일 구성 필터보다 좋아지지 않습니다. 일반 조건의 결과와 잡음 조건의 안정성·세 시드의 변동을 나누어 읽습니다.
 
-| 제약 | 확인할 내용 |
-| --- | --- |
-| 일반화 범위 | 필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다. |
-| 내부 분할 | 외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다. |
-| 지표 정의 | Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다. |
+<a id="layout18-table-16-row-1"></a>
+
+**일반화 범위**
+
+**제약**
+
+일반화 범위
+
+**확인할 내용**
+
+필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다.
+
+<a id="layout18-table-16-row-2"></a>
+
+**내부 분할**
+
+**제약**
+
+내부 분할
+
+**확인할 내용**
+
+외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다.
+
+<a id="layout18-table-16-row-3"></a>
+
+**지표 정의**
+
+**제약**
+
+지표 정의
+
+**확인할 내용**
+
+Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다.
+
 
 [파일 구성·핵심 정의·사용 순서](docs/revisions/paper-2.md) · [이 단계 전체 비교](docs/revision-diffs/paper-2.diff)
 
@@ -410,11 +661,42 @@ DataSet/
 
 복합 필터는 모든 경우에 단일 구성 필터보다 좋아지지 않습니다. 일반 조건의 결과와 잡음 조건의 안정성·세 시드의 변동을 나누어 읽습니다.
 
-| 제약 | 확인할 내용 |
-| --- | --- |
-| 일반화 범위 | 필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다. |
-| 내부 분할 | 외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다. |
-| 지표 정의 | Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다. |
+<a id="layout18-table-19-row-1"></a>
+
+**일반화 범위**
+
+**제약**
+
+일반화 범위
+
+**확인할 내용**
+
+필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다.
+
+<a id="layout18-table-19-row-2"></a>
+
+**내부 분할**
+
+**제약**
+
+내부 분할
+
+**확인할 내용**
+
+외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다.
+
+<a id="layout18-table-19-row-3"></a>
+
+**지표 정의**
+
+**제약**
+
+지표 정의
+
+**확인할 내용**
+
+Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다.
+
 
 [파일 구성·핵심 정의·사용 순서](docs/revisions/paper-3.md) · [이 단계 전체 비교](docs/revision-diffs/paper-3.diff)
 
@@ -429,18 +711,91 @@ DataSet/
 
 새 모델을 학습하는 대신 원고의 표·그림·문장과 저장된 원정밀도 결과를 대조한 검토 도구 단계입니다.
 
-| 구성 | 처리 내용 |
-| --- | --- |
-| 원문 결합 | 원고 SHA와 입력·근거 파일 해시를 대조합니다. |
-| 결과 계산 | 단일 16조건 8000행·반복 39조건 19500행의 영상별 결과를 집계하는 조건이 있습니다. |
-| 분할 점검 | 500영상·368유사그룹·154유사쌍, 외부 중복 0과 내부 9~20그룹 중복을 확인하는 조건을 포함합니다. |
-| 표시·서술 | 이중 반올림, HWP 그림 해상도, 인용·사사·원고 문장을 대조합니다. |
+<a id="layout18-table-20-row-1"></a>
 
-| 입력·실행 조건 | 내용 |
-| --- | --- |
-| 도구 | Python·NumPy와 CSV/JSON |
-| 입력 | audit.json·원고·결과 CSV·recalculated·container_dataset·main_findings 등 |
-| 역할 | 입력 자료의 근거와 완결성을 대조 |
+**원문 결합**
+
+**구성**
+
+원문 결합
+
+**처리 내용**
+
+원고 SHA와 입력·근거 파일 해시를 대조합니다.
+
+<a id="layout18-table-20-row-2"></a>
+
+**결과 계산**
+
+**구성**
+
+결과 계산
+
+**처리 내용**
+
+단일 16조건 8000행·반복 39조건 19500행의 영상별 결과를 집계하는 조건이 있습니다.
+
+<a id="layout18-table-20-row-3"></a>
+
+**분할 점검**
+
+**구성**
+
+분할 점검
+
+**처리 내용**
+
+500영상·368유사그룹·154유사쌍, 외부 중복 0과 내부 9~20그룹 중복을 확인하는 조건을 포함합니다.
+
+<a id="layout18-table-20-row-4"></a>
+
+**표시·서술**
+
+**구성**
+
+표시·서술
+
+**처리 내용**
+
+이중 반올림, HWP 그림 해상도, 인용·사사·원고 문장을 대조합니다.
+
+
+<a id="layout18-table-21-row-1"></a>
+
+**도구**
+
+**입력·실행 조건**
+
+도구
+
+**내용**
+
+Python·NumPy와 CSV/JSON
+
+<a id="layout18-table-21-row-2"></a>
+
+**입력**
+
+**입력·실행 조건**
+
+입력
+
+**내용**
+
+audit.json·원고·결과 CSV·recalculated·container_dataset·main_findings 등
+
+<a id="layout18-table-21-row-3"></a>
+
+**역할**
+
+**입력·실행 조건**
+
+역할
+
+**내용**
+
+입력 자료의 근거와 완결성을 대조
+
 
 도구는 paper_ready_for_submission=False를 요구하며 PASS·주의·수정필요·확인불가 상태를 구분합니다. 도구가 보존됐다는 사실만으로 원고가 수정됐거나 새 시험이 완료됐다고 보지 않습니다.
 
@@ -465,19 +820,103 @@ DataSet/
 
 보존된 결과표와 노트북을 논문용 도표·참조 코드·전달 패키지로 구성한 단계입니다. 모델을 다시 학습하는 경로와 저장 결과를 다시 그리는 경로를 분리합니다.
 
-| 구성 | 처리 내용 |
-| --- | --- |
-| 논문 그림 | paper_filter_figures.py가 단일·복합·잡음 CSV에서 3개 논문용 그림을 구성합니다. |
-| 스타일 함수 | reference_plot_style.py가 글꼴·색·막대·레이블·이웃 텍스트 배치를 공통 처리합니다. |
-| 결과 재렌더 | render_saved_figures.py가 저장 JSON·CSV와 참조 노트북의 그림 함수를 이용합니다. |
-| 입력 연결 | 재작성한 그림에 사용한 원자료 SHA를 기록하는 처리를 포함합니다. |
+<a id="layout18-table-23-row-1"></a>
 
-| 입력·실행 조건 | 내용 |
-| --- | --- |
-| 입력 표 | table_round1·table_round2·table_grid_noise40·table_grid_noise80 |
-| 그림 도구 | NumPy·pandas·Matplotlib |
-| 인자 | paper_filter_figures: --results·--output |
-| 재렌더 인자 | --results·--output·--notebook |
+**논문 그림**
+
+**구성**
+
+논문 그림
+
+**처리 내용**
+
+paper_filter_figures.py가 단일·복합·잡음 CSV에서 3개 논문용 그림을 구성합니다.
+
+<a id="layout18-table-23-row-2"></a>
+
+**스타일 함수**
+
+**구성**
+
+스타일 함수
+
+**처리 내용**
+
+reference_plot_style.py가 글꼴·색·막대·레이블·이웃 텍스트 배치를 공통 처리합니다.
+
+<a id="layout18-table-23-row-3"></a>
+
+**결과 재렌더**
+
+**구성**
+
+결과 재렌더
+
+**처리 내용**
+
+render_saved_figures.py가 저장 JSON·CSV와 참조 노트북의 그림 함수를 이용합니다.
+
+<a id="layout18-table-23-row-4"></a>
+
+**입력 연결**
+
+**구성**
+
+입력 연결
+
+**처리 내용**
+
+재작성한 그림에 사용한 원자료 SHA를 기록하는 처리를 포함합니다.
+
+
+<a id="layout18-table-24-row-1"></a>
+
+**입력 표**
+
+**입력·실행 조건**
+
+입력 표
+
+**내용**
+
+table_round1·table_round2·table_grid_noise40·table_grid_noise80
+
+<a id="layout18-table-24-row-2"></a>
+
+**그림 도구**
+
+**입력·실행 조건**
+
+그림 도구
+
+**내용**
+
+NumPy·pandas·Matplotlib
+
+<a id="layout18-table-24-row-3"></a>
+
+**인자**
+
+**입력·실행 조건**
+
+인자
+
+**내용**
+
+paper_filter_figures: --results·--output
+
+<a id="layout18-table-24-row-4"></a>
+
+**재렌더 인자**
+
+**입력·실행 조건**
+
+재렌더 인자
+
+**내용**
+
+--results·--output·--notebook
+
 
 도표 재구성은 저장 결과의 표현을 바꾼 것입니다. 새 실험이나 별도 논문 성과로 세지 않습니다.
 
@@ -524,11 +963,42 @@ DataSet/
 
 복합 필터는 모든 경우에 단일 구성 필터보다 좋아지지 않습니다. 일반 조건의 결과와 잡음 조건의 안정성·세 시드의 변동을 나누어 읽습니다.
 
-| 제약 | 확인할 내용 |
-| --- | --- |
-| 일반화 범위 | 필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다. |
-| 내부 분할 | 외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다. |
-| 지표 정의 | Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다. |
+<a id="layout18-table-28-row-1"></a>
+
+**일반화 범위**
+
+**제약**
+
+일반화 범위
+
+**확인할 내용**
+
+필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다.
+
+<a id="layout18-table-28-row-2"></a>
+
+**내부 분할**
+
+**제약**
+
+내부 분할
+
+**확인할 내용**
+
+외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다.
+
+<a id="layout18-table-28-row-3"></a>
+
+**지표 정의**
+
+**제약**
+
+지표 정의
+
+**확인할 내용**
+
+Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다.
+
 
 [파일 구성·핵심 정의·사용 순서](docs/revisions/paper-final.md) · [이 단계 전체 비교](docs/revision-diffs/paper-final.diff)
 
@@ -723,13 +1193,66 @@ DataSet/
 
 유사 영상 그룹과 교차검증을 구성하고 전처리 필터별 YOLO 검출, 볼 일치, 영역별 개수 판정과 추가 진단을 함께 계산하는 노트북입니다.
 
-| 구성 | 처리 내용 |
-| --- | --- |
-| 자료 점검 | 라벨·클래스 균형·128크기 축소영상의 평균 절대 차이 기반 유사 그룹을 점검합니다. |
-| 영역 규칙 | 부품 사각형 내부의 볼 중심을 위 5·왼쪽 4·아래 2·오른쪽 2 규칙에 맞춰 판정합니다. |
-| 외부 fold | assign_folds가 유사 그룹을 같은 외부 fold에 두고 fold_split은 남은 영상에서 내부 검증을 나눕니다. |
-| 검출 품질 | ball_match_stats는 라벨 크기의 0.5배 중심 허용거리로 일대일 매칭하고 누락·추가 검출을 셉니다. |
-| 필터 실험 | train_per_filter·inference_only 모드와 결과 서명 기반 캐시를 구분합니다. |
+<a id="layout18-table-44-row-1"></a>
+
+**자료 점검**
+
+**구성**
+
+자료 점검
+
+**처리 내용**
+
+라벨·클래스 균형·128크기 축소영상의 평균 절대 차이 기반 유사 그룹을 점검합니다.
+
+<a id="layout18-table-44-row-2"></a>
+
+**영역 규칙**
+
+**구성**
+
+영역 규칙
+
+**처리 내용**
+
+부품 사각형 내부의 볼 중심을 위 5·왼쪽 4·아래 2·오른쪽 2 규칙에 맞춰 판정합니다.
+
+<a id="layout18-table-44-row-3"></a>
+
+**외부 fold**
+
+**구성**
+
+외부 fold
+
+**처리 내용**
+
+assign_folds가 유사 그룹을 같은 외부 fold에 두고 fold_split은 남은 영상에서 내부 검증을 나눕니다.
+
+<a id="layout18-table-44-row-4"></a>
+
+**검출 품질**
+
+**구성**
+
+검출 품질
+
+**처리 내용**
+
+ball_match_stats는 라벨 크기의 0.5배 중심 허용거리로 일대일 매칭하고 누락·추가 검출을 셉니다.
+
+<a id="layout18-table-44-row-5"></a>
+
+**필터 실험**
+
+**구성**
+
+필터 실험
+
+**처리 내용**
+
+train_per_filter·inference_only 모드와 결과 서명 기반 캐시를 구분합니다.
+
 
 | 입력·실행 조건 | 내용 |
 | --- | --- |
@@ -745,13 +1268,66 @@ Strict Acc는 모든 라벨 볼을 중심 거리 기준으로 찾고 추가 검�
 
 OKNG_CSV가 없을 때 규칙 기반 정답과의 일치도를 전문가 판정 정확도로 부르지 않습니다.
 
-| 제약 | 확인할 내용 |
-| --- | --- |
-| 일반화 범위 | 필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다. |
-| 내부 분할 | 외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다. |
-| 지표 정의 | Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다. |
-| 실행 비용 | GPU 학습·여러 조건 평가·모니터 스레드와 파일 생성이 포함됩니다. 단순 열람과 전체 실행을 구분합니다. |
-| 캐시 | 자료·가중치·임계값·필터 파라미터의 서명이 같을 때 결과를 재사용합니다. |
+<a id="layout18-table-46-row-1"></a>
+
+**일반화 범위**
+
+**제약**
+
+일반화 범위
+
+**확인할 내용**
+
+필터·잡음 조건별 재학습 결과이며 고정 모델의 미지 촬영 조건 적응성을 입증한 것은 아닙니다.
+
+<a id="layout18-table-46-row-2"></a>
+
+**내부 분할**
+
+**제약**
+
+내부 분할
+
+**확인할 내용**
+
+외부 평가 그룹은 분리하지만 내부 train/val에는 유사 그룹 중복이 남아 있습니다.
+
+<a id="layout18-table-46-row-3"></a>
+
+**지표 정의**
+
+**제약**
+
+지표 정의
+
+**확인할 내용**
+
+Strict Acc는 중심 거리·누락·추가 검출 규칙이며 전문가 OK/NG 판정이나 mAP와 같지 않습니다.
+
+<a id="layout18-table-46-row-4"></a>
+
+**실행 비용**
+
+**제약**
+
+실행 비용
+
+**확인할 내용**
+
+GPU 학습·여러 조건 평가·모니터 스레드와 파일 생성이 포함됩니다. 단순 열람과 전체 실행을 구분합니다.
+
+<a id="layout18-table-46-row-5"></a>
+
+**캐시**
+
+**제약**
+
+캐시
+
+**확인할 내용**
+
+자료·가중치·임계값·필터 파라미터의 서명이 같을 때 결과를 재사용합니다.
+
 
 [파일 구성·핵심 정의·사용 순서](docs/revisions/code-final.md) · [이 단계 전체 비교](docs/revision-diffs/code-final.diff)
 
