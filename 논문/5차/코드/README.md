@@ -66,9 +66,9 @@ render_saved_figures.py가 저장 JSON·CSV와 참조 노트북의 그림 함수
 3. 논문용 3개 그림 또는 저장 결과 전체 재렌더 중 목적에 맞는 스크립트를 선택합니다.
 4. 출력 그림의 값·조건명·표시 자릿수를 입력 표와 대조합니다.
 
-| 내용 |
-| --- |
-| **차수·단계**<br>[논문 5차 · 재구성 패키지](../../../docs/revisions/paper-5.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-2-row-1-field-1)<br><br>**자료**<br>[폴더](.)<br><br>**직전 비교**<br>[전체 비교](../../../docs/revision-diffs/paper-5.diff) |
+| 차수·단계 | 자료 |
+| --- | --- |
+| [논문 5차 · 재구성 패키지](../../../docs/revisions/paper-5.md) | **주요 내용** [상세 설명](#layout18-table-2-row-1-field-1)<br>**자료** [폴더](.)<br>**직전 비교** [전체 비교](../../../docs/revision-diffs/paper-5.diff) |
 
 <a id="layout18-table-2-row-1-field-1"></a>
 

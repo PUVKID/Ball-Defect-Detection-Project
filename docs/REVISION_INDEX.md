@@ -10,21 +10,21 @@
 
 [프로젝트 전체 소개](../README.md)
 
-| 내용 |
-| --- |
-| **차수·단계**<br>[논문 1차](revisions/paper-1.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-1-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-1.diff) |
-| **차수·단계**<br>[논문 2차](revisions/paper-2.md)<br><br>**주요 내용**<br>1차와 같은 제목·연구 설정 아래 문장과 표현을 다듬은 원고 단계입니다.<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-2.diff) |
-| **차수·단계**<br>[논문 3차](revisions/paper-3.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-3-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-3.diff) |
-| **차수·단계**<br>[논문 4차 · 검토 도구](revisions/paper-4.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-4-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/tools)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-4.diff) |
-| **차수·단계**<br>[논문 5차 · 재구성 패키지](revisions/paper-5.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-5-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-5.diff) |
-| **차수·단계**<br>[논문 최종 · 3장/5장/요약](revisions/paper-final.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-6-field-1)<br><br>**자료**<br>[폴더](../%EB%85%BC%EB%AC%B8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/paper-final.diff) |
-| **차수·단계**<br>[발표자료 1차](revisions/talk-1.md)<br><br>**주요 내용**<br>필터 비교 연구를 12장 본발표 600초와 3장 부록으로 설명한 초기 발표 구성입니다.<br><br>**자료**<br>[폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/1%EC%B0%A8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/talk-1.diff) |
-| **차수·단계**<br>[발표자료 2차](revisions/talk-2.md)<br><br>**주요 내용**<br>필터 비교 사진과 설명을 나누고 20장·600초 본발표로 재배치한 단계입니다.<br><br>**자료**<br>[폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/talk-2.diff) |
-| **차수·단계**<br>[발표자료 3차](revisions/talk-3.md)<br><br>**주요 내용**<br>2차의 20장 내용·시간을 유지하면서 투명 학교 마크와 전달 자산의 일치를 보강한 단계입니다.<br><br>**자료**<br>[폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/talk-3.diff) |
-| **차수·단계**<br>[발표자료 4차](revisions/talk-4.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-10-field-1)<br><br>**자료**<br>[폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/talk-4.diff) |
-| **차수·단계**<br>[발표자료 최종](revisions/talk-final.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-11-field-1)<br><br>**자료**<br>[폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/talk-final.diff) |
-| **차수·단계**<br>[최종](revisions/code-final.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-12-field-1)<br><br>**자료**<br>[폴더](../%EC%B5%9C%EC%A2%85)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/code-final.diff) |
-| **차수·단계**<br>[이전 도커 실험·기존 결과표](revisions/legacy.md)<br><br>**주요 내용**<br>[상세 설명](#layout18-table-1-row-13-field-1)<br><br>**자료**<br>[폴더](../%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98)<br><br>**직전 비교**<br>[전체 비교](revision-diffs/legacy.diff) |
+| 차수·단계 | 자료 |
+| --- | --- |
+| [논문 1차](revisions/paper-1.md) | **주요 내용** [상세 설명](#layout18-table-1-row-1-field-1)<br>**자료** [폴더](../%EB%85%BC%EB%AC%B8)<br>**직전 비교** [전체 비교](revision-diffs/paper-1.diff) |
+| [논문 2차](revisions/paper-2.md) | **주요 내용** 1차와 같은 제목·연구 설정 아래 문장과 표현을 다듬은 원고 단계입니다.<br>**자료** [폴더](../%EB%85%BC%EB%AC%B8)<br>**직전 비교** [전체 비교](revision-diffs/paper-2.diff) |
+| [논문 3차](revisions/paper-3.md) | **주요 내용** [상세 설명](#layout18-table-1-row-3-field-1)<br>**자료** [폴더](../%EB%85%BC%EB%AC%B8)<br>**직전 비교** [전체 비교](revision-diffs/paper-3.diff) |
+| [논문 4차 · 검토 도구](revisions/paper-4.md) | **주요 내용** [상세 설명](#layout18-table-1-row-4-field-1)<br>**자료** [폴더](../%EB%85%BC%EB%AC%B8/4%EC%B0%A8/tools)<br>**직전 비교** [전체 비교](revision-diffs/paper-4.diff) |
+| [논문 5차 · 재구성 패키지](revisions/paper-5.md) | **주요 내용** [상세 설명](#layout18-table-1-row-5-field-1)<br>**자료** [폴더](../%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C)<br>**직전 비교** [전체 비교](revision-diffs/paper-5.diff) |
+| [논문 최종 · 3장/5장/요약](revisions/paper-final.md) | **주요 내용** [상세 설명](#layout18-table-1-row-6-field-1)<br>**자료** [폴더](../%EB%85%BC%EB%AC%B8)<br>**직전 비교** [전체 비교](revision-diffs/paper-final.diff) |
+| [발표자료 1차](revisions/talk-1.md) | **주요 내용** 필터 비교 연구를 12장 본발표 600초와 3장 부록으로 설명한 초기 발표 구성입니다.<br>**자료** [폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/1%EC%B0%A8)<br>**직전 비교** [전체 비교](revision-diffs/talk-1.diff) |
+| [발표자료 2차](revisions/talk-2.md) | **주요 내용** 필터 비교 사진과 설명을 나누고 20장·600초 본발표로 재배치한 단계입니다.<br>**자료** [폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8)<br>**직전 비교** [전체 비교](revision-diffs/talk-2.diff) |
+| [발표자료 3차](revisions/talk-3.md) | **주요 내용** 2차의 20장 내용·시간을 유지하면서 투명 학교 마크와 전달 자산의 일치를 보강한 단계입니다.<br>**자료** [폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8)<br>**직전 비교** [전체 비교](revision-diffs/talk-3.diff) |
+| [발표자료 4차](revisions/talk-4.md) | **주요 내용** [상세 설명](#layout18-table-1-row-10-field-1)<br>**자료** [폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8)<br>**직전 비교** [전체 비교](revision-diffs/talk-4.diff) |
+| [발표자료 최종](revisions/talk-final.md) | **주요 내용** [상세 설명](#layout18-table-1-row-11-field-1)<br>**자료** [폴더](../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85)<br>**직전 비교** [전체 비교](revision-diffs/talk-final.diff) |
+| [최종](revisions/code-final.md) | **주요 내용** [상세 설명](#layout18-table-1-row-12-field-1)<br>**자료** [폴더](../%EC%B5%9C%EC%A2%85)<br>**직전 비교** [전체 비교](revision-diffs/code-final.diff) |
+| [이전 도커 실험·기존 결과표](revisions/legacy.md) | **주요 내용** [상세 설명](#layout18-table-1-row-13-field-1)<br>**자료** [폴더](../%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98)<br>**직전 비교** [전체 비교](revision-diffs/legacy.diff) |
 
 <a id="layout18-table-1-row-1-field-1"></a>
 
