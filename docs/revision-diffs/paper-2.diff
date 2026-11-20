@@ -9,21 +9,7 @@
 # 현재 논문/2차/요약.pdf 126433 507b72bf24f9c31295291338f1b4fd59ea48d21b46ed18880662b0bb4f15812d
 # 현재 원본작업자료/논문/2차/추계학술대회 논문 2차_요약.hwp 89088 0b168e3b3f99215b98eed7e8bdf430ae30273d6d5a73008e7a0be730d1fc51ff
 Binary files 논문/1차/원고.hwp and 논문/2차/원고.hwp differ
---- 논문/1차/원고.pdf
-+++ 논문/2차/원고.pdf
-@@ -22,10 +22,9 @@
- consistently improves detection. Filter selection must therefore account for the input condition and evaluation metric.
- Key words
- YOLOv8n, image preprocessing, filter combination, object detection
--본 연구는 2026년 경기대학교 대학원 연구원장학생 장학금 지원에 의하여 수행되었음. 이 논문은 
--정부(과학기술정보통신부)의 재원으로 정보통신기획평가원-학·석사연계ICT핵심인재양성사업의 지원을 
--받아 수행된 연구임(ITTP-2024-00436954). 또한 이 논문은 2024년도 정부(교육부)의 재원으로 
--한국연구재단의 지원을 받아 수행된 기초연구사업임(No. RS-2020-NR049579)
-+이 논문은 정부(과학기술정보통신부)의 재원으로 정보통신기획평가원-학·석사연계ICT핵심인재양성사
-+업의 지원을 받아 수행된 연구임(ITTP-2024-00436954). 또한 이 논문은 2024년도 정부(교육부)의 재원으
-+로 한국연구재단의 지원을 받아 수행된 기초연구사업임(No. RS-2020-NR049579)
- *경기대학교 , lukeyun@kyonggi.ac.kr, https://orcid.org/0009-0004-0207-4000
- **경기대학교  교수(교신저자), ngkim@kyonggi.ac.kr, http://orcid.org/0000-0002-0077-6576
- 
+# 작성 완료 원고의 본문은 게재 전이므로 공개 비교에서 제외했습니다. 코드·실험 변경은 나머지 구간에서 확인할 수 있습니다.
+
 Binary files 원본작업자료/논문/1차/추계학술대회 논문 1차_요약.hwp and /dev/null differ
 Binary files /dev/null and 원본작업자료/논문/2차/추계학술대회 논문 2차_요약.hwp differ

@@ -1,6 +1,6 @@
 <a id="-발표자료4차"></a>
 
-# 발표자료/4차
+# 발표 자료/4차
 
 <!-- reading-levels17:start -->
 **읽기 수준 선택** · [LEVEL 1 - Beginner](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) · [LEVEL 2 - Explorer](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) · [LEVEL 3 - Practitioner](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) · [LEVEL 4 - Advanced](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) · [LEVEL 5 - Expert](../../docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md)
@@ -24,17 +24,9 @@
 3. 전환 문장이 다음 장의 연구 질문과 연결되는지 확인합니다.
 4. 리허설에서 실제 시간을 측정해 말하기 속도와 쉬는 구간을 맞춥니다.
 
-| 차수·단계 | 자료 |
-| --- | --- |
-| [발표자료 4차](../../docs/revisions/talk-4.md) | **주요 내용** [상세 설명](#layout18-table-2-row-1-field-1)<br>**자료** [폴더](.)<br>**직전 비교** [전체 비교](../../docs/revision-diffs/talk-4.diff) |
-
-<a id="layout18-table-2-row-1-field-1"></a>
-
-**[발표자료 4차](../../docs/revisions/talk-4.md)**
-
-**주요 내용**
-
-3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다. 슬라이드를 새로 학습하거나 실험한 단계가 아닙니다.
+| 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
+| --- | --- | --- | --- |
+| [발표자료 4차](../../docs/revisions/talk-4.md) | <a id="layout18-table-2-row-1-field-1"></a>3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다.<br>슬라이드를 새로 학습하거나 실험한 단계가 아닙니다. | [폴더](.) | [전체 비교](../../docs/revision-diffs/talk-4.diff) |
 
 
 [프로젝트](../../README.md) · [전체 차수](../../docs/REVISION_INDEX.md)

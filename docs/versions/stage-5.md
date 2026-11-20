@@ -1,6 +1,6 @@
 <a id="-발표자료3차"></a>
 
-# 발표자료/3차
+# 발표 자료/3차
 
 <!-- reading-levels17:start -->
 **읽기 수준 선택** · [LEVEL 1 - Beginner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) · [LEVEL 2 - Explorer](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) · [LEVEL 3 - Practitioner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) · [LEVEL 4 - Advanced](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) · [LEVEL 5 - Expert](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md)
@@ -27,7 +27,7 @@
 | --- | --- |
 | 내용 유지 | 2·3차 content.json은 같은 바이트여서 발화 내용·시간 배정은 유지됩니다. |
 | 자산 점검 | RGBA 투명 로고·동봉 PNG/SVG/원본 AI와 입력 보존을 대조하는 조건을 추가합니다. |
-| 원정밀도 차트 | 검사기는 JSON 수치와 PPTX 차트의 15유효자리 및 1·2자리 표시를 대조합니다. |
+| 원정 밀도 차트 | 검사기는 JSON 수치와 PPTX 차트의 15 유효자리 및 1·2 자리 표시를 대조합니다. |
 | 발화 대응 | 슬라이드 노트와 대본에 같은 발화문이 있는지 확인하는 경로를 포함합니다. |
 
 <a id="-해석-범위"></a>
