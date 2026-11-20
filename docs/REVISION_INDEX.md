@@ -26,6 +26,7 @@
 | [최종](revisions/code-final.md) | **주요 내용** [상세 설명](#layout18-table-1-row-12-field-1)<br>**자료** [폴더](../%EC%B5%9C%EC%A2%85)<br>**직전 비교** [전체 비교](revision-diffs/code-final.diff) |
 | [이전 도커 실험·기존 결과표](revisions/legacy.md) | **주요 내용** [상세 설명](#layout18-table-1-row-13-field-1)<br>**자료** [폴더](../%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98)<br>**직전 비교** [전체 비교](revision-diffs/legacy.diff) |
 | [발표자료 5차](revisions/talk-5.md) | [자료 폴더](../발표자료/5차) · [상세](revisions/talk-5.md) · [직전 비교](revision-diffs/talk-5.md) |
+| [발표자료 6차](revisions/talk-6.md) | [자료 폴더](../발표자료/6차) · [상세](revisions/talk-6.md) · [직전 비교](revision-diffs/talk-6.md) |
 
 <a id="layout18-table-1-row-1-field-1"></a>
 
