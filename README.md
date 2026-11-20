@@ -534,7 +534,7 @@ DataSet/
 | 구성 | 처리 내용 |
 | --- | --- |
 | <a id="layout18-table-23-row-1"></a> 논문 그림 | paper_filter_figures.py가 단일·복합·잡음 CSV에서 3개 논문용 그림을 구성합니다. |
-| <a id="layout18-table-23-row-2"></a> 스타일 함수 | reference_plot_style.py가 글 꼴·색·막대·레이블·이웃 텍스트 배치를 공통 처리합니다. |
+| <a id="layout18-table-23-row-2"></a> 스타일 함수 | reference_plot_style.py가 글꼴·색·막대·레이블·이웃 텍스트 배치를 공통 처리합니다. |
 | <a id="layout18-table-23-row-3"></a> 결과 재렌더 | render_saved_figures.py가 저장 JSON·CSV와 참조 노트북의 그림 함수를 이용합니다. |
 | <a id="layout18-table-23-row-4"></a> 입력 연결 | 재작성한 그림에 사용한 원자료 SHA를 기록하는 처리를 포함합니다. |
 

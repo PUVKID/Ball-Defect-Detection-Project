@@ -21,7 +21,7 @@
 
 ### LEVEL 1 · 저장 결과를 다시 그리는 경로
 
-**저장 결과를 다시 그리는 경로**을 읽는 단계입니다. paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글 꼴·색·막대·레이블 배치를 공통 처리합니다.
+**저장 결과를 다시 그리는 경로**을 읽는 단계입니다. paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글꼴·색·막대·레이블 배치를 공통 처리합니다.
 
 먼저 자료의 역할을 확인한 뒤 아래의 확인 점을 따라가세요.
 
@@ -29,7 +29,7 @@
 
 | 조건·자료 | 의미와 확인 방법 |
 | --- | --- |
-| <a id="layout18-table-1-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글 꼴·색·막대·레이블 배치를 공통 처리합니다. |
+| <a id="layout18-table-1-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글꼴·색·막대·레이블 배치를 공통 처리합니다. |
 | <a id="layout18-table-1-row-2"></a> 사용·확인·한계 | render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.<br>입력 원자료 SHA를 연결해도 새 학습이 되는 것은 아니며 같은 결과의 재도표와 참조 코드 패키지 구성입니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md)
@@ -58,7 +58,7 @@
 
 | 조건·자료 | 의미와 확인 방법 |
 | --- | --- |
-| <a id="layout18-table-6-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글 꼴·색·막대·레이블 배치를 공통 처리합니다. |
+| <a id="layout18-table-6-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글꼴·색·막대·레이블 배치를 공통 처리합니다. |
 | <a id="layout18-table-6-row-2"></a> 사용·확인·한계 | render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.<br>입력 원자료 SHA를 연결해도 새 학습이 되는 것은 아니며 같은 결과의 재도표와 참조 코드 패키지 구성입니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md)
@@ -79,7 +79,7 @@
 
 ### LEVEL 3 · 저장 결과를 다시 그리는 경로
 
-이 단계의 파일을 열고 입력 준비 →처리 →결과 확인 순서로 읽으세요. paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글 꼴·색·막대·레이블 배치를 공통 처리합니다. render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.
+이 단계의 파일을 열고 입력 준비 →처리 →결과 확인 순서로 읽으세요. paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글꼴·색·막대·레이블 배치를 공통 처리합니다. render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.
 
 입력 원자료 SHA를 연결해도 새 학습이 되는 것은 아니며 같은 결과의 재도표와 참조 코드 패키지 구성입니다.
 
@@ -87,7 +87,7 @@
 
 | 조건·자료 | 의미와 확인 방법 |
 | --- | --- |
-| <a id="layout18-table-11-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글 꼴·색·막대·레이블 배치를 공통 처리합니다. |
+| <a id="layout18-table-11-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글꼴·색·막대·레이블 배치를 공통 처리합니다. |
 | <a id="layout18-table-11-row-2"></a> 사용·확인·한계 | render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.<br>입력 원자료 SHA를 연결해도 새 학습이 되는 것은 아니며 같은 결과의 재도표와 참조 코드 패키지 구성입니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md)
@@ -116,7 +116,7 @@
 
 | 조건·자료 | 의미와 확인 방법 |
 | --- | --- |
-| <a id="layout18-table-16-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글 꼴·색·막대·레이블 배치를 공통 처리합니다. |
+| <a id="layout18-table-16-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글꼴·색·막대·레이블 배치를 공통 처리합니다. |
 | <a id="layout18-table-16-row-2"></a> 사용·확인·한계 | render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.<br>입력 원자료 SHA를 연결해도 새 학습이 되는 것은 아니며 같은 결과의 재도표와 참조 코드 패키지 구성입니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md)
@@ -129,7 +129,7 @@
 
 ### LEVEL 5 · 저장 결과를 다시 그리는 경로
 
-이 단계의 수락 범위는 해당 자료의 역할과 조건에 한정됩니다. paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글 꼴·색·막대·레이블 배치를 공통 처리합니다. render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.
+이 단계의 수락 범위는 해당 자료의 역할과 조건에 한정됩니다. paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글꼴·색·막대·레이블 배치를 공통 처리합니다. render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.
 
 입력 원자료 SHA를 연결해도 새 학습이 되는 것은 아니며 같은 결과의 재도표와 참조 코드 패키지 구성입니다.
 
@@ -137,7 +137,7 @@
 
 | 조건·자료 | 의미와 확인 방법 |
 | --- | --- |
-| <a id="layout18-table-21-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글 꼴·색·막대·레이블 배치를 공통 처리합니다. |
+| <a id="layout18-table-21-row-1"></a> 당시의 대상·조건 | paper_filter_figures.py는 저장 CSV에서 논문 그림 3개를 만들고 reference_plot_style.py는 글꼴·색·막대·레이블 배치를 공통 처리합니다. |
 | <a id="layout18-table-21-row-2"></a> 사용·확인·한계 | render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.<br>입력 원자료 SHA를 연결해도 새 학습이 되는 것은 아니며 같은 결과의 재도표와 참조 코드 패키지 구성입니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md)
@@ -167,7 +167,7 @@
 | 구성 | 실제 역할 |
 | --- | --- |
 | <a id="layout18-table-22-row-1"></a> 논문 그림 | paper_filter_figures.py가 단일·복합·잡음 CSV에서 3개 논문용 그림을 구성합니다. |
-| <a id="layout18-table-22-row-2"></a> 스타일 함수 | reference_plot_style.py가 글 꼴·색·막대·레이블·이웃 텍스트 배치를 공통 처리합니다. |
+| <a id="layout18-table-22-row-2"></a> 스타일 함수 | reference_plot_style.py가 글꼴·색·막대·레이블·이웃 텍스트 배치를 공통 처리합니다. |
 | <a id="layout18-table-22-row-3"></a> 결과 재렌더 | render_saved_figures.py가 저장 JSON·CSV와 참조 노트북의 그림 함수를 이용합니다. |
 | <a id="layout18-table-22-row-4"></a> 입력 연결 | 재작성한 그림에 사용한 원자료 SHA를 기록하는 처리를 포함합니다. |
 
