@@ -1,5 +1,11 @@
 <a id="-볼-검출-필터-비교-학술대회-10분-발표"></a>
 
+## 현재 발표 자료 · 5차
+
+**현재 개정 자료는 5차의 PPTX·발표 PDF·10분 대본 PDF·예상 질문과 답변 PDF·연구 이해 자료 PDF·필터 사진모음 PDF·발표연습 질문지 PDF입니다.** 아래 기존 기록은 이전 차수의 설명과 당시 해시를 보존한 이력입니다.
+
+[최신 5차 자료](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/5%EC%B0%A8) · [5차 상세](../../docs/revisions/talk-5.md)
+
 # 볼 검출 필터 비교 학술대회 10분 발표
 
 <!-- reading-levels17:start -->
@@ -37,15 +43,15 @@
 발표는 기존 연구 결과를 전달하는 문서입니다. 슬라이드 구성·로고·발화의 변화가 추가 연구 성능을 뜻하지 않습니다.
 
 <details>
-<summary>파일·크기·SHA-256과 자료 연결</summary>
+<summary>3차 보존본의 크기·해시와 자료 연결</summary>
 
 <a id="layout18-table-2-row-1"></a>
 
-**[추계학술대회_10분발표.pdf](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pdf)**
+**[추계학술대회_10분발표.pdf](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8/%EA%B2%B0%EA%B3%BC/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pdf)**
 
 **원문 파일**
 
-[추계학술대회_10분발표.pdf](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pdf)
+[추계학술대회_10분발표.pdf](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8/%EA%B2%B0%EA%B3%BC/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pdf)
 
 **바이트**
 
@@ -57,11 +63,11 @@
 
 <a id="layout18-table-2-row-2"></a>
 
-**[추계학술대회_10분발표.pptx](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pptx)**
+**[추계학술대회_10분발표.pptx](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8/%EA%B2%B0%EA%B3%BC/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pptx)**
 
 **원문 파일**
 
-[추계학술대회_10분발표.pptx](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pptx)
+[추계학술대회_10분발표.pptx](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8/%EA%B2%B0%EA%B3%BC/%EC%B6%94%EA%B3%84%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C_10%EB%B6%84%EB%B0%9C%ED%91%9C.pptx)
 
 **바이트**
 

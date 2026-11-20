@@ -6,6 +6,14 @@
 **읽기 수준 선택** · [LEVEL 1 - Beginner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) · [LEVEL 2 - Explorer](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) · [LEVEL 3 - Practitioner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) · [LEVEL 4 - Advanced](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) · [LEVEL 5 - Expert](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md)
 <!-- reading-levels17:end -->
 
+<a id="paper-errata-20261120"></a>
+
+## 기존 원고와 정정 안내
+
+**기존 5쪽 HWP·PDF는 원문 그대로 보존합니다.** 원고 그림의 세 값에 남은 이중 반올림 표시와 반복 문단을 별도 [논문 정정 안내](../../발표자료/5차/논문_정정안내.pdf)에서 구분해 설명합니다. 발표 그래프는 저장된 원정밀도 값에서 한 번 반올림한 표시를 사용합니다. 원고를 인용할 때 이 안내를 함께 확인합니다.
+
+
+
 **같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약이 있던 최종 단계에서 현재는 5쪽 전체 원고와 같은 판의 HWP를 제공합니다.**
 
 [목적·구성·사용법·결과의 상세 안내](../revisions/paper-final.md) · [프로젝트](../../README.md) · [전체 차수](../REVISION_INDEX.md)
