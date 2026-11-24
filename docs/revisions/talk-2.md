@@ -3,10 +3,10 @@
 # 발표 자료 2차·비교 사진을 분리한 20장 발표
 
 <!-- reading-levels17:start -->
-**읽기 수준** · [LEVEL 1](#reading-level-1) · [LEVEL 2](#reading-level-2) · [LEVEL 3](#reading-level-3) · [LEVEL 4](#reading-level-4) · [LEVEL 5](#reading-level-5)
+읽기 수준 · [LEVEL 1](#reading-level-1) · [LEVEL 2](#reading-level-2) · [LEVEL 3](#reading-level-3) · [LEVEL 4](#reading-level-4) · [LEVEL 5](#reading-level-5)
 
 <details open>
-<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+<summary>LEVEL 1 · Beginner — 목적과 동작부터</summary>
 
 <a id="reading-level-1"></a>
 
@@ -43,7 +43,7 @@
 </details>
 
 <details>
-<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
+<summary>LEVEL 2 · Explorer — 구성과 연결 원리</summary>
 
 <a id="reading-level-2"></a>
 
@@ -74,7 +74,7 @@
 </details>
 
 <details>
-<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
+<summary>LEVEL 3 · Practitioner — 준비·실행·결과 확인</summary>
 
 <a id="reading-level-3"></a>
 
@@ -113,7 +113,7 @@
 </details>
 
 <details>
-<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
+<summary>LEVEL 4 · Advanced — 구현·설계·실패 처리</summary>
 
 <a id="reading-level-4"></a>
 
@@ -144,7 +144,7 @@
 </details>
 
 <details>
-<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
+<summary>LEVEL 5 · Expert — 근거·프로토콜·한계 검토</summary>
 
 <a id="reading-level-5"></a>
 
@@ -173,7 +173,7 @@
 
 <!-- reading-levels17:end -->
 
-**필터 비교 사진과 설명을 나누고 20장·600초 본 발표로 재배치한 단계입니다.**
+필터 비교 사진과 설명을 나누고 20장·600초 본 발표로 재배치한 단계입니다.
 
 분야: 연구 발표 › 필터 비교의 전달 구성 › 슬라이드·발화·차트·자산
 

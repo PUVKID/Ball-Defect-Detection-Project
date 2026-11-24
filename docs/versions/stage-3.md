@@ -4,7 +4,7 @@
 
 <!-- reading-levels17:start -->
 <details>
-<summary><strong>읽기 수준 선택</strong></summary>
+<summary>읽기 수준 선택</summary>
 
 | 레벨 | 읽는 목적 |
 | --- | --- |
@@ -17,7 +17,7 @@
 </details>
 <!-- reading-levels17:end -->
 
-**필터 비교 연구를 12장 본 발표 600초와 3장 부록으로 설명한 초기 발표 구성입니다.**
+필터 비교 연구를 12장 본 발표 600초와 3장 부록으로 설명한 초기 발표 구성입니다.
 
 [목적·구성·사용법·결과의 상세 안내](../revisions/talk-1.md) · [프로젝트](../../README.md) · [전체 차수](../REVISION_INDEX.md)
 

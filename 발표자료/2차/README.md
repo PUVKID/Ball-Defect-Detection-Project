@@ -4,7 +4,7 @@
 
 <!-- reading-levels17:start -->
 <details>
-<summary><strong>읽기 수준 선택</strong></summary>
+<summary>읽기 수준 선택</summary>
 
 | 레벨 | 읽는 목적 |
 | --- | --- |
@@ -17,7 +17,7 @@
 </details>
 <!-- reading-levels17:end -->
 
-**필터 비교 사진과 설명을 나누고 20장·600초 본 발표로 재배치한 단계입니다.**
+필터 비교 사진과 설명을 나누고 20장·600초 본 발표로 재배치한 단계입니다.
 
 | 주요 구성 | 내용 |
 | --- | --- |

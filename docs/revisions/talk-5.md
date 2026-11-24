@@ -3,7 +3,7 @@
 [LEVEL 1 - Beginner](#reading-level-1) · [LEVEL 2 - Explorer](#reading-level-2) · [LEVEL 3 - Practitioner](#reading-level-3) · [LEVEL 4 - Advanced](#reading-level-4) · [LEVEL 5 - Expert](#reading-level-5)
 
 <details open>
-<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+<summary>LEVEL 1 · Beginner — 목적과 동작부터</summary>
 
 <a id="reading-level-1"></a>
 
@@ -11,7 +11,7 @@
 
 ### LEVEL 1 · 사진 손질 방법을 비교한 발표
 
-**저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다.** 사진에서 공처럼 생긴 작은 볼의 위치를 찾는 AI를 다뤘습니다.
+저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다. 사진에서 공처럼 생긴 작은 볼의 위치를 찾는 AI를 다뤘습니다.
 
 사진을 밝게 바꾸거나, 가장자리를 강조하거나, 흐리게하는 방법을 각각 비교합니다.
 
@@ -41,7 +41,7 @@
 </details>
 
 <details>
-<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
+<summary>LEVEL 2 · Explorer — 구성과 연결 원리</summary>
 
 <a id="reading-level-2"></a>
 
@@ -49,7 +49,7 @@
 
 ### LEVEL 2 · 필터와 재학습의 관계
 
-**저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다.** 입력 영상의 표현을 바꾸면 학습 모델이 보는 단서도 달라집니다.
+저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다. 입력 영상의 표현을 바꾸면 학습 모델이 보는 단서도 달라집니다.
 
 이번 비교는 Original과 열 가지 단일 필터, 순서를 정한 다섯 복합 필터를 같은 외부 교차 검증 구조에서 비교한 것입니다.
 
@@ -79,7 +79,7 @@ mAP50-95는 경계 상자의 위치와 검출을 여러 IoU 기준에서 평가�
 </details>
 
 <details>
-<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
+<summary>LEVEL 3 · Practitioner — 준비·실행·결과 확인</summary>
 
 <a id="reading-level-3"></a>
 
@@ -87,7 +87,7 @@ mAP50-95는 경계 상자의 위치와 검출을 여러 IoU 기준에서 평가�
 
 ### LEVEL 3 · 발표와 질의응답을 준비하는 순서
 
-**저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다.** PPTX는 편집용, 같은 발표 PDF는 열람·상영 확인용입니다.
+저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다. PPTX는 편집용, 같은 발표 PDF는 열람·상영 확인용입니다.
 
 장별 대본과 질문·답변은 PDF로 읽습니다.
 
@@ -117,7 +117,7 @@ mAP50-95는 경계 상자의 위치와 검출을 여러 IoU 기준에서 평가�
 </details>
 
 <details>
-<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
+<summary>LEVEL 4 · Advanced — 구현·설계·실패 처리</summary>
 
 <a id="reading-level-4"></a>
 
@@ -125,7 +125,7 @@ mAP50-95는 경계 상자의 위치와 검출을 여러 IoU 기준에서 평가�
 
 ### LEVEL 4 · 전달 구조와 결과의 경계
 
-**저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다.** 발표의 사진은 입력 변환의 예시이며 전체 시험 결과를 대신하지 않습니다.
+저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다. 발표의 사진은 입력 변환의 예시이며 전체 시험 결과를 대신하지 않습니다.
 
 본문 그래프는 저장된 집계값을 사용합니다.
 
@@ -159,7 +159,7 @@ Gamma의 일반 조건 반복 평가가 없어 안정적인 우위라고 단정�
 </details>
 
 <details>
-<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
+<summary>LEVEL 5 · Expert — 근거·프로토콜·한계 검토</summary>
 
 <a id="reading-level-5"></a>
 
@@ -167,7 +167,7 @@ Gamma의 일반 조건 반복 평가가 없어 안정적인 우위라고 단정�
 
 ### LEVEL 5 · 평가 프로토콜과 재현 한계
 
-**저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다.** 500개 영상·6,270개 볼 상 자, 368개 유사 그룹 기반 외부 5 겹 교차 검증 결과를 설명합니다.
+저장된 연구 결과를 발표에 맞게 다시 정리한 차수입니다. 500개 영상·6,270개 볼 상 자, 368개 유사 그룹 기반 외부 5 겹 교차 검증 결과를 설명합니다.
 
 외부 평가의 알려진 그룹 중복은 0이나 내부 train/val에는 9~20개 유사 그룹 중복이 남아 있습니다.
 

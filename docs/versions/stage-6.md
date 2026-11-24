@@ -4,7 +4,7 @@
 
 <!-- reading-levels17:start -->
 <details>
-<summary><strong>읽기 수준 선택</strong></summary>
+<summary>읽기 수준 선택</summary>
 
 | 레벨 | 읽는 목적 |
 | --- | --- |
@@ -17,7 +17,7 @@
 </details>
 <!-- reading-levels17:end -->
 
-**같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약을 정리한 최종 단계입니다.**  
+같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약을 정리한 최종 단계입니다.  
 현재 5쪽 전체 원고와 같은 판의 HWP는 로컬에 보존하며 공개 안내에서는 작성·게재 상태를 확인합니다.
 
 [목적·구성·사용법·결과의 상세 안내](../revisions/paper-final.md) · [프로젝트](../../README.md) · [전체 차수](../REVISION_INDEX.md)

@@ -5,23 +5,23 @@
 
 # Ball Defect Detection Project
 
-**YOLOv8n 기반 볼 객체 검출에서 단일·복합 전처리 필터의 성능을 비교합니다.**
+YOLOv8n 기반 볼 객체 검출에서 단일·복합 전처리 필터의 성능을 비교합니다.
 
 <!-- reading-levels17:start -->
 | 읽기 수준 | 안내 내용 |
 | --- | --- |
-| [**LEVEL 1 - Beginner**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
-| [**LEVEL 2 - Explorer**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 핵심 개념과 처리 흐름의 관계 이해 |
-| [**LEVEL 3 - Practitioner**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 실험·사용 절차와 결과 해석 따라가기 |
-| [**LEVEL 4 - Advanced**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 코드 구조·설정·설계 선택과 제약 검토 |
-| [**LEVEL 5 - Expert**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 논문·프로토콜·분모·누수·미검증 범위 대조 |
+| [LEVEL 1 - Beginner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
+| [LEVEL 2 - Explorer](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 핵심 개념과 처리 흐름의 관계 이해 |
+| [LEVEL 3 - Practitioner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 실험·사용 절차와 결과 해석 따라가기 |
+| [LEVEL 4 - Advanced](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 코드 구조·설정·설계 선택과 제약 검토 |
+| [LEVEL 5 - Expert](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 논문·프로토콜·분모·누수·미검증 범위 대조 |
 <!-- reading-levels17:end -->
 
 <a id="paper-errata-20261120"></a>
 
 ## 기존 원고와 정정 안내
 
-**기존 5 쪽 HWP·PDF는 원문 그대로 보존합니다.** 원고 그림의 세 값에 남은 이중 반올림 표시와 반복 문단을 별도 [논문 정정 안내](발표자료/5차/논문_정정안내.pdf)에서 구분해 설명합니다.
+기존 5 쪽 HWP·PDF는 원문 그대로 보존합니다. 원고 그림의 세 값에 남은 이중 반올림 표시와 반복 문단을 별도 [논문 정정 안내](발표자료/5차/논문_정정안내.pdf)에서 구분해 설명합니다.
 
 발표 그래프는 저장된 원정밀도 값에서 한 번 반올림한 표시를 사용합니다.
 
@@ -30,7 +30,7 @@
 
 ## 최신 발표·7차
 
-**마지막 장은 감사 인사 중심으로 정리했습니다.** 질의응답 문구와 하단 네 파트 안내·선을 제거하고, 감사 인사·저자·학교 마크·페이지 번호를 유지했습니다. 다른 19장과 연구 수치·대본·사진은 유지합니다.
+마지막 장은 감사 인사 중심으로 정리했습니다. 질의응답 문구와 하단 네 파트 안내·선을 제거하고, 감사 인사·저자·학교 마크·페이지 번호를 유지했습니다. 다른 19장과 연구 수치·대본·사진은 유지합니다.
 
 | 차수 | 변경 | 자료 |
 | --- | --- | --- |
@@ -42,7 +42,7 @@
 
 ## 발표 시각 개선·6차
 
-**20장 발표의 연구 내용과 장별 대본을 유지하면서 파트 구분·도식 연결·차트 식별을 다듬었습니다.** 6차는 같은 연구의 시각 표현 개정이며 새로운 학습·성능 측정을 추가한 차수가 아닙니다.
+20장 발표의 연구 내용과 장별 대본을 유지하면서 파트 구분·도식 연결·차트 식별을 다듬었습니다. 6차는 같은 연구의 시각 표현 개정이며 새로운 학습·성능 측정을 추가한 차수가 아닙니다.
 
 | 차수 | 바뀐 부분 | 자료 |
 | --- | --- | --- |
@@ -54,7 +54,7 @@
 
 ## 발표 준비 자료·5차
 
-**필터 별 볼 검출 성능을 비교한 연구를 발표 슬라이드·10분 대본·질문과 답변으로 함께 읽습니다.** 이번 차수는 저장된 결과의 전달 방식과 가독성을 다듬는 작업이며 새 학습 결과를 추가하지 않습니다.
+필터 별 볼 검출 성능을 비교한 연구를 발표 슬라이드·10분 대본·질문과 답변으로 함께 읽습니다. 이번 차수는 저장된 결과의 전달 방식과 가독성을 다듬는 작업이며 새 학습 결과를 추가하지 않습니다.
 
 | 차수 | 달라진 점 | 자료 |
 | --- | --- | --- |
@@ -92,7 +92,7 @@ YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 연구를
 
 **자료별 안내:** [최종 연구코드](docs/versions/stage-1.md) · [논문/4차](docs/versions/stage-2.md) · [발표자료/1차](docs/versions/stage-3.md) · [발표자료/2차](docs/versions/stage-4.md) · [발표자료/3차](docs/versions/stage-5.md) · [최종 원고](docs/versions/stage-6.md) · [전체 기록](docs/VERSIONS.md)
 
-발표 자료는 **1차: 본 발표 12장 +부록 3장 → 2차: 비교 사진을 확장한 본 발표 20장 → 3차: 같은 내용·시간을 유지하고 투명 로고·자산 검사를 보강**한 흐름입니다. 연구 실험 차수와 구분하며, 공개 폴더에는 각 차수의 검사 도구만 보관합니다.
+발표 자료는 1차: 본 발표 12장 +부록 3장 → 2차: 비교 사진을 확장한 본 발표 20장 → 3차: 같은 내용·시간을 유지하고 투명 로고·자산 검사를 보강한 흐름입니다. 연구 실험 차수와 구분하며, 공개 폴더에는 각 차수의 검사 도구만 보관합니다.
 
 <a name="preview"></a>
 
@@ -225,7 +225,7 @@ flowchart LR
 
 ### 최종 원고의 연구 범위
 
-**YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교**
+YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교
 *Performance Comparison of Single and Combined Preprocessing Filters for YOLOv8n-Based Ball Detection*
 
 한국정보기술학회([Korean Institute of Information Technology](https://eng.ki-it.or.kr/homepage/custom/memberadministrationregulation))의 2026 추계종합학술대회 양식으로 작성한 연구 원고입니다.
@@ -361,7 +361,7 @@ DataSet/
 <a id="-논문-1차--단일복합-전처리-필터-비교의-출발점"></a>
 
 <details>
-<summary><strong>논문 1차·단일·복합 전처리 필터 비교의 출발점</strong></summary>
+<summary>논문 1차·단일·복합 전처리 필터 비교의 출발점</summary>
 
 <a id="논문-1차단일복합-전처리-필터-비교의-출발점"></a>
 
@@ -403,7 +403,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>논문 2차·같은 설정을 더 명확하게 설명한 원고</strong></summary>
+<summary>논문 2차·같은 설정을 더 명확하게 설명한 원고</summary>
 
 <a id="논문-2차같은-설정을-더-명확하게-설명한-원고"></a>
 
@@ -445,7 +445,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>논문 3차·YOLOv8n 필터 비교 전체 원고</strong></summary>
+<summary>논문 3차·YOLOv8n 필터 비교 전체 원고</summary>
 
 <a id="논문-3차yolov8n-필터-비교-전체-원고"></a>
 
@@ -487,7 +487,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>논문 4차·원고 수치와 근거를 대조하는 도구</strong></summary>
+<summary>논문 4차·원고 수치와 근거를 대조하는 도구</summary>
 
 <a id="논문-4차원고-수치와-근거를-대조하는-도구"></a>
 
@@ -525,7 +525,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>논문 5차·결과 표와 도표 재구성 패키지</strong></summary>
+<summary>논문 5차·결과 표와 도표 재구성 패키지</summary>
 
 <a id="논문-5차결과-표와-도표-재구성-패키지"></a>
 
@@ -564,7 +564,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>논문 최종·5 쪽 전체 원고 읽기</strong></summary>
+<summary>논문 최종·5 쪽 전체 원고 읽기</summary>
 
 <a id="논문-최종5-쪽-전체-원고-읽기"></a>
 
@@ -606,7 +606,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>발표 자료 1차·12장 본 발표와 3장 부록</strong></summary>
+<summary>발표 자료 1차·12장 본 발표와 3장 부록</summary>
 
 <a id="발표-자료-1차12장-본-발표와-3장-부록"></a>
 
@@ -642,7 +642,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>발표 자료 2차·비교 사진을 분리한 20장 발표</strong></summary>
+<summary>발표 자료 2차·비교 사진을 분리한 20장 발표</summary>
 
 <a id="발표-자료-2차비교-사진을-분리한-20장-발표"></a>
 
@@ -678,7 +678,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>발표 자료 3차·투명 로고와 자산 보존</strong></summary>
+<summary>발표 자료 3차·투명 로고와 자산 보존</summary>
 
 <a id="발표-자료-3차투명-로고와-자산-보존"></a>
 
@@ -714,7 +714,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>발표 자료 4차·20장 순서에 맞춘 완성 대본</strong></summary>
+<summary>발표 자료 4차·20장 순서에 맞춘 완성 대본</summary>
 
 <a id="발표-자료-4차20장-순서에-맞춘-완성-대본"></a>
 
@@ -750,7 +750,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>발표 자료 최종·필터 비교 완성 20장</strong></summary>
+<summary>발표 자료 최종·필터 비교 완성 20장</summary>
 
 <a id="발표-자료-최종필터-비교-완성-20장"></a>
 
@@ -786,7 +786,7 @@ DataSet/
 </details>
 
 <details>
-<summary><strong>최종 연구코드 · 볼 검출과 규칙 기반 판정</strong></summary>
+<summary>최종 연구코드 · 볼 검출과 규칙 기반 판정</summary>
 
 <a id="최종-연구코드--볼-검출과-규칙-기반-판정"></a>
 
@@ -831,7 +831,7 @@ OKNG_CSV가 없을 때 규칙 기반 정답과의 일치도를 전문가 판정 
 </details>
 
 <details>
-<summary><strong>이전 도커 실험 · 코드와 저장 결과 읽기</strong></summary>
+<summary>이전 도커 실험 · 코드와 저장 결과 읽기</summary>
 
 <a id="이전-도커-실험--코드와-저장-결과-읽기"></a>
 
