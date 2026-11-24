@@ -3,7 +3,7 @@
 # 논문 1차·단일·복합 전처리 필터 비교의 출발점
 
 <!-- reading-levels17:start -->
-읽기 수준 · [LEVEL 1](#reading-level-1) · [LEVEL 2](#reading-level-2) · [LEVEL 3](#reading-level-3) · [LEVEL 4](#reading-level-4) · [LEVEL 5](#reading-level-5)
+읽기 수준 · [LEVEL 1](#user-content-reading-level-1) · [LEVEL 2](#user-content-reading-level-2) · [LEVEL 3](#user-content-reading-level-3) · [LEVEL 4](#user-content-reading-level-4) · [LEVEL 5](#user-content-reading-level-5)
 
 <details open>
 <summary>LEVEL 1 · Beginner — 목적과 동작부터</summary>

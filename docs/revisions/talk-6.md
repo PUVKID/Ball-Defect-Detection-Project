@@ -1,6 +1,6 @@
 # 발표 자료 6차·파트와 비교 차트의 시각 개선
 
-[LEVEL 1 - Beginner](#reading-level-1) · [LEVEL 2 - Explorer](#reading-level-2) · [LEVEL 3 - Practitioner](#reading-level-3) · [LEVEL 4 - Advanced](#reading-level-4) · [LEVEL 5 - Expert](#reading-level-5)
+[LEVEL 1 - Beginner](#user-content-reading-level-1) · [LEVEL 2 - Explorer](#user-content-reading-level-2) · [LEVEL 3 - Practitioner](#user-content-reading-level-3) · [LEVEL 4 - Advanced](#user-content-reading-level-4) · [LEVEL 5 - Expert](#user-content-reading-level-5)
 
 <details open>
 <summary>LEVEL 1 · Beginner — 목적과 동작부터</summary>
@@ -34,7 +34,7 @@
 | 5차 대본·질의 응답 자료 | 같은 장 순서로 설명·연습 | 600초 목표와 실제 시간 구분 |
 | 기존 원고·정정 안내 | 원문과 표시 정정 범위를 함께 읽기 | 원고 본문과 원정밀도 보존 |
 
-[이 수준의 직전 5차](talk-5.md#reading-level-1) · [프로젝트 안내](../읽기안내/레벨1.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨1.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
+[이 수준의 직전 5차](talk-5.md#user-content-reading-level-1) · [프로젝트 안내](../읽기안내/레벨1.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨1.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
 
 
 
@@ -70,7 +70,7 @@
 | 5차 대본·질의 응답 자료 | 같은 장 순서로 설명·연습 | 600초 목표와 실제 시간 구분 |
 | 기존 원고·정정 안내 | 원문과 표시 정정 범위를 함께 읽기 | 원고 본문과 원정밀도 보존 |
 
-[이 수준의 직전 5차](talk-5.md#reading-level-2) · [프로젝트 안내](../읽기안내/레벨2.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨2.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
+[이 수준의 직전 5차](talk-5.md#user-content-reading-level-2) · [프로젝트 안내](../읽기안내/레벨2.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨2.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
 
 
 
@@ -102,7 +102,7 @@
 | 5차 대본·질의 응답 자료 | 같은 장 순서로 설명·연습 | 600초 목표와 실제 시간 구분 |
 | 기존 원고·정정 안내 | 원문과 표시 정정 범위를 함께 읽기 | 원고 본문과 원정밀도 보존 |
 
-[이 수준의 직전 5차](talk-5.md#reading-level-3) · [프로젝트 안내](../읽기안내/레벨3.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨3.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
+[이 수준의 직전 5차](talk-5.md#user-content-reading-level-3) · [프로젝트 안내](../읽기안내/레벨3.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨3.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
 
 
 
@@ -138,7 +138,7 @@
 | 5차 대본·질의 응답 자료 | 같은 장 순서로 설명·연습 | 600초 목표와 실제 시간 구분 |
 | 기존 원고·정정 안내 | 원문과 표시 정정 범위를 함께 읽기 | 원고 본문과 원정밀도 보존 |
 
-[이 수준의 직전 5차](talk-5.md#reading-level-4) · [프로젝트 안내](../읽기안내/레벨4.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨4.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
+[이 수준의 직전 5차](talk-5.md#user-content-reading-level-4) · [프로젝트 안내](../읽기안내/레벨4.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨4.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
 
 
 
@@ -174,7 +174,7 @@
 | 5차 대본·질의 응답 자료 | 같은 장 순서로 설명·연습 | 600초 목표와 실제 시간 구분 |
 | 기존 원고·정정 안내 | 원문과 표시 정정 범위를 함께 읽기 | 원고 본문과 원정밀도 보존 |
 
-[이 수준의 직전 5차](talk-5.md#reading-level-5) · [프로젝트 안내](../읽기안내/레벨5.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨5.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
+[이 수준의 직전 5차](talk-5.md#user-content-reading-level-5) · [프로젝트 안내](../읽기안내/레벨5.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨5.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
 
 </details>
 

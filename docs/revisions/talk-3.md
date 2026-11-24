@@ -3,7 +3,7 @@
 # 발표 자료 3차·투명 로고와 자산 보존
 
 <!-- reading-levels17:start -->
-읽기 수준 · [LEVEL 1](#reading-level-1) · [LEVEL 2](#reading-level-2) · [LEVEL 3](#reading-level-3) · [LEVEL 4](#reading-level-4) · [LEVEL 5](#reading-level-5)
+읽기 수준 · [LEVEL 1](#user-content-reading-level-1) · [LEVEL 2](#user-content-reading-level-2) · [LEVEL 3](#user-content-reading-level-3) · [LEVEL 4](#user-content-reading-level-4) · [LEVEL 5](#user-content-reading-level-5)
 
 <details open>
 <summary>LEVEL 1 · Beginner — 목적과 동작부터</summary>
