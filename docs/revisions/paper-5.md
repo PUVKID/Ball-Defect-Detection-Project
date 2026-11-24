@@ -5,6 +5,9 @@
 <!-- reading-levels17:start -->
 **읽기 수준** · [LEVEL 1](#reading-level-1) · [LEVEL 2](#reading-level-2) · [LEVEL 3](#reading-level-3) · [LEVEL 4](#reading-level-4) · [LEVEL 5](#reading-level-5)
 
+<details open>
+<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+
 <a id="reading-level-1"></a>
 
 ## LEVEL 1 - Beginner
@@ -33,6 +36,12 @@
 | <a id="layout18-table-1-row-2"></a> 사용·확인·한계 | render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.<br>입력 원자료 SHA를 연결해도 새 학습이 되는 것은 아니며 같은 결과의 재도표와 참조 코드 패키지 구성입니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
 
 <a id="reading-level-2"></a>
 
@@ -63,6 +72,12 @@
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
+
 <a id="reading-level-3"></a>
 
 ## LEVEL 3 - Practitioner
@@ -92,6 +107,12 @@
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
+
 <a id="reading-level-4"></a>
 
 ## LEVEL 4 - Advanced
@@ -120,6 +141,12 @@
 | <a id="layout18-table-16-row-2"></a> 사용·확인·한계 | render_saved_figures.py는 JSON/CSV와 참조 노트북 그림 함수를 사용합니다.<br>입력 원자료 SHA를 연결해도 새 학습이 되는 것은 아니며 같은 결과의 재도표와 참조 코드 패키지 구성입니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
 
 <a id="reading-level-5"></a>
 
@@ -791,3 +818,6 @@
 
 
 <a id="layout18-table-12-row-1"></a><a id="layout18-table-12-row-2"></a><a id="layout18-table-12-row-3"></a><a id="layout18-table-12-row-4"></a><a id="layout18-table-14-row-1"></a><a id="layout18-table-14-row-2"></a><a id="layout18-table-14-row-3"></a><a id="layout18-table-14-row-4"></a><a id="layout18-table-17-row-1"></a><a id="layout18-table-17-row-2"></a><a id="layout18-table-17-row-3"></a><a id="layout18-table-17-row-4"></a><a id="layout18-table-19-row-1"></a><a id="layout18-table-19-row-2"></a><a id="layout18-table-19-row-3"></a><a id="layout18-table-19-row-4"></a><a id="layout18-table-2-row-1"></a><a id="layout18-table-2-row-2"></a><a id="layout18-table-2-row-3"></a><a id="layout18-table-2-row-4"></a><a id="layout18-table-4-row-1"></a><a id="layout18-table-4-row-2"></a><a id="layout18-table-4-row-3"></a><a id="layout18-table-4-row-4"></a><a id="layout18-table-7-row-1"></a><a id="layout18-table-7-row-2"></a><a id="layout18-table-7-row-3"></a><a id="layout18-table-7-row-4"></a><a id="layout18-table-9-row-1"></a><a id="layout18-table-9-row-2"></a><a id="layout18-table-9-row-3"></a><a id="layout18-table-9-row-4"></a>
+
+</details>
+

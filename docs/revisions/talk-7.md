@@ -2,6 +2,9 @@
 
 [LEVEL 1 - Beginner](#reading-level-1) · [LEVEL 2 - Explorer](#reading-level-2) · [LEVEL 3 - Practitioner](#reading-level-3) · [LEVEL 4 - Advanced](#reading-level-4) · [LEVEL 5 - Expert](#reading-level-5)
 
+<details open>
+<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+
 <a id="reading-level-1"></a>
 
 ## LEVEL 1 - Beginner
@@ -20,6 +23,12 @@
 
 [이 수준의 직전 6차](talk-6.md#reading-level-1) · [프로젝트 안내](../읽기안내/레벨1.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨1.md) · [7차 자료](../../발표자료/7차) · [실제 전체 비교](../revision-diffs/talk-7.md)
 
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
 
 <a id="reading-level-2"></a>
 
@@ -40,6 +49,12 @@
 [이 수준의 직전 6차](talk-6.md#reading-level-2) · [프로젝트 안내](../읽기안내/레벨2.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨2.md) · [7차 자료](../../발표자료/7차) · [실제 전체 비교](../revision-diffs/talk-7.md)
 
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
+
 <a id="reading-level-3"></a>
 
 ## LEVEL 3 - Practitioner
@@ -59,6 +74,12 @@
 [이 수준의 직전 6차](talk-6.md#reading-level-3) · [프로젝트 안내](../읽기안내/레벨3.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨3.md) · [7차 자료](../../발표자료/7차) · [실제 전체 비교](../revision-diffs/talk-7.md)
 
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
+
 <a id="reading-level-4"></a>
 
 ## LEVEL 4 - Advanced
@@ -77,6 +98,12 @@ PPTX의 슬라이드 내용과 PDF 렌더링을 대조하며 마지막 장의 �
 
 [이 수준의 직전 6차](talk-6.md#reading-level-4) · [프로젝트 안내](../읽기안내/레벨4.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨4.md) · [7차 자료](../../발표자료/7차) · [실제 전체 비교](../revision-diffs/talk-7.md)
 
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
 
 <a id="reading-level-5"></a>
 
@@ -99,3 +126,6 @@ PPTX의 슬라이드 내용과 PDF 렌더링을 대조하며 마지막 장의 �
 500개 영상에 대한 기존 조건별 재학습 평가와 지표 정의·내부 그룹 분리의 한계는 그대로 적용됩니다. Gamma 단일 시드의 소폭 차이, 합성 잡음 비교, 일부 세 시드 반복의 해석을 바꾸지 않습니다. 마지막 장의 정리로 일반화 성능이나 실제 발화 시간이 개선되었다고 측정한 것은 아닙니다.
 
 [이 수준의 직전 6차](talk-6.md#reading-level-5) · [프로젝트 안내](../읽기안내/레벨5.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨5.md) · [7차 자료](../../발표자료/7차) · [실제 전체 비교](../revision-diffs/talk-7.md)
+
+</details>
+

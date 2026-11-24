@@ -10,11 +10,11 @@
 <!-- reading-levels17:start -->
 | 읽기 수준 | 안내 내용 |
 | --- | --- |
-| [LEVEL 1 - Beginner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
-| [LEVEL 2 - Explorer](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 핵심 개념과 처리 흐름의 관계 이해 |
-| [LEVEL 3 - Practitioner](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 실험·사용 절차와 결과 해석 따라가기 |
-| [LEVEL 4 - Advanced](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 코드 구조·설정·설계 선택과 제약 검토 |
-| [LEVEL 5 - Expert](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 논문·프로토콜·분모·누수·미검증 범위 대조 |
+| [**LEVEL 1 - Beginner**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 낯선 용어를 풀고 입력부터 결과까지 구체적인 예로 읽기 |
+| [**LEVEL 2 - Explorer**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 핵심 개념과 처리 흐름의 관계 이해 |
+| [**LEVEL 3 - Practitioner**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 실험·사용 절차와 결과 해석 따라가기 |
+| [**LEVEL 4 - Advanced**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 코드 구조·설정·설계 선택과 제약 검토 |
+| [**LEVEL 5 - Expert**](docs/%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 논문·프로토콜·분모·누수·미검증 범위 대조 |
 <!-- reading-levels17:end -->
 
 <a id="paper-errata-20261120"></a>
@@ -134,21 +134,21 @@ YOLOv8n의 단일·복합 필터와 잡음·시드 조건을 비교한 연구를
 
 ## 전체 차수
 
-| 차수·단계 | 주요 내용 | 자료 | 직전 비교 |
-| --- | --- | --- | --- |
-| [논문 1차](docs/revisions/paper-1.md) | <a id="layout18-table-4-row-1-field-1"></a>다양한 영상 조건에서 YOLO 볼 검출을 위한 단일·복합 필터의 성능 비교를 정리한 초기 원고입니다. | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-1.diff) |
-| [논문 2차](docs/revisions/paper-2.md) | 1차와 같은 제목·연구 설정 아래 문장과 표현을 다듬은 원고 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-2.diff) |
-| [논문 3차](docs/revisions/paper-3.md) | <a id="layout18-table-4-row-3-field-1"></a>제목을 YOLOv8n 기반 볼 검출의 단일·복합 전처리 필터 비교로 정리하고 조건·결과 해석을 확장한 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-3.diff) |
-| [논문 4차 · 검토 도구](docs/revisions/paper-4.md) | <a id="layout18-table-4-row-4-field-1"></a>새 모델을 학습하는 대신 원고의 표·그림·문장과 저장된 원정밀도 결과를 대조한 검토 도구 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8/4%EC%B0%A8/tools) | [전체 비교](docs/revision-diffs/paper-4-%EC%97%B4%EB%9E%8C.md) |
-| [논문 5차 · 재구성 패키지](docs/revisions/paper-5.md) | <a id="layout18-table-4-row-5-field-1"></a>보존된 결과표와 노트북을 논문용 도표·참조 코드·전달 패키지로 구성한 단계입니다.<br>모델을 다시 학습하는 경로와 저장 결과를 다시 그리는 경로를 분리합니다. | [폴더](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C) | [전체 비교](docs/revision-diffs/paper-5-%EC%97%B4%EB%9E%8C.md) |
-| [논문 최종 · 3장/5장/요약](docs/revisions/paper-final.md) | <a id="layout18-table-4-row-6-field-1"></a>같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약을 정리한 최종 단계입니다. 현재 5쪽 전체 원고와 같은 판의 HWP는 로컬에 보존하며 공개 안내에서는 작성·게재 상태를 확인합니다. | [폴더](%EB%85%BC%EB%AC%B8) | [전체 비교](docs/revision-diffs/paper-final-%EC%97%B4%EB%9E%8C.md) |
-| [발표자료 1차](docs/revisions/talk-1.md) | 필터 비교 연구를 12장 본 발표 600초와 3장 부록으로 설명한 초기 발표 구성입니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/1%EC%B0%A8) | [전체 비교](docs/revision-diffs/talk-1.diff) |
-| [발표자료 2차](docs/revisions/talk-2.md) | 필터 비교 사진과 설명을 나누고 20장·600초 본 발표로 재배치한 단계입니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8) | [전체 비교](docs/revision-diffs/talk-2.diff) |
-| [발표자료 3차](docs/revisions/talk-3.md) | 2차의 20장 내용·시간을 유지하면서 투명 학교 마크와 전달 자산의 일치를 보강한 단계입니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8) | [전체 비교](docs/revision-diffs/talk-3.diff) |
-| [발표자료 4차](docs/revisions/talk-4.md) | <a id="layout18-table-4-row-10-field-1"></a>3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다.<br>슬라이드를 새로 학습하거나 실험한 단계가 아닙니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8) | [전체 비교](docs/revision-diffs/talk-4.diff) |
-| [발표자료 최종](docs/revisions/talk-final.md) | <a id="layout18-table-4-row-11-field-1"></a>단일·복합 필터와 잡음·시드 결과를 20장으로 설명하는 완성 발표 PDF/PPTX입니다.<br>논문과 다른 목적의 발표 자료로 같은 연구의 흐름을 전달합니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85) | [전체 비교](docs/revision-diffs/talk-final.diff) |
-| [최종](docs/revisions/code-final.md) | <a id="layout18-table-4-row-12-field-1"></a>유사 영상 그룹과 교차검증을 구성하고 전처리 필터별 YOLO 검출, 볼 일치, 영역별 개수 판정과 추가 진단을 함께 계산하는 노트북입니다. | [폴더](%EC%B5%9C%EC%A2%85) | [전체 비교](docs/revision-diffs/code-final-%EC%97%B4%EB%9E%8C.md) |
-| [이전 도커 실험·기존 결과표](docs/revisions/legacy.md) | <a id="layout18-table-4-row-13-field-1"></a>단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다.<br>결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다. | [폴더](%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98) | [전체 비교](docs/revision-diffs/legacy-%EC%97%B4%EB%9E%8C.md) |
+| 차수·단계 | 주요 내용 | 자료 · 직전 비교 |
+| --- | --- | --- |
+| [논문 1차](docs/revisions/paper-1.md) | <a id="layout18-table-4-row-1-field-1"></a>다양한 영상 조건에서 YOLO 볼 검출을 위한 단일·복합 필터의 성능 비교를 정리한 초기 원고입니다. | [폴더](%EB%85%BC%EB%AC%B8)<br>[전체 비교](docs/revision-diffs/paper-1.diff) |
+| [논문 2차](docs/revisions/paper-2.md) | 1차와 같은 제목·연구 설정 아래 문장과 표현을 다듬은 원고 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8)<br>[전체 비교](docs/revision-diffs/paper-2.diff) |
+| [논문 3차](docs/revisions/paper-3.md) | <a id="layout18-table-4-row-3-field-1"></a>제목을 YOLOv8n 기반 볼 검출의 단일·복합 전처리 필터 비교로 정리하고 조건·결과 해석을 확장한 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8)<br>[전체 비교](docs/revision-diffs/paper-3.diff) |
+| [논문 4차 · 검토 도구](docs/revisions/paper-4.md) | <a id="layout18-table-4-row-4-field-1"></a>새 모델을 학습하는 대신 원고의 표·그림·문장과 저장된 원정밀도 결과를 대조한 검토 도구 단계입니다. | [폴더](%EB%85%BC%EB%AC%B8/4%EC%B0%A8/tools)<br>[전체 비교](docs/revision-diffs/paper-4-%EC%97%B4%EB%9E%8C.md) |
+| [논문 5차 · 재구성 패키지](docs/revisions/paper-5.md) | <a id="layout18-table-4-row-5-field-1"></a>보존된 결과표와 노트북을 논문용 도표·참조 코드·전달 패키지로 구성한 단계입니다.<br>모델을 다시 학습하는 경로와 저장 결과를 다시 그리는 경로를 분리합니다. | [폴더](%EB%85%BC%EB%AC%B8/5%EC%B0%A8/%EC%BD%94%EB%93%9C)<br>[전체 비교](docs/revision-diffs/paper-5-%EC%97%B4%EB%9E%8C.md) |
+| [논문 최종 · 3장/5장/요약](docs/revisions/paper-final.md) | <a id="layout18-table-4-row-6-field-1"></a>같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약을 정리한 최종 단계입니다.<br>현재 5쪽 전체 원고와 같은 판의 HWP는 로컬에 보존하며 공개 안내에서는 작성·게재 상태를 확인합니다. | [폴더](%EB%85%BC%EB%AC%B8)<br>[전체 비교](docs/revision-diffs/paper-final-%EC%97%B4%EB%9E%8C.md) |
+| [발표자료 1차](docs/revisions/talk-1.md) | 필터 비교 연구를 12장 본 발표 600초와 3장 부록으로 설명한 초기 발표 구성입니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/1%EC%B0%A8)<br>[전체 비교](docs/revision-diffs/talk-1.diff) |
+| [발표자료 2차](docs/revisions/talk-2.md) | 필터 비교 사진과 설명을 나누고 20장·600초 본 발표로 재배치한 단계입니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8)<br>[전체 비교](docs/revision-diffs/talk-2.diff) |
+| [발표자료 3차](docs/revisions/talk-3.md) | 2차의 20장 내용·시간을 유지하면서 투명 학교 마크와 전달 자산의 일치를 보강한 단계입니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/3%EC%B0%A8)<br>[전체 비교](docs/revision-diffs/talk-3.diff) |
+| [발표자료 4차](docs/revisions/talk-4.md) | <a id="layout18-table-4-row-10-field-1"></a>3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다.<br>슬라이드를 새로 학습하거나 실험한 단계가 아닙니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8)<br>[전체 비교](docs/revision-diffs/talk-4.diff) |
+| [발표자료 최종](docs/revisions/talk-final.md) | <a id="layout18-table-4-row-11-field-1"></a>단일·복합 필터와 잡음·시드 결과를 20장으로 설명하는 완성 발표 PDF/PPTX입니다.<br>논문과 다른 목적의 발표 자료로 같은 연구의 흐름을 전달합니다. | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85)<br>[전체 비교](docs/revision-diffs/talk-final.diff) |
+| [최종](docs/revisions/code-final.md) | <a id="layout18-table-4-row-12-field-1"></a>유사 영상 그룹과 교차검증을 구성하고 전처리 필터별 YOLO 검출, 볼 일치, 영역별 개수 판정과 추가 진단을 함께 계산하는 노트북입니다. | [폴더](%EC%B5%9C%EC%A2%85)<br>[전체 비교](docs/revision-diffs/code-final-%EC%97%B4%EB%9E%8C.md) |
+| [이전 도커 실험·기존 결과표](docs/revisions/legacy.md) | <a id="layout18-table-4-row-13-field-1"></a>단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다.<br>결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다. | [폴더](%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98)<br>[전체 비교](docs/revision-diffs/legacy-%EC%97%B4%EB%9E%8C.md) |
 
 
 <a name="introduction"></a>
@@ -342,11 +342,11 @@ DataSet/
 
 현재 공개 자료와 직전 공개본의 비교입니다. 이전 원고·발표·코드의 단계별 설명은 전체 차수 표에서 확인할 수 있으며, 미게재 원고 본문과 편집 원본은 로컬에 보존하고 공개하지 않습니다.
 
-| 문서 | 자료 폴더 | 상세 | 직전 공개본 전체 비교 |
-| --- | --- | --- | --- |
-| 최종 논문 · 볼 검출 필터 비교 | [폴더](%EB%85%BC%EB%AC%B8) | [설명](docs/latest/ball-yolov8n-filter-paper.md) | [전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
-| 최종 발표 · 볼 검출 | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85) | [설명](docs/latest/ball-conference-presentation.md) | [전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
-| 완성 대본·볼 검출 발표 4차 | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8) | [설명](docs/latest/ball-complete-talk-script.md) | [전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
+| 문서 | 자료 폴더 | 상세 · 직전 공개본 전체 비교 |
+| --- | --- | --- |
+| 최종 논문 · 볼 검출 필터 비교 | [폴더](%EB%85%BC%EB%AC%B8) | [설명](docs/latest/ball-yolov8n-filter-paper.md)<br>[전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
+| 최종 발표 · 볼 검출 | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85) | [설명](docs/latest/ball-conference-presentation.md)<br>[전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
+| 완성 대본·볼 검출 발표 4차 | [폴더](%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/4%EC%B0%A8) | [설명](docs/latest/ball-complete-talk-script.md)<br>[전체 비교](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C-%EC%A0%84%EC%B2%B4%EB%B9%84%EA%B5%90.md) |
 
 [최신 문서 구성 변경](docs/changes/2026-11-02-%EC%B5%9C%EC%8B%A0%EB%AC%B8%EC%84%9C.md)
 
@@ -361,9 +361,9 @@ DataSet/
 <a id="-논문-1차--단일복합-전처리-필터-비교의-출발점"></a>
 
 <details>
-<summary>논문 1차·단일·복합 전처리 필터 비교의 출발점</summary>
+<summary><strong>논문 1차·단일·복합 전처리 필터 비교의 출발점</strong></summary>
 
-### 논문 1차·단일·복합 전처리 필터 비교의 출발점
+<a id="논문-1차단일복합-전처리-필터-비교의-출발점"></a>
 
 다양한 영상 조건에서 YOLO 볼 검출을 위한 단일·복합 필터의 성능 비교를 정리한 초기 원고입니다.
 
@@ -403,9 +403,9 @@ DataSet/
 </details>
 
 <details>
-<summary>논문 2차·같은 설정을 더 명확하게 설명한 원고</summary>
+<summary><strong>논문 2차·같은 설정을 더 명확하게 설명한 원고</strong></summary>
 
-### 논문 2차·같은 설정을 더 명확하게 설명한 원고
+<a id="논문-2차같은-설정을-더-명확하게-설명한-원고"></a>
 
 1차와 같은 제목·연구 설정 아래 문장과 표현을 다듬은 원고 단계입니다.
 
@@ -445,9 +445,9 @@ DataSet/
 </details>
 
 <details>
-<summary>논문 3차·YOLOv8n 필터 비교 전체 원고</summary>
+<summary><strong>논문 3차·YOLOv8n 필터 비교 전체 원고</strong></summary>
 
-### 논문 3차·YOLOv8n 필터 비교 전체 원고
+<a id="논문-3차yolov8n-필터-비교-전체-원고"></a>
 
 제목을 YOLOv8n 기반 볼 검출의 단일·복합 전처리 필터 비교로 정리하고 조건·결과 해석을 확장한 단계입니다.
 
@@ -487,9 +487,9 @@ DataSet/
 </details>
 
 <details>
-<summary>논문 4차·원고 수치와 근거를 대조하는 도구</summary>
+<summary><strong>논문 4차·원고 수치와 근거를 대조하는 도구</strong></summary>
 
-### 논문 4차·원고 수치와 근거를 대조하는 도구
+<a id="논문-4차원고-수치와-근거를-대조하는-도구"></a>
 
 새 모델을 학습하는 대신 원고의 표·그림·문장과 저장된 원정밀도 결과를 대조한 검토 도구 단계입니다.
 
@@ -525,9 +525,9 @@ DataSet/
 </details>
 
 <details>
-<summary>논문 5차·결과 표와 도표 재구성 패키지</summary>
+<summary><strong>논문 5차·결과 표와 도표 재구성 패키지</strong></summary>
 
-### 논문 5차·결과 표와 도표 재구성 패키지
+<a id="논문-5차결과-표와-도표-재구성-패키지"></a>
 
 보존된 결과표와 노트북을 논문용 도표·참조 코드·전달 패키지로 구성한 단계입니다. 모델을 다시 학습하는 경로와 저장 결과를 다시 그리는 경로를 분리합니다.
 
@@ -564,9 +564,9 @@ DataSet/
 </details>
 
 <details>
-<summary>논문 최종·5 쪽 전체 원고 읽기</summary>
+<summary><strong>논문 최종·5 쪽 전체 원고 읽기</strong></summary>
 
-### 논문 최종·5 쪽 전체 원고 읽기
+<a id="논문-최종5-쪽-전체-원고-읽기"></a>
 
 같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약을 정리한 최종 단계입니다. 현재 5쪽 전체 원고와 같은 판의 HWP는 로컬에 보존하며 공개 안내에서는 작성·게재 상태를 확인합니다.
 
@@ -606,9 +606,9 @@ DataSet/
 </details>
 
 <details>
-<summary>발표 자료 1차·12장 본 발표와 3장 부록</summary>
+<summary><strong>발표 자료 1차·12장 본 발표와 3장 부록</strong></summary>
 
-### 발표 자료 1차·12장 본 발표와 3장 부록
+<a id="발표-자료-1차12장-본-발표와-3장-부록"></a>
 
 필터 비교 연구를 12장 본 발표 600초와 3장 부록으로 설명한 초기 발표 구성입니다.
 
@@ -642,9 +642,9 @@ DataSet/
 </details>
 
 <details>
-<summary>발표 자료 2차·비교 사진을 분리한 20장 발표</summary>
+<summary><strong>발표 자료 2차·비교 사진을 분리한 20장 발표</strong></summary>
 
-### 발표 자료 2차·비교 사진을 분리한 20장 발표
+<a id="발표-자료-2차비교-사진을-분리한-20장-발표"></a>
 
 필터 비교 사진과 설명을 나누고 20장·600초 본 발표로 재배치한 단계입니다.
 
@@ -678,9 +678,9 @@ DataSet/
 </details>
 
 <details>
-<summary>발표 자료 3차·투명 로고와 자산 보존</summary>
+<summary><strong>발표 자료 3차·투명 로고와 자산 보존</strong></summary>
 
-### 발표 자료 3차·투명 로고와 자산 보존
+<a id="발표-자료-3차투명-로고와-자산-보존"></a>
 
 2차의 20장 내용·시간을 유지하면서 투명 학교 마크와 전달 자산의 일치를 보강한 단계입니다.
 
@@ -714,9 +714,9 @@ DataSet/
 </details>
 
 <details>
-<summary>발표 자료 4차·20장 순서에 맞춘 완성 대본</summary>
+<summary><strong>발표 자료 4차·20장 순서에 맞춘 완성 대본</strong></summary>
 
-### 발표 자료 4차·20장 순서에 맞춘 완성 대본
+<a id="발표-자료-4차20장-순서에-맞춘-완성-대본"></a>
 
 3차의 20장 슬라이드 순서에 맞춰 발화·전환 문장을 다듬고 목표 시간을 배분한 전체 발표 대본입니다. 슬라이드를 새로 학습하거나 실험한 단계가 아닙니다.
 
@@ -750,9 +750,9 @@ DataSet/
 </details>
 
 <details>
-<summary>발표 자료 최종·필터 비교 완성 20장</summary>
+<summary><strong>발표 자료 최종·필터 비교 완성 20장</strong></summary>
 
-### 발표 자료 최종·필터 비교 완성 20장
+<a id="발표-자료-최종필터-비교-완성-20장"></a>
 
 단일·복합 필터와 잡음·시드 결과를 20장으로 설명하는 완성 발표 PDF/PPTX입니다. 논문과 다른 목적의 발표 자료로 같은 연구의 흐름을 전달합니다.
 
@@ -786,9 +786,9 @@ DataSet/
 </details>
 
 <details>
-<summary>최종 연구코드 · 볼 검출과 규칙 기반 판정</summary>
+<summary><strong>최종 연구코드 · 볼 검출과 규칙 기반 판정</strong></summary>
 
-### 최종 연구코드 · 볼 검출과 규칙 기반 판정
+<a id="최종-연구코드--볼-검출과-규칙-기반-판정"></a>
 
 유사 영상 그룹과 교차검증을 구성하고 전처리 필터별 YOLO 검출, 볼 일치, 영역별 개수 판정과 추가 진단을 함께 계산하는 노트북입니다.
 
@@ -831,9 +831,9 @@ OKNG_CSV가 없을 때 규칙 기반 정답과의 일치도를 전문가 판정 
 </details>
 
 <details>
-<summary>이전 도커 실험 · 코드와 저장 결과 읽기</summary>
+<summary><strong>이전 도커 실험 · 코드와 저장 결과 읽기</strong></summary>
 
-### 이전 도커 실험 · 코드와 저장 결과 읽기
+<a id="이전-도커-실험--코드와-저장-결과-읽기"></a>
 
 단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다. 결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다.
 

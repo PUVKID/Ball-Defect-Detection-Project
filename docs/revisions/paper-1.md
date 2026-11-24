@@ -5,6 +5,9 @@
 <!-- reading-levels17:start -->
 **읽기 수준** · [LEVEL 1](#reading-level-1) · [LEVEL 2](#reading-level-2) · [LEVEL 3](#reading-level-3) · [LEVEL 4](#reading-level-4) · [LEVEL 5](#reading-level-5)
 
+<details open>
+<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+
 <a id="reading-level-1"></a>
 
 ## LEVEL 1 - Beginner
@@ -30,6 +33,12 @@
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
+
 <a id="reading-level-2"></a>
 
 ## LEVEL 2 - Explorer
@@ -54,6 +63,12 @@
 | <a id="layout18-table-6-row-2"></a> 사용·확인·한계 | 초기 제목과 원고 구조를 확인합니다.후속 문장 정리나 제목 변경이 초기 단계의 새 실험 성과를 뜻하지는 않습니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
 
 <a id="reading-level-3"></a>
 
@@ -90,6 +105,12 @@
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
+
 <a id="reading-level-4"></a>
 
 ## LEVEL 4 - Advanced
@@ -114,6 +135,12 @@
 | <a id="layout18-table-16-row-2"></a> 사용·확인·한계 | 초기 제목과 원고 구조를 확인합니다.후속 문장 정리나 제목 변경이 초기 단계의 새 실험 성과를 뜻하지는 않습니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
 
 <a id="reading-level-5"></a>
 
@@ -290,3 +317,6 @@
 
 
 <a id="layout18-table-10-row-1"></a><a id="layout18-table-10-row-2"></a><a id="layout18-table-10-row-3"></a><a id="layout18-table-15-row-1"></a><a id="layout18-table-15-row-2"></a><a id="layout18-table-15-row-3"></a><a id="layout18-table-20-row-1"></a><a id="layout18-table-20-row-2"></a><a id="layout18-table-20-row-3"></a><a id="layout18-table-5-row-1"></a><a id="layout18-table-5-row-2"></a><a id="layout18-table-5-row-3"></a>
+
+</details>
+

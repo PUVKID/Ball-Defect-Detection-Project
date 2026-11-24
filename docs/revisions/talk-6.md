@@ -2,6 +2,9 @@
 
 [LEVEL 1 - Beginner](#reading-level-1) · [LEVEL 2 - Explorer](#reading-level-2) · [LEVEL 3 - Practitioner](#reading-level-3) · [LEVEL 4 - Advanced](#reading-level-4) · [LEVEL 5 - Expert](#reading-level-5)
 
+<details open>
+<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+
 <a id="reading-level-1"></a>
 
 ## LEVEL 1 - Beginner
@@ -34,6 +37,12 @@
 [이 수준의 직전 5차](talk-5.md#reading-level-1) · [프로젝트 안내](../읽기안내/레벨1.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨1.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
 
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
+
 <a id="reading-level-2"></a>
 
 ## LEVEL 2 - Explorer
@@ -64,6 +73,12 @@
 [이 수준의 직전 5차](talk-5.md#reading-level-2) · [프로젝트 안내](../읽기안내/레벨2.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨2.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
 
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
+
 <a id="reading-level-3"></a>
 
 ## LEVEL 3 - Practitioner
@@ -89,6 +104,12 @@
 
 [이 수준의 직전 5차](talk-5.md#reading-level-3) · [프로젝트 안내](../읽기안내/레벨3.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨3.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
 
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
 
 <a id="reading-level-4"></a>
 
@@ -120,6 +141,12 @@
 [이 수준의 직전 5차](talk-5.md#reading-level-4) · [프로젝트 안내](../읽기안내/레벨4.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨4.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
 
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
+
 <a id="reading-level-5"></a>
 
 ## LEVEL 5 - Expert
@@ -148,3 +175,6 @@
 | 기존 원고·정정 안내 | 원문과 표시 정정 범위를 함께 읽기 | 원고 본문과 원정밀도 보존 |
 
 [이 수준의 직전 5차](talk-5.md#reading-level-5) · [프로젝트 안내](../읽기안내/레벨5.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨5.md) · [6차 자료](../../발표자료/6차) · [실제 전체 비교](../revision-diffs/talk-6.md)
+
+</details>
+

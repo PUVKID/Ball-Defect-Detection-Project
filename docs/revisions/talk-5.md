@@ -2,6 +2,9 @@
 
 [LEVEL 1 - Beginner](#reading-level-1) · [LEVEL 2 - Explorer](#reading-level-2) · [LEVEL 3 - Practitioner](#reading-level-3) · [LEVEL 4 - Advanced](#reading-level-4) · [LEVEL 5 - Expert](#reading-level-5)
 
+<details open>
+<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+
 <a id="reading-level-1"></a>
 
 ## LEVEL 1 - Beginner
@@ -33,6 +36,12 @@
 
 [이 수준의 이전 대본](talk-4.md#reading-level-1) · [프로젝트 안내](../읽기안내/레벨1.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨1.md) · [차수 자료](../../발표자료/5차) · [전체 비교](../revision-diffs/talk-5.md)
 
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
 
 <a id="reading-level-2"></a>
 
@@ -66,6 +75,12 @@ mAP50-95는 경계 상자의 위치와 검출을 여러 IoU 기준에서 평가�
 [이 수준의 이전 대본](talk-4.md#reading-level-2) · [프로젝트 안내](../읽기안내/레벨2.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨2.md) · [차수 자료](../../발표자료/5차) · [전체 비교](../revision-diffs/talk-5.md)
 
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
+
 <a id="reading-level-3"></a>
 
 ## LEVEL 3 - Practitioner
@@ -97,6 +112,12 @@ mAP50-95는 경계 상자의 위치와 검출을 여러 IoU 기준에서 평가�
 
 [이 수준의 이전 대본](talk-4.md#reading-level-3) · [프로젝트 안내](../읽기안내/레벨3.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨3.md) · [차수 자료](../../발표자료/5차) · [전체 비교](../revision-diffs/talk-5.md)
 
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
 
 <a id="reading-level-4"></a>
 
@@ -134,6 +155,12 @@ Gamma의 일반 조건 반복 평가가 없어 안정적인 우위라고 단정�
 [이 수준의 이전 대본](talk-4.md#reading-level-4) · [프로젝트 안내](../읽기안내/레벨4.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨4.md) · [차수 자료](../../발표자료/5차) · [전체 비교](../revision-diffs/talk-5.md)
 
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
+
 <a id="reading-level-5"></a>
 
 ## LEVEL 5 - Expert
@@ -168,4 +195,7 @@ mAP는 fold별 held-out test의 AP를 평균한 값이고, Strict Acc는 전체 
 | 5차 발표 자료 | 가독성과 자료 간 대응을 보강 | 추가 학습·새 측정 없음 |
 
 [이 수준의 이전 대본](talk-4.md#reading-level-5) · [프로젝트 안내](../읽기안내/레벨5.md) · [같은 수준 프로필](https://github.com/PUVKID/PUVKID/blob/main/docs/읽기안내/레벨5.md) · [차수 자료](../../발표자료/5차) · [전체 비교](../revision-diffs/talk-5.md)
+
+
+</details>
 

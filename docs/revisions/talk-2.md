@@ -5,6 +5,9 @@
 <!-- reading-levels17:start -->
 **읽기 수준** · [LEVEL 1](#reading-level-1) · [LEVEL 2](#reading-level-2) · [LEVEL 3](#reading-level-3) · [LEVEL 4](#reading-level-4) · [LEVEL 5](#reading-level-5)
 
+<details open>
+<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+
 <a id="reading-level-1"></a>
 
 ## LEVEL 1 - Beginner
@@ -36,6 +39,12 @@
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
+
 <a id="reading-level-2"></a>
 
 ## LEVEL 2 - Explorer
@@ -60,6 +69,12 @@
 | <a id="layout18-table-6-row-2"></a> 사용·확인·한계 | 원고 지표→차트 원정밀도→노트/대본→사진자산의 대응을 확인하고 시간은 리허설에서 실제로 잽니다.당시 검사도구의 입력자료는 별도로 필요합니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
 
 <a id="reading-level-3"></a>
 
@@ -94,6 +109,12 @@
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
+
 <a id="reading-level-4"></a>
 
 ## LEVEL 4 - Advanced
@@ -118,6 +139,12 @@
 | <a id="layout18-table-16-row-2"></a> 사용·확인·한계 | 원고 지표→차트 원정밀도→노트/대본→사진자산의 대응을 확인하고 시간은 리허설에서 실제로 잽니다.당시 검사도구의 입력자료는 별도로 필요합니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
 
 <a id="reading-level-5"></a>
 
@@ -287,3 +314,6 @@
 ---
 
 [프로젝트](../../README.md) · [전체 차수](../REVISION_INDEX.md) · [자료 폴더](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/2%EC%B0%A8) · [발표자료 1차](talk-1.md) · [발표자료 3차](talk-3.md)
+
+</details>
+

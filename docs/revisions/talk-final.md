@@ -5,6 +5,9 @@
 <!-- reading-levels17:start -->
 **읽기 수준** · [LEVEL 1](#reading-level-1) · [LEVEL 2](#reading-level-2) · [LEVEL 3](#reading-level-3) · [LEVEL 4](#reading-level-4) · [LEVEL 5](#reading-level-5)
 
+<details open>
+<summary><strong>LEVEL 1 · Beginner</strong> — 목적과 동작부터</summary>
+
 <a id="reading-level-1"></a>
 
 ## LEVEL 1 - Beginner
@@ -38,6 +41,12 @@ PDF는 읽기,PPTX 는 같은 발표의 편집 원본이며 4차 대본과 장�
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 2 · Explorer</strong> — 구성과 연결 원리</summary>
+
 <a id="reading-level-2"></a>
 
 ## LEVEL 2 - Explorer
@@ -66,6 +75,12 @@ PDF는 읽기,PPTX 는 같은 발표의 편집 원본이며 4차 대본과 장�
 | <a id="layout18-table-6-row-2"></a> 사용·확인·한계 | 3차 발표와 최종 파일의 대응·바이트 동일 여부를 확인하는 자료입니다.<br>논문이나 최종 연구 코드 폴더와 목적이 다르며 발표 구성 변화는 추가 성과가 아닙니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 3 · Practitioner</strong> — 준비·실행·결과 확인</summary>
 
 <a id="reading-level-3"></a>
 
@@ -100,6 +115,12 @@ PDF는 읽기,PPTX 는 같은 발표의 편집 원본이며 4차 대본과 장�
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md)
 
+
+</details>
+
+<details>
+<summary><strong>LEVEL 4 · Advanced</strong> — 구현·설계·실패 처리</summary>
+
 <a id="reading-level-4"></a>
 
 ## LEVEL 4 - Advanced
@@ -128,6 +149,12 @@ PDF는 읽기,PPTX 는 같은 발표의 편집 원본이며 4차 대본과 장�
 | <a id="layout18-table-16-row-2"></a> 사용·확인·한계 | 3차 발표와 최종 파일의 대응·바이트 동일 여부를 확인하는 자료입니다.<br>논문이나 최종 연구 코드 폴더와 목적이 다르며 발표 구성 변화는 추가 성과가 아닙니다. |
 
 [동일 수준 프로젝트 안내](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md)
+
+
+</details>
+
+<details>
+<summary><strong>LEVEL 5 · Expert</strong> — 근거·프로토콜·한계 검토</summary>
 
 <a id="reading-level-5"></a>
 
@@ -278,3 +305,6 @@ PDF는 읽기,PPTX 는 같은 발표의 편집 원본이며 4차 대본과 장�
 ---
 
 [프로젝트](../../README.md) · [전체 차수](../REVISION_INDEX.md) · [자료 폴더](../../%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C/%EC%B5%9C%EC%A2%85) · [발표자료 3차](talk-3.md)
+
+</details>
+

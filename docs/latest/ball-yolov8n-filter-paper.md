@@ -3,7 +3,18 @@
 # YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교
 
 <!-- reading-levels17:start -->
-**읽기 수준 선택** · [LEVEL 1 - Beginner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) · [LEVEL 2 - Explorer](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) · [LEVEL 3 - Practitioner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) · [LEVEL 4 - Advanced](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) · [LEVEL 5 - Expert](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md)
+<details>
+<summary><strong>읽기 수준 선택</strong></summary>
+
+| 레벨 | 읽는 목적 |
+| --- | --- |
+| [LEVEL 1 - Beginner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A81.md) | 목적과 입력·출력을 쉬운 말로 이해하기 |
+| [LEVEL 2 - Explorer](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A82.md) | 주요 기능과 전체 처리 흐름 살펴보기 |
+| [LEVEL 3 - Practitioner](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A83.md) | 설정·실행 순서와 결과 확인하기 |
+| [LEVEL 4 - Advanced](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A84.md) | 구현 선택과 조건·한계 비교하기 |
+| [LEVEL 5 - Expert](../%EC%9D%BD%EA%B8%B0%EC%95%88%EB%82%B4/%EB%A0%88%EB%B2%A85.md) | 세부 근거와 재현 조건 검토하기 |
+
+</details>
 <!-- reading-levels17:end -->
 
 <a id="paper-errata-20261120"></a>
@@ -17,7 +28,8 @@
 원고를 인용할 때 이 안내를 함께 확인합니다.
 
 
-**같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약을 정리한 최종 단계입니다. 현재 5쪽 전체 원고와 같은 판의 HWP는 로컬에 보존하며 공개 안내에서는 작성·게재 상태를 확인합니다.**
+**같은 연구의 3쪽 축약본·5쪽 전체본·별도 요약을 정리한 최종 단계입니다.**  
+현재 5쪽 전체 원고와 같은 판의 HWP는 로컬에 보존하며 공개 안내에서는 작성·게재 상태를 확인합니다.
 
 [목적·구성·사용법·결과의 상세 안내](../revisions/paper-final.md) · [프로젝트](../../README.md) · [전체 차수](../REVISION_INDEX.md)
 
@@ -54,7 +66,9 @@
 <details>
 <summary>파일·크기·SHA-256과 자료 연결</summary>
 
-이 표의 바이트 수와 SHA-256은 원고의 당시 기록값입니다. 링크는 현재 작성·게재 상태 안내로 연결되며, 연결된 안내 파일의 크기·해시를 뜻하지 않습니다. 미게재 원고 본문과 편집 원본은 로컬에 보존하며 공개하지 않습니다.
+이 표의 바이트 수와 SHA-256은 원고의 당시 기록값입니다.  
+링크는 현재 작성·게재 상태 안내로 연결되며, 연결된 안내 파일의 크기·해시를 뜻하지 않습니다.  
+미게재 원고 본문과 편집 원본은 로컬에 보존하며 공개하지 않습니다.
 
 | 원문 파일 | 바이트 | SHA-256 |
 | --- | --- | --- |
