@@ -38,7 +38,7 @@
 | [이전 도커 실험·기존 결과표](revisions/legacy.md) | **주요 내용** <a id="layout18-table-1-row-13-field-1"></a>단일·복합 필터 실험의 이전 노트북과 저장된 CSV·JSON·그래프를 함께 읽는 자료입니다.<br>결과표를 확인하는 경로와 새 학습을 수행하는 경로를 나누어 사용합니다.<br>자료 [폴더](../%EC%9D%B4%EC%A0%84%20%EB%8F%84%EC%BB%A4%20%EC%8B%A4%ED%97%98/%EB%B6%88%EB%9F%89%EA%B2%80%EC%B6%9C%EC%8B%A4%ED%97%98)<br>직전 비교 [전체 비교](revision-diffs/legacy-%EC%97%B4%EB%9E%8C.md) |
 | [발표자료 5차](revisions/talk-5.md) | [자료 폴더](../발표자료/5차) · [상세](revisions/talk-5.md) · [직전 비교](revision-diffs/talk-5.md) |
 | [발표자료 6차](revisions/talk-6.md) | [자료 폴더](../발표자료/6차) · [상세](revisions/talk-6.md) · [직전 비교](revision-diffs/talk-6.md) |
-| [발표자료 7차](revisions/talk-7.md) | [자료 폴더](../발표자료/7차) · [상세](revisions/talk-7.md) · [직전 비교](revision-diffs/talk-7.md) |
+| [발표 자료 7차](revisions/talk-7.md) | [자료 폴더](../발표자료/7차) · [상세](revisions/talk-7.md) · [직전 비교](revision-diffs/talk-7.md) |
 
 
 <a id="-자료-이용"></a>
