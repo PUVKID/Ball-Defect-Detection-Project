@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-발표자료-2차--비교-사진을-분리한-20장-발표"></a>
 
 # 발표 자료 2차·비교 사진을 분리한 20장 발표

@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-yolov8n-기반-볼-검출을-위한-단일-및-복합-전처리-필터의-성능-비교"></a>
 
 # YOLOv8n 기반 볼 검출을 위한 단일 및 복합 전처리 필터의 성능 비교

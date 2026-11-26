@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 # 발표 자료 6차·파트와 비교 차트의 시각 개선
 
 [LEVEL 1 - Beginner](#user-content-reading-level-1) · [LEVEL 2 - Explorer](#user-content-reading-level-2) · [LEVEL 3 - Practitioner](#user-content-reading-level-3) · [LEVEL 4 - Advanced](#user-content-reading-level-4) · [LEVEL 5 - Expert](#user-content-reading-level-5)

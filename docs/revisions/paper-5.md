@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-논문-5차--결과표와-도표-재구성-패키지"></a>
 
 # 논문 5차·결과 표와 도표 재구성 패키지

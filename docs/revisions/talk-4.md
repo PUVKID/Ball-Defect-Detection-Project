@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="️-발표자료-4차--20장-순서에-맞춘-완성-대본"></a>
 
 # 발표 자료 4차·20장 순서에 맞춘 완성 대본

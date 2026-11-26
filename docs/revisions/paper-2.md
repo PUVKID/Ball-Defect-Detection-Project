@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-논문-2차--같은-설정을-더-명확하게-설명한-원고"></a>
 
 # 논문 2차·같은 설정을 더 명확하게 설명한 원고

@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-논문-1차--단일복합-전처리-필터-비교의-출발점"></a>
 
 # 논문 1차·단일·복합 전처리 필터 비교의 출발점

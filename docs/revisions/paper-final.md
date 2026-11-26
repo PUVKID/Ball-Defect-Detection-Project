@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-논문-최종--5쪽-전체-원고-읽기"></a>
 
 # 논문 최종·5 쪽 전체 원고 읽기

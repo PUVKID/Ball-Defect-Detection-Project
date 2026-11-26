@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-볼-검출-10분-발표-완성-대본-4차"></a>
 
 ## 현재 발표 자료·5차

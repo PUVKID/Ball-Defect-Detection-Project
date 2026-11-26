@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-발표자료-3차--투명-로고와-자산-보존"></a>
 
 # 발표 자료 3차·투명 로고와 자산 보존

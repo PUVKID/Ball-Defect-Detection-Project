@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-논문-4차--원고-수치와-근거를-대조하는-도구"></a>
 
 # 논문 4차·원고 수치와 근거를 대조하는 도구

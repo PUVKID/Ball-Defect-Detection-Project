@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 <a id="-논문-3차--yolov8n-필터-비교-전체-원고"></a>
 
 # 논문 3차·YOLOv8n 필터 비교 전체 원고

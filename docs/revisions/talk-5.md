@@ -1,3 +1,7 @@
+<!-- language-choice:start -->
+🔵 **한국어** · [English overview](../../en/README.md)
+<!-- language-choice:end -->
+
 # 발표 자료 5차·가독성과 발표 준비 자료 정리
 
 [LEVEL 1 - Beginner](#user-content-reading-level-1) · [LEVEL 2 - Explorer](#user-content-reading-level-2) · [LEVEL 3 - Practitioner](#user-content-reading-level-3) · [LEVEL 4 - Advanced](#user-content-reading-level-4) · [LEVEL 5 - Expert](#user-content-reading-level-5)
