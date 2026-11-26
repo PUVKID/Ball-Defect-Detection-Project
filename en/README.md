@@ -25,7 +25,7 @@
   <source media="(max-width: 600px)" srcset="../assets/readme/flow-en-light-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="../assets/readme/flow-en-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="../assets/readme/flow-en-light.svg" />
-  <img src="../assets/readme/flow-en-light.svg" alt="Ball Defect Detection Project: Component images · labels → YOLO · filter comparison → mAP · Strict Acc" width="100%" />
+  <img src="../assets/readme/flow-en-light.svg" alt="Component images · labels: Component images and ball-box labels → YOLO · filter comparison: Compare original and filtered images → mAP · Strict Acc: Detection metrics and OK/NG decisions" width="100%" />
 </picture>
 <!-- readme-header32:end -->
 

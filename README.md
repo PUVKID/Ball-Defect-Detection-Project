@@ -24,7 +24,7 @@
   <source media="(max-width: 600px)" srcset="assets/readme/flow-ko-light-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="assets/readme/flow-ko-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="assets/readme/flow-ko-light.svg" />
-  <img src="assets/readme/flow-ko-light.svg" alt="Ball Defect Detection Project: 부품 영상 · 라벨 → YOLO · 필터 비교 → mAP · Strict Acc" width="100%" />
+  <img src="assets/readme/flow-ko-light.svg" alt="부품 영상 · 라벨: 제조 부품 영상과 볼 위치 라벨 → YOLO · 필터 비교: 원본·단일·복합 필터 조건 비교 → mAP · Strict Acc: 검출 지표와 별도 OK·NG 판정" width="100%" />
 </picture>
 <!-- readme-header32:end -->
 
